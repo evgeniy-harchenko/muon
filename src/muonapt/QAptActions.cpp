@@ -125,7 +125,7 @@ void QAptActions::setupActions()
     softwarePropertiesAction->setText(i18nc("@action Opens the software sources configuration dialog", "Configure Software Sources"));
     connect(softwarePropertiesAction, SIGNAL(triggered()), this, SLOT(runSourcesEditor()));
     m_actions.append(softwarePropertiesAction);
-    
+
     QAction* loadSelectionsAction = actionCollection()->addAction(QStringLiteral("open_markings"));
     loadSelectionsAction->setIcon(QIcon::fromTheme(QStringLiteral("document-open")));
     loadSelectionsAction->setText(i18nc("@action", "Read Markings..."));
@@ -160,13 +160,13 @@ void QAptActions::setupActions()
     loadArchivesAction->setText(i18nc("@action", "Add Downloaded Packages"));
     connect(loadArchivesAction, SIGNAL(triggered()), this, SLOT(loadArchives()));
     m_actions.append(loadArchivesAction);
-    
+
     QAction* saveInstalledAction = actionCollection()->addAction(QStringLiteral("save_package_list"));
     saveInstalledAction->setPriority(QAction::LowPriority);
     saveInstalledAction->setIcon(QIcon::fromTheme(QStringLiteral("document-save-as")));
     saveInstalledAction->setText(i18nc("@action", "Save Installed Packages List..."));
     connect(saveInstalledAction, SIGNAL(triggered()), this, SLOT(saveInstalledPackagesList()));
-    
+
     QAction* historyAction = actionCollection()->addAction(QStringLiteral("history"));
     historyAction->setPriority(QAction::LowPriority);
     historyAction->setIcon(QIcon::fromTheme(QStringLiteral("view-history")));
@@ -202,7 +202,7 @@ void QAptActions::setActionsEnabled(bool enabled)
     actionCollection()->action(QStringLiteral("undo"))->setEnabled(m_backend && !m_backend->isUndoStackEmpty());
     actionCollection()->action(QStringLiteral("redo"))->setEnabled(m_backend && !m_backend->isRedoStackEmpty());
     actionCollection()->action(QStringLiteral("revert"))->setEnabled(m_backend && m_backend->areChangesMarked());
-    
+
     actionCollection()->action(QStringLiteral("save_download_list"))->setEnabled(isConnected());
 
     bool changesPending = m_backend && m_backend->areChangesMarked();
@@ -390,7 +390,17 @@ void QAptActions::runSourcesEditor()
     QStringList arguments;
     int winID = m_mainWindow->effectiveWinId();
 
-    const QString kdesu = QFile::decodeName(CMAKE_INSTALL_FULL_LIBEXECDIR_KF6 "/kdesu");
+    QStringList libexecpath(QStringLiteral("/" LIBEXECDIR));
+
+    QString call = QStandardPaths::findExecutable(QStringLiteral("kdesu"));
+    if (call.isEmpty()) call = QStandardPaths::findExecutable(QStringLiteral("kdesu"), libexecpath);
+    if (call.isEmpty ()) call = QStandardPaths::findExecutable(QStringLiteral("kdesudo"));
+    if (call.isEmpty ()) call = QStandardPaths::findExecutable(QStringLiteral("kdesudo"), libexecpath);
+    if (call.isEmpty()) {
+        KMessageBox::error(m_mainWindow, i18n("Neither kdesu nor kdesudo could be found. To install as root, please install one of these packages."), i18n("kdesu not found"));
+        return;
+    }
+
     QString editor = QStandardPaths::findExecutable(QStringLiteral("software-properties-qt"));
     if (editor.isEmpty()) {
         editor = QStandardPaths::findExecutable(QStringLiteral("software-properties-kde"));
@@ -420,7 +430,7 @@ void QAptActions::runSourcesEditor()
             proc, &QProcess::deleteLater);
     m_mainWindow->find(winID)->setEnabled(false);
     proc->setProcessChannelMode(QProcess::ForwardedChannels);
-    proc->start(kdesu, arguments);
+    proc->start(call, arguments);
 }
 
 void QAptActions::sourcesEditorFinished(int exitStatus)
@@ -492,20 +502,20 @@ void QAptActions::showHistoryDialog()
 
         KConfigGroup dialogConfig(KSharedConfig::openConfig(QStringLiteral("muonrc")), QStringLiteral("HistoryDialog"));
         KWindowConfig::restoreWindowSize(m_historyDialog->windowHandle(), dialogConfig);
-        
+
 
         connect(m_historyDialog, SIGNAL(finished(int)), SLOT(closeHistoryDialog()));
         HistoryView *historyView = new HistoryView(m_historyDialog);
         m_historyDialog->layout()->addWidget(historyView);
         m_historyDialog->setWindowTitle(i18nc("@title:window", "Package History"));
         m_historyDialog->setWindowIcon(QIcon::fromTheme(QStringLiteral("view-history")));
-        
+
         QDialogButtonBox* box = new QDialogButtonBox(m_historyDialog);
         box->setStandardButtons(QDialogButtonBox::Close);
         connect(box, SIGNAL(accepted()), m_historyDialog, SLOT(accept()));
         connect(box, SIGNAL(rejected()), m_historyDialog, SLOT(reject()));
         m_historyDialog->layout()->addWidget(box);
-        
+
         m_historyDialog->show();
     } else {
         m_historyDialog->raise();

@@ -43,12 +43,14 @@ set(muon_SRCS
 
 )
 
+ADD_DEFINITIONS(-DLIBEXECDIR="${KDE_INSTALL_LIBEXECDIR_KF}")
+
 kconfig_add_kcfg_files(muon_SRCS GENERATE_MOC config/MuonSettings.kcfgc)
 install(FILES config/muon.kcfg DESTINATION ${KDE_INSTALL_KCFGDIR})
 
 add_executable(muon ${muon_SRCS})
 
-target_compile_definitions(muon PRIVATE -DCMAKE_INSTALL_FULL_LIBEXECDIR_KF6=\"${CMAKE_INSTALL_FULL_LIBEXECDIR_KF6}\")
+target_compile_definitions(muon PRIVATE -DCMAKE_INSTALL_FULL_LIBEXECDIR_KF6=\"${KDE_INSTALL_LIBEXECDIR}\")
 
 target_link_libraries(muon #DebconfKDE::Main
                            KF6::KIOWidgets
@@ -60,11 +62,11 @@ target_link_libraries(muon #DebconfKDE::Main
                            QApt::Main
 )
 
-install(TARGETS muon ${INSTALL_TARGETS_DEFAULT_ARGS} )
+install(TARGETS muon ${KDE_INSTALL_TARGETS_DEFAULT_ARGS} )
 
 
 ########### install files ###############
 
 install( PROGRAMS org.kde.muon.desktop  DESTINATION ${KDE_INSTALL_APPDIR} )
-install( FILES muonui.rc  DESTINATION  ${KXMLGUI_INSTALL_DIR}/muon )
+install( FILES muonui.rc  DESTINATION  ${KDE_INSTALL_KXMLGUIDIR}/muon )
 install( FILES org.kde.muon.appdata.xml DESTINATION ${KDE_INSTALL_METAINFODIR} )
