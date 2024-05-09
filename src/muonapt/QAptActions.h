@@ -100,7 +100,6 @@ private:
     QPointer<QDialog> m_historyDialog;
     QList<QAction *> m_actions;
     bool m_distUpgradeAvailable;
-    QNetworkInformation* m_config;
 
 };
 

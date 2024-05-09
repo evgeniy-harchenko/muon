@@ -58,9 +58,9 @@ QAptActions::QAptActions()
     , m_reloadWhenEditorFinished(false)
     , m_historyDialog(nullptr)
     , m_distUpgradeAvailable(false)
-    , m_config(QNetworkInformation::instance())
 {
-    connect(m_config, &QNetworkInformation::reachabilityChanged, this, &QAptActions::shouldConnect);
+    QNetworkInformation::loadDefaultBackend();
+    connect(QNetworkInformation::instance(), &QNetworkInformation::reachabilityChanged, this, &QAptActions::shouldConnect);
 }
 
 QAptActions* QAptActions::self()
@@ -218,7 +218,7 @@ bool QAptActions::reloadWhenSourcesEditorFinished() const
 
 bool QAptActions::isConnected() const
 {
-    return m_config->reachability() == QNetworkInformation::Reachability::Online;
+    return QNetworkInformation::instance()->reachability() == QNetworkInformation::Reachability::Online;
 }
 
 bool QAptActions::saveSelections()
