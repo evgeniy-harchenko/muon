@@ -43,7 +43,7 @@ void CategoryFilter::populate()
     QApt::GroupList groups = m_backend->availableGroups();
     QSet<QString> groupSet;
 
-    foreach(const QApt::Group &group, groups) {
+    for(const QApt::Group &group: groups) {
         QString groupName = MuonStrings::global()->groupName(group);
 
         if (!groupName.isEmpty()) {
@@ -53,14 +53,15 @@ void CategoryFilter::populate()
 
     QStandardItem *defaultItem = new QStandardItem;
     defaultItem->setEditable(false);
-    defaultItem->setIcon(QIcon::fromTheme("bookmark-new-list"));
+    defaultItem->setIcon(QIcon::fromTheme(QStringLiteral("bookmark-new-list")));
     defaultItem->setText(i18nc("@item:inlistbox Item that resets the filter to \"all\"", "All"));
     appendRow(defaultItem);
 
-    QStringList groupList = groupSet.toList();
-    qSort(groupList);
+    //QStringList groupList = groupSet.toList();
+    QStringList groupList = QStringList(groupSet.begin(), groupSet.end());
+    std::sort(groupList.begin(), groupList.end());
 
-    foreach(const QString &group, groupList) {
+    for(const QString &group: groupList) {
         QStandardItem *groupItem = new QStandardItem;
         groupItem->setEditable(false);
         groupItem->setText(group);

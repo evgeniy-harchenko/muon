@@ -25,6 +25,7 @@
 #include <QPointer>
 
 #include <QApt/Globals>
+#include <QNetworkInformation>
 
 
 class KXmlGuiWindow;
@@ -33,7 +34,7 @@ class KXmlGuiWindow;
 class KActionCollection;
 class QAction;
 class QDialog;
-class QNetworkConfigurationManager;
+//class QNetworkInformation;
 
 namespace QApt {
     class Backend;
@@ -56,13 +57,13 @@ public:
     void displayTransactionError(QApt::ErrorCode error, QApt::Transaction* trans);
     KActionCollection* actionCollection();
 
-signals:
-    void shouldConnect(bool isConnected);
+Q_SIGNALS:
+    void shouldConnect(QNetworkInformation::Reachability isConnected);
     void changesReverted();
     void sourcesEditorClosed(bool reload);
     void downloadArchives(QApt::Transaction *trans);
     
-public slots:
+public Q_SLOTS:
     void setBackend(QApt::Backend *backend);
     void setupActions();
 
@@ -81,7 +82,7 @@ public slots:
     void showHistoryDialog();
     void setActionsEnabled(bool enabled = true);
 
-private slots:
+private Q_SLOTS:
     void closeHistoryDialog();
     void checkDistUpgrade();
     void launchDistUpgrade();
@@ -99,7 +100,7 @@ private:
     QPointer<QDialog> m_historyDialog;
     QList<QAction *> m_actions;
     bool m_distUpgradeAvailable;
-    QNetworkConfigurationManager* m_config;
+    QNetworkInformation* m_config;
 
 };
 

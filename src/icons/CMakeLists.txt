@@ -8,6 +8,6 @@ ecm_install_icons(
         48-apps-muon.png
         64-apps-muon.png
         sc-apps-muon.svgz
-    DESTINATION ${ICON_INSTALL_DIR}
+    DESTINATION ${KDE_INSTALL_ICONDIR}
     THEME hicolor
 )

@@ -1,14 +1,18 @@
+cmake_minimum_required(VERSION 3.16.0)
+
 project(muon)
-set(PROJECT_VERSION "5.8.0")
-set(PROJECT_VERSION_MAJOR 5)
 
-cmake_minimum_required(VERSION 2.8.12)
+set(PROJECT_VERSION "6.0.0")
+set(PROJECT_VERSION_MAJOR 6)
 
-find_package(ECM REQUIRED NO_MODULE)
+set(QT_MIN_VERSION "6.5.0")
+set(KF_MIN_VERSION "6.1.0")
+
+find_package(ECM ${KF_MIN_VERSION} NO_MODULE)
 
 set(CMAKE_MODULE_PATH ${ECM_MODULE_PATH} ${ECM_KDE_MODULE_DIR})
 
-find_package(Qt5 5.7.0 REQUIRED CONFIG COMPONENTS Widgets Concurrent)
+find_package(Qt6 ${QT_MIN_VERSION} REQUIRED CONFIG COMPONENTS Widgets Concurrent)
 include(KDEInstallDirs)
 include(KDECMakeSettings NO_POLICY_SCOPE)
 include(KDECompilerSettings NO_POLICY_SCOPE)
@@ -16,10 +20,10 @@ include(ECMInstallIcons)
 include(ECMMarkAsTest)
 include(GenerateExportHeader)
 
-find_package(KF5 REQUIRED KIO DBusAddons I18n IconThemes XmlGui)
+find_package(KF6 ${KF_MIN_VERSION} REQUIRED KIO DBusAddons I18n IconThemes XmlGui)
 
-find_package(QApt 3.0.2 REQUIRED)
-find_package(DebconfKDE 1.0.0 REQUIRED)
+find_package(QApt 3.0.5 REQUIRED)
+#find_package(DebconfKDE 1.1.0 REQUIRED)
 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
 

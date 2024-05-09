@@ -37,7 +37,7 @@ protected Q_SLOTS:
 public Q_SLOTS:
     void updateView();
 
-signals:
+Q_SIGNALS:
     void currentPackageChanged(const QModelIndex &current);
     void selectionEmpty();
     void selectionMulti();

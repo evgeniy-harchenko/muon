@@ -53,7 +53,8 @@ ManagerWidget::ManagerWidget(QWidget *parent)
 
 ManagerWidget::~ManagerWidget()
 {
-    MuonSettings::self()->setManagerListColumns(saveColumnsState().toBase64());
+    //MuonSettings::self()->setManagerListColumns(saveColumnsState().toBase64());
+    MuonSettings::self()->setManagerListColumns(QString::fromUtf8(saveColumnsState()));
     MuonSettings::self()->save();
 }
 

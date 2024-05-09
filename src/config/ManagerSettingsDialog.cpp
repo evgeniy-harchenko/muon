@@ -45,7 +45,7 @@ ManagerSettingsDialog::ManagerSettingsDialog(QWidget* parent, QApt::Config *aptC
     GeneralSettingsPage *generalPage = new GeneralSettingsPage(this, m_aptConfig);
     KPageWidgetItem *generalSettingsFrame = addPage(generalPage,
                                                     i18nc("@title:group Title of the general group", "General"));
-    generalSettingsFrame->setIcon(QIcon::fromTheme("system-run"));
+    generalSettingsFrame->setIcon(QIcon::fromTheme(QStringLiteral("system-run")));
     connect(generalPage, SIGNAL(changed()), this, SLOT(changed()));
     connect(generalPage, SIGNAL(authChanged()), this, SLOT(authChanged()));
 
@@ -67,34 +67,34 @@ void ManagerSettingsDialog::slotButtonClicked(QAbstractButton* b)
 
 void ManagerSettingsDialog::changed()
 {
-    button(QDialogButtonBox::Apply)->setIcon(QIcon::fromTheme("dialog-ok-apply"));
+    button(QDialogButtonBox::Apply)->setIcon(QIcon::fromTheme(QStringLiteral("dialog-ok-apply")));
     button(QDialogButtonBox::Apply)->setEnabled(true);
 }
 
 void ManagerSettingsDialog::authChanged()
 {
-    button(QDialogButtonBox::Apply)->setIcon(QIcon::fromTheme("dialog-password"));
+    button(QDialogButtonBox::Apply)->setIcon(QIcon::fromTheme(QStringLiteral("dialog-password")));
     button(QDialogButtonBox::Apply)->setEnabled(true);
 }
 
 void ManagerSettingsDialog::applySettings()
 {
-    foreach (SettingsPageBase* page, m_pages) {
+    for (SettingsPageBase* page: m_pages) {
         page->applySettings();
     }
 
-    emit settingsChanged();
-    button(QDialogButtonBox::Apply)->setIcon(QIcon::fromTheme("dialog-ok-apply"));
+    Q_EMIT settingsChanged();
+    button(QDialogButtonBox::Apply)->setIcon(QIcon::fromTheme(QStringLiteral("dialog-ok-apply")));
     button(QDialogButtonBox::Apply)->setEnabled(false);
 }
 
 void ManagerSettingsDialog::restoreDefaults()
 {
-    foreach (SettingsPageBase* page, m_pages) {
+    for (SettingsPageBase* page: m_pages) {
         page->restoreDefaults();
     }
 
-    button(QDialogButtonBox::Apply)->setIcon(QIcon::fromTheme("dialog-ok-apply"));
+    button(QDialogButtonBox::Apply)->setIcon(QIcon::fromTheme(QStringLiteral("dialog-ok-apply")));
 }
 
 #include "ManagerSettingsDialog.moc"

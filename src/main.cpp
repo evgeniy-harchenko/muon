@@ -31,12 +31,12 @@
 int main(int argc, char **argv)
 {
     QApplication app(argc, argv);
-    app.setWindowIcon(QIcon::fromTheme("muon"));
+    app.setWindowIcon(QIcon::fromTheme(QStringLiteral("muon")));
     KLocalizedString::setApplicationDomain("muon");
-    KAboutData about("muon", i18n("Muon Package Manager"), version, i18n("A package manager"),
+    KAboutData about(QStringLiteral("muon"), i18n("Muon Package Manager"), QString::fromUtf8(version), i18n("A package manager"),
                      KAboutLicense::GPL, i18n("© 2009-2013 Jonathan Thomas"));
-    about.addAuthor(i18n("Jonathan Thomas"), QString(), "echidnaman@kubuntu.org");
-    about.addCredit(i18n("Harald Sitter"), i18n("Top Gardener"), "sitter@kde.org", QString(), QStringLiteral("apachelogger"));
+    about.addAuthor(i18n("Jonathan Thomas"), QString(), QStringLiteral("echidnaman@kubuntu.org"));
+    about.addCredit(i18n("Harald Sitter"), i18n("Top Gardener"), QStringLiteral("sitter@kde.org"), QString(), QStringLiteral("apachelogger"));
     about.setProductName("muon/muon");
     KAboutData::setApplicationData(about);
 

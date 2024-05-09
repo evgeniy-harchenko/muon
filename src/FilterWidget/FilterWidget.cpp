@@ -135,25 +135,25 @@ void FilterWidget::populateFilters()
 void FilterWidget::categoryActivated(const QModelIndex &index)
 {
     QString groupName = index.data(Qt::DisplayRole).toString();
-    emit filterByGroup(groupName);
+    Q_EMIT filterByGroup(groupName);
 }
 
 void FilterWidget::statusActivated(const QModelIndex &index)
 {
     QApt::Package::State state = (QApt::Package::State)index.data(Qt::UserRole+1).toInt();
-    emit filterByStatus(state);
+    Q_EMIT filterByStatus(state);
 }
 
 void FilterWidget::originActivated(const QModelIndex &index)
 {
     QString originName = index.data(Qt::DisplayRole).toString();
-    emit filterByOrigin(originName);
+    Q_EMIT filterByOrigin(originName);
 }
 
 void FilterWidget::architectureActivated(const QModelIndex &index)
 {
     QString arch = index.data(Qt::UserRole+1).toString();
-    emit filterByArchitecture(arch);
+    Q_EMIT filterByArchitecture(arch);
 }
 
 void FilterWidget::selectFirstRow(const QAbstractItemView *itemView)

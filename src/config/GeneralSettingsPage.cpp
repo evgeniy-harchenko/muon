@@ -45,7 +45,7 @@ GeneralSettingsPage::GeneralSettingsPage(QWidget* parent, QApt::Config *aptConfi
         , m_autoCleanSpinbox(new QSpinBox(this))
 {
     QFormLayout *layout = new QFormLayout(this);
-    layout->setMargin(0);
+    layout->setContentsMargins(QMargins());
     setLayout(layout);
 
     m_askChangesCheckBox->setText(i18n("Ask to confirm changes that affect other packages"));
@@ -60,7 +60,7 @@ GeneralSettingsPage::GeneralSettingsPage(QWidget* parent, QApt::Config *aptConfi
     QWidget *autoCleanWidget = new QWidget(this);
 
     QHBoxLayout *autoCleanLayout = new QHBoxLayout(autoCleanWidget);
-    autoCleanLayout->setMargin(0);
+    autoCleanLayout->setContentsMargins(QMargins());
     autoCleanWidget->setLayout(autoCleanLayout);
 
     m_autoCleanCheckBox->setText(i18n("Delete obsolete cached packages every:"));
@@ -111,12 +111,12 @@ void GeneralSettingsPage::loadSettings()
 
     m_askChangesCheckBox->setChecked(settings->askChanges());
     m_multiArchDupesBox->setChecked(settings->showMultiArchDupes());
-    m_recommendsCheckBox->setChecked(m_aptConfig->readEntry("APT::Install-Recommends", true));
-    m_suggestsCheckBox->setChecked(m_aptConfig->readEntry("APT::Install-Suggests", false));
-    m_untrustedCheckBox->setChecked(m_aptConfig->readEntry("APT::Get::AllowUnauthenticated", false));
+    m_recommendsCheckBox->setChecked(m_aptConfig->readEntry(QStringLiteral("APT::Install-Recommends"), true));
+    m_suggestsCheckBox->setChecked(m_aptConfig->readEntry(QStringLiteral("APT::Install-Suggests"), false));
+    m_untrustedCheckBox->setChecked(m_aptConfig->readEntry(QStringLiteral("APT::Get::AllowUnauthenticated"), false));
     m_undoStackSpinbox->setValue(settings->undoStackSize());
 
-    int autoCleanValue = m_aptConfig->readEntry("APT::Periodic::AutocleanInterval", 0);
+    int autoCleanValue = m_aptConfig->readEntry(QStringLiteral("APT::Periodic::AutocleanInterval"), 0);
     m_autoCleanCheckBox->setChecked(autoCleanValue > 0);
     m_autoCleanSpinbox->setValue(autoCleanValue);
 }
@@ -131,22 +131,22 @@ void GeneralSettingsPage::applySettings()
     settings->save();
 
     // Only write if changed. Unnecessary password dialogs ftl
-    if (m_aptConfig->readEntry("APT::Install-Recommends", true) != m_recommendsCheckBox->isChecked()) {
-        m_aptConfig->writeEntry("APT::Install-Recommends", m_recommendsCheckBox->isChecked());
+    if (m_aptConfig->readEntry(QStringLiteral("APT::Install-Recommends"), true) != m_recommendsCheckBox->isChecked()) {
+        m_aptConfig->writeEntry(QStringLiteral("APT::Install-Recommends"), m_recommendsCheckBox->isChecked());
     }
 
-    if (m_aptConfig->readEntry("APT::Install-Suggests", false) != m_suggestsCheckBox->isChecked()) {
-        m_aptConfig->writeEntry("APT::Install-Suggests", m_suggestsCheckBox->isChecked());
+    if (m_aptConfig->readEntry(QStringLiteral("APT::Install-Suggests"), false) != m_suggestsCheckBox->isChecked()) {
+        m_aptConfig->writeEntry(QStringLiteral("APT::Install-Suggests"), m_suggestsCheckBox->isChecked());
     }
 
-    if (m_aptConfig->readEntry("APT::Get::AllowUnauthenticated", true) != m_untrustedCheckBox->isChecked()) {
-        m_aptConfig->writeEntry("APT::Get::AllowUnauthenticated", m_untrustedCheckBox->isChecked());
+    if (m_aptConfig->readEntry(QStringLiteral("APT::Get::AllowUnauthenticated"), true) != m_untrustedCheckBox->isChecked()) {
+        m_aptConfig->writeEntry(QStringLiteral("APT::Get::AllowUnauthenticated"), m_untrustedCheckBox->isChecked());
     }
 
     int aCleanValue = autoCleanValue();
 
-    if (m_aptConfig->readEntry("APT::Periodic::AutocleanInterval", 0) != aCleanValue) {
-        m_aptConfig->writeEntry("APT::Periodic::AutocleanInterval", aCleanValue);
+    if (m_aptConfig->readEntry(QStringLiteral("APT::Periodic::AutocleanInterval"), 0) != aCleanValue) {
+        m_aptConfig->writeEntry(QStringLiteral("APT::Periodic::AutocleanInterval"), aCleanValue);
     }
 }
 
@@ -175,20 +175,20 @@ int GeneralSettingsPage::autoCleanValue() const
 
 void GeneralSettingsPage::emitAuthChanged()
 {
-    bool recChanged = m_aptConfig->readEntry("APT::Install-Recommends", true)
+    bool recChanged = m_aptConfig->readEntry(QStringLiteral("APT::Install-Recommends"), true)
                       != m_recommendsCheckBox->isChecked();
-    bool sugChanged = m_aptConfig->readEntry("APT::Install-Suggests", false)
+    bool sugChanged = m_aptConfig->readEntry(QStringLiteral("APT::Install-Suggests"), false)
                       != m_suggestsCheckBox->isChecked();
-    bool trustChanged = m_aptConfig->readEntry("APT::Get::AllowUnauthenticated", true)
+    bool trustChanged = m_aptConfig->readEntry(QStringLiteral("APT::Get::AllowUnauthenticated"), true)
                         != m_untrustedCheckBox->isChecked();
 
     int cleanInt = autoCleanValue();
-    bool cleanIntChanged = m_aptConfig->readEntry("APT::Periodic::AutocleanInterval", 0) != cleanInt;
+    bool cleanIntChanged = m_aptConfig->readEntry(QStringLiteral("APT::Periodic::AutocleanInterval"), 0) != cleanInt;
 
     if (recChanged || sugChanged || cleanIntChanged || trustChanged) {
-        emit authChanged();
+        Q_EMIT authChanged();
     } else {
-        emit changed();
+        Q_EMIT changed();
     }
 }
 

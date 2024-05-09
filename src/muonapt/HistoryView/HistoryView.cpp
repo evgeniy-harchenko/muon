@@ -62,19 +62,19 @@ HistoryView::HistoryView(QWidget *parent)
     connect(m_searchEdit, SIGNAL(textChanged(QString)), m_searchTimer, SLOT(start()));
 
     m_filterBox = new QComboBox(headerWidget);
-    m_filterBox->insertItem(AllChangesItem, QIcon::fromTheme("bookmark-new-list"),
+    m_filterBox->insertItem(AllChangesItem, QIcon::fromTheme(QStringLiteral("bookmark-new-list")),
                             i18nc("@item:inlistbox Filters all changes in the history view",
                                   "All changes"),
                             0);
-    m_filterBox->insertItem(InstallationsItem, QIcon::fromTheme("download"),
+    m_filterBox->insertItem(InstallationsItem, QIcon::fromTheme(QStringLiteral("download")),
                             i18nc("@item:inlistbox Filters installations in the history view",
                                   "Installations"),
                             QApt::Package::ToInstall);
-    m_filterBox->insertItem(UpdatesItem, QIcon::fromTheme("system-software-update"),
+    m_filterBox->insertItem(UpdatesItem, QIcon::fromTheme(QStringLiteral("system-software-update")),
                             i18nc("@item:inlistbox Filters updates in the history view",
                                   "Updates"),
                             QApt::Package::ToUpgrade);
-    m_filterBox->insertItem(RemovalsItem, QIcon::fromTheme("edit-delete"),
+    m_filterBox->insertItem(RemovalsItem, QIcon::fromTheme(QStringLiteral("edit-delete")),
                             i18nc("@item:inlistbox Filters removals in the history view",
                                   "Removals"),
                             (QApt::Package::State)(QApt::Package::ToRemove | QApt::Package::ToPurge));
@@ -90,7 +90,7 @@ HistoryView::HistoryView(QWidget *parent)
     m_historyModel->setHeaderData(0, Qt::Horizontal, i18nc("@title:column", "Date"));
     m_historyView = new QTreeView(this);
 
-    QIcon itemIcon(QIcon::fromTheme("applications-other"));
+    QIcon itemIcon(QIcon::fromTheme(QStringLiteral("applications-other")));
 
     QHash<QString, QString> categoryHash;
 
@@ -101,7 +101,7 @@ HistoryView::HistoryView(QWidget *parent)
     actionHash[RemovedAction] = i18nc("@status describes a past-tense action", "Removed");
     actionHash[PurgedAction] = i18nc("@status describes a past-tense action", "Purged");
 
-    Q_FOREACH (const QApt::HistoryItem &item, m_history->historyItems()) {
+    for (const QApt::HistoryItem &item: m_history->historyItems()) {
         QDateTime startDateTime = item.startDate();
         QString formattedTime = startDateTime.toString();
         QString category;
@@ -110,7 +110,7 @@ HistoryView::HistoryView(QWidget *parent)
         if (categoryHash.contains(date)) {
             category = categoryHash.value(date);
         } else {
-            category = startDateTime.date().toString(Qt::DefaultLocaleShortDate);
+            category = QLocale().toString(startDateTime.date(), QLocale::ShortFormat);
             categoryHash[date] = category;
         }
 
@@ -128,7 +128,7 @@ HistoryView::HistoryView(QWidget *parent)
             parentItem = m_categoryHash.value(category);
         }
 
-        foreach (const QString &package, item.installedPackages()) {
+        for (const QString &package: item.installedPackages()) {
             QStandardItem *historyItem = new QStandardItem;
             historyItem->setEditable(false);
             historyItem->setIcon(itemIcon);
@@ -143,7 +143,7 @@ HistoryView::HistoryView(QWidget *parent)
             parentItem->appendRow(historyItem);
         }
 
-        foreach (const QString &package, item.upgradedPackages()) {
+        for (const QString &package: item.upgradedPackages()) {
             QStandardItem *historyItem = new QStandardItem;
             historyItem->setEditable(false);
             historyItem->setIcon(itemIcon);
@@ -158,7 +158,7 @@ HistoryView::HistoryView(QWidget *parent)
             parentItem->appendRow(historyItem);
         }
 
-        foreach (const QString &package, item.downgradedPackages()) {
+        for (const QString &package: item.downgradedPackages()) {
             QStandardItem *historyItem = new QStandardItem;
             historyItem->setEditable(false);
             historyItem->setIcon(itemIcon);
@@ -173,7 +173,7 @@ HistoryView::HistoryView(QWidget *parent)
             parentItem->appendRow(historyItem);
         }
 
-        foreach (const QString &package, item.removedPackages()) {
+        for (const QString &package: item.removedPackages()) {
             QStandardItem *historyItem = new QStandardItem;
             historyItem->setEditable(false);
             historyItem->setIcon(itemIcon);
@@ -188,7 +188,7 @@ HistoryView::HistoryView(QWidget *parent)
             parentItem->appendRow(historyItem);
         }
 
-        foreach (const QString &package, item.purgedPackages()) {
+        for (const QString &package: item.purgedPackages()) {
             QStandardItem *historyItem = new QStandardItem;
             historyItem->setEditable(false);
             historyItem->setIcon(itemIcon);

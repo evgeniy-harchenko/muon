@@ -60,7 +60,7 @@ void DownloadDelegate::paint(QPainter* painter, const QStyleOptionViewItem& opti
         }
         case 3: {
             int percentage = index.data(DownloadModel::PercentRole).toInt();
-            QString text = QString::number(percentage) + '%';
+            QString text = QString::number(percentage) + QChar::fromLatin1('%');
 
             if (percentage == 100) {
                 text = i18nc("@info:status Progress text when done", "Done");

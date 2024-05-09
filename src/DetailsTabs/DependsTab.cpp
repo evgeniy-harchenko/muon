@@ -95,7 +95,7 @@ void DependsTab::populateDepends(int index)
         break;
     }
 
-    foreach(const QString &string, list) {
+    for(const QString &string: list) {
             m_dependsBrowser->append(string);
     }
 

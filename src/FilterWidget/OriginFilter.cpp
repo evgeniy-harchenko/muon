@@ -38,11 +38,11 @@ void OriginFilter::populate()
 
     QStandardItem *defaultItem = new QStandardItem;
     defaultItem->setEditable(false);
-    defaultItem->setIcon(QIcon::fromTheme("bookmark-new-list"));
+    defaultItem->setIcon(QIcon::fromTheme(QStringLiteral("bookmark-new-list")));
     defaultItem->setText(i18nc("@item:inlistbox Item that resets the filter to \"all\"", "All"));
     appendRow(defaultItem);
 
-    foreach(const QString &originLabel, originLabels) {
+    for(const QString &originLabel: originLabels) {
         QStandardItem *originItem = new QStandardItem;
         originItem->setEditable(false);
         originItem->setText(originLabel);

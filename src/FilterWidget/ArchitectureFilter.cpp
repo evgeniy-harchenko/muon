@@ -39,15 +39,15 @@ ArchitectureFilter::ArchitectureFilter(QObject *parent, QApt::Backend *backend)
 void ArchitectureFilter::populate()
 {
     QStringList archList = m_backend->architectures();
-    archList.prepend("all");
+    archList.prepend(QStringLiteral("all"));
 
     QStandardItem *defaultItem = new QStandardItem;
     defaultItem->setEditable(false);
-    defaultItem->setIcon(QIcon::fromTheme("bookmark-new-list"));
+    defaultItem->setIcon(QIcon::fromTheme(QStringLiteral("bookmark-new-list")));
     defaultItem->setText(i18nc("@item:inlistbox Item that resets the filter to \"all\"", "All"));
     appendRow(defaultItem);
 
-    Q_FOREACH (const QString &arch, archList) {
+    for (const QString &arch: archList) {
         QStandardItem *archItem = new QStandardItem;
         archItem->setEditable(false);
         archItem->setText(MuonStrings::global()->archString(arch));

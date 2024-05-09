@@ -55,7 +55,7 @@ DetailsWidget::DetailsWidget(QWidget *parent)
     // Hide until a package is clicked
     hide();
 
-    Q_FOREACH (DetailsTab *tab, m_detailsTabs) {
+    for (DetailsTab *tab: m_detailsTabs) {
         addTab(tab, tab->name());
     }
 
@@ -83,7 +83,7 @@ DetailsWidget::~DetailsWidget()
 
 void DetailsWidget::setBackend(QApt::Backend *backend)
 {
-    Q_FOREACH (DetailsTab *tab, m_detailsTabs) {
+    for (DetailsTab *tab: m_detailsTabs) {
         tab->setBackend(backend);
     }
 }
@@ -91,7 +91,7 @@ void DetailsWidget::setBackend(QApt::Backend *backend)
 void DetailsWidget::setPackage(QApt::Package *package)
 {
     bool tabChanged = false;
-    Q_FOREACH (DetailsTab *tab, m_detailsTabs) {
+    for (DetailsTab *tab: m_detailsTabs) {
         tab->setPackage(package);
 
         if (currentIndex() == indexOf(tab) && !tab->shouldShow()) {
@@ -109,7 +109,7 @@ void DetailsWidget::setPackage(QApt::Package *package)
 
 void DetailsWidget::emitHideButtons()
 {
-  emit emitHideButtonsSignal();
+  Q_EMIT emitHideButtonsSignal();
 }
 
 void DetailsWidget::refreshCurrentTab()
@@ -122,7 +122,7 @@ void DetailsWidget::refreshCurrentTab()
 
 void DetailsWidget::clear()
 {
-    Q_FOREACH (DetailsTab *tab, m_detailsTabs) {
+    for (DetailsTab *tab: m_detailsTabs) {
         tab->clear();
     }
 

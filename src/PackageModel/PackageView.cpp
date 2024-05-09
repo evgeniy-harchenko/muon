@@ -46,17 +46,17 @@ void PackageView::selectionChanged(const QItemSelection &selected, const QItemSe
 
     const int count = selectionCount();
     if (count <= 0) {
-        emit selectionEmpty();
+        Q_EMIT selectionEmpty();
         return;
     }
 
     if (selected.isEmpty()) {
-        emit currentPackageChanged(selectedIndexes().last());
+        Q_EMIT currentPackageChanged(selectedIndexes().last());
     } else {
-        emit currentPackageChanged(selected.indexes().first());
+        Q_EMIT currentPackageChanged(selected.indexes().first());
     }
     if(count > 1) {
-        emit selectionMulti();
+        Q_EMIT selectionMulti();
     }
 }
 

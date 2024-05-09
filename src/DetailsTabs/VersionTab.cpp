@@ -51,7 +51,7 @@ VersionTab::VersionTab(QWidget *parent)
     footerWidget->setLayout(footerLayout);
 
     QLabel *infoIconLabel = new QLabel(footerWidget);
-    infoIconLabel->setPixmap(QIcon::fromTheme("dialog-warning").pixmap(32, 32));
+    infoIconLabel->setPixmap(QIcon::fromTheme(QStringLiteral("dialog-warning")).pixmap(32, 32));
     footerLayout->addWidget(infoIconLabel);
 
     QLabel *infoLabel = new QLabel(footerWidget);
@@ -104,8 +104,8 @@ void VersionTab::populateVersions()
 {
     QStringList availableVersions = m_package->availableVersions();
 
-    foreach(const QString &version, availableVersions) {
-        QStringList split = version.split(' ');
+    for(const QString &version: availableVersions) {
+        QStringList split = version.split(QChar::fromLatin1(' '));
         m_versions.append(split.at(0));
 
         QStandardItem *versionItem = new QStandardItem;

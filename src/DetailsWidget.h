@@ -24,6 +24,7 @@
 // Qt includes
 #include <QtCore/QVector>
 #include <QTabWidget>
+#include <qt5/QtCore/QStandardPaths>
 
 class QScrollArea;
 
@@ -52,7 +53,7 @@ public Q_SLOTS:
     void clear();
     void emitHideButtons();
 
-signals:
+Q_SIGNALS:
     void setInstall(QApt::Package *package);
     void setRemove(QApt::Package *package);
     void setUpgrade(QApt::Package *package);

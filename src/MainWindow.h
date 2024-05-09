@@ -114,7 +114,7 @@ public Q_SLOTS:
 
     void setupTransaction(QApt::Transaction *trans);
 
-signals:
+Q_SIGNALS:
     void backendReady(QApt::Backend *backend);
 };
 

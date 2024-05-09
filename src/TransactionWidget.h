@@ -66,7 +66,7 @@ private:
     QLabel *m_statusLabel;
     QPushButton *m_cancelButton;
 
-private slots:
+private Q_SLOTS:
     void statusChanged(QApt::TransactionStatus status);
     void transactionErrorOccurred(QApt::ErrorCode error);
     void provideMedium(const QString &label, const QString &medium);

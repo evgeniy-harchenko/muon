@@ -61,7 +61,7 @@ StatusWidget::StatusWidget(QWidget *parent)
 
     QHBoxLayout* topLayout = new QHBoxLayout(this);
     setLayout(topLayout);
-    topLayout->setMargin(0);
+    topLayout->setContentsMargins(QMargins());
     topLayout->setSpacing(4);
     topLayout->addWidget(m_countsLabel);
     topLayout->addWidget(m_downloadLabel);

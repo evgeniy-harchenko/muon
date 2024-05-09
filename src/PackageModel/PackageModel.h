@@ -56,7 +56,7 @@ public:
 private:
     QApt::PackageList m_packages;
 
-public slots:
+public Q_SLOTS:
     void externalDataChanged();
 };
 

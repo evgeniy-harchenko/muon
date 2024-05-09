@@ -62,7 +62,7 @@ bool packageNameLessThan(QApt::Package *p1, QApt::Package *p2)
 
 QApt::PackageList sortPackages(QApt::PackageList list)
 {
-    qSort(list.begin(), list.end(), packageNameLessThan);
+    std::sort(list.begin(), list.end(), packageNameLessThan);
     return list;
 }
 
@@ -130,7 +130,7 @@ PackageWidget::PackageWidget(QWidget *parent)
             this, SLOT(setPurge(QApt::Package*)));
 
     m_busyWidget = new KPixmapSequenceOverlayPainter(this);
-    m_busyWidget->setSequence(KPixmapSequence("process-working", KIconLoader::SizeSmallMedium));
+    m_busyWidget->setSequence(KPixmapSequence(QStringLiteral("process-working"), KIconLoader::SizeSmallMedium));
     m_busyWidget->setAlignment(Qt::AlignHCenter | Qt::AlignVCenter);
     m_busyWidget->setWidget(m_packageView->viewport());
 
@@ -162,38 +162,38 @@ PackageWidget::PackageWidget(QWidget *parent)
 void PackageWidget::setupActions()
 {
     m_installAction = new QAction(this);
-    m_installAction->setIcon(QIcon::fromTheme("download"));
+    m_installAction->setIcon(QIcon::fromTheme(QStringLiteral("download")));
     m_installAction->setText(i18nc("@action:inmenu", "Mark for Installation"));
     connect(m_installAction, SIGNAL(triggered()), this, SLOT(setPackagesInstall()));
 
     m_removeAction = new QAction(this);
-    m_removeAction->setIcon(QIcon::fromTheme("edit-delete"));
+    m_removeAction->setIcon(QIcon::fromTheme(QStringLiteral("edit-delete")));
     m_removeAction->setText(i18nc("@action:button", "Mark for Removal"));
     connect(m_removeAction, SIGNAL(triggered()), this, SLOT(setPackagesRemove()));
 
     m_upgradeAction = new QAction(this);
-    m_upgradeAction->setIcon(QIcon::fromTheme("system-software-update"));
+    m_upgradeAction->setIcon(QIcon::fromTheme(QStringLiteral("system-software-update")));
     m_upgradeAction->setText(i18nc("@action:button", "Mark for Upgrade"));
     connect(m_upgradeAction, SIGNAL(triggered()), this, SLOT(setPackagesUpgrade()));
 
     m_reinstallAction = new QAction(this);
-    m_reinstallAction->setIcon(QIcon::fromTheme("view-refresh"));
+    m_reinstallAction->setIcon(QIcon::fromTheme(QStringLiteral("view-refresh")));
     m_reinstallAction->setText(i18nc("@action:button", "Mark for Reinstallation"));
     connect(m_reinstallAction, SIGNAL(triggered()), this, SLOT(setPackagesReInstall()));
 
     m_purgeAction = new QAction(this);
-    m_purgeAction->setIcon(QIcon::fromTheme("edit-delete-shred"));
+    m_purgeAction->setIcon(QIcon::fromTheme(QStringLiteral("edit-delete-shred")));
     m_purgeAction->setText(i18nc("@action:button", "Mark for Purge"));
     connect(m_purgeAction, SIGNAL(triggered()), this, SLOT(setPackagesPurge()));
 
     m_keepAction = new QAction(this);
-    m_keepAction->setIcon(QIcon::fromTheme("dialog-cancel"));
+    m_keepAction->setIcon(QIcon::fromTheme(QStringLiteral("dialog-cancel")));
     m_keepAction->setText(i18nc("@action:button", "Unmark"));
     connect(m_keepAction, SIGNAL(triggered()), this, SLOT(setPackagesKeep()));
 
     m_lockAction = new QAction(this);
     m_lockAction->setCheckable(true);
-    m_lockAction->setIcon(QIcon::fromTheme("object-locked"));
+    m_lockAction->setIcon(QIcon::fromTheme(QStringLiteral("object-locked")));
     m_lockAction->setText(i18nc("@action:button", "Lock Package at Current Version"));
     connect(m_lockAction, SIGNAL(triggered(bool)), this, SLOT(setPackagesLocked(bool)));
 }
@@ -274,7 +274,7 @@ void PackageWidget::cacheReloadStarted()
 {
     m_detailsWidget->clear();
     m_model->clear();
-    m_proxyModel->clear();
+    m_proxyModel->invalidate();
     m_proxyModel->reset();
     m_busyWidget->start();
 }
@@ -375,11 +375,11 @@ void PackageWidget::contextMenuRequested(const QPoint &pos)
         if (state & QApt::Package::IsPinned) {
             m_lockAction->setChecked(true);
             m_lockAction->setText(i18nc("@action:button", "Unlock package"));
-            m_lockAction->setIcon(QIcon::fromTheme("object-unlocked"));
+            m_lockAction->setIcon(QIcon::fromTheme(QStringLiteral("object-unlocked")));
         } else {
             m_lockAction->setChecked(false);
             m_lockAction->setText(i18nc("@action:button", "Lock at Current Version"));
-            m_lockAction->setIcon(QIcon::fromTheme("object-locked"));
+            m_lockAction->setIcon(QIcon::fromTheme(QStringLiteral("object-locked")));
         }
     } else {
         m_installAction->setEnabled(true);
@@ -490,7 +490,7 @@ void PackageWidget::actOnPackages(QApt::Package::State action)
         }
     }
 
-    emit packageChanged();
+    Q_EMIT packageChanged();
 
     m_backend->setCompressEvents(false);
     QApplication::restoreOverrideCursor();
@@ -650,7 +650,8 @@ QApt::PackageList PackageWidget::selectedPackages()
         packages << m_proxyModel->packageAt(index);
     }
 
-    return packages.toList();
+    return QList<QApt::Package*>(packages.begin(), packages.end());
+    //return packages.toList();
 }
 
 void PackageWidget::showBrokenReason(QApt::Package *package)
@@ -658,7 +659,7 @@ void PackageWidget::showBrokenReason(QApt::Package *package)
     QList<QApt::MarkingErrorInfo> failedReasons = package->brokenReason();
     QString dialogText = i18nc("@label", "The \"%1\" package could not be marked for installation or upgrade:",
                                package->name());
-    dialogText += '\n';
+    dialogText += QChar::fromLatin1('\n');
     QString title = i18nc("@title:window", "Unable to Mark Package");
 
     for (const QApt::MarkingErrorInfo &reason : failedReasons)
@@ -672,7 +673,7 @@ QString PackageWidget::digestReason(QApt::Package *pkg, const QApt::MarkingError
     QString reason;
     QString relation = QApt::DependencyInfo::typeName(info.errorInfo().dependencyType());
 
-    reason += '\t';
+    reason += QChar::fromLatin1('\n');
 
     switch (info.errorType()) {
     case QApt::ParentNotInstallable:
@@ -701,7 +702,7 @@ QString PackageWidget::digestReason(QApt::Package *pkg, const QApt::MarkingError
         break;
     }
 
-    reason += '\n';
+    reason += QChar::fromLatin1('\n');
 
     return reason;
 }

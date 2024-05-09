@@ -51,11 +51,11 @@ QVariant PackageModel::data(const QModelIndex &index, int role) const
     case NameRole:
         if (package->isForeignArch()) {
             return QString(package->name() % QLatin1String(" (")
-                    % package->architecture() % ')');
+                    % package->architecture() % QChar::fromLatin1(')'));
         }
         return package->name();
     case IconRole:
-        return QIcon::fromTheme("application-x-deb");
+        return QIcon::fromTheme(QStringLiteral("application-x-deb"));
     case DescriptionRole:
         return package->shortDescription();
     case StatusRole:
@@ -124,7 +124,7 @@ void PackageModel::externalDataChanged()
 {
     // A package being changed means that any number of other packages can have
     // changed, so say everything changed to trigger refreshes.
-    emit dataChanged(index(0, 0), index(m_packages.size() - 1, 0));
+    Q_EMIT dataChanged(index(0, 0), index(m_packages.size() - 1, 0));
 }
 
 QApt::Package *PackageModel::packageAt(const QModelIndex &index) const

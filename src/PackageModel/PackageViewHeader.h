@@ -35,7 +35,7 @@ public:
 protected:
     void contextMenuEvent(QContextMenuEvent *event);
 
-private slots:
+private Q_SLOTS:
     void modelLayoutChanged();
     void onSectionClicked();
     void toggleColumn(bool visible);

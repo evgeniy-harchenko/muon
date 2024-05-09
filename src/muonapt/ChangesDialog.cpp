@@ -56,7 +56,7 @@ ChangesDialog::ChangesDialog(QWidget *parent, const QApt::StateChanges &changes)
     QWidget *bottomBox = new QWidget(this);
     QHBoxLayout *bottomLayout = new QHBoxLayout(bottomBox);
     bottomLayout->setSpacing(0);
-    bottomLayout->setMargin(0);
+    bottomLayout->setContentsMargins(QMargins());
     bottomBox->setLayout(bottomLayout);
 
     QWidget *bottomSpacer = new QWidget(bottomBox);
@@ -100,8 +100,8 @@ void ChangesDialog::addPackages(const QApt::StateChanges &changes)
         font.setBold(true);
         root->setFont(font);
 
-        Q_FOREACH (QApt::Package *package, *i) {
-            root->appendRow(new QStandardItem(QIcon::fromTheme("muon"), package->name()));
+        for (QApt::Package *package: *i) {
+            root->appendRow(new QStandardItem(QIcon::fromTheme(QStringLiteral("muon")), package->name()));
         }
 
         m_model->appendRow(root);
@@ -111,7 +111,7 @@ void ChangesDialog::addPackages(const QApt::StateChanges &changes)
 int ChangesDialog::countChanges(const QApt::StateChanges &changes)
 {
     int count = 0;
-    foreach (const QApt::PackageList& pkgs, changes) {
+    for (const QApt::PackageList& pkgs: changes) {
         count += pkgs.size();
     }
     return count;

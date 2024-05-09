@@ -82,7 +82,7 @@ void DownloadModel::updateDetails(const QApt::DownloadProgress &details)
         m_itemList[i] = details;
         // If we get more than 10 columns we'll have to bump this.
         // ... but that's really not likely...
-        emit dataChanged(index(i, 0), index(i, 9));
+        Q_EMIT dataChanged(index(i, 0), index(i, 9));
         break;
     }
 

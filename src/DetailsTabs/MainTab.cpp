@@ -51,14 +51,14 @@ MainTab::MainTab(QWidget *parent)
     QWidget *buttonBox = new QWidget;
 
     QHBoxLayout *buttonBoxLayout = new QHBoxLayout(buttonBox);
-    buttonBoxLayout->setMargin(0);
+    buttonBoxLayout->setContentsMargins(QMargins());
 
     m_buttonLabel = new QLabel(buttonBox);
     m_buttonLabel->setText(i18nc("@label", "Mark for:"));
     buttonBoxLayout->addWidget(m_buttonLabel);
 
     m_installButton = new QPushButton(buttonBox);
-    m_installButton->setIcon(QIcon::fromTheme("download"));
+    m_installButton->setIcon(QIcon::fromTheme(QStringLiteral("download")));
     m_installButton->setText(i18nc("@action:button", "Installation"));
     connect(m_installButton, SIGNAL(clicked()), this, SLOT(emitSetInstall()));
     buttonBoxLayout->addWidget(m_installButton);
@@ -66,26 +66,26 @@ MainTab::MainTab(QWidget *parent)
     m_removeButton = new QToolButton(buttonBox);
     m_removeButton->setPopupMode(QToolButton::MenuButtonPopup);
     m_removeButton->setToolButtonStyle(Qt::ToolButtonTextBesideIcon);
-    m_removeButton->setIcon(QIcon::fromTheme("edit-delete"));
+    m_removeButton->setIcon(QIcon::fromTheme(QStringLiteral("edit-delete")));
     m_removeButton->setText(i18nc("@action:button", "Removal"));
     connect(m_removeButton, SIGNAL(clicked()), this, SLOT(emitSetRemove()));
     buttonBoxLayout->addWidget(m_removeButton);
 
     m_upgradeButton = new QPushButton(buttonBox);
-    m_upgradeButton->setIcon(QIcon::fromTheme("system-software-update"));
+    m_upgradeButton->setIcon(QIcon::fromTheme(QStringLiteral("system-software-update")));
     m_upgradeButton->setText(i18nc("@action:button", "Upgrade"));
     connect(m_upgradeButton, SIGNAL(clicked()), this, SLOT(emitSetInstall()));
     buttonBoxLayout->addWidget(m_upgradeButton);
 
     m_reinstallButton = new QPushButton(buttonBox);
-    m_reinstallButton->setIcon(QIcon::fromTheme("view-refresh"));
+    m_reinstallButton->setIcon(QIcon::fromTheme(QStringLiteral("view-refresh")));
     m_reinstallButton->setText(i18nc("@action:button", "Reinstallation"));
     connect(m_reinstallButton, SIGNAL(clicked()), this, SLOT(emitSetReInstall()));
     buttonBoxLayout->addWidget(m_reinstallButton);
 
     m_purgeMenu = new QMenu(m_removeButton);
     m_purgeAction = new QAction(this);
-    m_purgeAction->setIcon(QIcon::fromTheme("edit-delete-shred"));
+    m_purgeAction->setIcon(QIcon::fromTheme(QStringLiteral("edit-delete-shred")));
     m_purgeAction->setText(i18nc("@action:button", "Purge"));
     connect(m_purgeAction, SIGNAL(triggered()), this, SLOT(emitSetPurge()));
     m_purgeMenu->addAction(m_purgeAction);
@@ -98,7 +98,7 @@ MainTab::MainTab(QWidget *parent)
     buttonBoxLayout->addWidget(m_purgeButton);
 
     m_cancelButton = new QPushButton(buttonBox);
-    m_cancelButton->setIcon(QIcon::fromTheme("dialog-cancel"));
+    m_cancelButton->setIcon(QIcon::fromTheme(QStringLiteral("dialog-cancel")));
     m_cancelButton->setText(i18nc("@action:button", "Unmark"));
     connect(m_cancelButton, SIGNAL(clicked()), this, SLOT(emitSetKeep()));
     buttonBoxLayout->addWidget(m_cancelButton);
@@ -196,32 +196,32 @@ void MainTab::refresh()
 
 void MainTab::emitSetInstall()
 {
-    emit setInstall(m_package);
+    Q_EMIT setInstall(m_package);
 }
 
 void MainTab::emitSetRemove()
 {
-    emit setRemove(m_package);
+    Q_EMIT setRemove(m_package);
 }
 
 void MainTab::emitSetUpgrade()
 {
-    emit setUpgrade(m_package);
+    Q_EMIT setUpgrade(m_package);
 }
 
 void MainTab::emitSetReInstall()
 {
-    emit setReInstall(m_package);
+    Q_EMIT setReInstall(m_package);
 }
 
 void MainTab::emitSetKeep()
 {
-    emit setKeep(m_package);
+    Q_EMIT setKeep(m_package);
 }
 
 void MainTab::emitSetPurge()
 {
-    emit setPurge(m_package);
+    Q_EMIT setPurge(m_package);
 }
 
 #include "MainTab.moc"

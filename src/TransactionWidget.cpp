@@ -38,7 +38,7 @@
 
 // QApt includes
 #include <QApt/Transaction>
-#include <DebconfGui.h>
+//#include <DebconfGui.h>
 
 // Own includes
 #include "muonapt/MuonStrings.h"
@@ -51,7 +51,7 @@ TransactionWidget::TransactionWidget(QWidget *parent)
     , m_lastRealProgress(0)
 {
     QVBoxLayout *layout = new QVBoxLayout(this);
-    layout->setMargin(0);
+    layout->setContentsMargins(QMargins());
     setLayout(layout);
 
     m_headerLabel = new QLabel(this);
@@ -79,21 +79,21 @@ TransactionWidget::TransactionWidget(QWidget *parent)
     m_downloadView->hide();
 
     QString uuid = QUuid::createUuid().toString();
-    uuid.remove('{').remove('}').remove('-');
+    uuid.remove(QChar::fromLatin1('{')).remove(QChar::fromLatin1('}')).remove(QChar::fromLatin1('-'));
     m_pipe = QDir::tempPath() % QLatin1String("/qapt-sock-") % uuid;
 
-    m_debconfGui = new DebconfKde::DebconfGui(m_pipe, this);
+    /*m_debconfGui = new DebconfKde::DebconfGui(m_pipe, this);
     layout->addWidget(m_debconfGui);
     m_debconfGui->connect(m_debconfGui, SIGNAL(activated()), m_debconfGui, SLOT(show()));
     m_debconfGui->connect(m_debconfGui, SIGNAL(deactivated()), m_debconfGui, SLOT(hide()));
-    m_debconfGui->hide();
+    m_debconfGui->hide();*/
 
     m_statusLabel = new QLabel(this);
     layout->addWidget(m_statusLabel);
 
     QWidget *hbox = new QWidget(this);
     QHBoxLayout *hboxLayout = new QHBoxLayout(hbox);
-    hboxLayout->setMargin(0);
+    hboxLayout->setContentsMargins(QMargins());
     hbox->setLayout(hboxLayout);
     layout->addWidget(hbox);
     m_totalProgress = new QProgressBar(hbox);
@@ -101,7 +101,7 @@ TransactionWidget::TransactionWidget(QWidget *parent)
 
     m_cancelButton = new QPushButton(hbox);
     m_cancelButton->setText(i18nc("@action:button Cancels the download", "Cancel"));
-    m_cancelButton->setIcon(QIcon::fromTheme("dialog-cancel"));
+    m_cancelButton->setIcon(QIcon::fromTheme(QStringLiteral("dialog-cancel")));
     hboxLayout->addWidget(m_cancelButton);
     connect(m_downloadModel, SIGNAL(rowsInserted(QModelIndex,int,int)), m_downloadView, SLOT(scrollToBottom()));
 }
@@ -294,9 +294,9 @@ void TransactionWidget::configFileConflict(const QString &currentPath, const QSt
     // TODO: diff current and new paths
     Q_UNUSED(newPath)
 
-    int ret = KMessageBox::questionYesNo(this, text, title, useNew, useOld);
+    int ret = KMessageBox::questionTwoActions(this, text, title, useNew, useOld);
 
-    m_trans->resolveConfigFileConflict(currentPath, (ret == KMessageBox::Yes));
+    m_trans->resolveConfigFileConflict(currentPath, (ret == KMessageBox::PrimaryAction));
 }
 
 void TransactionWidget::updateProgress(int progress)

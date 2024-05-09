@@ -74,7 +74,7 @@ private Q_SLOTS:
     void originActivated(const QModelIndex &index);
     void architectureActivated(const QModelIndex &index);
 
-signals:
+Q_SIGNALS:
     void filterByGroup(const QString &groupName);
     void filterByStatus(const QApt::Package::State state);
     void filterByOrigin(const QString &originName);

@@ -28,7 +28,7 @@ DetailsTab::DetailsTab(QWidget *parent)
     , m_package(0)
 {
     m_layout = new QVBoxLayout(this);
-    m_layout->setMargin(0);
+    m_layout->setContentsMargins(QMargins());
     m_layout->setSpacing(0);
     setLayout(m_layout);
 }

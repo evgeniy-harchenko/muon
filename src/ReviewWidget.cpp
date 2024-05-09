@@ -35,7 +35,8 @@ ReviewWidget::ReviewWidget(QWidget *parent)
 
 ReviewWidget::~ReviewWidget()
 {
-    MuonSettings::self()->setReviewListColumns(saveColumnsState().toBase64());
+    //MuonSettings::self()->setReviewListColumns(saveColumnsState().toBase64());
+    MuonSettings::self()->setReviewListColumns(QString::fromUtf8(saveColumnsState()));
     MuonSettings::self()->save();
 }
 

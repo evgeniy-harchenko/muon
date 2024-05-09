@@ -54,7 +54,7 @@ void PackageViewHeader::contextMenuEvent(QContextMenuEvent *event)
 {
     QMenu menu(this);
     createActions();
-    foreach (QAction *action, m_columnActions) {
+    for (QAction *action: m_columnActions) {
         menu.addAction(action);
     }
     menu.exec(event->globalPos());

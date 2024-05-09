@@ -76,7 +76,7 @@ void MainWindow::initGUI()
     QWidget *centralWidget = new QWidget(this);
     QVBoxLayout *centralLayout = new QVBoxLayout(centralWidget);
     centralLayout->setSpacing(0);
-    centralLayout->setMargin(0);
+    centralLayout->setContentsMargins(QMargins());
 
     m_stack = new QStackedWidget(centralWidget);
     m_stack->setSizePolicy(QSizePolicy::Minimum, QSizePolicy::Expanding);
@@ -140,7 +140,7 @@ void MainWindow::initGUI()
 void MainWindow::initObject()
 {
     QAptActions::self()->setBackend(m_backend);
-    emit backendReady(m_backend);
+    Q_EMIT backendReady(m_backend);
     connect(m_backend, SIGNAL(packageChanged()),
             this, SLOT(setActionsEnabled()));
     connect(m_backend, SIGNAL(cacheReloadFinished()),
@@ -177,40 +177,40 @@ void MainWindow::saveSplitterSizes()
 void MainWindow::setupActions()
 {
     QAction *quitAction = KStandardAction::quit(QCoreApplication::instance(), SLOT(quit()), actionCollection());
-    actionCollection()->addAction("file_quit", quitAction);
+    actionCollection()->addAction(QStringLiteral("file_quit"), quitAction);
 
     QAction *focusSearchAction = KStandardAction::find(this, SLOT(setFocusSearchEdit()), actionCollection());
-    actionCollection()->addAction("find", focusSearchAction);
+    actionCollection()->addAction(QStringLiteral("find"), focusSearchAction);
 
-    m_safeUpgradeAction = actionCollection()->addAction("safeupgrade");
-    m_safeUpgradeAction->setIcon(QIcon::fromTheme("go-up"));
+    m_safeUpgradeAction = actionCollection()->addAction(QStringLiteral("safeupgrade"));
+    m_safeUpgradeAction->setIcon(QIcon::fromTheme(QStringLiteral("go-up")));
     m_safeUpgradeAction->setText(i18nc("@action Marks upgradeable packages for upgrade", "Cautious Upgrade"));
     connect(m_safeUpgradeAction, SIGNAL(triggered()), this, SLOT(markUpgrade()));
 
-    m_distUpgradeAction = actionCollection()->addAction("fullupgrade");
-    m_distUpgradeAction->setIcon(QIcon::fromTheme("go-top"));
+    m_distUpgradeAction = actionCollection()->addAction(QStringLiteral("fullupgrade"));
+    m_distUpgradeAction->setIcon(QIcon::fromTheme(QStringLiteral("go-top")));
     m_distUpgradeAction->setText(i18nc("@action Marks upgradeable packages, including ones that install/remove new things",
                                        "Full Upgrade"));
     connect(m_distUpgradeAction, SIGNAL(triggered()), this, SLOT(markDistUpgrade()));
 
-    m_autoRemoveAction = actionCollection()->addAction("autoremove");
-    m_autoRemoveAction->setIcon(QIcon::fromTheme("trash-empty"));
+    m_autoRemoveAction = actionCollection()->addAction(QStringLiteral("autoremove"));
+    m_autoRemoveAction->setIcon(QIcon::fromTheme(QStringLiteral("trash-empty")));
     m_autoRemoveAction->setText(i18nc("@action Marks packages no longer needed for removal",
                                       "Remove Unnecessary Packages"));
     connect(m_autoRemoveAction, SIGNAL(triggered()), this, SLOT(markAutoRemove()));
 
-    m_previewAction = actionCollection()->addAction("preview");
-    m_previewAction->setIcon(QIcon::fromTheme("document-preview-archive"));
+    m_previewAction = actionCollection()->addAction(QStringLiteral("preview"));
+    m_previewAction->setIcon(QIcon::fromTheme(QStringLiteral("document-preview-archive")));
     m_previewAction->setText(i18nc("@action Takes the user to the preview page", "Preview Changes"));
     connect(m_previewAction, SIGNAL(triggered()), this, SLOT(previewChanges()));
 
-    m_applyAction = actionCollection()->addAction("apply");
-    m_applyAction->setIcon(QIcon::fromTheme("dialog-ok-apply"));
+    m_applyAction = actionCollection()->addAction(QStringLiteral("apply"));
+    m_applyAction->setIcon(QIcon::fromTheme(QStringLiteral("dialog-ok-apply")));
     m_applyAction->setText(i18nc("@action Applys the changes a user has made", "Apply Changes"));
     connect(m_applyAction, SIGNAL(triggered()), this, SLOT(startCommit()));
 
-    QAction* updateAction = actionCollection()->addAction("update");
-    updateAction->setIcon(QIcon::fromTheme("system-software-update"));
+    QAction* updateAction = actionCollection()->addAction(QStringLiteral("update"));
+    updateAction->setIcon(QIcon::fromTheme(QStringLiteral("system-software-update")));
     updateAction->setText(i18nc("@action Checks the Internet for updates", "Check for Updates"));
     actionCollection()->setDefaultShortcut(updateAction, QKeySequence(Qt::CTRL + Qt::Key_R));
     connect(updateAction, SIGNAL(triggered()), SLOT(checkForUpdates()));
@@ -329,7 +329,7 @@ void MainWindow::previewChanges()
 
     m_stack->setCurrentWidget(m_reviewWidget);
 
-    m_previewAction->setIcon(QIcon::fromTheme("go-previous"));
+    m_previewAction->setIcon(QIcon::fromTheme(QStringLiteral("go-previous")));
     m_previewAction->setText(i18nc("@action:intoolbar Return from the preview page", "Back"));
     disconnect(m_previewAction, SIGNAL(triggered()), this, SLOT(previewChanges()));
     connect(m_previewAction, SIGNAL(triggered()), this, SLOT(returnFromPreview()));
@@ -343,7 +343,7 @@ void MainWindow::returnFromPreview()
         m_reviewWidget = nullptr;
     }
 
-    m_previewAction->setIcon(QIcon::fromTheme("document-preview-archive"));
+    m_previewAction->setIcon(QIcon::fromTheme(QStringLiteral("document-preview-archive")));
     m_previewAction->setText(i18nc("@action", "Preview Changes"));
     disconnect(m_previewAction, SIGNAL(triggered()), this, SLOT(returnFromPreview()));
     connect(m_previewAction, SIGNAL(triggered()), this, SLOT(previewChanges()));
@@ -461,9 +461,9 @@ void MainWindow::revertChanges()
 void MainWindow::setupTransaction(QApt::Transaction *trans)
 {
     // Provide proxy/locale to the transaction
-    if (KProtocolManager::proxyType() == KProtocolManager::ManualProxy) {
+    /*if (KProtocolManager::proxyType() == KProtocolManager::ManualProxy) {
         trans->setProxy(KProtocolManager::proxyFor("http"));
-    }
+    }*/
 
     trans->setLocale(QLatin1String(setlocale(LC_MESSAGES, 0)));
 
