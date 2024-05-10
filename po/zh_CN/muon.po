@@ -1,0 +1,1913 @@
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Ni Hui <shuizhuyuanluo@126.com>, 2011.
+# FengChao <rainofchaos@gmail.com>, 2013.
+# Xuetian Weng <xweng@cs.stonybrook.edu>, 2014.
+# Weng Xuetian <wengxt@gmail.com>, 2015.
+# Guo Yunhe <guoyunhebrave@gmail.com>, 2017.
+msgid ""
+msgstr ""
+"Project-Id-Version: kdeorg\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2018-03-15 03:18+0100\n"
+"PO-Revision-Date: 2018-03-18 19:37-0400\n"
+"Last-Translator: guoyunhebrave <guoyunhebrave@gmail.com>\n"
+"Language-Team: Chinese Simplified\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: crowdin.com\n"
+"X-Crowdin-Project: kdeorg\n"
+"X-Crowdin-Language: zh-CN\n"
+"X-Crowdin-File: /kf5-trunk/messages/extragear-sysadmin/muon.pot\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "KDE 中国"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "kde-china@kde.org"
+
+#. i18n: ectx: label, entry (SplitterSizes), group (muon)
+#: muonrc.cpp:3 src/config/muon.kcfg:9
+#, kde-format
+msgid "How the main window is divided."
+msgstr "主窗口的拆分方式。"
+
+#. i18n: ectx: label, entry (Width), group (muon)
+#: muonrc.cpp:6 src/config/muon.kcfg:12
+#, kde-format
+msgid "Width of the main window."
+msgstr "主窗口的宽度。"
+
+#. i18n: ectx: label, entry (Height), group (muon)
+#: muonrc.cpp:9 src/config/muon.kcfg:16
+#, kde-format
+msgid "Height of the main window."
+msgstr "主窗口的高度。"
+
+#. i18n: ectx: label, entry (UndoStackSize), group (muon)
+#: muonrc.cpp:12 src/config/muon.kcfg:20
+#, kde-format
+msgid "The amount of history kept for undo/redo."
+msgstr "撤销/重做的历史长度。"
+
+#. i18n: ectx: label, entry (AskChanges), group (muon)
+#: muonrc.cpp:15 src/config/muon.kcfg:24
+#, kde-format
+msgid "Whether or not to confirm additional changes."
+msgstr "是否确认额外更改。"
+
+#. i18n: ectx: label, entry (ShowMultiArchDupes), group (muon)
+#: muonrc.cpp:18 src/config/muon.kcfg:28
+#, kde-format
+msgid "Show foreign architecture packages also available natively."
+msgstr "显示可以原生使用的其他架构的软件包。"
+
+#. i18n: ectx: label, entry (ManagerListColumns), group (muon)
+#: muonrc.cpp:21 src/config/muon.kcfg:32
+#, kde-format
+msgid "Status of columns in the manager list of packages."
+msgstr "包管理列表中的列的状态。"
+
+#. i18n: ectx: label, entry (ReviewListColumns), group (muon)
+#: muonrc.cpp:24 src/config/muon.kcfg:36
+#, kde-format
+msgid "Status of columns in the changes review list of packages."
+msgstr "更改包复核列表中列的状态。"
+
+#: src/config/GeneralSettingsPage.cpp:51
+#, kde-format
+msgid "Ask to confirm changes that affect other packages"
+msgstr "更改会影响其他软件包时需要确认"
+
+#: src/config/GeneralSettingsPage.cpp:52
+#, kde-format
+msgid "Show foreign-architecture packages that are available natively"
+msgstr "显示可以原生使用的其他架构的软件包"
+
+#: src/config/GeneralSettingsPage.cpp:53
+#, kde-format
+msgid "Treat recommended packages as dependencies"
+msgstr "将推荐的软件包视为依赖包"
+
+#: src/config/GeneralSettingsPage.cpp:54
+#, kde-format
+msgid "Treat suggested packages as dependencies"
+msgstr "将建议的软件包视为依赖包"
+
+#: src/config/GeneralSettingsPage.cpp:55
+#, kde-format
+msgid "Allow the installation of untrusted packages"
+msgstr "允许安装不可信的软件包"
+
+#: src/config/GeneralSettingsPage.cpp:66
+#, kde-format
+msgid "Delete obsolete cached packages every:"
+msgstr "删除过时的软件包缓存的周期："
+
+#: src/config/GeneralSettingsPage.cpp:84
+#, kde-format
+msgid "Number of undo operations:"
+msgstr "撤销操作次数："
+
+#: src/config/GeneralSettingsPage.cpp:160
+#, kde-format
+msgid " day"
+msgid_plural " days"
+msgstr[0] " 天"
+
+#: src/config/ManagerSettingsDialog.cpp:40
+#, kde-format
+msgctxt "@title:window"
+msgid "Muon Preferences"
+msgstr "Muon 首选项"
+
+#: src/config/ManagerSettingsDialog.cpp:47
+#, kde-format
+msgctxt "@title:group Title of the general group"
+msgid "General"
+msgstr "常规"
+
+#: src/DetailsTabs/ChangelogTab.cpp:45
+#, kde-format
+msgctxt "@title:tab"
+msgid "Changes List"
+msgstr "更改列表"
+
+#: src/DetailsTabs/ChangelogTab.cpp:94
+#, kde-kuit-format
+msgctxt "@info/rich"
+msgid ""
+"The list of changes is not yet available. Please use <link "
+"url='%1'>Launchpad</link> instead."
+msgstr "更改列表尚不可用。请转用<link url='%1'>Launchpad</link>。"
+
+#: src/DetailsTabs/ChangelogTab.cpp:98
+#, kde-format
+msgctxt "@info"
+msgid "The list of changes is not yet available."
+msgstr "更改列表尚不可用。"
+
+#: src/DetailsTabs/DependsTab.cpp:37
+#, kde-format
+msgctxt "@title:tab"
+msgid "Dependencies"
+msgstr "依赖关系"
+
+#: src/DetailsTabs/DependsTab.cpp:40
+#, kde-format
+msgctxt "@item:inlistbox"
+msgid "Dependencies of the Current Version"
+msgstr "当前版本的依赖关系"
+
+#: src/DetailsTabs/DependsTab.cpp:41
+#, kde-format
+msgctxt "@item:inlistbox"
+msgid "Dependencies of the Latest Version"
+msgstr "最新版本的依赖关系"
+
+#: src/DetailsTabs/DependsTab.cpp:42
+#, kde-format
+msgctxt "@item:inlistbox"
+msgid "Dependants (Reverse Dependencies)"
+msgstr "依赖者(反向依赖)"
+
+#: src/DetailsTabs/DependsTab.cpp:43
+#, kde-format
+msgctxt "@item:inlistbox"
+msgid "Virtual Packages Provided"
+msgstr "提供了虚拟包"
+
+#: src/DetailsTabs/DependsTab.cpp:71 src/DetailsTabs/DependsTab.cpp:78
+#, kde-format
+msgctxt "@label"
+msgid "This package does not have any dependencies"
+msgstr "这个软件包不依赖任何包"
+
+#: src/DetailsTabs/DependsTab.cpp:85
+#, kde-format
+msgctxt "@label"
+msgid "This package has no dependents. (Nothing depends on it.)"
+msgstr "这个软件包没有任何依赖者。(没有包依赖它。)"
+
+#: src/DetailsTabs/DependsTab.cpp:92
+#, kde-format
+msgctxt "@label"
+msgid "This package does not provide any virtual packages"
+msgstr "这个软件包未提供任何虚拟包"
+
+#: src/DetailsTabs/InstalledFilesTab.cpp:35
+#, kde-format
+msgctxt "@title:tab"
+msgid "Installed Files"
+msgstr "安装的文件"
+
+#: src/DetailsTabs/MainTab.cpp:43
+#, kde-format
+msgctxt "@title:tab"
+msgid "Details"
+msgstr "细节"
+
+#: src/DetailsTabs/MainTab.cpp:57
+#, kde-format
+msgctxt "@label"
+msgid "Mark for:"
+msgstr "标记为："
+
+#: src/DetailsTabs/MainTab.cpp:62
+#, kde-format
+msgctxt "@action:button"
+msgid "Installation"
+msgstr "安装"
+
+#: src/DetailsTabs/MainTab.cpp:70
+#, kde-format
+msgctxt "@action:button"
+msgid "Removal"
+msgstr "删除"
+
+#: src/DetailsTabs/MainTab.cpp:76
+#, kde-format
+msgctxt "@action:button"
+msgid "Upgrade"
+msgstr "升级"
+
+#: src/DetailsTabs/MainTab.cpp:82
+#, kde-format
+msgctxt "@action:button"
+msgid "Reinstallation"
+msgstr "重新安装"
+
+#: src/DetailsTabs/MainTab.cpp:89
+#, kde-format
+msgctxt "@action:button"
+msgid "Purge"
+msgstr "彻底删除"
+
+#: src/DetailsTabs/MainTab.cpp:102 src/PackageModel/PackageWidget.cpp:191
+#, kde-format
+msgctxt "@action:button"
+msgid "Unmark"
+msgstr "取消标记"
+
+#: src/DetailsTabs/MainTab.cpp:188
+#, kde-format
+msgctxt "@info Tells how long Canonical, Ltd. will support a package"
+msgid "Canonical provides critical updates for %1 until %2."
+msgstr "Canonical 将在 %2 之前为 %1 提供安全更新。"
+
+#: src/DetailsTabs/MainTab.cpp:192
+#, kde-format
+msgctxt "@info Tells how long Canonical, Ltd. will support a package"
+msgid ""
+"Canonical does not provide updates for %1. Some updates may be provided by "
+"the Ubuntu community."
+msgstr "Canonical 不提供 %1 的更新。Ubuntu 社区可能会提供它的一些更新。"
+
+#: src/DetailsTabs/TechnicalDetailsTab.cpp:43
+#, kde-format
+msgctxt "@title:tab"
+msgid "Technical Details"
+msgstr "技术细节"
+
+#: src/DetailsTabs/TechnicalDetailsTab.cpp:57
+#, kde-format
+msgctxt "@label Label preceding the package maintainer"
+msgid "Maintainer:"
+msgstr "维护者："
+
+#: src/DetailsTabs/TechnicalDetailsTab.cpp:66
+#, kde-format
+msgctxt "@label Label preceding the package category"
+msgid "Category:"
+msgstr "类别："
+
+#: src/DetailsTabs/TechnicalDetailsTab.cpp:76
+#, kde-format
+msgctxt "@label The parent package that this package comes from"
+msgid "Source Package:"
+msgstr "源代码包："
+
+#: src/DetailsTabs/TechnicalDetailsTab.cpp:86
+#, kde-format
+msgctxt "@label The software source that this package comes from"
+msgid "Origin:"
+msgstr "来源："
+
+#: src/DetailsTabs/TechnicalDetailsTab.cpp:96
+#, kde-format
+msgctxt "@label The package archive component that this package comes from"
+msgid "Component:"
+msgstr "组件："
+
+#: src/DetailsTabs/TechnicalDetailsTab.cpp:106
+#, kde-format
+msgctxt "@title:group"
+msgid "Installed Version"
+msgstr "安装的版本"
+
+#: src/DetailsTabs/TechnicalDetailsTab.cpp:113
+#: src/DetailsTabs/TechnicalDetailsTab.cpp:138
+#, kde-format
+msgctxt "@label Label preceding the package version"
+msgid "Version:"
+msgstr "版本："
+
+#: src/DetailsTabs/TechnicalDetailsTab.cpp:121
+#: src/DetailsTabs/TechnicalDetailsTab.cpp:146
+#, kde-format
+msgctxt "@label Label preceding the package size"
+msgid "Installed Size:"
+msgstr "安装大小："
+
+#: src/DetailsTabs/TechnicalDetailsTab.cpp:131
+#, kde-format
+msgctxt "@title:group"
+msgid "Available Version"
+msgstr "可用的版本"
+
+#: src/DetailsTabs/TechnicalDetailsTab.cpp:154
+#, kde-format
+msgctxt "@label Label preceding the package's download size"
+msgid "Download Size:"
+msgstr "下载大小:"
+
+#: src/DetailsTabs/VersionTab.cpp:39
+#, kde-format
+msgctxt "@title:tab"
+msgid "Versions"
+msgstr "版本"
+
+#: src/DetailsTabs/VersionTab.cpp:42
+#, kde-format
+msgctxt "@label"
+msgid "Available versions:"
+msgstr "可用的版本： "
+
+#: src/DetailsTabs/VersionTab.cpp:60
+#, kde-format
+msgctxt "@label"
+msgid ""
+"Muon always selects the most applicable version available. If you force a "
+"different version from the default one, errors in the dependency handling "
+"can occur."
+msgstr ""
+"Muon 总是选择可获得的最可用版本。如果您强制使用非默认的版本，处理依赖关系时可"
+"能会出错。"
+
+#: src/DetailsTabs/VersionTab.cpp:68
+#, kde-format
+msgctxt "@action:button"
+msgid "Force Version"
+msgstr "强制版本"
+
+#: src/DownloadModel/DownloadDelegate.cpp:66
+#, kde-format
+msgctxt "@info:status Progress text when done"
+msgid "Done"
+msgstr "完成"
+
+#: src/DownloadModel/DownloadModel.cpp:60
+#, kde-format
+msgctxt "@title:column"
+msgid "Package"
+msgstr "软件包"
+
+#: src/DownloadModel/DownloadModel.cpp:62
+#, kde-format
+msgctxt "@title:column"
+msgid "Location"
+msgstr "位置"
+
+#: src/DownloadModel/DownloadModel.cpp:64
+#, kde-format
+msgctxt "@title:column"
+msgid "Size"
+msgstr "大小"
+
+#: src/DownloadModel/DownloadModel.cpp:66
+#, kde-format
+msgctxt "@title:column"
+msgid "Progress"
+msgstr "进度"
+
+#: src/FilterWidget/ArchitectureFilter.cpp:47
+#: src/FilterWidget/CategoryFilter.cpp:57 src/FilterWidget/OriginFilter.cpp:42
+#: src/FilterWidget/StatusFilter.cpp:43 src/ManagerWidget.cpp:69
+#, kde-format
+msgctxt "@item:inlistbox Item that resets the filter to \"all\""
+msgid "All"
+msgstr "全部"
+
+#: src/FilterWidget/FilterWidget.cpp:46
+#, kde-format
+msgctxt "@title:window"
+msgid "Filter:"
+msgstr "过滤："
+
+#: src/FilterWidget/FilterWidget.cpp:55
+#, kde-format
+msgctxt "@title:tab"
+msgid "By Category"
+msgstr "按类别"
+
+#: src/FilterWidget/FilterWidget.cpp:61
+#, kde-format
+msgctxt "@title:tab"
+msgid "By Status"
+msgstr "按状态"
+
+#: src/FilterWidget/FilterWidget.cpp:67
+#, kde-format
+msgctxt "@title:tab"
+msgid "By Origin"
+msgstr "按来源"
+
+#: src/FilterWidget/FilterWidget.cpp:73
+#, kde-format
+msgctxt "@title:tab"
+msgid "By Architecture"
+msgstr "按架构"
+
+#: src/main.cpp:36
+#, kde-format
+msgid "Muon Package Manager"
+msgstr "Muon 软件包管理器"
+
+#: src/main.cpp:36
+#, kde-format
+msgid "A package manager"
+msgstr "软件包管理器"
+
+#: src/main.cpp:37
+#, kde-format
+msgid "© 2009-2013 Jonathan Thomas"
+msgstr "© 2009-2013 Jonathan Thomas"
+
+#: src/main.cpp:38
+#, kde-format
+msgid "Jonathan Thomas"
+msgstr "Jonathan Thomas"
+
+#: src/main.cpp:39
+#, kde-format
+msgid "Harald Sitter"
+msgstr "Harald Sitter"
+
+#: src/main.cpp:39
+#, kde-format
+msgid "Top Gardener"
+msgstr "Top Gardener"
+
+#: src/MainWindow.cpp:180
+#, kde-format
+msgctxt "@action Marks upgradeable packages for upgrade"
+msgid "Cautious Upgrade"
+msgstr "谨慎升级"
+
+#: src/MainWindow.cpp:186
+#, kde-format
+msgctxt ""
+"@action Marks upgradeable packages, including ones that install/remove new "
+"things"
+msgid "Full Upgrade"
+msgstr "完整升级"
+
+#: src/MainWindow.cpp:192
+#, kde-format
+msgctxt "@action Marks packages no longer needed for removal"
+msgid "Remove Unnecessary Packages"
+msgstr "移除不需要的软件包"
+
+#: src/MainWindow.cpp:197
+#, kde-format
+msgctxt "@action Takes the user to the preview page"
+msgid "Preview Changes"
+msgstr "预览更改"
+
+#: src/MainWindow.cpp:202
+#, kde-format
+msgctxt "@action Applys the changes a user has made"
+msgid "Apply Changes"
+msgstr "应用更改"
+
+#: src/MainWindow.cpp:207
+#, kde-format
+msgctxt "@action Checks the Internet for updates"
+msgid "Check for Updates"
+msgstr "检查更新"
+
+#: src/MainWindow.cpp:233
+#, kde-kuit-format
+msgctxt "@label"
+msgid ""
+"Unable to mark upgrades. The available upgrades may require new packages to "
+"be installed or removed. You may wish to try a full upgrade by clicking the "
+"<interface>Full Upgrade</interface> button."
+msgstr ""
+"无法标记升级。可用的升级可能需要安装新软件包或移除包。愿意的话，您可以尝试点"
+"击<interface>完整升级</interface>按钮进行完整的升级。"
+
+#: src/MainWindow.cpp:238 src/MainWindow.cpp:253
+#, kde-format
+msgctxt "@title:window"
+msgid "Unable to Mark Upgrades"
+msgstr "无法标记升级"
+
+#: src/MainWindow.cpp:250
+#, kde-format
+msgctxt "@label"
+msgid ""
+"Unable to mark upgrades. Some upgrades may have unsatisfiable dependencies "
+"at the moment, or may have been manually held back."
+msgstr "无法标记升级。有些升级可能有当前无法满足的依赖关系，或者被手动阻止。"
+
+#: src/MainWindow.cpp:326
+#, kde-format
+msgctxt "@action:intoolbar Return from the preview page"
+msgid "Back"
+msgstr "后退"
+
+#: src/MainWindow.cpp:340
+#, kde-format
+msgctxt "@action"
+msgid "Preview Changes"
+msgstr "预览更改"
+
+#: src/muonapt/ChangesDialog.cpp:39
+#, kde-format
+msgctxt "@title:window"
+msgid "Confirm Additional Changes"
+msgstr "确认额外的更改"
+
+#: src/muonapt/ChangesDialog.cpp:44
+#, kde-format
+msgctxt "@info"
+msgid "<h2>Mark additional changes?</h2>"
+msgstr "<h2>标记额外的更改吗？</h2>"
+
+#: src/muonapt/ChangesDialog.cpp:48
+#, kde-format
+msgid "This action requires a change to another package:"
+msgid_plural "This action requires changes to other packages:"
+msgstr[0] "此操作需要更改其他软件包："
+
+#: src/muonapt/HistoryView/HistoryView.cpp:49
+#, kde-kuit-format
+msgctxt "@info"
+msgid "<title>History</title>"
+msgstr "<title>历史</title>"
+
+#: src/muonapt/HistoryView/HistoryView.cpp:55
+#: src/PackageModel/PackageWidget.cpp:102
+#, kde-format
+msgctxt "@label Line edit click message"
+msgid "Search"
+msgstr "搜索"
+
+#: src/muonapt/HistoryView/HistoryView.cpp:67
+#, kde-format
+msgctxt "@item:inlistbox Filters all changes in the history view"
+msgid "All changes"
+msgstr "所有更改"
+
+#: src/muonapt/HistoryView/HistoryView.cpp:71
+#, kde-format
+msgctxt "@item:inlistbox Filters installations in the history view"
+msgid "Installations"
+msgstr "安装"
+
+#: src/muonapt/HistoryView/HistoryView.cpp:75
+#, kde-format
+msgctxt "@item:inlistbox Filters updates in the history view"
+msgid "Updates"
+msgstr "更新"
+
+#: src/muonapt/HistoryView/HistoryView.cpp:79
+#, kde-format
+msgctxt "@item:inlistbox Filters removals in the history view"
+msgid "Removals"
+msgstr "移除"
+
+#: src/muonapt/HistoryView/HistoryView.cpp:90
+#, kde-format
+msgctxt "@title:column"
+msgid "Date"
+msgstr "日期"
+
+#: src/muonapt/HistoryView/HistoryView.cpp:98
+#, kde-format
+msgctxt "@info:status describes a past-tense action"
+msgid "Installed"
+msgstr "已安装"
+
+#: src/muonapt/HistoryView/HistoryView.cpp:99
+#, kde-format
+msgctxt "@info:status describes a past-tense action"
+msgid "Upgraded"
+msgstr "已升级"
+
+#: src/muonapt/HistoryView/HistoryView.cpp:100
+#, kde-format
+msgctxt "@status describes a past-tense action"
+msgid "Downgraded"
+msgstr "已降级"
+
+#: src/muonapt/HistoryView/HistoryView.cpp:101
+#, kde-format
+msgctxt "@status describes a past-tense action"
+msgid "Removed"
+msgstr "已删除"
+
+#: src/muonapt/HistoryView/HistoryView.cpp:102
+#, kde-format
+msgctxt "@status describes a past-tense action"
+msgid "Purged"
+msgstr "已清除"
+
+#: src/muonapt/HistoryView/HistoryView.cpp:137
+#: src/muonapt/HistoryView/HistoryView.cpp:152
+#: src/muonapt/HistoryView/HistoryView.cpp:167
+#: src/muonapt/HistoryView/HistoryView.cpp:182
+#: src/muonapt/HistoryView/HistoryView.cpp:197
+#, kde-format
+msgctxt "@item example: muon installed at 16:00"
+msgid "%1 %2 at %3"
+msgstr "%1 %2 于 %3"
+
+#: src/muonapt/MuonStrings.cpp:49
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"admin\""
+msgid "System Administration"
+msgstr "系统管理"
+
+#: src/muonapt/MuonStrings.cpp:51
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"base\""
+msgid "Base System"
+msgstr "基本系统"
+
+#: src/muonapt/MuonStrings.cpp:53
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"cli-mono"
+"\""
+msgid "Mono/CLI Infrastructure"
+msgstr "Mono/CLI 基础架构"
+
+#: src/muonapt/MuonStrings.cpp:55
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"comm\""
+msgid "Communication"
+msgstr "通讯"
+
+#: src/muonapt/MuonStrings.cpp:57
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"database"
+"\""
+msgid "Databases"
+msgstr "数据库"
+
+#: src/muonapt/MuonStrings.cpp:59
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"devel\""
+msgid "Development"
+msgstr "开发"
+
+#: src/muonapt/MuonStrings.cpp:61
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"doc\""
+msgid "Documentation"
+msgstr "文档"
+
+#: src/muonapt/MuonStrings.cpp:63
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"debug\""
+msgid "Debug"
+msgstr "调试"
+
+#: src/muonapt/MuonStrings.cpp:65
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"editors"
+"\""
+msgid "Editors"
+msgstr "编辑器"
+
+#: src/muonapt/MuonStrings.cpp:67
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section "
+"\"electronics\""
+msgid "Electronics"
+msgstr "电子"
+
+#: src/muonapt/MuonStrings.cpp:69
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"embedded"
+"\""
+msgid "Embedded Devices"
+msgstr "嵌入式设备"
+
+#: src/muonapt/MuonStrings.cpp:71
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"fonts\""
+msgid "Fonts"
+msgstr "字体"
+
+#: src/muonapt/MuonStrings.cpp:73
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"games\""
+msgid "Games and Amusement"
+msgstr "游戏和娱乐"
+
+#: src/muonapt/MuonStrings.cpp:75
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"gnome\""
+msgid "GNOME Desktop Environment"
+msgstr " GNOME 桌面环境"
+
+#: src/muonapt/MuonStrings.cpp:77
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"graphics"
+"\""
+msgid "Graphics"
+msgstr "图像工作"
+
+#: src/muonapt/MuonStrings.cpp:79
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"gnu-r\""
+msgid "GNU R Statistical System"
+msgstr "GNU R 统计系统"
+
+#: src/muonapt/MuonStrings.cpp:81
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"gnustep"
+"\""
+msgid "Gnustep Desktop Environment"
+msgstr "Gnustep 桌面环境"
+
+#: src/muonapt/MuonStrings.cpp:83
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"hamradio"
+"\""
+msgid "Amateur Radio"
+msgstr "业余无线电"
+
+#: src/muonapt/MuonStrings.cpp:85
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"haskell"
+"\""
+msgid "Haskell Programming Language"
+msgstr "Haskell 编程语言"
+
+#: src/muonapt/MuonStrings.cpp:87
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"httpd\""
+msgid "Web Servers"
+msgstr "Web 服务器"
+
+#: src/muonapt/MuonStrings.cpp:89
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section "
+"\"interpreters\""
+msgid "Interpreted Computer Languages"
+msgstr "解释型计算机语言"
+
+#: src/muonapt/MuonStrings.cpp:91
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"java\""
+msgid "Java Programming Language"
+msgstr "Java 编程语言"
+
+#: src/muonapt/MuonStrings.cpp:93
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"kde\""
+msgid "KDE Software Compilation"
+msgstr "KDE 软件集"
+
+#: src/muonapt/MuonStrings.cpp:95
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"kernel\""
+msgid "Kernel and Modules"
+msgstr "内核和模块"
+
+#: src/muonapt/MuonStrings.cpp:97
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"libdevel"
+"\""
+msgid "Libraries - Development"
+msgstr "库 - 开发"
+
+#: src/muonapt/MuonStrings.cpp:99
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"libs\""
+msgid "Libraries"
+msgstr "库"
+
+#: src/muonapt/MuonStrings.cpp:101
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"lisp\""
+msgid "Lisp Programming Language"
+msgstr "Lisp 编程语言"
+
+#: src/muonapt/MuonStrings.cpp:103
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section "
+"\"localization\""
+msgid "Localization"
+msgstr "本地化"
+
+#: src/muonapt/MuonStrings.cpp:105
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"mail\""
+msgid "Email"
+msgstr "邮件地址"
+
+#: src/muonapt/MuonStrings.cpp:107
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"math\""
+msgid "Mathematics"
+msgstr "数学"
+
+#: src/muonapt/MuonStrings.cpp:109
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"misc\""
+msgid "Miscellaneous - Text-based"
+msgstr "杂项 - 文本"
+
+#: src/muonapt/MuonStrings.cpp:111
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"net\""
+msgid "Networking"
+msgstr "网络"
+
+#: src/muonapt/MuonStrings.cpp:113
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"news\""
+msgid "Newsgroups"
+msgstr "新闻组"
+
+#: src/muonapt/MuonStrings.cpp:115
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"ocaml\""
+msgid "OCaml Programming Language"
+msgstr "OCaml 编程语言"
+
+#: src/muonapt/MuonStrings.cpp:117
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"oldlibs"
+"\""
+msgid "Libraries - Old"
+msgstr "库 - 旧的"
+
+#: src/muonapt/MuonStrings.cpp:119
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section "
+"\"otherosfs\""
+msgid "Cross Platform"
+msgstr "跨平台"
+
+#: src/muonapt/MuonStrings.cpp:121
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"perl\""
+msgid "Perl Programming Language"
+msgstr "Perl 编程语言"
+
+#: src/muonapt/MuonStrings.cpp:123
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"php\""
+msgid "PHP Programming Language"
+msgstr "PHP 编程语言"
+
+#: src/muonapt/MuonStrings.cpp:125
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"python\""
+msgid "Python Programming Language"
+msgstr "Python 编程语言"
+
+#: src/muonapt/MuonStrings.cpp:127
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"ruby\""
+msgid "Ruby Programming Language"
+msgstr "Ruby 编程语言"
+
+#: src/muonapt/MuonStrings.cpp:129
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"science"
+"\""
+msgid "Science"
+msgstr "科学"
+
+#: src/muonapt/MuonStrings.cpp:131
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"shells\""
+msgid "Shells"
+msgstr "Shell"
+
+#: src/muonapt/MuonStrings.cpp:133
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"sound\""
+msgid "Multimedia"
+msgstr "多媒体"
+
+#: src/muonapt/MuonStrings.cpp:135
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"tex\""
+msgid "TeX Authoring"
+msgstr "Tex 创作"
+
+#: src/muonapt/MuonStrings.cpp:137
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"text\""
+msgid "Word Processing"
+msgstr "字处理"
+
+#: src/muonapt/MuonStrings.cpp:139
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"utils\""
+msgid "Utilities"
+msgstr "工具"
+
+#: src/muonapt/MuonStrings.cpp:141
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"vcs\""
+msgid "Version Control Systems"
+msgstr "版本控制系统"
+
+#: src/muonapt/MuonStrings.cpp:143
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"video\""
+msgid "Video Software"
+msgstr "视频软件"
+
+#: src/muonapt/MuonStrings.cpp:145
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"web\""
+msgid "Internet"
+msgstr "互联网"
+
+#: src/muonapt/MuonStrings.cpp:147
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"x11\""
+msgid "Miscellaneous - Graphical"
+msgstr "杂项 - 图形"
+
+#: src/muonapt/MuonStrings.cpp:149
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"xfce\""
+msgid "Xfce Desktop Environment"
+msgstr "Xfce 桌面环境"
+
+#: src/muonapt/MuonStrings.cpp:151
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"zope\""
+msgid "Zope/Plone Environment"
+msgstr "Zope/Plone 环境"
+
+#: src/muonapt/MuonStrings.cpp:153
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"unknown"
+"\""
+msgid "Unknown"
+msgstr "未知"
+
+#: src/muonapt/MuonStrings.cpp:155
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"alien\""
+msgid "Converted from RPM by Alien"
+msgstr "由 Alien 从 RPM 转换"
+
+#: src/muonapt/MuonStrings.cpp:157
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section "
+"\"translations\""
+msgid "Internationalization and Localization"
+msgstr "国际化和本地化"
+
+#: src/muonapt/MuonStrings.cpp:159
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section "
+"\"metapackages\""
+msgid "Meta Packages"
+msgstr "元软件包"
+
+#: src/muonapt/MuonStrings.cpp:161
+#, kde-format
+msgctxt ""
+"@item:inlistbox Debian package section \"non-US\", for packages that cannot "
+"be shipped in the US"
+msgid "Restricted On Export"
+msgstr "限制出口"
+
+#: src/muonapt/MuonStrings.cpp:163
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"non-free"
+"\""
+msgid "Non-free"
+msgstr "非自由"
+
+#: src/muonapt/MuonStrings.cpp:165
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"contrib"
+"\""
+msgid "Contrib"
+msgstr "贡献"
+
+#: src/muonapt/MuonStrings.cpp:167
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section "
+"\"education\""
+msgid "Education"
+msgstr "教育"
+
+#: src/muonapt/MuonStrings.cpp:169
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section "
+"\"introspection\""
+msgid "GObject Introspection Data"
+msgstr "GObject 内省数据"
+
+#: src/muonapt/MuonStrings.cpp:195
+#, kde-format
+msgctxt "@info:status Package state"
+msgid "No Change"
+msgstr "无更改"
+
+#: src/muonapt/MuonStrings.cpp:196 src/muonapt/MuonStrings.cpp:197
+#, kde-format
+msgctxt "@info:status Requested action"
+msgid "Install"
+msgstr "安装"
+
+#: src/muonapt/MuonStrings.cpp:198
+#, kde-format
+msgctxt "@info:status Requested action"
+msgid "Reinstall"
+msgstr "重新安装"
+
+#: src/muonapt/MuonStrings.cpp:199
+#, kde-format
+msgctxt "@info:status Requested action"
+msgid "Upgrade"
+msgstr "升级"
+
+#: src/muonapt/MuonStrings.cpp:200
+#, kde-format
+msgctxt "@info:status Requested action"
+msgid "Downgrade"
+msgstr "降级"
+
+#: src/muonapt/MuonStrings.cpp:201
+#, kde-format
+msgctxt "@info:status Requested action"
+msgid "Remove"
+msgstr "移除"
+
+#: src/muonapt/MuonStrings.cpp:202
+#, kde-format
+msgctxt "@info:status Package state"
+msgid "Held"
+msgstr "保持"
+
+#: src/muonapt/MuonStrings.cpp:203
+#, kde-format
+msgctxt "@info:status Package state"
+msgid "Installed"
+msgstr "已安装"
+
+#: src/muonapt/MuonStrings.cpp:204
+#, kde-format
+msgctxt "@info:status Package state"
+msgid "Upgradeable"
+msgstr "可升级"
+
+#: src/muonapt/MuonStrings.cpp:205
+#, kde-format
+msgctxt "@info:status Package state"
+msgid "Broken"
+msgstr "已损坏"
+
+#: src/muonapt/MuonStrings.cpp:206
+#, kde-format
+msgctxt "@info:status Package state"
+msgid "Install Broken"
+msgstr "安装损坏"
+
+#: src/muonapt/MuonStrings.cpp:207
+#, kde-format
+msgctxt "@info:status Package state"
+msgid "Orphaned"
+msgstr "孤立"
+
+#: src/muonapt/MuonStrings.cpp:208
+#, kde-format
+msgctxt "@info:status Package state"
+msgid "Locked"
+msgstr "已锁定"
+
+#: src/muonapt/MuonStrings.cpp:209
+#, kde-format
+msgctxt "@info:status Package state"
+msgid "New in repository"
+msgstr "新添加至软件仓库"
+
+#: src/muonapt/MuonStrings.cpp:210
+#, kde-format
+msgctxt "@info:status Package state"
+msgid "Residual Configuration"
+msgstr "残留配置"
+
+#: src/muonapt/MuonStrings.cpp:211
+#, kde-format
+msgctxt "@info:status Package state"
+msgid "Not Downloadable"
+msgstr "无法下载"
+
+#: src/muonapt/MuonStrings.cpp:212
+#, kde-format
+msgctxt "@info:status Requested action"
+msgid "Purge"
+msgstr "删除"
+
+#: src/muonapt/MuonStrings.cpp:213
+#, kde-format
+msgctxt "@info:status Package state"
+msgid "Important for base install"
+msgstr "基础安装所必须"
+
+#: src/muonapt/MuonStrings.cpp:214
+#, kde-format
+msgctxt "@info:status Package state"
+msgid "Version overridden"
+msgstr "覆盖版本"
+
+#: src/muonapt/MuonStrings.cpp:215
+#, kde-format
+msgctxt "@info:status Package state"
+msgid "Required by other packages"
+msgstr "被其他包需要"
+
+#: src/muonapt/MuonStrings.cpp:216
+#, kde-format
+msgctxt "@info:status Package state"
+msgid "Installed (auto-removable)"
+msgstr "已安装 (可自动移除)"
+
+#: src/muonapt/MuonStrings.cpp:217 src/muonapt/MuonStrings.cpp:218
+#, kde-format
+msgctxt "@info:status Package state"
+msgid "Policy Broken"
+msgstr "违反策略"
+
+#: src/muonapt/MuonStrings.cpp:219
+#, kde-format
+msgctxt "@info:status Package state"
+msgid "Not Installed"
+msgstr "未安装"
+
+#: src/muonapt/MuonStrings.cpp:221
+#, kde-format
+msgctxt "@info:status Package locked at a certain version"
+msgid "Locked"
+msgstr "已锁定"
+
+#: src/muonapt/MuonStrings.cpp:222
+#, kde-format
+msgctxt "@info:status Package state"
+msgid "Manually held back"
+msgstr "手动保持原状态"
+
+#: src/muonapt/MuonStrings.cpp:243
+#, kde-format
+msgctxt "@item:inlistbox"
+msgid "Common"
+msgstr "公共"
+
+#: src/muonapt/MuonStrings.cpp:244
+#, kde-format
+msgctxt "@item:inlistbox CPU architecture"
+msgid "32-bit"
+msgstr "32 位"
+
+#: src/muonapt/MuonStrings.cpp:245
+#, kde-format
+msgctxt "@item:inlistbox CPU architecture"
+msgid "64-bit"
+msgstr "64 位"
+
+#: src/muonapt/MuonStrings.cpp:246
+#, kde-format
+msgctxt "@item:inlistbox PU architecture"
+msgid "Power PC"
+msgstr "Power PC"
+
+#: src/muonapt/MuonStrings.cpp:265
+#, kde-format
+msgctxt "@title:window"
+msgid "Initialization Error"
+msgstr "初始化错误"
+
+#: src/muonapt/MuonStrings.cpp:267
+#, kde-format
+msgctxt "@title:window"
+msgid "Unable to Obtain Package System Lock"
+msgstr "无法获取软件包系统锁"
+
+#: src/muonapt/MuonStrings.cpp:269
+#, kde-format
+msgctxt "@title:window"
+msgid "Low Disk Space"
+msgstr "磁盘空间低"
+
+#: src/muonapt/MuonStrings.cpp:272
+#, kde-format
+msgctxt "@title:window"
+msgid "Failed to Apply Changes"
+msgstr "应用更改失败"
+
+#: src/muonapt/MuonStrings.cpp:274
+#, kde-format
+msgctxt "@title:window"
+msgid "Authentication error"
+msgstr "验证错误"
+
+#: src/muonapt/MuonStrings.cpp:276
+#, kde-format
+msgctxt "@title:window"
+msgid "Unexpected Error"
+msgstr "意外错误"
+
+#: src/muonapt/MuonStrings.cpp:278
+#, kde-format
+msgctxt "@title:window"
+msgid "Untrusted Packages"
+msgstr "不可信的软件包"
+
+#: src/muonapt/MuonStrings.cpp:281
+#, kde-format
+msgctxt "@title:window"
+msgid "Unknown Error"
+msgstr "未知错误"
+
+#: src/muonapt/MuonStrings.cpp:291
+#, kde-format
+msgctxt "@label"
+msgid ""
+"The package system could not be initialized, your configuration may be "
+"broken."
+msgstr "软件包系统未能初始化，您的配置可能已经损坏。"
+
+#: src/muonapt/MuonStrings.cpp:296
+#, kde-format
+msgctxt "@label"
+msgid ""
+"Another application seems to be using the package system at this time. You "
+"must close all other package managers before you will be able to install or "
+"remove any packages."
+msgstr ""
+"另一个应用程序似乎正在使用软件包系统。您必须关闭所有其他的软件包管理器才能安"
+"装或移除软件包。"
+
+#: src/muonapt/MuonStrings.cpp:303
+#, kde-format
+msgctxt "@label"
+msgid ""
+"You do not have enough disk space in the directory at %1 to continue with "
+"this operation."
+msgstr "%1 处目录中的磁盘空间不足，操作无法继续。"
+
+#: src/muonapt/MuonStrings.cpp:307
+#, kde-format
+msgctxt "@label"
+msgid "Could not download packages"
+msgstr "无法下载软件包"
+
+#: src/muonapt/MuonStrings.cpp:310
+#, kde-format
+msgctxt "@label"
+msgid "An error occurred while applying changes:"
+msgstr "应用更改时发生了错误："
+
+#: src/muonapt/MuonStrings.cpp:314
+#, kde-format
+msgctxt "@label"
+msgid ""
+"This operation cannot continue since proper authorization was not provided"
+msgstr "操作无法继续，因为没有提供合法的认证"
+
+#: src/muonapt/MuonStrings.cpp:318
+#, kde-format
+msgctxt "@label"
+msgid ""
+"It appears that the QApt worker has either crashed or disappeared. Please "
+"report a bug to the QApt maintainers"
+msgstr "QApt worker (工具) 似乎已崩溃或消失。请向 QApt 维护者报告这一错误。"
+
+#: src/muonapt/MuonStrings.cpp:323
+#, kde-format
+msgctxt "@label"
+msgid ""
+"The following package has not been verified by its author. Downloading "
+"untrusted packages has been disallowed by your current configuration."
+msgid_plural ""
+"The following packages have not been verified by their authors. Downloading "
+"untrusted packages has been disallowed by your current configuration."
+msgstr[0] ""
+"以下软件包未经它们作者验证。您当前的配置不允许下载这些不信任的软件包。"
+
+#: src/muonapt/QAptActions.cpp:118
+#, kde-format
+msgctxt "@action Reverts all potential changes to the cache"
+msgid "Unmark All"
+msgstr "取消所有标记"
+
+#: src/muonapt/QAptActions.cpp:125
+#, kde-format
+msgctxt "@action Opens the software sources configuration dialog"
+msgid "Configure Software Sources"
+msgstr "配置软件源"
+
+#: src/muonapt/QAptActions.cpp:131
+#, kde-format
+msgctxt "@action"
+msgid "Read Markings..."
+msgstr "读取标记..."
+
+#: src/muonapt/QAptActions.cpp:137
+#, kde-format
+msgctxt "@action"
+msgid "Save Markings As..."
+msgstr "标记另存为..."
+
+#: src/muonapt/QAptActions.cpp:144
+#, kde-format
+msgctxt "@action"
+msgid "Save Package Download List..."
+msgstr "保存软件包下载列表..."
+
+#: src/muonapt/QAptActions.cpp:151
+#, kde-format
+msgctxt "@action"
+msgid "Download Packages From List..."
+msgstr "从列表下载软件包..."
+
+#: src/muonapt/QAptActions.cpp:160
+#, kde-format
+msgctxt "@action"
+msgid "Add Downloaded Packages"
+msgstr "添加已下载软件包"
+
+#: src/muonapt/QAptActions.cpp:167
+#, kde-format
+msgctxt "@action"
+msgid "Save Installed Packages List..."
+msgstr "保存已安装软件包列表..."
+
+#: src/muonapt/QAptActions.cpp:173
+#, kde-format
+msgctxt "@action::inmenu"
+msgid "History..."
+msgstr "历史..."
+
+#: src/muonapt/QAptActions.cpp:179
+#, kde-format
+msgctxt "@action"
+msgid "Upgrade"
+msgstr "升级"
+
+#: src/muonapt/QAptActions.cpp:182
+#, kde-format
+msgctxt "Notification when a new version of Kubuntu is available"
+msgid "A new version of Kubuntu is available."
+msgstr "有新版本的 Kubuntu 可用。"
+
+#: src/muonapt/QAptActions.cpp:226
+#, kde-format
+msgctxt "@title:window"
+msgid "Save Markings As"
+msgstr "保存标记"
+
+#: src/muonapt/QAptActions.cpp:233 src/muonapt/QAptActions.cpp:258
+#: src/muonapt/QAptActions.cpp:282
+#, kde-kuit-format
+msgctxt "@label"
+msgid ""
+"The document could not be saved, as it was not possible to write to "
+"<filename>%1</filename>\n"
+"\n"
+"Check that you have write access to this file or that enough disk space is "
+"available."
+msgstr ""
+"该文档无法保存，因为无法写入 <filename>%1</filename>\n"
+"\n"
+"请检查您是否有对此文件的写权限以及磁盘空间是否足够。"
+
+#: src/muonapt/QAptActions.cpp:251
+#, kde-format
+msgctxt "@title:window"
+msgid "Save Installed Packages List As"
+msgstr "已安装软件包列表另存为"
+
+#: src/muonapt/QAptActions.cpp:275
+#, kde-format
+msgctxt "@title:window"
+msgid "Save Download List As"
+msgstr "下载列表另存为"
+
+#: src/muonapt/QAptActions.cpp:297 src/muonapt/QAptActions.cpp:314
+#, kde-format
+msgctxt "@title:window"
+msgid "Open File"
+msgstr "打开文件"
+
+#: src/muonapt/QAptActions.cpp:322
+#, kde-format
+msgctxt "@label"
+msgid ""
+"Could not mark changes. Please make sure that the file is a markings file "
+"created by either the Muon Package Manager or the Synaptic Package Manager."
+msgstr ""
+"无法标记更改。请确保该文件是由 Muon 软件包管理器或新立得软件包管理器创建的标"
+"记文件。"
+
+#: src/muonapt/QAptActions.cpp:333
+#, kde-format
+msgctxt "@title:window"
+msgid "Choose a Directory"
+msgstr "选择目录"
+
+#: src/muonapt/QAptActions.cpp:356
+#, kde-format
+msgctxt "@label"
+msgid "%1 package was successfully added to the cache"
+msgid_plural "%1 packages were successfully added to the cache"
+msgstr[0] "%1 个软件包被成功添加到缓存"
+
+#: src/muonapt/QAptActions.cpp:362
+#, kde-format
+msgctxt "@label"
+msgid ""
+"No valid packages could be found in this directory. Please make sure the "
+"packages are compatible with your computer and are at the latest version."
+msgstr ""
+"在此目录中找不到有效的软件包。请确认软件包与您的计算机兼容而且是最新版本。"
+
+#: src/muonapt/QAptActions.cpp:366
+#, kde-format
+msgctxt "@title:window"
+msgid "Packages Could Not be Found"
+msgstr "无法找到软件包"
+
+#: src/muonapt/QAptActions.cpp:398
+#, kde-format
+msgctxt "@label"
+msgid ""
+"Could not find <command>software-properties-kde</command> on your system, "
+"please install it. Alternatively, you can use <application>Plasma Discover</"
+"application> to configure software sources."
+msgstr ""
+"在您系统中无法找到 <command>software-properties-kde</command>，请安装它。或"
+"者，您可以使用 <application>Plasma 发现者</application> 来配置软件源。"
+
+#: src/muonapt/QAptActions.cpp:403
+#, kde-format
+msgctxt "@title:window"
+msgid "Cannot find <command>software-properties-kde</command>"
+msgstr "无法找到 <command>software-properties-kde</command>"
+
+#: src/muonapt/QAptActions.cpp:494
+#, kde-format
+msgctxt "@title:window"
+msgid "Package History"
+msgstr "软件包历史"
+
+#: src/PackageModel/PackageModel.cpp:88
+#, kde-format
+msgid "Package"
+msgstr "软件包"
+
+#: src/PackageModel/PackageModel.cpp:90
+#, kde-format
+msgid "Status"
+msgstr "状态"
+
+#: src/PackageModel/PackageModel.cpp:92
+#, kde-format
+msgid "Requested"
+msgstr "要求"
+
+#: src/PackageModel/PackageModel.cpp:94
+#, kde-format
+msgid "Installed Size"
+msgstr "安装大小"
+
+#: src/PackageModel/PackageModel.cpp:96
+#, kde-format
+msgid "Installed Version"
+msgstr "安装的版本"
+
+#: src/PackageModel/PackageModel.cpp:98
+#, kde-format
+msgid "Available Version"
+msgstr "可用的版本"
+
+#: src/PackageModel/PackageWidget.cpp:166
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Mark for Installation"
+msgstr "标记以安装"
+
+#: src/PackageModel/PackageWidget.cpp:171
+#, kde-format
+msgctxt "@action:button"
+msgid "Mark for Removal"
+msgstr "标记以移除"
+
+#: src/PackageModel/PackageWidget.cpp:176
+#, kde-format
+msgctxt "@action:button"
+msgid "Mark for Upgrade"
+msgstr "标记以升级"
+
+#: src/PackageModel/PackageWidget.cpp:181
+#, kde-format
+msgctxt "@action:button"
+msgid "Mark for Reinstallation"
+msgstr "标记以重新安装"
+
+#: src/PackageModel/PackageWidget.cpp:186
+#, kde-format
+msgctxt "@action:button"
+msgid "Mark for Purge"
+msgstr "标记以彻底删除"
+
+#: src/PackageModel/PackageWidget.cpp:197
+#, kde-format
+msgctxt "@action:button"
+msgid "Lock Package at Current Version"
+msgstr "将软件包锁定为当前版本"
+
+#: src/PackageModel/PackageWidget.cpp:377
+#, kde-format
+msgctxt "@action:button"
+msgid "Unlock package"
+msgstr "解锁软件包"
+
+#: src/PackageModel/PackageWidget.cpp:381
+#, kde-format
+msgctxt "@action:button"
+msgid "Lock at Current Version"
+msgstr "锁定为当前版本"
+
+#: src/PackageModel/PackageWidget.cpp:422
+#, kde-format
+msgctxt "@label"
+msgid ""
+"Removing this package may break your system. Are you sure you want to remove "
+"it?"
+msgstr "移除此软件包可能会破坏您的系统。您确定要删除它吗？"
+
+#: src/PackageModel/PackageWidget.cpp:423
+#, kde-format
+msgctxt "@label"
+msgid "Warning - Removing Important Package"
+msgstr "警告 - 将移除重要的软件包"
+
+#: src/PackageModel/PackageWidget.cpp:609
+#, kde-format
+msgctxt "@title:window"
+msgid "Failed to Lock Package"
+msgstr "无法锁定软件包"
+
+#: src/PackageModel/PackageWidget.cpp:610
+#, kde-format
+msgctxt "@info Error text"
+msgid "The package %1 could not be locked. Failed to write lock file."
+msgstr "软件包 %1 无法锁定。写锁文件失败。"
+
+#: src/PackageModel/PackageWidget.cpp:659
+#, kde-format
+msgctxt "@label"
+msgid "The \"%1\" package could not be marked for installation or upgrade:"
+msgstr "“%1”软件包无法标记以安装或升级："
+
+#: src/PackageModel/PackageWidget.cpp:662
+#, kde-format
+msgctxt "@title:window"
+msgid "Unable to Mark Package"
+msgstr "无法标记软件包"
+
+#: src/PackageModel/PackageWidget.cpp:679
+#, kde-format
+msgctxt "@label"
+msgid ""
+"The \"%1\" package has no available version, but exists in the database.\n"
+"\tThis typically means that the package was mentioned in a dependency and "
+"never uploaded, has been obsoleted, or is not available from the currently-"
+"enabled repositories."
+msgstr ""
+"“%1”软件包没有可用的版本，但它存在于数据库中。\n"
+"\t这通常意味着该包在某个依赖关系中被提及，但从未上传，或已废弃，或在当前启用"
+"的仓库中不可用。"
+
+#: src/PackageModel/PackageWidget.cpp:686
+#, kde-format
+msgctxt "@label Example: Depends: libqapt 0.1, but 0.2 is to be installed"
+msgid "%1: %2 %3, but %4 is to be installed"
+msgstr "%1：%2 %3，但将要安装的是 %4"
+
+#: src/PackageModel/PackageWidget.cpp:692
+#, kde-format
+msgctxt "@label Example: Depends: libqapt, but is not installable"
+msgid "%1: %2, but it is not installable"
+msgstr "%1：%2，但它无法安装"
+
+#: src/PackageModel/PackageWidget.cpp:697
+#, kde-format
+msgctxt "@label Example: Depends: libqapt, but it is a virtual package"
+msgid "%1: %2, but it is a virtual package"
+msgstr "%1：%2,但它是个虚包"
+
+#: src/ReviewWidget.cpp:32
+#, kde-format
+msgid "<b>Review and Apply Changes</b>"
+msgstr "<b>检查并应用更改</b>"
+
+#: src/StatusWidget.cpp:52
+#, kde-format
+msgctxt "@info:status"
+msgid "Rebuilding Search Index"
+msgstr "正在重建搜索索引"
+
+#: src/StatusWidget.cpp:93
+#, kde-format
+msgctxt "@info:status"
+msgid "1 package available, "
+msgid_plural "%1 packages available, "
+msgstr[0] "%1 个软件包可用，"
+
+#: src/StatusWidget.cpp:94
+#, kde-format
+msgctxt "@info:status"
+msgid "%1 installed, "
+msgstr "%1 个已安装，"
+
+#: src/StatusWidget.cpp:98
+#, kde-format
+msgctxt "@info:status"
+msgid "%1 upgradeable,"
+msgstr "%1 个可升级，"
+
+#: src/StatusWidget.cpp:100
+#, kde-format
+msgctxt "@info:status"
+msgid "%1 upgradeable"
+msgstr "%1 个可升级"
+
+#: src/StatusWidget.cpp:112
+#, kde-format
+msgctxt "@info:status Part of the status label"
+msgid " %1 to install/upgrade"
+msgstr " %1 个要安装/升级"
+
+#: src/StatusWidget.cpp:117
+#, kde-format
+msgctxt ""
+"@info:status Label for the number of packages pending removal when packages "
+"are also pending upgrade"
+msgid ", %1 to remove"
+msgstr "，%1 个要移除"
+
+#: src/StatusWidget.cpp:120
+#, kde-format
+msgctxt ""
+"@info:status Label for the number of packages pending removal when there are "
+"only removals"
+msgid " %1 to remove"
+msgstr " %1 个要移除"
+
+#: src/StatusWidget.cpp:129
+#, kde-format
+msgctxt "@label showing download and install size"
+msgid "%1 to download, %2 of space to be freed"
+msgstr "%1 个要下载，%2 的空间会释放"
+
+#: src/StatusWidget.cpp:133
+#, kde-format
+msgctxt "@label showing download and install size"
+msgid "%1 to download, %2 of space to be used"
+msgstr "%1 个要下载，%2 的空间会使用"
+
+#: src/TransactionWidget.cpp:103
+#, kde-format
+msgctxt "@action:button Cancels the download"
+msgid "Cancel"
+msgstr "取消"
+
+#: src/TransactionWidget.cpp:148
+#, kde-kuit-format
+msgctxt "@info Status information, widget title"
+msgid "<title>Starting</title>"
+msgstr "<title>正在启动</title>"
+
+#: src/TransactionWidget.cpp:150
+#, kde-format
+msgctxt "@info Status info"
+msgid "Waiting for service to start"
+msgstr "正在等待服务启动"
+
+#: src/TransactionWidget.cpp:155
+#, kde-format
+msgctxt "@info Status info"
+msgid "Waiting for authentication"
+msgstr "正在等待认证"
+
+#: src/TransactionWidget.cpp:159 src/TransactionWidget.cpp:166
+#: src/TransactionWidget.cpp:173 src/TransactionWidget.cpp:180
+#, kde-kuit-format
+msgctxt "@info Status information, widget title"
+msgid "<title>Waiting</title>"
+msgstr "<title>正在等待</title>"
+
+#: src/TransactionWidget.cpp:161
+#, kde-format
+msgctxt "@info Status info"
+msgid "Waiting for other transactions to finish"
+msgstr "正在等待其它事务完成"
+
+#: src/TransactionWidget.cpp:168
+#, kde-format
+msgctxt "@info Status info"
+msgid "Waiting for other software managers to quit"
+msgstr "正在等待其他软件管理器退出"
+
+#: src/TransactionWidget.cpp:175
+#, kde-format
+msgctxt "@info Status info"
+msgid "Waiting for required medium"
+msgstr "正在等待需要的媒体"
+
+#: src/TransactionWidget.cpp:182
+#, kde-format
+msgctxt "@info Status info"
+msgid "Waiting for configuration file"
+msgstr "正在等待配置文件"
+
+#: src/TransactionWidget.cpp:193
+#, kde-kuit-format
+msgctxt "@info Status info"
+msgid "<title>Loading Software List</title>"
+msgstr "<title>正在加载软件列表</title>"
+
+#: src/TransactionWidget.cpp:201
+#, kde-kuit-format
+msgctxt "@info Status information, widget title"
+msgid "<title>Updating software sources</title>"
+msgstr "<title>正在更新软件源</title>"
+
+#: src/TransactionWidget.cpp:206
+#, kde-kuit-format
+msgctxt "@info Status information, widget title"
+msgid "<title>Downloading Packages</title>"
+msgstr "<title>正在下载软件包</title>"
+
+#: src/TransactionWidget.cpp:218
+#, kde-kuit-format
+msgctxt "@info Status information, widget title"
+msgid "<title>Committing Changes</title>"
+msgstr "<title>正在提交更改</title>"
+
+#: src/TransactionWidget.cpp:225
+#, kde-kuit-format
+msgctxt "@info Status information, widget title"
+msgid "<title>Finished</title>"
+msgstr "<title>完成</title>"
+
+#: src/TransactionWidget.cpp:254
+#, kde-format
+msgctxt "@title:window"
+msgid "Media Change Required"
+msgstr "需要更改媒体"
+
+#: src/TransactionWidget.cpp:255
+#, kde-kuit-format
+msgctxt "@label"
+msgid "Please insert %1 into <filename>%2</filename>"
+msgstr "请将 %1 插入 <filename>%2</filename>"
+
+#: src/TransactionWidget.cpp:264
+#, kde-format
+msgctxt "@title:window"
+msgid "Warning - Unverified Software"
+msgstr "警告 - 软件未经验证"
+
+#: src/TransactionWidget.cpp:266
+#, kde-kuit-format
+msgctxt "@label"
+msgid ""
+"The following piece of software cannot be verified. <warning>Installing "
+"unverified software represents a security risk, as the presence of "
+"unverifiable software can be a sign of tampering.</warning> Do you wish to "
+"continue?"
+msgid_plural ""
+"The following pieces of software cannot be verified. <warning>Installing "
+"unverified software represents a security risk, as the presence of "
+"unverifiable software can be a sign of tampering.</warning> Do you wish to "
+"continue?"
+msgstr[0] ""
+"以下软件组件无法验证。<warning>安装未验证软件是一种安全风险，因为无法验证可能"
+"表示软件被篡改。</warning>您想继续吗？"
+
+#: src/TransactionWidget.cpp:284
+#, kde-format
+msgctxt "@title:window"
+msgid "Configuration File Changed"
+msgstr "配置文件已更改"
+
+#: src/TransactionWidget.cpp:286
+#, kde-kuit-format
+msgctxt "@label Notifies a config file change"
+msgid ""
+"A new version of the configuration file <filename>%1</filename> is "
+"available, but your version has been modified. Would you like to keep your "
+"current version or install the new version?"
+msgstr ""
+"有新版的配置文件 <filename>%1</filename> 可用，但您的版本已经修改。您想保持当"
+"前版本还是安装新版本？"
+
+#: src/TransactionWidget.cpp:291
+#, kde-format
+msgctxt "@action Use the new config file"
+msgid "Use New Version"
+msgstr "使用新版本"
+
+#: src/TransactionWidget.cpp:292
+#, kde-format
+msgctxt "@action Keep the old config file"
+msgid "Keep Old Version"
+msgstr "保留旧版本"

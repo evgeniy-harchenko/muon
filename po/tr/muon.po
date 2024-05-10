@@ -1,0 +1,1948 @@
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Translators:
+# obsoleteman <tulliana@gmail.com>, 2010,2012.
+# Volkan Gezer <volkangezer@gmail.com>, 2013-2014, 2017.
+# Kaan Ozdincer <kaanozdincer@gmail.com>, 2014.
+msgid ""
+msgstr ""
+"Project-Id-Version: extragear-sysadmin-kde4\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2018-03-15 03:18+0100\n"
+"PO-Revision-Date: 2017-05-05 12:37+0000\n"
+"Last-Translator: Kaan <kaanozdincer@gmail.com>\n"
+"Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
+"Language: tr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Lokalize 2.0\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Serdar Soytetir, Volkan Gezer"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "tulliana@gmail.com, volkangezer@gmail.com"
+
+#. i18n: ectx: label, entry (SplitterSizes), group (muon)
+#: muonrc.cpp:3 src/config/muon.kcfg:9
+#, kde-format
+msgid "How the main window is divided."
+msgstr "Ana pencerenin nasıl bölündüğü."
+
+#. i18n: ectx: label, entry (Width), group (muon)
+#: muonrc.cpp:6 src/config/muon.kcfg:12
+#, kde-format
+msgid "Width of the main window."
+msgstr "Ana pencerenin genişliği."
+
+#. i18n: ectx: label, entry (Height), group (muon)
+#: muonrc.cpp:9 src/config/muon.kcfg:16
+#, kde-format
+msgid "Height of the main window."
+msgstr "Ana pencerenin yüksekliği."
+
+#. i18n: ectx: label, entry (UndoStackSize), group (muon)
+#: muonrc.cpp:12 src/config/muon.kcfg:20
+#, kde-format
+msgid "The amount of history kept for undo/redo."
+msgstr "Geri alma/yeniden yapma işlemi için geçmişin ne kadarının saklanacağı."
+
+#. i18n: ectx: label, entry (AskChanges), group (muon)
+#: muonrc.cpp:15 src/config/muon.kcfg:24
+#, kde-format
+msgid "Whether or not to confirm additional changes."
+msgstr "Ek değişikliklerin onaylanıp onaylanmayacağı."
+
+#. i18n: ectx: label, entry (ShowMultiArchDupes), group (muon)
+#: muonrc.cpp:18 src/config/muon.kcfg:28
+#, kde-format
+msgid "Show foreign architecture packages also available natively."
+msgstr ""
+"Yerli olarak kullanılabilir olan ama yabancı mimariye sahip paketleri de "
+"göster"
+
+#. i18n: ectx: label, entry (ManagerListColumns), group (muon)
+#: muonrc.cpp:21 src/config/muon.kcfg:32
+#, kde-format
+msgid "Status of columns in the manager list of packages."
+msgstr "Yönetici listesindeki paketlerin durum sütunu."
+
+#. i18n: ectx: label, entry (ReviewListColumns), group (muon)
+#: muonrc.cpp:24 src/config/muon.kcfg:36
+#, kde-format
+msgid "Status of columns in the changes review list of packages."
+msgstr "Değişiklik listesindeki paketlerin sütunu."
+
+#: src/config/GeneralSettingsPage.cpp:51
+#, kde-format
+msgid "Ask to confirm changes that affect other packages"
+msgstr "Diğer paketleri etkileyebilecek değişiklikleri her zaman sor"
+
+#: src/config/GeneralSettingsPage.cpp:52
+#, kde-format
+msgid "Show foreign-architecture packages that are available natively"
+msgstr ""
+"Yerli olarak kullanılabilir olan ama yabancı mimariye sahip paketleri de "
+"göster"
+
+#: src/config/GeneralSettingsPage.cpp:53
+#, kde-format
+msgid "Treat recommended packages as dependencies"
+msgstr "Sistem tarafından önerilen paketleri bağımlılık olarak değerlendir"
+
+#: src/config/GeneralSettingsPage.cpp:54
+#, kde-format
+msgid "Treat suggested packages as dependencies"
+msgstr "Önerilen paketleri bağımlılık olarak değerlendir"
+
+#: src/config/GeneralSettingsPage.cpp:55
+#, kde-format
+msgid "Allow the installation of untrusted packages"
+msgstr "Güvenilmeyen paketlerin kurulumuna izin ver"
+
+#: src/config/GeneralSettingsPage.cpp:66
+#, kde-format
+msgid "Delete obsolete cached packages every:"
+msgstr "Önbelleğe alınan gereksiz paketleri silme zamanı:"
+
+#: src/config/GeneralSettingsPage.cpp:84
+#, kde-format
+msgid "Number of undo operations:"
+msgstr "Geri alma işlemlerinin sayısı:"
+
+#: src/config/GeneralSettingsPage.cpp:160
+#, kde-format
+msgid " day"
+msgid_plural " days"
+msgstr[0] " gün"
+msgstr[1] " gün"
+
+#: src/config/ManagerSettingsDialog.cpp:40
+#, kde-format
+msgctxt "@title:window"
+msgid "Muon Preferences"
+msgstr "Muon Tercihleri"
+
+#: src/config/ManagerSettingsDialog.cpp:47
+#, kde-format
+msgctxt "@title:group Title of the general group"
+msgid "General"
+msgstr "Genel"
+
+#: src/DetailsTabs/ChangelogTab.cpp:45
+#, kde-format
+msgctxt "@title:tab"
+msgid "Changes List"
+msgstr "Değişiklikler Listesi"
+
+#: src/DetailsTabs/ChangelogTab.cpp:94
+#, kde-kuit-format
+msgctxt "@info/rich"
+msgid ""
+"The list of changes is not yet available. Please use <link "
+"url='%1'>Launchpad</link> instead."
+msgstr ""
+"Değişikliklerin listesi henüz kullanılabilir değil. Lütfen <link "
+"url='%1'>Launchpad</link> sitesine bakın."
+
+#: src/DetailsTabs/ChangelogTab.cpp:98
+#, kde-format
+msgctxt "@info"
+msgid "The list of changes is not yet available."
+msgstr "Değişikliklerin listesi henüz kullanılabilir değil."
+
+#: src/DetailsTabs/DependsTab.cpp:37
+#, kde-format
+msgctxt "@title:tab"
+msgid "Dependencies"
+msgstr "Bağımlılıklar"
+
+#: src/DetailsTabs/DependsTab.cpp:40
+#, kde-format
+msgctxt "@item:inlistbox"
+msgid "Dependencies of the Current Version"
+msgstr "Geçerli Sürümün Bağımlılıkları"
+
+#: src/DetailsTabs/DependsTab.cpp:41
+#, kde-format
+msgctxt "@item:inlistbox"
+msgid "Dependencies of the Latest Version"
+msgstr "Son Sürümün Bağımlılıkları"
+
+#: src/DetailsTabs/DependsTab.cpp:42
+#, kde-format
+msgctxt "@item:inlistbox"
+msgid "Dependants (Reverse Dependencies)"
+msgstr "Bu Pakete Bağımlı Olanlar (Ters Bağımlılıklar)"
+
+#: src/DetailsTabs/DependsTab.cpp:43
+#, kde-format
+msgctxt "@item:inlistbox"
+msgid "Virtual Packages Provided"
+msgstr "Sağlanan Sanal Paketler"
+
+#: src/DetailsTabs/DependsTab.cpp:71 src/DetailsTabs/DependsTab.cpp:78
+#, kde-format
+msgctxt "@label"
+msgid "This package does not have any dependencies"
+msgstr "Bu paketin bir bağımlılığı yok"
+
+#: src/DetailsTabs/DependsTab.cpp:85
+#, kde-format
+msgctxt "@label"
+msgid "This package has no dependents. (Nothing depends on it.)"
+msgstr ""
+"Bu pakete bağımlı başka bir paket yok. (Hiçbir şey bu pakete bağımlı değil.)"
+
+#: src/DetailsTabs/DependsTab.cpp:92
+#, kde-format
+msgctxt "@label"
+msgid "This package does not provide any virtual packages"
+msgstr "Bu paket bir sanal paket sağlamıyor"
+
+#: src/DetailsTabs/InstalledFilesTab.cpp:35
+#, kde-format
+msgctxt "@title:tab"
+msgid "Installed Files"
+msgstr "Kurulu Dosyalar"
+
+#: src/DetailsTabs/MainTab.cpp:43
+#, kde-format
+msgctxt "@title:tab"
+msgid "Details"
+msgstr "Ayrıntılar"
+
+#: src/DetailsTabs/MainTab.cpp:57
+#, kde-format
+msgctxt "@label"
+msgid "Mark for:"
+msgstr "Bunun için işaretle:"
+
+#: src/DetailsTabs/MainTab.cpp:62
+#, kde-format
+msgctxt "@action:button"
+msgid "Installation"
+msgstr "Kurulum"
+
+#: src/DetailsTabs/MainTab.cpp:70
+#, kde-format
+msgctxt "@action:button"
+msgid "Removal"
+msgstr "Kaldırma"
+
+#: src/DetailsTabs/MainTab.cpp:76
+#, kde-format
+msgctxt "@action:button"
+msgid "Upgrade"
+msgstr "Yükseltme"
+
+#: src/DetailsTabs/MainTab.cpp:82
+#, kde-format
+msgctxt "@action:button"
+msgid "Reinstallation"
+msgstr "Yeniden Kurulum"
+
+#: src/DetailsTabs/MainTab.cpp:89
+#, kde-format
+msgctxt "@action:button"
+msgid "Purge"
+msgstr "Temizleme"
+
+#: src/DetailsTabs/MainTab.cpp:102 src/PackageModel/PackageWidget.cpp:191
+#, kde-format
+msgctxt "@action:button"
+msgid "Unmark"
+msgstr "Seçimini Kaldır"
+
+#: src/DetailsTabs/MainTab.cpp:188
+#, kde-format
+msgctxt "@info Tells how long Canonical, Ltd. will support a package"
+msgid "Canonical provides critical updates for %1 until %2."
+msgstr "Canonical %1 için %2 tarihine kadar kritik güncelleştirmeleri sağlar."
+
+#: src/DetailsTabs/MainTab.cpp:192
+#, kde-format
+msgctxt "@info Tells how long Canonical, Ltd. will support a package"
+msgid ""
+"Canonical does not provide updates for %1. Some updates may be provided by "
+"the Ubuntu community."
+msgstr ""
+"Canonical %1 için güncelleştirme sunmaz. Güncellemeler Ubuntu Topluluğu "
+"tarafından sağlanıyor olabilir."
+
+#: src/DetailsTabs/TechnicalDetailsTab.cpp:43
+#, kde-format
+msgctxt "@title:tab"
+msgid "Technical Details"
+msgstr "Teknik Ayrıntılar"
+
+#: src/DetailsTabs/TechnicalDetailsTab.cpp:57
+#, kde-format
+msgctxt "@label Label preceding the package maintainer"
+msgid "Maintainer:"
+msgstr "Projeyi Yürüten:"
+
+#: src/DetailsTabs/TechnicalDetailsTab.cpp:66
+#, kde-format
+msgctxt "@label Label preceding the package category"
+msgid "Category:"
+msgstr "Kategori:"
+
+#: src/DetailsTabs/TechnicalDetailsTab.cpp:76
+#, kde-format
+msgctxt "@label The parent package that this package comes from"
+msgid "Source Package:"
+msgstr "Kaynak Paket:"
+
+#: src/DetailsTabs/TechnicalDetailsTab.cpp:86
+#, kde-format
+msgctxt "@label The software source that this package comes from"
+msgid "Origin:"
+msgstr "Kaynak:"
+
+#: src/DetailsTabs/TechnicalDetailsTab.cpp:96
+#, kde-format
+msgctxt "@label The package archive component that this package comes from"
+msgid "Component:"
+msgstr "Bileşen:"
+
+#: src/DetailsTabs/TechnicalDetailsTab.cpp:106
+#, kde-format
+msgctxt "@title:group"
+msgid "Installed Version"
+msgstr "Kurulu Sürüm"
+
+#: src/DetailsTabs/TechnicalDetailsTab.cpp:113
+#: src/DetailsTabs/TechnicalDetailsTab.cpp:138
+#, kde-format
+msgctxt "@label Label preceding the package version"
+msgid "Version:"
+msgstr "Sürüm:"
+
+#: src/DetailsTabs/TechnicalDetailsTab.cpp:121
+#: src/DetailsTabs/TechnicalDetailsTab.cpp:146
+#, kde-format
+msgctxt "@label Label preceding the package size"
+msgid "Installed Size:"
+msgstr "Kurulu Boyut:"
+
+#: src/DetailsTabs/TechnicalDetailsTab.cpp:131
+#, kde-format
+msgctxt "@title:group"
+msgid "Available Version"
+msgstr "Kullanılabilir Sürüm"
+
+#: src/DetailsTabs/TechnicalDetailsTab.cpp:154
+#, kde-format
+msgctxt "@label Label preceding the package's download size"
+msgid "Download Size:"
+msgstr "İndirme Boyutu:"
+
+#: src/DetailsTabs/VersionTab.cpp:39
+#, kde-format
+msgctxt "@title:tab"
+msgid "Versions"
+msgstr "Sürümler"
+
+#: src/DetailsTabs/VersionTab.cpp:42
+#, kde-format
+msgctxt "@label"
+msgid "Available versions:"
+msgstr "Kullanılabilir sürümler:"
+
+#: src/DetailsTabs/VersionTab.cpp:60
+#, kde-format
+msgctxt "@label"
+msgid ""
+"Muon always selects the most applicable version available. If you force a "
+"different version from the default one, errors in the dependency handling "
+"can occur."
+msgstr ""
+"Muon her zaman kullanılabilir en uygun sürümü seçer. Eğer seçilen öntanımlı "
+"sürüm yerine başka bir sürümü zorlarsanız bağımlılık yönetiminde hatalar "
+"oluşabilir."
+
+#: src/DetailsTabs/VersionTab.cpp:68
+#, kde-format
+msgctxt "@action:button"
+msgid "Force Version"
+msgstr "Sürüme Zorla"
+
+#: src/DownloadModel/DownloadDelegate.cpp:66
+#, kde-format
+msgctxt "@info:status Progress text when done"
+msgid "Done"
+msgstr "Tamamlandı"
+
+#: src/DownloadModel/DownloadModel.cpp:60
+#, kde-format
+msgctxt "@title:column"
+msgid "Package"
+msgstr "Paket"
+
+#: src/DownloadModel/DownloadModel.cpp:62
+#, kde-format
+msgctxt "@title:column"
+msgid "Location"
+msgstr "Konum"
+
+#: src/DownloadModel/DownloadModel.cpp:64
+#, kde-format
+msgctxt "@title:column"
+msgid "Size"
+msgstr "Boyut"
+
+#: src/DownloadModel/DownloadModel.cpp:66
+#, kde-format
+msgctxt "@title:column"
+msgid "Progress"
+msgstr "İlerleme"
+
+#: src/FilterWidget/ArchitectureFilter.cpp:47
+#: src/FilterWidget/CategoryFilter.cpp:57 src/FilterWidget/OriginFilter.cpp:42
+#: src/FilterWidget/StatusFilter.cpp:43 src/ManagerWidget.cpp:69
+#, kde-format
+msgctxt "@item:inlistbox Item that resets the filter to \"all\""
+msgid "All"
+msgstr "Tümü"
+
+#: src/FilterWidget/FilterWidget.cpp:46
+#, kde-format
+msgctxt "@title:window"
+msgid "Filter:"
+msgstr "Filtrele:"
+
+#: src/FilterWidget/FilterWidget.cpp:55
+#, kde-format
+msgctxt "@title:tab"
+msgid "By Category"
+msgstr "Kategoriye Göre"
+
+#: src/FilterWidget/FilterWidget.cpp:61
+#, kde-format
+msgctxt "@title:tab"
+msgid "By Status"
+msgstr "Duruma Göre"
+
+#: src/FilterWidget/FilterWidget.cpp:67
+#, kde-format
+msgctxt "@title:tab"
+msgid "By Origin"
+msgstr "Kaynağa Göre"
+
+#: src/FilterWidget/FilterWidget.cpp:73
+#, kde-format
+msgctxt "@title:tab"
+msgid "By Architecture"
+msgstr "Mimariye Göre"
+
+#: src/main.cpp:36
+#, kde-format
+msgid "Muon Package Manager"
+msgstr "Muon Paket Yöneticisi"
+
+#: src/main.cpp:36
+#, kde-format
+msgid "A package manager"
+msgstr "Bir paket yöneticisi"
+
+#: src/main.cpp:37
+#, kde-format
+msgid "© 2009-2013 Jonathan Thomas"
+msgstr "© 2009-2013 Jonathan Thomas"
+
+#: src/main.cpp:38
+#, kde-format
+msgid "Jonathan Thomas"
+msgstr "Jonathan Thomas"
+
+#: src/main.cpp:39
+#, kde-format
+msgid "Harald Sitter"
+msgstr "Harald Sitter"
+
+#: src/main.cpp:39
+#, kde-format
+msgid "Top Gardener"
+msgstr "Top Gardener"
+
+#: src/MainWindow.cpp:180
+#, kde-format
+msgctxt "@action Marks upgradeable packages for upgrade"
+msgid "Cautious Upgrade"
+msgstr "Tedbirli Yükseltme"
+
+#: src/MainWindow.cpp:186
+#, kde-format
+msgctxt ""
+"@action Marks upgradeable packages, including ones that install/remove new "
+"things"
+msgid "Full Upgrade"
+msgstr "Tam Yükseltme"
+
+#: src/MainWindow.cpp:192
+#, kde-format
+msgctxt "@action Marks packages no longer needed for removal"
+msgid "Remove Unnecessary Packages"
+msgstr "Gerekli Olmayan Paketleri Kaldır"
+
+#: src/MainWindow.cpp:197
+#, kde-format
+msgctxt "@action Takes the user to the preview page"
+msgid "Preview Changes"
+msgstr "Değişiklikleri Önizle"
+
+#: src/MainWindow.cpp:202
+#, kde-format
+msgctxt "@action Applys the changes a user has made"
+msgid "Apply Changes"
+msgstr "Değişiklikleri Uygula"
+
+#: src/MainWindow.cpp:207
+#, kde-format
+msgctxt "@action Checks the Internet for updates"
+msgid "Check for Updates"
+msgstr "Güncellemeleri Kontrol Et"
+
+#: src/MainWindow.cpp:233
+#, kde-kuit-format
+msgctxt "@label"
+msgid ""
+"Unable to mark upgrades. The available upgrades may require new packages to "
+"be installed or removed. You may wish to try a full upgrade by clicking the "
+"<interface>Full Upgrade</interface> button."
+msgstr ""
+"Yükseltmeler işaretlenemedi. Kullanılabilir yükseltmeler yeni paketlerin "
+"kurulmasını veya kaldırılmasını gerektiriyor olabilir. İsterseniz "
+"<interface>Tam Yükseltme</interface> düğmesine basarak tam yükseltmeyi "
+"deneyebilirsiniz."
+
+#: src/MainWindow.cpp:238 src/MainWindow.cpp:253
+#, kde-format
+msgctxt "@title:window"
+msgid "Unable to Mark Upgrades"
+msgstr "Yükseltmeler İşaretlenemedi"
+
+#: src/MainWindow.cpp:250
+#, kde-format
+msgctxt "@label"
+msgid ""
+"Unable to mark upgrades. Some upgrades may have unsatisfiable dependencies "
+"at the moment, or may have been manually held back."
+msgstr ""
+"Yükseltmeler işaretlenemedi. Bazı yükseltmelerin şu anda sağlanamayan "
+"bağımlılıkları vardır ya da  yükseltilmesi kullanıcı tarafından engellenmiş "
+"olabilir."
+
+#: src/MainWindow.cpp:326
+#, kde-format
+msgctxt "@action:intoolbar Return from the preview page"
+msgid "Back"
+msgstr "Geri"
+
+#: src/MainWindow.cpp:340
+#, kde-format
+msgctxt "@action"
+msgid "Preview Changes"
+msgstr "Değişiklikleri Önizle"
+
+#: src/muonapt/ChangesDialog.cpp:39
+#, kde-format
+msgctxt "@title:window"
+msgid "Confirm Additional Changes"
+msgstr "Ek Değişiklikleri Onayla"
+
+#: src/muonapt/ChangesDialog.cpp:44
+#, kde-format
+msgctxt "@info"
+msgid "<h2>Mark additional changes?</h2>"
+msgstr "<h2>Ek değişiklikler işaretlensin mi?</h2>"
+
+#: src/muonapt/ChangesDialog.cpp:48
+#, kde-format
+msgid "This action requires a change to another package:"
+msgid_plural "This action requires changes to other packages:"
+msgstr[0] "Bu eylem başka bir paketin değiştirilmesini gerektiriyor:"
+msgstr[1] "Bu eylem diğer paketlerin değiştirilmesini gerektiriyor:"
+
+#: src/muonapt/HistoryView/HistoryView.cpp:49
+#, kde-kuit-format
+msgctxt "@info"
+msgid "<title>History</title>"
+msgstr "<title>Geçmiş</title>"
+
+#: src/muonapt/HistoryView/HistoryView.cpp:55
+#: src/PackageModel/PackageWidget.cpp:102
+#, kde-format
+msgctxt "@label Line edit click message"
+msgid "Search"
+msgstr "Ara"
+
+#: src/muonapt/HistoryView/HistoryView.cpp:67
+#, kde-format
+msgctxt "@item:inlistbox Filters all changes in the history view"
+msgid "All changes"
+msgstr "Tüm değişiklikler"
+
+#: src/muonapt/HistoryView/HistoryView.cpp:71
+#, kde-format
+msgctxt "@item:inlistbox Filters installations in the history view"
+msgid "Installations"
+msgstr "Kurulumlar"
+
+#: src/muonapt/HistoryView/HistoryView.cpp:75
+#, kde-format
+msgctxt "@item:inlistbox Filters updates in the history view"
+msgid "Updates"
+msgstr "Güncelleştirmeler"
+
+#: src/muonapt/HistoryView/HistoryView.cpp:79
+#, kde-format
+msgctxt "@item:inlistbox Filters removals in the history view"
+msgid "Removals"
+msgstr "Kaldırılanlar"
+
+#: src/muonapt/HistoryView/HistoryView.cpp:90
+#, kde-format
+msgctxt "@title:column"
+msgid "Date"
+msgstr "Tarih"
+
+#: src/muonapt/HistoryView/HistoryView.cpp:98
+#, kde-format
+msgctxt "@info:status describes a past-tense action"
+msgid "Installed"
+msgstr "Kuruldu"
+
+#: src/muonapt/HistoryView/HistoryView.cpp:99
+#, kde-format
+msgctxt "@info:status describes a past-tense action"
+msgid "Upgraded"
+msgstr "Yükseltildi"
+
+#: src/muonapt/HistoryView/HistoryView.cpp:100
+#, kde-format
+msgctxt "@status describes a past-tense action"
+msgid "Downgraded"
+msgstr "Eski sürüme geçildi"
+
+#: src/muonapt/HistoryView/HistoryView.cpp:101
+#, kde-format
+msgctxt "@status describes a past-tense action"
+msgid "Removed"
+msgstr "Kaldırıldı"
+
+#: src/muonapt/HistoryView/HistoryView.cpp:102
+#, kde-format
+msgctxt "@status describes a past-tense action"
+msgid "Purged"
+msgstr "Temizlendi"
+
+#: src/muonapt/HistoryView/HistoryView.cpp:137
+#: src/muonapt/HistoryView/HistoryView.cpp:152
+#: src/muonapt/HistoryView/HistoryView.cpp:167
+#: src/muonapt/HistoryView/HistoryView.cpp:182
+#: src/muonapt/HistoryView/HistoryView.cpp:197
+#, kde-format
+msgctxt "@item example: muon installed at 16:00"
+msgid "%1 %2 at %3"
+msgstr "%1 %2 - %3"
+
+#: src/muonapt/MuonStrings.cpp:49
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"admin\""
+msgid "System Administration"
+msgstr "Sistem Yöneticisi"
+
+#: src/muonapt/MuonStrings.cpp:51
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"base\""
+msgid "Base System"
+msgstr "Temel Sistem"
+
+#: src/muonapt/MuonStrings.cpp:53
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"cli-mono"
+"\""
+msgid "Mono/CLI Infrastructure"
+msgstr "Mono/CLI Altyapısı"
+
+#: src/muonapt/MuonStrings.cpp:55
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"comm\""
+msgid "Communication"
+msgstr "İletişim"
+
+#: src/muonapt/MuonStrings.cpp:57
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"database"
+"\""
+msgid "Databases"
+msgstr "Veritabanları"
+
+#: src/muonapt/MuonStrings.cpp:59
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"devel\""
+msgid "Development"
+msgstr "Geliştirme"
+
+#: src/muonapt/MuonStrings.cpp:61
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"doc\""
+msgid "Documentation"
+msgstr "Belgeler"
+
+#: src/muonapt/MuonStrings.cpp:63
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"debug\""
+msgid "Debug"
+msgstr "Hata Ayıklama"
+
+#: src/muonapt/MuonStrings.cpp:65
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"editors"
+"\""
+msgid "Editors"
+msgstr "Düzenleyiciler"
+
+#: src/muonapt/MuonStrings.cpp:67
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section "
+"\"electronics\""
+msgid "Electronics"
+msgstr "Elektronik"
+
+#: src/muonapt/MuonStrings.cpp:69
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"embedded"
+"\""
+msgid "Embedded Devices"
+msgstr "Gömülü Aygıtlar"
+
+#: src/muonapt/MuonStrings.cpp:71
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"fonts\""
+msgid "Fonts"
+msgstr "Yazı tipleri"
+
+#: src/muonapt/MuonStrings.cpp:73
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"games\""
+msgid "Games and Amusement"
+msgstr "Oyunlar ve Eğlence"
+
+#: src/muonapt/MuonStrings.cpp:75
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"gnome\""
+msgid "GNOME Desktop Environment"
+msgstr "GNOME Masaüstü Ortamı"
+
+#: src/muonapt/MuonStrings.cpp:77
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"graphics"
+"\""
+msgid "Graphics"
+msgstr "Grafik programları"
+
+#: src/muonapt/MuonStrings.cpp:79
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"gnu-r\""
+msgid "GNU R Statistical System"
+msgstr "GNU R İstatistik Sistemi"
+
+#: src/muonapt/MuonStrings.cpp:81
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"gnustep"
+"\""
+msgid "Gnustep Desktop Environment"
+msgstr "Gnustep Masaüstü Ortamı"
+
+#: src/muonapt/MuonStrings.cpp:83
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"hamradio"
+"\""
+msgid "Amateur Radio"
+msgstr "Amatör Telsiz"
+
+#: src/muonapt/MuonStrings.cpp:85
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"haskell"
+"\""
+msgid "Haskell Programming Language"
+msgstr "Haskell Programlama Dili"
+
+#: src/muonapt/MuonStrings.cpp:87
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"httpd\""
+msgid "Web Servers"
+msgstr "Web Sunucuları"
+
+#: src/muonapt/MuonStrings.cpp:89
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section "
+"\"interpreters\""
+msgid "Interpreted Computer Languages"
+msgstr "Yorumlanan Bilgisayar Dilleri"
+
+#: src/muonapt/MuonStrings.cpp:91
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"java\""
+msgid "Java Programming Language"
+msgstr "Java Programlama Dili"
+
+#: src/muonapt/MuonStrings.cpp:93
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"kde\""
+msgid "KDE Software Compilation"
+msgstr "KDE Yazılım Derlemesi"
+
+#: src/muonapt/MuonStrings.cpp:95
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"kernel\""
+msgid "Kernel and Modules"
+msgstr "Çekirdek ve Modülleri"
+
+#: src/muonapt/MuonStrings.cpp:97
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"libdevel"
+"\""
+msgid "Libraries - Development"
+msgstr "Kitaplıklar - Geliştirme"
+
+#: src/muonapt/MuonStrings.cpp:99
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"libs\""
+msgid "Libraries"
+msgstr "Kütüphaneler"
+
+#: src/muonapt/MuonStrings.cpp:101
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"lisp\""
+msgid "Lisp Programming Language"
+msgstr "Lisp Programlama Dili"
+
+#: src/muonapt/MuonStrings.cpp:103
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section "
+"\"localization\""
+msgid "Localization"
+msgstr "Yerelleştirme"
+
+#: src/muonapt/MuonStrings.cpp:105
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"mail\""
+msgid "Email"
+msgstr "E-posta"
+
+#: src/muonapt/MuonStrings.cpp:107
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"math\""
+msgid "Mathematics"
+msgstr "Matematik"
+
+#: src/muonapt/MuonStrings.cpp:109
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"misc\""
+msgid "Miscellaneous - Text-based"
+msgstr "Çeşitli - Metin Tabanlı"
+
+#: src/muonapt/MuonStrings.cpp:111
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"net\""
+msgid "Networking"
+msgstr "Ağ"
+
+#: src/muonapt/MuonStrings.cpp:113
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"news\""
+msgid "Newsgroups"
+msgstr "Haber Grupları"
+
+#: src/muonapt/MuonStrings.cpp:115
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"ocaml\""
+msgid "OCaml Programming Language"
+msgstr "OCaml Programlama Dili"
+
+#: src/muonapt/MuonStrings.cpp:117
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"oldlibs"
+"\""
+msgid "Libraries - Old"
+msgstr "Kütüphaneler - Eski"
+
+#: src/muonapt/MuonStrings.cpp:119
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section "
+"\"otherosfs\""
+msgid "Cross Platform"
+msgstr "Platformdan Bağımsız"
+
+#: src/muonapt/MuonStrings.cpp:121
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"perl\""
+msgid "Perl Programming Language"
+msgstr "Perl Programlama Dili"
+
+#: src/muonapt/MuonStrings.cpp:123
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"php\""
+msgid "PHP Programming Language"
+msgstr "PHP Programlama Dili"
+
+#: src/muonapt/MuonStrings.cpp:125
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"python\""
+msgid "Python Programming Language"
+msgstr "Python Programlama Dili"
+
+#: src/muonapt/MuonStrings.cpp:127
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"ruby\""
+msgid "Ruby Programming Language"
+msgstr "Ruby Programlama Dili"
+
+#: src/muonapt/MuonStrings.cpp:129
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"science"
+"\""
+msgid "Science"
+msgstr "Bilim"
+
+#: src/muonapt/MuonStrings.cpp:131
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"shells\""
+msgid "Shells"
+msgstr "Kabuklar"
+
+#: src/muonapt/MuonStrings.cpp:133
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"sound\""
+msgid "Multimedia"
+msgstr "Çokluortam"
+
+#: src/muonapt/MuonStrings.cpp:135
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"tex\""
+msgid "TeX Authoring"
+msgstr "TeX Yazımı"
+
+#: src/muonapt/MuonStrings.cpp:137
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"text\""
+msgid "Word Processing"
+msgstr "Kelime İşleme"
+
+#: src/muonapt/MuonStrings.cpp:139
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"utils\""
+msgid "Utilities"
+msgstr "Araçlar"
+
+#: src/muonapt/MuonStrings.cpp:141
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"vcs\""
+msgid "Version Control Systems"
+msgstr "Sürüm Kontrol Sistemleri"
+
+#: src/muonapt/MuonStrings.cpp:143
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"video\""
+msgid "Video Software"
+msgstr "Video Yazılımı"
+
+#: src/muonapt/MuonStrings.cpp:145
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"web\""
+msgid "Internet"
+msgstr "İnternet"
+
+#: src/muonapt/MuonStrings.cpp:147
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"x11\""
+msgid "Miscellaneous - Graphical"
+msgstr "Diğer - Grafiksel"
+
+#: src/muonapt/MuonStrings.cpp:149
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"xfce\""
+msgid "Xfce Desktop Environment"
+msgstr "Xfce Masaüstü Ortamı"
+
+#: src/muonapt/MuonStrings.cpp:151
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"zope\""
+msgid "Zope/Plone Environment"
+msgstr "Zope/Plone Ortamı"
+
+#: src/muonapt/MuonStrings.cpp:153
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"unknown"
+"\""
+msgid "Unknown"
+msgstr "Bilinmeyen"
+
+#: src/muonapt/MuonStrings.cpp:155
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"alien\""
+msgid "Converted from RPM by Alien"
+msgstr "RPM formatindan Ailen ile dönüştürülen"
+
+#: src/muonapt/MuonStrings.cpp:157
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section "
+"\"translations\""
+msgid "Internationalization and Localization"
+msgstr "Uluslararasılaştırma ve Yerelleştirme"
+
+#: src/muonapt/MuonStrings.cpp:159
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section "
+"\"metapackages\""
+msgid "Meta Packages"
+msgstr "Meta Paketler"
+
+#: src/muonapt/MuonStrings.cpp:161
+#, kde-format
+msgctxt ""
+"@item:inlistbox Debian package section \"non-US\", for packages that cannot "
+"be shipped in the US"
+msgid "Restricted On Export"
+msgstr "Dışarı Gönderilirken Kısıtlanan"
+
+#: src/muonapt/MuonStrings.cpp:163
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"non-free"
+"\""
+msgid "Non-free"
+msgstr "Özgür Olmayan"
+
+#: src/muonapt/MuonStrings.cpp:165
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"contrib"
+"\""
+msgid "Contrib"
+msgstr "Katkı"
+
+#: src/muonapt/MuonStrings.cpp:167
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section "
+"\"education\""
+msgid "Education"
+msgstr "Eğitim"
+
+#: src/muonapt/MuonStrings.cpp:169
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section "
+"\"introspection\""
+msgid "GObject Introspection Data"
+msgstr "GObject İçgözlem Verileri"
+
+#: src/muonapt/MuonStrings.cpp:195
+#, kde-format
+msgctxt "@info:status Package state"
+msgid "No Change"
+msgstr "Değişiklik Yok"
+
+#: src/muonapt/MuonStrings.cpp:196 src/muonapt/MuonStrings.cpp:197
+#, kde-format
+msgctxt "@info:status Requested action"
+msgid "Install"
+msgstr "Kur"
+
+#: src/muonapt/MuonStrings.cpp:198
+#, kde-format
+msgctxt "@info:status Requested action"
+msgid "Reinstall"
+msgstr "Tekrar Kur"
+
+#: src/muonapt/MuonStrings.cpp:199
+#, kde-format
+msgctxt "@info:status Requested action"
+msgid "Upgrade"
+msgstr "Yükseltme"
+
+#: src/muonapt/MuonStrings.cpp:200
+#, kde-format
+msgctxt "@info:status Requested action"
+msgid "Downgrade"
+msgstr "Eski Sürüme Geç"
+
+#: src/muonapt/MuonStrings.cpp:201
+#, kde-format
+msgctxt "@info:status Requested action"
+msgid "Remove"
+msgstr "Kaldır"
+
+#: src/muonapt/MuonStrings.cpp:202
+#, kde-format
+msgctxt "@info:status Package state"
+msgid "Held"
+msgstr "Bekliyor"
+
+#: src/muonapt/MuonStrings.cpp:203
+#, kde-format
+msgctxt "@info:status Package state"
+msgid "Installed"
+msgstr "Kuruldu"
+
+#: src/muonapt/MuonStrings.cpp:204
+#, kde-format
+msgctxt "@info:status Package state"
+msgid "Upgradeable"
+msgstr "Yükseltilebilir"
+
+#: src/muonapt/MuonStrings.cpp:205
+#, kde-format
+msgctxt "@info:status Package state"
+msgid "Broken"
+msgstr "Kırık"
+
+#: src/muonapt/MuonStrings.cpp:206
+#, kde-format
+msgctxt "@info:status Package state"
+msgid "Install Broken"
+msgstr "Kırıkları Kur"
+
+#: src/muonapt/MuonStrings.cpp:207
+#, kde-format
+msgctxt "@info:status Package state"
+msgid "Orphaned"
+msgstr "Sahipsiz"
+
+#: src/muonapt/MuonStrings.cpp:208
+#, kde-format
+msgctxt "@info:status Package state"
+msgid "Locked"
+msgstr "Kilitlendi"
+
+#: src/muonapt/MuonStrings.cpp:209
+#, kde-format
+msgctxt "@info:status Package state"
+msgid "New in repository"
+msgstr "Depo içinde yeni"
+
+#: src/muonapt/MuonStrings.cpp:210
+#, kde-format
+msgctxt "@info:status Package state"
+msgid "Residual Configuration"
+msgstr "Artık Yapılandırma"
+
+#: src/muonapt/MuonStrings.cpp:211
+#, kde-format
+msgctxt "@info:status Package state"
+msgid "Not Downloadable"
+msgstr "İndirilemez"
+
+#: src/muonapt/MuonStrings.cpp:212
+#, kde-format
+msgctxt "@info:status Requested action"
+msgid "Purge"
+msgstr "Temizle"
+
+#: src/muonapt/MuonStrings.cpp:213
+#, kde-format
+msgctxt "@info:status Package state"
+msgid "Important for base install"
+msgstr "Temel kurumaz için içe aktar"
+
+#: src/muonapt/MuonStrings.cpp:214
+#, kde-format
+msgctxt "@info:status Package state"
+msgid "Version overridden"
+msgstr "Sürümün üstüne yazıldı"
+
+#: src/muonapt/MuonStrings.cpp:215
+#, kde-format
+msgctxt "@info:status Package state"
+msgid "Required by other packages"
+msgstr "Başka paketler tarafından istendi"
+
+#: src/muonapt/MuonStrings.cpp:216
+#, kde-format
+msgctxt "@info:status Package state"
+msgid "Installed (auto-removable)"
+msgstr "Kurulu (otomatik olarak kaldırılabilir)"
+
+#: src/muonapt/MuonStrings.cpp:217 src/muonapt/MuonStrings.cpp:218
+#, kde-format
+msgctxt "@info:status Package state"
+msgid "Policy Broken"
+msgstr "Bozuk Kural"
+
+#: src/muonapt/MuonStrings.cpp:219
+#, kde-format
+msgctxt "@info:status Package state"
+msgid "Not Installed"
+msgstr "Kurulu Değil"
+
+#: src/muonapt/MuonStrings.cpp:221
+#, kde-format
+msgctxt "@info:status Package locked at a certain version"
+msgid "Locked"
+msgstr "Kilitli"
+
+#: src/muonapt/MuonStrings.cpp:222
+#, kde-format
+msgctxt "@info:status Package state"
+msgid "Manually held back"
+msgstr "Manüel olarak geri alındı"
+
+#: src/muonapt/MuonStrings.cpp:243
+#, kde-format
+msgctxt "@item:inlistbox"
+msgid "Common"
+msgstr "Genel"
+
+#: src/muonapt/MuonStrings.cpp:244
+#, kde-format
+msgctxt "@item:inlistbox CPU architecture"
+msgid "32-bit"
+msgstr "32-bit"
+
+#: src/muonapt/MuonStrings.cpp:245
+#, kde-format
+msgctxt "@item:inlistbox CPU architecture"
+msgid "64-bit"
+msgstr "64-bit"
+
+#: src/muonapt/MuonStrings.cpp:246
+#, kde-format
+msgctxt "@item:inlistbox PU architecture"
+msgid "Power PC"
+msgstr "Power PC"
+
+#: src/muonapt/MuonStrings.cpp:265
+#, kde-format
+msgctxt "@title:window"
+msgid "Initialization Error"
+msgstr "Başlatma Hatası"
+
+#: src/muonapt/MuonStrings.cpp:267
+#, kde-format
+msgctxt "@title:window"
+msgid "Unable to Obtain Package System Lock"
+msgstr "Paket Sistem Kilidi Alınamadı"
+
+#: src/muonapt/MuonStrings.cpp:269
+#, kde-format
+msgctxt "@title:window"
+msgid "Low Disk Space"
+msgstr "Düş Disk Alanı"
+
+#: src/muonapt/MuonStrings.cpp:272
+#, kde-format
+msgctxt "@title:window"
+msgid "Failed to Apply Changes"
+msgstr "Değişikliklerin Uygulaması Başarısız"
+
+#: src/muonapt/MuonStrings.cpp:274
+#, kde-format
+msgctxt "@title:window"
+msgid "Authentication error"
+msgstr "Kimlik doğrulama hatası"
+
+#: src/muonapt/MuonStrings.cpp:276
+#, kde-format
+msgctxt "@title:window"
+msgid "Unexpected Error"
+msgstr "Beklenmedik Hata"
+
+#: src/muonapt/MuonStrings.cpp:278
+#, kde-format
+msgctxt "@title:window"
+msgid "Untrusted Packages"
+msgstr "Güvenilmeyen Paketler"
+
+#: src/muonapt/MuonStrings.cpp:281
+#, kde-format
+msgctxt "@title:window"
+msgid "Unknown Error"
+msgstr "Bilinmeyen Hata"
+
+#: src/muonapt/MuonStrings.cpp:291
+#, kde-format
+msgctxt "@label"
+msgid ""
+"The package system could not be initialized, your configuration may be "
+"broken."
+msgstr "Paket sistemi başlatılamadı, yapılandırmanız bozuk olabilir."
+
+#: src/muonapt/MuonStrings.cpp:296
+#, kde-format
+msgctxt "@label"
+msgid ""
+"Another application seems to be using the package system at this time. You "
+"must close all other package managers before you will be able to install or "
+"remove any packages."
+msgstr ""
+"Şuanda başka bir uygulama paket sistemini kullanıyor gibi görünüyor. Bir "
+"paket kurmak ya da kaldırabilmek için diğer tüm paket yöneticilerini "
+"kapatmanız gerekli."
+
+#: src/muonapt/MuonStrings.cpp:303
+#, kde-format
+msgctxt "@label"
+msgid ""
+"You do not have enough disk space in the directory at %1 to continue with "
+"this operation."
+msgstr ""
+"Bu işleme devam edebilmek için %1 konumundaki dizinde yeterli alanınız yok."
+
+#: src/muonapt/MuonStrings.cpp:307
+#, kde-format
+msgctxt "@label"
+msgid "Could not download packages"
+msgstr "Paketler indirilemedi"
+
+#: src/muonapt/MuonStrings.cpp:310
+#, kde-format
+msgctxt "@label"
+msgid "An error occurred while applying changes:"
+msgstr "Değişiklikler uygulanırken bir hata oluştu:"
+
+#: src/muonapt/MuonStrings.cpp:314
+#, kde-format
+msgctxt "@label"
+msgid ""
+"This operation cannot continue since proper authorization was not provided"
+msgstr "Geçerli yetkilendirme sağlanmadığından bu işlem devam edemez"
+
+#: src/muonapt/MuonStrings.cpp:318
+#, kde-format
+msgctxt "@label"
+msgid ""
+"It appears that the QApt worker has either crashed or disappeared. Please "
+"report a bug to the QApt maintainers"
+msgstr ""
+"QApt aracı çöktü ya da kayboldu. Lütfen QApt geliştiricilerine bir hata "
+"raporlayın"
+
+#: src/muonapt/MuonStrings.cpp:323
+#, kde-format
+msgctxt "@label"
+msgid ""
+"The following package has not been verified by its author. Downloading "
+"untrusted packages has been disallowed by your current configuration."
+msgid_plural ""
+"The following packages have not been verified by their authors. Downloading "
+"untrusted packages has been disallowed by your current configuration."
+msgstr[0] ""
+"Bu paket yazarı tarafından doğrulanmadı. Şimdiki yapılandırmanız "
+"güvenilmeyen paketlerin indirilmesine izin vermiyor."
+msgstr[1] ""
+
+#: src/muonapt/QAptActions.cpp:118
+#, kde-format
+msgctxt "@action Reverts all potential changes to the cache"
+msgid "Unmark All"
+msgstr "Tümünün İşaretini Kaldır"
+
+#: src/muonapt/QAptActions.cpp:125
+#, kde-format
+msgctxt "@action Opens the software sources configuration dialog"
+msgid "Configure Software Sources"
+msgstr "Yazılım Kaynaklarını Yapılandır"
+
+#: src/muonapt/QAptActions.cpp:131
+#, kde-format
+msgctxt "@action"
+msgid "Read Markings..."
+msgstr "İşaretlemeleri Oku..."
+
+#: src/muonapt/QAptActions.cpp:137
+#, kde-format
+msgctxt "@action"
+msgid "Save Markings As..."
+msgstr "İşaretlemeleri Farklı Kaydet..."
+
+#: src/muonapt/QAptActions.cpp:144
+#, kde-format
+msgctxt "@action"
+msgid "Save Package Download List..."
+msgstr "Paket İndirme Listesini Kaydet..."
+
+#: src/muonapt/QAptActions.cpp:151
+#, kde-format
+msgctxt "@action"
+msgid "Download Packages From List..."
+msgstr "Paketleri Listeden İndir..."
+
+#: src/muonapt/QAptActions.cpp:160
+#, kde-format
+msgctxt "@action"
+msgid "Add Downloaded Packages"
+msgstr "İndirilmiş Paketleri Ekle"
+
+#: src/muonapt/QAptActions.cpp:167
+#, kde-format
+msgctxt "@action"
+msgid "Save Installed Packages List..."
+msgstr "Kurulu Paketler Listesini Kaydet..."
+
+#: src/muonapt/QAptActions.cpp:173
+#, kde-format
+msgctxt "@action::inmenu"
+msgid "History..."
+msgstr "Geçmiş..."
+
+#: src/muonapt/QAptActions.cpp:179
+#, kde-format
+msgctxt "@action"
+msgid "Upgrade"
+msgstr "Yükselt"
+
+#: src/muonapt/QAptActions.cpp:182
+#, kde-format
+msgctxt "Notification when a new version of Kubuntu is available"
+msgid "A new version of Kubuntu is available."
+msgstr "Kubuntu'nun yeni bir sürümü kullanılabilir."
+
+#: src/muonapt/QAptActions.cpp:226
+#, kde-format
+msgctxt "@title:window"
+msgid "Save Markings As"
+msgstr "İşaretlemeyi Farklı Kaydet"
+
+#: src/muonapt/QAptActions.cpp:233 src/muonapt/QAptActions.cpp:258
+#: src/muonapt/QAptActions.cpp:282
+#, kde-kuit-format
+msgctxt "@label"
+msgid ""
+"The document could not be saved, as it was not possible to write to "
+"<filename>%1</filename>\n"
+"\n"
+"Check that you have write access to this file or that enough disk space is "
+"available."
+msgstr ""
+"Aşağıdaki dosyaya yazmak mümkün olmadığından, belge kaydedilemeyecek. "
+"<filename>%1</filename>\n"
+"\n"
+"Bu dosyaya yazma erişiminiz olduğundan veya yeterli disk alanına sahip "
+"olduğunuzdan emin olun."
+
+#: src/muonapt/QAptActions.cpp:251
+#, kde-format
+msgctxt "@title:window"
+msgid "Save Installed Packages List As"
+msgstr "Kurulu Paketler Listesini Farklı Kaydet"
+
+#: src/muonapt/QAptActions.cpp:275
+#, kde-format
+msgctxt "@title:window"
+msgid "Save Download List As"
+msgstr "İndirme Listesini Faklı Kaydet"
+
+#: src/muonapt/QAptActions.cpp:297 src/muonapt/QAptActions.cpp:314
+#, kde-format
+msgctxt "@title:window"
+msgid "Open File"
+msgstr "Dosya Aç"
+
+#: src/muonapt/QAptActions.cpp:322
+#, kde-format
+msgctxt "@label"
+msgid ""
+"Could not mark changes. Please make sure that the file is a markings file "
+"created by either the Muon Package Manager or the Synaptic Package Manager."
+msgstr ""
+"Değişiklikler işaretlenemedi. Lütfen bu dosyanın Moun ya da Synaptic "
+"tarafından oluşturulan bir işaretlemeler dosyası olduğundan emin olun."
+
+#: src/muonapt/QAptActions.cpp:333
+#, kde-format
+msgctxt "@title:window"
+msgid "Choose a Directory"
+msgstr "Bir Dizin Seç"
+
+#: src/muonapt/QAptActions.cpp:356
+#, kde-format
+msgctxt "@label"
+msgid "%1 package was successfully added to the cache"
+msgid_plural "%1 packages were successfully added to the cache"
+msgstr[0] "%1 paket başarılı bir şekilde önbelleğe eklendi"
+msgstr[1] "%1 paketler başarılı bir şekilde önbelleğe eklendi"
+
+#: src/muonapt/QAptActions.cpp:362
+#, kde-format
+msgctxt "@label"
+msgid ""
+"No valid packages could be found in this directory. Please make sure the "
+"packages are compatible with your computer and are at the latest version."
+msgstr ""
+"Bu dizinde geçerli bir paket bulunamadı. Lütfen paketlerin bilgisayarınızla "
+"uyumlu olduğundan ve son sürüm olduğundan emin olun."
+
+#: src/muonapt/QAptActions.cpp:366
+#, kde-format
+msgctxt "@title:window"
+msgid "Packages Could Not be Found"
+msgstr "Paketler Bulunamadı"
+
+#: src/muonapt/QAptActions.cpp:398
+#, kde-format
+msgctxt "@label"
+msgid ""
+"Could not find <command>software-properties-kde</command> on your system, "
+"please install it. Alternatively, you can use <application>Plasma Discover</"
+"application> to configure software sources."
+msgstr ""
+"<command>software-properties-kde</command> sisteminizde bulunamadı, lütfen "
+"yükleyince. Alternatif olarak <application>Plasma Discover</application> "
+"uygulamasını yazılım yapılandırması için kullanabilirsiniz."
+
+#: src/muonapt/QAptActions.cpp:403
+#, kde-format
+msgctxt "@title:window"
+msgid "Cannot find <command>software-properties-kde</command>"
+msgstr "<command>software-properties-kde</command> bulunamadı"
+
+#: src/muonapt/QAptActions.cpp:494
+#, kde-format
+msgctxt "@title:window"
+msgid "Package History"
+msgstr "Paket Geçmişi"
+
+#: src/PackageModel/PackageModel.cpp:88
+#, kde-format
+msgid "Package"
+msgstr "Paket"
+
+#: src/PackageModel/PackageModel.cpp:90
+#, kde-format
+msgid "Status"
+msgstr "Durum"
+
+#: src/PackageModel/PackageModel.cpp:92
+#, kde-format
+msgid "Requested"
+msgstr "İstendi"
+
+#: src/PackageModel/PackageModel.cpp:94
+#, kde-format
+msgid "Installed Size"
+msgstr "Kurulu Boyut:"
+
+#: src/PackageModel/PackageModel.cpp:96
+#, kde-format
+msgid "Installed Version"
+msgstr "Kurulu Sürüm"
+
+#: src/PackageModel/PackageModel.cpp:98
+#, kde-format
+msgid "Available Version"
+msgstr "Kullanılabilir Sürüm"
+
+#: src/PackageModel/PackageWidget.cpp:166
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Mark for Installation"
+msgstr "Kurulum için İşaretle"
+
+#: src/PackageModel/PackageWidget.cpp:171
+#, kde-format
+msgctxt "@action:button"
+msgid "Mark for Removal"
+msgstr "Kaldırmak için İşaretle"
+
+#: src/PackageModel/PackageWidget.cpp:176
+#, kde-format
+msgctxt "@action:button"
+msgid "Mark for Upgrade"
+msgstr "Yükseltme için İşaretle"
+
+#: src/PackageModel/PackageWidget.cpp:181
+#, kde-format
+msgctxt "@action:button"
+msgid "Mark for Reinstallation"
+msgstr "Yeniden Kurulum için İşaretle"
+
+#: src/PackageModel/PackageWidget.cpp:186
+#, kde-format
+msgctxt "@action:button"
+msgid "Mark for Purge"
+msgstr "Temizlemek için İşaretle"
+
+#: src/PackageModel/PackageWidget.cpp:197
+#, kde-format
+msgctxt "@action:button"
+msgid "Lock Package at Current Version"
+msgstr "Paketi Geçerli Sürümde Kilitle"
+
+#: src/PackageModel/PackageWidget.cpp:377
+#, kde-format
+msgctxt "@action:button"
+msgid "Unlock package"
+msgstr "Paketin kilidini kaldır"
+
+#: src/PackageModel/PackageWidget.cpp:381
+#, kde-format
+msgctxt "@action:button"
+msgid "Lock at Current Version"
+msgstr "Geçerli Sürümde Kilitle"
+
+#: src/PackageModel/PackageWidget.cpp:422
+#, kde-format
+msgctxt "@label"
+msgid ""
+"Removing this package may break your system. Are you sure you want to remove "
+"it?"
+msgstr ""
+"Paketi kaldırmak sisteminizi kullanılmaz hale getirebilir. Paketi kaldırmak "
+"istediğinizden emin misiniz?"
+
+#: src/PackageModel/PackageWidget.cpp:423
+#, kde-format
+msgctxt "@label"
+msgid "Warning - Removing Important Package"
+msgstr "Uyarı - Önemli Paket Kaldırılıyor"
+
+#: src/PackageModel/PackageWidget.cpp:609
+#, kde-format
+msgctxt "@title:window"
+msgid "Failed to Lock Package"
+msgstr "Paket Kilitleme Başarısız"
+
+#: src/PackageModel/PackageWidget.cpp:610
+#, kde-format
+msgctxt "@info Error text"
+msgid "The package %1 could not be locked. Failed to write lock file."
+msgstr "%1 paketi kilitlenemedi. Kilit dosyası yazma başarısız."
+
+#: src/PackageModel/PackageWidget.cpp:659
+#, kde-format
+msgctxt "@label"
+msgid "The \"%1\" package could not be marked for installation or upgrade:"
+msgstr "\"%1\" paketi kurulum veya yükseltme için işaretlenemedi:"
+
+#: src/PackageModel/PackageWidget.cpp:662
+#, kde-format
+msgctxt "@title:window"
+msgid "Unable to Mark Package"
+msgstr "Paket İşaretlenemedi"
+
+#: src/PackageModel/PackageWidget.cpp:679
+#, kde-format
+msgctxt "@label"
+msgid ""
+"The \"%1\" package has no available version, but exists in the database.\n"
+"\tThis typically means that the package was mentioned in a dependency and "
+"never uploaded, has been obsoleted, or is not available from the currently-"
+"enabled repositories."
+msgstr ""
+"\"%1\" paketini veritabanında olmasına rağmen bu paketin kurulabilir bir "
+"sürümü yok.\n"
+"\tBu durum paketin bir bağımlılık olarak adının geçtiğini ancak asla depoya "
+"yüklenmediğini, gereksiz hale geldiğini ya da etkinleştirdiğiniz depolarda "
+"bulunmadığını gösterir."
+
+#: src/PackageModel/PackageWidget.cpp:686
+#, kde-format
+msgctxt "@label Example: Depends: libqapt 0.1, but 0.2 is to be installed"
+msgid "%1: %2 %3, but %4 is to be installed"
+msgstr "%1: %2 %3, ama %4 kurulacak"
+
+#: src/PackageModel/PackageWidget.cpp:692
+#, kde-format
+msgctxt "@label Example: Depends: libqapt, but is not installable"
+msgid "%1: %2, but it is not installable"
+msgstr "%1: %2, fakat kurulabilir değil"
+
+#: src/PackageModel/PackageWidget.cpp:697
+#, kde-format
+msgctxt "@label Example: Depends: libqapt, but it is a virtual package"
+msgid "%1: %2, but it is a virtual package"
+msgstr "%1: %2, ama bu bir sanal paket"
+
+#: src/ReviewWidget.cpp:32
+#, kde-format
+msgid "<b>Review and Apply Changes</b>"
+msgstr "<b>Değişiklikleri Gözden Geçir ve  Uygula</b>"
+
+#: src/StatusWidget.cpp:52
+#, kde-format
+msgctxt "@info:status"
+msgid "Rebuilding Search Index"
+msgstr "Arama Dizini Yeniden Oluşturuluyor"
+
+#: src/StatusWidget.cpp:93
+#, kde-format
+msgctxt "@info:status"
+msgid "1 package available, "
+msgid_plural "%1 packages available, "
+msgstr[0] "1 paket kullanılabilir, "
+msgstr[1] "%1 paket kullanılabilir, "
+
+#: src/StatusWidget.cpp:94
+#, kde-format
+msgctxt "@info:status"
+msgid "%1 installed, "
+msgstr "%1 kurulu, "
+
+#: src/StatusWidget.cpp:98
+#, kde-format
+msgctxt "@info:status"
+msgid "%1 upgradeable,"
+msgstr "%1 yükseltilebilir,"
+
+#: src/StatusWidget.cpp:100
+#, kde-format
+msgctxt "@info:status"
+msgid "%1 upgradeable"
+msgstr "%1 yükseltilebilir"
+
+#: src/StatusWidget.cpp:112
+#, kde-format
+msgctxt "@info:status Part of the status label"
+msgid " %1 to install/upgrade"
+msgstr " %1 kur/yükselt"
+
+#: src/StatusWidget.cpp:117
+#, kde-format
+msgctxt ""
+"@info:status Label for the number of packages pending removal when packages "
+"are also pending upgrade"
+msgid ", %1 to remove"
+msgstr ", %1 kaldırılacak"
+
+#: src/StatusWidget.cpp:120
+#, kde-format
+msgctxt ""
+"@info:status Label for the number of packages pending removal when there are "
+"only removals"
+msgid " %1 to remove"
+msgstr " %1 kaldırılacak"
+
+#: src/StatusWidget.cpp:129
+#, kde-format
+msgctxt "@label showing download and install size"
+msgid "%1 to download, %2 of space to be freed"
+msgstr "%1 indirilecek, %2 kadar disk alanı boşaltılacak"
+
+#: src/StatusWidget.cpp:133
+#, kde-format
+msgctxt "@label showing download and install size"
+msgid "%1 to download, %2 of space to be used"
+msgstr "%1 indirilecek, %2 kadar disk alanı kullanılacak"
+
+#: src/TransactionWidget.cpp:103
+#, kde-format
+msgctxt "@action:button Cancels the download"
+msgid "Cancel"
+msgstr "İptal"
+
+#: src/TransactionWidget.cpp:148
+#, kde-kuit-format
+msgctxt "@info Status information, widget title"
+msgid "<title>Starting</title>"
+msgstr "<title>Başlatılıyor</title>"
+
+#: src/TransactionWidget.cpp:150
+#, kde-format
+msgctxt "@info Status info"
+msgid "Waiting for service to start"
+msgstr "Hizmetin başlaması bekleniyor"
+
+#: src/TransactionWidget.cpp:155
+#, kde-format
+msgctxt "@info Status info"
+msgid "Waiting for authentication"
+msgstr "Kimlik doğrulama bekleniyor"
+
+#: src/TransactionWidget.cpp:159 src/TransactionWidget.cpp:166
+#: src/TransactionWidget.cpp:173 src/TransactionWidget.cpp:180
+#, kde-kuit-format
+msgctxt "@info Status information, widget title"
+msgid "<title>Waiting</title>"
+msgstr "<title>Bekleniyor</title>"
+
+#: src/TransactionWidget.cpp:161
+#, kde-format
+msgctxt "@info Status info"
+msgid "Waiting for other transactions to finish"
+msgstr "Diğer işlemlerin bitmesi bekleniyor"
+
+#: src/TransactionWidget.cpp:168
+#, kde-format
+msgctxt "@info Status info"
+msgid "Waiting for other software managers to quit"
+msgstr "Diğer yazılım yöneticilerinin çıkması bekleniyor"
+
+#: src/TransactionWidget.cpp:175
+#, kde-format
+msgctxt "@info Status info"
+msgid "Waiting for required medium"
+msgstr "Gerekli ortam bekleniyor"
+
+#: src/TransactionWidget.cpp:182
+#, kde-format
+msgctxt "@info Status info"
+msgid "Waiting for configuration file"
+msgstr "Yapılandırma dosyası bekleniyor"
+
+#: src/TransactionWidget.cpp:193
+#, kde-kuit-format
+msgctxt "@info Status info"
+msgid "<title>Loading Software List</title>"
+msgstr "<title>Yazılım Listesi Yükleniyor</title>"
+
+#: src/TransactionWidget.cpp:201
+#, kde-kuit-format
+msgctxt "@info Status information, widget title"
+msgid "<title>Updating software sources</title>"
+msgstr "<title>Yazılım kaynakları güncelleniyor</title>"
+
+#: src/TransactionWidget.cpp:206
+#, kde-kuit-format
+msgctxt "@info Status information, widget title"
+msgid "<title>Downloading Packages</title>"
+msgstr "<title>Paketler İndiriliyor</title>"
+
+#: src/TransactionWidget.cpp:218
+#, kde-kuit-format
+msgctxt "@info Status information, widget title"
+msgid "<title>Committing Changes</title>"
+msgstr "<title>Değişiklikler Gönderiliyor</title>"
+
+#: src/TransactionWidget.cpp:225
+#, kde-kuit-format
+msgctxt "@info Status information, widget title"
+msgid "<title>Finished</title>"
+msgstr "<title>Tamamlandı</title>"
+
+#: src/TransactionWidget.cpp:254
+#, kde-format
+msgctxt "@title:window"
+msgid "Media Change Required"
+msgstr "Ortamı Değiştirmeniz Gerekiyor"
+
+#: src/TransactionWidget.cpp:255
+#, kde-kuit-format
+msgctxt "@label"
+msgid "Please insert %1 into <filename>%2</filename>"
+msgstr "Lütfen %1 ortamını <filename>%2</filename> konumuna takın"
+
+#: src/TransactionWidget.cpp:264
+#, kde-format
+msgctxt "@title:window"
+msgid "Warning - Unverified Software"
+msgstr "Uyarı: Doğrulanmamış Yazılım"
+
+#: src/TransactionWidget.cpp:266
+#, kde-kuit-format
+msgctxt "@label"
+msgid ""
+"The following piece of software cannot be verified. <warning>Installing "
+"unverified software represents a security risk, as the presence of "
+"unverifiable software can be a sign of tampering.</warning> Do you wish to "
+"continue?"
+msgid_plural ""
+"The following pieces of software cannot be verified. <warning>Installing "
+"unverified software represents a security risk, as the presence of "
+"unverifiable software can be a sign of tampering.</warning> Do you wish to "
+"continue?"
+msgstr[0] ""
+"Aşağıdaki yazılım parçası doğrulanamadı. <warning>Doğrulanmamış bir yazılım "
+"yüklemek, bir güvenli riski oluşturabilir. Doğrulanamayan yazılım müdahale "
+"edilme belirtisi olabilir.</warning> Devam etmek istiyor musunuz?"
+msgstr[1] ""
+"Aşağıdaki yazılım parçaları doğrulanamadı. <warning>Doğrulanmamış bir "
+"yazılım yüklemek, bir güvenli riski oluşturabilir. Doğrulanamayan yazılım "
+"müdahale edilme belirtisi olabilir.</warning> Devam etmek istiyor musunuz?"
+
+#: src/TransactionWidget.cpp:284
+#, kde-format
+msgctxt "@title:window"
+msgid "Configuration File Changed"
+msgstr "Yapılandırma Dosyası Değiştirildi"
+
+#: src/TransactionWidget.cpp:286
+#, kde-kuit-format
+msgctxt "@label Notifies a config file change"
+msgid ""
+"A new version of the configuration file <filename>%1</filename> is "
+"available, but your version has been modified. Would you like to keep your "
+"current version or install the new version?"
+msgstr ""
+"<filename>%1</filename> yapılandırma dosyasının yeni bir sürümü mevcut ancak "
+"sizin sürümünüz değiştirilmiş. Geçerli sürümü saklamak mı yoksa yeni sürümü "
+"mü yüklemek istersiniz?"
+
+#: src/TransactionWidget.cpp:291
+#, kde-format
+msgctxt "@action Use the new config file"
+msgid "Use New Version"
+msgstr "Yeni Sürümü Kullan"
+
+#: src/TransactionWidget.cpp:292
+#, kde-format
+msgctxt "@action Keep the old config file"
+msgid "Keep Old Version"
+msgstr "Eski Sürümü Kullan"

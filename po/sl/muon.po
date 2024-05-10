@@ -1,0 +1,1967 @@
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Andrej Mernik <andrejm@ubuntu.si>, 2012, 2013, 2014, 2015, 2016, 2018.
+# Jure Repinc <jlp@holodeck1.com>, 2012.
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2018-03-15 03:18+0100\n"
+"PO-Revision-Date: 2018-01-12 20:44+0100\n"
+"Last-Translator: Andrej Mernik <andrejm@ubuntu.si>\n"
+"Language-Team: Slovenian <lugos-slo@lugos.si>\n"
+"Language: sl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n%100==1 ? 1 : n%100==2 ? 2 : n%100==3 || n"
+"%100==4 ? 3 : 0);\n"
+"X-Generator: Lokalize 2.0\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Andrej Mernik"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "andrejm@ubuntu.si"
+
+#. i18n: ectx: label, entry (SplitterSizes), group (muon)
+#: muonrc.cpp:3 src/config/muon.kcfg:9
+#, kde-format
+msgid "How the main window is divided."
+msgstr "Kako je razdeljeno glavno okno."
+
+#. i18n: ectx: label, entry (Width), group (muon)
+#: muonrc.cpp:6 src/config/muon.kcfg:12
+#, kde-format
+msgid "Width of the main window."
+msgstr "Širina glavnega okna."
+
+#. i18n: ectx: label, entry (Height), group (muon)
+#: muonrc.cpp:9 src/config/muon.kcfg:16
+#, kde-format
+msgid "Height of the main window."
+msgstr "Višina glavnega okna."
+
+#. i18n: ectx: label, entry (UndoStackSize), group (muon)
+#: muonrc.cpp:12 src/config/muon.kcfg:20
+#, kde-format
+msgid "The amount of history kept for undo/redo."
+msgstr "Količina ohranjene zgodovine za razveljavitve/uveljavitve."
+
+#. i18n: ectx: label, entry (AskChanges), group (muon)
+#: muonrc.cpp:15 src/config/muon.kcfg:24
+#, kde-format
+msgid "Whether or not to confirm additional changes."
+msgstr "Ali je treba dodatne spremembe potrditi."
+
+#. i18n: ectx: label, entry (ShowMultiArchDupes), group (muon)
+#: muonrc.cpp:18 src/config/muon.kcfg:28
+#, kde-format
+msgid "Show foreign architecture packages also available natively."
+msgstr "Pokaži pakete s tujo arhitekturo, ki so na voljo tudi kot lastni."
+
+#. i18n: ectx: label, entry (ManagerListColumns), group (muon)
+#: muonrc.cpp:21 src/config/muon.kcfg:32
+#, kde-format
+msgid "Status of columns in the manager list of packages."
+msgstr "Stanje stolpcev v seznamu paketov upravljalnika."
+
+#. i18n: ectx: label, entry (ReviewListColumns), group (muon)
+#: muonrc.cpp:24 src/config/muon.kcfg:36
+#, kde-format
+msgid "Status of columns in the changes review list of packages."
+msgstr "Stanje stolpcev v seznamu pregleda sprememb paketov."
+
+#: src/config/GeneralSettingsPage.cpp:51
+#, kde-format
+msgid "Ask to confirm changes that affect other packages"
+msgstr "Vprašaj, če spremembe vplivajo na druge pakete"
+
+#: src/config/GeneralSettingsPage.cpp:52
+#, kde-format
+msgid "Show foreign-architecture packages that are available natively"
+msgstr "Pokaži pakete s tujo arhitekturo, ki so na voljo kot lastni"
+
+#: src/config/GeneralSettingsPage.cpp:53
+#, kde-format
+msgid "Treat recommended packages as dependencies"
+msgstr "Obravnavaj priporočene pakete kot odvisnosti"
+
+#: src/config/GeneralSettingsPage.cpp:54
+#, kde-format
+msgid "Treat suggested packages as dependencies"
+msgstr "Obravnavaj predlagane pakete kot odvisnosti"
+
+#: src/config/GeneralSettingsPage.cpp:55
+#, kde-format
+msgid "Allow the installation of untrusted packages"
+msgstr "Dovoli namestitev paketov, ki niso zaupanja vredni"
+
+#: src/config/GeneralSettingsPage.cpp:66
+#, kde-format
+msgid "Delete obsolete cached packages every:"
+msgstr "Izbriši zastarele predpomnjene pakete vsakih:"
+
+#: src/config/GeneralSettingsPage.cpp:84
+#, kde-format
+msgid "Number of undo operations:"
+msgstr "Število opravil, ki jih je mogoče razveljaviti:"
+
+#: src/config/GeneralSettingsPage.cpp:160
+#, kde-format
+msgid " day"
+msgid_plural " days"
+msgstr[0] " dni"
+msgstr[1] " dan"
+msgstr[2] " dneva"
+msgstr[3] " dnevi"
+
+#: src/config/ManagerSettingsDialog.cpp:40
+#, kde-format
+msgctxt "@title:window"
+msgid "Muon Preferences"
+msgstr "Možnosti Muon"
+
+#: src/config/ManagerSettingsDialog.cpp:47
+#, kde-format
+msgctxt "@title:group Title of the general group"
+msgid "General"
+msgstr "Splošno"
+
+#: src/DetailsTabs/ChangelogTab.cpp:45
+#, kde-format
+msgctxt "@title:tab"
+msgid "Changes List"
+msgstr "Seznam sprememb"
+
+#: src/DetailsTabs/ChangelogTab.cpp:94
+#, kde-kuit-format
+msgctxt "@info/rich"
+msgid ""
+"The list of changes is not yet available. Please use <link "
+"url='%1'>Launchpad</link> instead."
+msgstr ""
+"Seznam sprememb še ni na voljo. Namesto tega uporabite povezavo na <link "
+"url='%1'>Launchpad</link>."
+
+#: src/DetailsTabs/ChangelogTab.cpp:98
+#, kde-format
+msgctxt "@info"
+msgid "The list of changes is not yet available."
+msgstr "Seznam sprememb še ni na voljo."
+
+#: src/DetailsTabs/DependsTab.cpp:37
+#, kde-format
+msgctxt "@title:tab"
+msgid "Dependencies"
+msgstr "Odvisnosti"
+
+#: src/DetailsTabs/DependsTab.cpp:40
+#, kde-format
+msgctxt "@item:inlistbox"
+msgid "Dependencies of the Current Version"
+msgstr "Odvisnosti za trenutno različico"
+
+#: src/DetailsTabs/DependsTab.cpp:41
+#, kde-format
+msgctxt "@item:inlistbox"
+msgid "Dependencies of the Latest Version"
+msgstr "Odvisnosti za najnovejšo različico"
+
+#: src/DetailsTabs/DependsTab.cpp:42
+#, kde-format
+msgctxt "@item:inlistbox"
+msgid "Dependants (Reverse Dependencies)"
+msgstr "Odvisniki (obratne odvisnosti)"
+
+#: src/DetailsTabs/DependsTab.cpp:43
+#, kde-format
+msgctxt "@item:inlistbox"
+msgid "Virtual Packages Provided"
+msgstr "Ponujeni navidezni paketi"
+
+#: src/DetailsTabs/DependsTab.cpp:71 src/DetailsTabs/DependsTab.cpp:78
+#, kde-format
+msgctxt "@label"
+msgid "This package does not have any dependencies"
+msgstr "Ta paket nima nobenih odvisnosti"
+
+#: src/DetailsTabs/DependsTab.cpp:85
+#, kde-format
+msgctxt "@label"
+msgid "This package has no dependents. (Nothing depends on it.)"
+msgstr "Ta paket nima nobenih odvisnikov. (Nič ni odvisno od njega.)"
+
+#: src/DetailsTabs/DependsTab.cpp:92
+#, kde-format
+msgctxt "@label"
+msgid "This package does not provide any virtual packages"
+msgstr "Ta paket ne ponuja nobenih navideznih paketov"
+
+#: src/DetailsTabs/InstalledFilesTab.cpp:35
+#, kde-format
+msgctxt "@title:tab"
+msgid "Installed Files"
+msgstr "Nameščene datoteke"
+
+#: src/DetailsTabs/MainTab.cpp:43
+#, kde-format
+msgctxt "@title:tab"
+msgid "Details"
+msgstr "Podrobnosti"
+
+#: src/DetailsTabs/MainTab.cpp:57
+#, kde-format
+msgctxt "@label"
+msgid "Mark for:"
+msgstr "Označi za:"
+
+#: src/DetailsTabs/MainTab.cpp:62
+#, kde-format
+msgctxt "@action:button"
+msgid "Installation"
+msgstr "Namestitev"
+
+#: src/DetailsTabs/MainTab.cpp:70
+#, kde-format
+msgctxt "@action:button"
+msgid "Removal"
+msgstr "Odstranitev"
+
+#: src/DetailsTabs/MainTab.cpp:76
+#, kde-format
+msgctxt "@action:button"
+msgid "Upgrade"
+msgstr "Nadgradnjo"
+
+#: src/DetailsTabs/MainTab.cpp:82
+#, kde-format
+msgctxt "@action:button"
+msgid "Reinstallation"
+msgstr "Ponovno namestitev"
+
+#: src/DetailsTabs/MainTab.cpp:89
+#, kde-format
+msgctxt "@action:button"
+msgid "Purge"
+msgstr "Čiščenje"
+
+#: src/DetailsTabs/MainTab.cpp:102 src/PackageModel/PackageWidget.cpp:191
+#, kde-format
+msgctxt "@action:button"
+msgid "Unmark"
+msgstr "Odstrani oznako"
+
+#: src/DetailsTabs/MainTab.cpp:188
+#, kde-format
+msgctxt "@info Tells how long Canonical, Ltd. will support a package"
+msgid "Canonical provides critical updates for %1 until %2."
+msgstr "Canonical ponuja kritične posodobitve za %1 do %2."
+
+#: src/DetailsTabs/MainTab.cpp:192
+#, kde-format
+msgctxt "@info Tells how long Canonical, Ltd. will support a package"
+msgid ""
+"Canonical does not provide updates for %1. Some updates may be provided by "
+"the Ubuntu community."
+msgstr ""
+"Canonical ne ponuja posodobitev za %1. Nekatere morda ponuja skupnost "
+"Ubuntu.."
+
+#: src/DetailsTabs/TechnicalDetailsTab.cpp:43
+#, kde-format
+msgctxt "@title:tab"
+msgid "Technical Details"
+msgstr "Tehnične podrobnosti"
+
+#: src/DetailsTabs/TechnicalDetailsTab.cpp:57
+#, kde-format
+msgctxt "@label Label preceding the package maintainer"
+msgid "Maintainer:"
+msgstr "Vzdrževalec:"
+
+#: src/DetailsTabs/TechnicalDetailsTab.cpp:66
+#, kde-format
+msgctxt "@label Label preceding the package category"
+msgid "Category:"
+msgstr "Kategorija:"
+
+#: src/DetailsTabs/TechnicalDetailsTab.cpp:76
+#, kde-format
+msgctxt "@label The parent package that this package comes from"
+msgid "Source Package:"
+msgstr "Izvorni paket:"
+
+#: src/DetailsTabs/TechnicalDetailsTab.cpp:86
+#, kde-format
+msgctxt "@label The software source that this package comes from"
+msgid "Origin:"
+msgstr "Izvor:"
+
+#: src/DetailsTabs/TechnicalDetailsTab.cpp:96
+#, kde-format
+msgctxt "@label The package archive component that this package comes from"
+msgid "Component:"
+msgstr "Sestavni del:"
+
+#: src/DetailsTabs/TechnicalDetailsTab.cpp:106
+#, kde-format
+msgctxt "@title:group"
+msgid "Installed Version"
+msgstr "Nameščena različica"
+
+#: src/DetailsTabs/TechnicalDetailsTab.cpp:113
+#: src/DetailsTabs/TechnicalDetailsTab.cpp:138
+#, kde-format
+msgctxt "@label Label preceding the package version"
+msgid "Version:"
+msgstr "Različica:"
+
+#: src/DetailsTabs/TechnicalDetailsTab.cpp:121
+#: src/DetailsTabs/TechnicalDetailsTab.cpp:146
+#, kde-format
+msgctxt "@label Label preceding the package size"
+msgid "Installed Size:"
+msgstr "Nameščena velikost:"
+
+#: src/DetailsTabs/TechnicalDetailsTab.cpp:131
+#, kde-format
+msgctxt "@title:group"
+msgid "Available Version"
+msgstr "Razpoložljiva različica"
+
+#: src/DetailsTabs/TechnicalDetailsTab.cpp:154
+#, kde-format
+msgctxt "@label Label preceding the package's download size"
+msgid "Download Size:"
+msgstr "Velikost prejema:"
+
+#: src/DetailsTabs/VersionTab.cpp:39
+#, kde-format
+msgctxt "@title:tab"
+msgid "Versions"
+msgstr "Različice"
+
+#: src/DetailsTabs/VersionTab.cpp:42
+#, kde-format
+msgctxt "@label"
+msgid "Available versions:"
+msgstr "Razpoložljive različice:"
+
+#: src/DetailsTabs/VersionTab.cpp:60
+#, kde-format
+msgctxt "@label"
+msgid ""
+"Muon always selects the most applicable version available. If you force a "
+"different version from the default one, errors in the dependency handling "
+"can occur."
+msgstr ""
+"Muon vselej izbere najbolj uporabno razpoložljivo različico. Če vsilite "
+"različno različico namesto privzete, lahko pride do napak v obravnavanju "
+"odvisnosti."
+
+#: src/DetailsTabs/VersionTab.cpp:68
+#, kde-format
+msgctxt "@action:button"
+msgid "Force Version"
+msgstr "Vsili različico"
+
+#: src/DownloadModel/DownloadDelegate.cpp:66
+#, kde-format
+msgctxt "@info:status Progress text when done"
+msgid "Done"
+msgstr "Končano"
+
+#: src/DownloadModel/DownloadModel.cpp:60
+#, kde-format
+msgctxt "@title:column"
+msgid "Package"
+msgstr "Paket"
+
+#: src/DownloadModel/DownloadModel.cpp:62
+#, kde-format
+msgctxt "@title:column"
+msgid "Location"
+msgstr "Mesto"
+
+#: src/DownloadModel/DownloadModel.cpp:64
+#, kde-format
+msgctxt "@title:column"
+msgid "Size"
+msgstr "Velikost"
+
+#: src/DownloadModel/DownloadModel.cpp:66
+#, kde-format
+msgctxt "@title:column"
+msgid "Progress"
+msgstr "Napredek"
+
+#: src/FilterWidget/ArchitectureFilter.cpp:47
+#: src/FilterWidget/CategoryFilter.cpp:57 src/FilterWidget/OriginFilter.cpp:42
+#: src/FilterWidget/StatusFilter.cpp:43 src/ManagerWidget.cpp:69
+#, kde-format
+msgctxt "@item:inlistbox Item that resets the filter to \"all\""
+msgid "All"
+msgstr "Vse"
+
+#: src/FilterWidget/FilterWidget.cpp:46
+#, kde-format
+msgctxt "@title:window"
+msgid "Filter:"
+msgstr "Filter:"
+
+#: src/FilterWidget/FilterWidget.cpp:55
+#, kde-format
+msgctxt "@title:tab"
+msgid "By Category"
+msgstr "Po kategoriji"
+
+#: src/FilterWidget/FilterWidget.cpp:61
+#, kde-format
+msgctxt "@title:tab"
+msgid "By Status"
+msgstr "Po stanju"
+
+#: src/FilterWidget/FilterWidget.cpp:67
+#, kde-format
+msgctxt "@title:tab"
+msgid "By Origin"
+msgstr "Po izvoru"
+
+#: src/FilterWidget/FilterWidget.cpp:73
+#, kde-format
+msgctxt "@title:tab"
+msgid "By Architecture"
+msgstr "Po arhitekturi"
+
+#: src/main.cpp:36
+#, kde-format
+msgid "Muon Package Manager"
+msgstr "Upravljalnik paketov Muon"
+
+#: src/main.cpp:36
+#, kde-format
+msgid "A package manager"
+msgstr "Upravljalnik paketov"
+
+#: src/main.cpp:37
+#, kde-format
+msgid "© 2009-2013 Jonathan Thomas"
+msgstr "© 2009-2013 Jonathan Thomas"
+
+#: src/main.cpp:38
+#, kde-format
+msgid "Jonathan Thomas"
+msgstr "Jonathan Thomas"
+
+#: src/main.cpp:39
+#, kde-format
+msgid "Harald Sitter"
+msgstr "Harald Sitter"
+
+#: src/main.cpp:39
+#, kde-format
+msgid "Top Gardener"
+msgstr "Prispevkar"
+
+#: src/MainWindow.cpp:180
+#, kde-format
+msgctxt "@action Marks upgradeable packages for upgrade"
+msgid "Cautious Upgrade"
+msgstr "Previdna nadgradnja"
+
+#: src/MainWindow.cpp:186
+#, kde-format
+msgctxt ""
+"@action Marks upgradeable packages, including ones that install/remove new "
+"things"
+msgid "Full Upgrade"
+msgstr "Polna nadgradnja"
+
+#: src/MainWindow.cpp:192
+#, kde-format
+msgctxt "@action Marks packages no longer needed for removal"
+msgid "Remove Unnecessary Packages"
+msgstr "Odstrani nepotrebne pakete"
+
+#: src/MainWindow.cpp:197
+#, kde-format
+msgctxt "@action Takes the user to the preview page"
+msgid "Preview Changes"
+msgstr "Predogled sprememb"
+
+#: src/MainWindow.cpp:202
+#, kde-format
+msgctxt "@action Applys the changes a user has made"
+msgid "Apply Changes"
+msgstr "Uveljavi spremembe"
+
+#: src/MainWindow.cpp:207
+#, kde-format
+msgctxt "@action Checks the Internet for updates"
+msgid "Check for Updates"
+msgstr "Preveri za posodobitvami"
+
+#: src/MainWindow.cpp:233
+#, kde-kuit-format
+msgctxt "@label"
+msgid ""
+"Unable to mark upgrades. The available upgrades may require new packages to "
+"be installed or removed. You may wish to try a full upgrade by clicking the "
+"<interface>Full Upgrade</interface> button."
+msgstr ""
+"Ni mogoče označiti nadgradenj. Razpoložljive nadgradnje morda zahtevajo, da "
+"se namestijo ali odstranijo novi paketi. Morda bi želeli izvesti polno "
+"nadgradnjo tako da kliknete na gumb <interface>Polna nadgradnja</interface>."
+
+#: src/MainWindow.cpp:238 src/MainWindow.cpp:253
+#, kde-format
+msgctxt "@title:window"
+msgid "Unable to Mark Upgrades"
+msgstr "Ni mogoče označiti nadgradenj"
+
+#: src/MainWindow.cpp:250
+#, kde-format
+msgctxt "@label"
+msgid ""
+"Unable to mark upgrades. Some upgrades may have unsatisfiable dependencies "
+"at the moment, or may have been manually held back."
+msgstr ""
+"Ni mogoče označiti nadgradenj. Nekatere nadgradnje trenutno nimajo "
+"izpolnjenih odvisnosti ali pa so bile ročno zadržane."
+
+#: src/MainWindow.cpp:326
+#, kde-format
+msgctxt "@action:intoolbar Return from the preview page"
+msgid "Back"
+msgstr "Nazaj"
+
+#: src/MainWindow.cpp:340
+#, kde-format
+msgctxt "@action"
+msgid "Preview Changes"
+msgstr "Predogled sprememb"
+
+#: src/muonapt/ChangesDialog.cpp:39
+#, kde-format
+msgctxt "@title:window"
+msgid "Confirm Additional Changes"
+msgstr "Potrdi dodatne spremembe"
+
+#: src/muonapt/ChangesDialog.cpp:44
+#, kde-format
+msgctxt "@info"
+msgid "<h2>Mark additional changes?</h2>"
+msgstr "<h2>Označim dodatne spremembe?</h2>"
+
+#: src/muonapt/ChangesDialog.cpp:48
+#, kde-format
+msgid "This action requires a change to another package:"
+msgid_plural "This action requires changes to other packages:"
+msgstr[0] "To dejanje zahteva spremembo drugih paketov:"
+msgstr[1] "To dejanje zahteva spremembo drugega paketa:"
+msgstr[2] "To dejanje zahteva spremembo drugih paketov:"
+msgstr[3] "To dejanje zahteva spremembo drugih paketov:"
+
+#: src/muonapt/HistoryView/HistoryView.cpp:49
+#, kde-kuit-format
+msgctxt "@info"
+msgid "<title>History</title>"
+msgstr "<title>Zgodovina</title>"
+
+#: src/muonapt/HistoryView/HistoryView.cpp:55
+#: src/PackageModel/PackageWidget.cpp:102
+#, kde-format
+msgctxt "@label Line edit click message"
+msgid "Search"
+msgstr "Poišči"
+
+#: src/muonapt/HistoryView/HistoryView.cpp:67
+#, kde-format
+msgctxt "@item:inlistbox Filters all changes in the history view"
+msgid "All changes"
+msgstr "Vse spremembe"
+
+#: src/muonapt/HistoryView/HistoryView.cpp:71
+#, kde-format
+msgctxt "@item:inlistbox Filters installations in the history view"
+msgid "Installations"
+msgstr "Namestitve"
+
+#: src/muonapt/HistoryView/HistoryView.cpp:75
+#, kde-format
+msgctxt "@item:inlistbox Filters updates in the history view"
+msgid "Updates"
+msgstr "Posodobitve"
+
+#: src/muonapt/HistoryView/HistoryView.cpp:79
+#, kde-format
+msgctxt "@item:inlistbox Filters removals in the history view"
+msgid "Removals"
+msgstr "Odstranitve"
+
+#: src/muonapt/HistoryView/HistoryView.cpp:90
+#, kde-format
+msgctxt "@title:column"
+msgid "Date"
+msgstr "Datum"
+
+#: src/muonapt/HistoryView/HistoryView.cpp:98
+#, kde-format
+msgctxt "@info:status describes a past-tense action"
+msgid "Installed"
+msgstr "Nameščeno"
+
+#: src/muonapt/HistoryView/HistoryView.cpp:99
+#, kde-format
+msgctxt "@info:status describes a past-tense action"
+msgid "Upgraded"
+msgstr "Nadgrajeno"
+
+#: src/muonapt/HistoryView/HistoryView.cpp:100
+#, kde-format
+msgctxt "@status describes a past-tense action"
+msgid "Downgraded"
+msgstr "Podgrajeno"
+
+#: src/muonapt/HistoryView/HistoryView.cpp:101
+#, kde-format
+msgctxt "@status describes a past-tense action"
+msgid "Removed"
+msgstr "Odstranjeno"
+
+#: src/muonapt/HistoryView/HistoryView.cpp:102
+#, kde-format
+msgctxt "@status describes a past-tense action"
+msgid "Purged"
+msgstr "Počiščeno"
+
+#: src/muonapt/HistoryView/HistoryView.cpp:137
+#: src/muonapt/HistoryView/HistoryView.cpp:152
+#: src/muonapt/HistoryView/HistoryView.cpp:167
+#: src/muonapt/HistoryView/HistoryView.cpp:182
+#: src/muonapt/HistoryView/HistoryView.cpp:197
+#, kde-format
+msgctxt "@item example: muon installed at 16:00"
+msgid "%1 %2 at %3"
+msgstr "%1 %2 ob %3"
+
+#: src/muonapt/MuonStrings.cpp:49
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"admin\""
+msgid "System Administration"
+msgstr "Skrbništvo sistema"
+
+#: src/muonapt/MuonStrings.cpp:51
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"base\""
+msgid "Base System"
+msgstr "Osnovni sistem"
+
+#: src/muonapt/MuonStrings.cpp:53
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"cli-mono"
+"\""
+msgid "Mono/CLI Infrastructure"
+msgstr "Infrastruktura Mono/CLI"
+
+#: src/muonapt/MuonStrings.cpp:55
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"comm\""
+msgid "Communication"
+msgstr "Komunikacija"
+
+#: src/muonapt/MuonStrings.cpp:57
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"database"
+"\""
+msgid "Databases"
+msgstr "Podatkovne zbirke"
+
+#: src/muonapt/MuonStrings.cpp:59
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"devel\""
+msgid "Development"
+msgstr "Razvoj"
+
+#: src/muonapt/MuonStrings.cpp:61
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"doc\""
+msgid "Documentation"
+msgstr "Dokumentacija"
+
+#: src/muonapt/MuonStrings.cpp:63
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"debug\""
+msgid "Debug"
+msgstr "Razhroščevanje"
+
+#: src/muonapt/MuonStrings.cpp:65
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"editors"
+"\""
+msgid "Editors"
+msgstr "Urejevalniki"
+
+#: src/muonapt/MuonStrings.cpp:67
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section "
+"\"electronics\""
+msgid "Electronics"
+msgstr "Elektronika"
+
+#: src/muonapt/MuonStrings.cpp:69
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"embedded"
+"\""
+msgid "Embedded Devices"
+msgstr "Vgrajene naprave"
+
+#: src/muonapt/MuonStrings.cpp:71
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"fonts\""
+msgid "Fonts"
+msgstr "Pisave"
+
+#: src/muonapt/MuonStrings.cpp:73
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"games\""
+msgid "Games and Amusement"
+msgstr "Igre in zabava"
+
+#: src/muonapt/MuonStrings.cpp:75
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"gnome\""
+msgid "GNOME Desktop Environment"
+msgstr "Namizno okolje GNOME"
+
+#: src/muonapt/MuonStrings.cpp:77
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"graphics"
+"\""
+msgid "Graphics"
+msgstr "Grafika"
+
+#: src/muonapt/MuonStrings.cpp:79
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"gnu-r\""
+msgid "GNU R Statistical System"
+msgstr "Statistični sistem GNU R"
+
+#: src/muonapt/MuonStrings.cpp:81
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"gnustep"
+"\""
+msgid "Gnustep Desktop Environment"
+msgstr "Namizno okolje Gnustep"
+
+#: src/muonapt/MuonStrings.cpp:83
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"hamradio"
+"\""
+msgid "Amateur Radio"
+msgstr "Amaterski radio"
+
+#: src/muonapt/MuonStrings.cpp:85
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"haskell"
+"\""
+msgid "Haskell Programming Language"
+msgstr "Programski jezik Haskell"
+
+#: src/muonapt/MuonStrings.cpp:87
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"httpd\""
+msgid "Web Servers"
+msgstr "Spletni strežniki"
+
+#: src/muonapt/MuonStrings.cpp:89
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section "
+"\"interpreters\""
+msgid "Interpreted Computer Languages"
+msgstr "Računalniški jeziki, ki zahtevajo interpretacijo"
+
+#: src/muonapt/MuonStrings.cpp:91
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"java\""
+msgid "Java Programming Language"
+msgstr "Programski jezik Java"
+
+#: src/muonapt/MuonStrings.cpp:93
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"kde\""
+msgid "KDE Software Compilation"
+msgstr "KDE Software Compilation"
+
+#: src/muonapt/MuonStrings.cpp:95
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"kernel\""
+msgid "Kernel and Modules"
+msgstr "Jedro in moduli"
+
+#: src/muonapt/MuonStrings.cpp:97
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"libdevel"
+"\""
+msgid "Libraries - Development"
+msgstr "Knjižnice - razvoj"
+
+#: src/muonapt/MuonStrings.cpp:99
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"libs\""
+msgid "Libraries"
+msgstr "Knjižnice"
+
+#: src/muonapt/MuonStrings.cpp:101
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"lisp\""
+msgid "Lisp Programming Language"
+msgstr "Programski jezik Lisp"
+
+#: src/muonapt/MuonStrings.cpp:103
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section "
+"\"localization\""
+msgid "Localization"
+msgstr "Prevajanje"
+
+#: src/muonapt/MuonStrings.cpp:105
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"mail\""
+msgid "Email"
+msgstr "E-pošta"
+
+#: src/muonapt/MuonStrings.cpp:107
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"math\""
+msgid "Mathematics"
+msgstr "Matematika"
+
+#: src/muonapt/MuonStrings.cpp:109
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"misc\""
+msgid "Miscellaneous - Text-based"
+msgstr "Razno - besedilno"
+
+#: src/muonapt/MuonStrings.cpp:111
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"net\""
+msgid "Networking"
+msgstr "Povezovanje"
+
+#: src/muonapt/MuonStrings.cpp:113
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"news\""
+msgid "Newsgroups"
+msgstr "Novičarske skupine"
+
+#: src/muonapt/MuonStrings.cpp:115
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"ocaml\""
+msgid "OCaml Programming Language"
+msgstr "Programski jezik OCaml"
+
+#: src/muonapt/MuonStrings.cpp:117
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"oldlibs"
+"\""
+msgid "Libraries - Old"
+msgstr "Knjižnice - stare"
+
+#: src/muonapt/MuonStrings.cpp:119
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section "
+"\"otherosfs\""
+msgid "Cross Platform"
+msgstr "Za več okolij"
+
+#: src/muonapt/MuonStrings.cpp:121
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"perl\""
+msgid "Perl Programming Language"
+msgstr "Programski jezik Perl"
+
+#: src/muonapt/MuonStrings.cpp:123
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"php\""
+msgid "PHP Programming Language"
+msgstr "Programski jezik PHP"
+
+#: src/muonapt/MuonStrings.cpp:125
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"python\""
+msgid "Python Programming Language"
+msgstr "Programski jezik Python"
+
+#: src/muonapt/MuonStrings.cpp:127
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"ruby\""
+msgid "Ruby Programming Language"
+msgstr "Programski jezik Ruby"
+
+#: src/muonapt/MuonStrings.cpp:129
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"science"
+"\""
+msgid "Science"
+msgstr "Znanost"
+
+#: src/muonapt/MuonStrings.cpp:131
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"shells\""
+msgid "Shells"
+msgstr "Lupine"
+
+#: src/muonapt/MuonStrings.cpp:133
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"sound\""
+msgid "Multimedia"
+msgstr "Predstavnost"
+
+#: src/muonapt/MuonStrings.cpp:135
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"tex\""
+msgid "TeX Authoring"
+msgstr "Izdelava s TeX"
+
+#: src/muonapt/MuonStrings.cpp:137
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"text\""
+msgid "Word Processing"
+msgstr "Urejevalniki besedila"
+
+#: src/muonapt/MuonStrings.cpp:139
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"utils\""
+msgid "Utilities"
+msgstr "Pripomočki"
+
+#: src/muonapt/MuonStrings.cpp:141
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"vcs\""
+msgid "Version Control Systems"
+msgstr "Sistemi za nadzor različic"
+
+#: src/muonapt/MuonStrings.cpp:143
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"video\""
+msgid "Video Software"
+msgstr "Programska oprema za video"
+
+#: src/muonapt/MuonStrings.cpp:145
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"web\""
+msgid "Internet"
+msgstr "Internet"
+
+#: src/muonapt/MuonStrings.cpp:147
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"x11\""
+msgid "Miscellaneous - Graphical"
+msgstr "Razno - grafično"
+
+#: src/muonapt/MuonStrings.cpp:149
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"xfce\""
+msgid "Xfce Desktop Environment"
+msgstr "Namizno okolje Xfce"
+
+#: src/muonapt/MuonStrings.cpp:151
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"zope\""
+msgid "Zope/Plone Environment"
+msgstr "Okolje Zope/Plone"
+
+#: src/muonapt/MuonStrings.cpp:153
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"unknown"
+"\""
+msgid "Unknown"
+msgstr "Neznano"
+
+#: src/muonapt/MuonStrings.cpp:155
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"alien\""
+msgid "Converted from RPM by Alien"
+msgstr "Pretvorjeno iz RPM s pomočjo Alien-a"
+
+#: src/muonapt/MuonStrings.cpp:157
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section "
+"\"translations\""
+msgid "Internationalization and Localization"
+msgstr "Mednarodna jezikovna prilagoditev in prevodi"
+
+#: src/muonapt/MuonStrings.cpp:159
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section "
+"\"metapackages\""
+msgid "Meta Packages"
+msgstr "Meta paketi"
+
+#: src/muonapt/MuonStrings.cpp:161
+#, kde-format
+msgctxt ""
+"@item:inlistbox Debian package section \"non-US\", for packages that cannot "
+"be shipped in the US"
+msgid "Restricted On Export"
+msgstr "Omejeno ob izvozu"
+
+#: src/muonapt/MuonStrings.cpp:163
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"non-free"
+"\""
+msgid "Non-free"
+msgstr "Ni prosto"
+
+#: src/muonapt/MuonStrings.cpp:165
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"contrib"
+"\""
+msgid "Contrib"
+msgstr "Prispevano"
+
+#: src/muonapt/MuonStrings.cpp:167
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section "
+"\"education\""
+msgid "Education"
+msgstr "Izobraževanje"
+
+#: src/muonapt/MuonStrings.cpp:169
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section "
+"\"introspection\""
+msgid "GObject Introspection Data"
+msgstr "Podatki GObject Introspection"
+
+#: src/muonapt/MuonStrings.cpp:195
+#, kde-format
+msgctxt "@info:status Package state"
+msgid "No Change"
+msgstr "Brez sprememb"
+
+#: src/muonapt/MuonStrings.cpp:196 src/muonapt/MuonStrings.cpp:197
+#, kde-format
+msgctxt "@info:status Requested action"
+msgid "Install"
+msgstr "Namesti"
+
+#: src/muonapt/MuonStrings.cpp:198
+#, kde-format
+msgctxt "@info:status Requested action"
+msgid "Reinstall"
+msgstr "Ponovno namesti"
+
+#: src/muonapt/MuonStrings.cpp:199
+#, kde-format
+msgctxt "@info:status Requested action"
+msgid "Upgrade"
+msgstr "Nadgradi"
+
+#: src/muonapt/MuonStrings.cpp:200
+#, kde-format
+msgctxt "@info:status Requested action"
+msgid "Downgrade"
+msgstr "Podgradi"
+
+#: src/muonapt/MuonStrings.cpp:201
+#, kde-format
+msgctxt "@info:status Requested action"
+msgid "Remove"
+msgstr "Odstrani"
+
+#: src/muonapt/MuonStrings.cpp:202
+#, kde-format
+msgctxt "@info:status Package state"
+msgid "Held"
+msgstr "Zadržan"
+
+#: src/muonapt/MuonStrings.cpp:203
+#, kde-format
+msgctxt "@info:status Package state"
+msgid "Installed"
+msgstr "Nameščeno"
+
+#: src/muonapt/MuonStrings.cpp:204
+#, kde-format
+msgctxt "@info:status Package state"
+msgid "Upgradeable"
+msgstr "Ima nadgradnjo"
+
+#: src/muonapt/MuonStrings.cpp:205
+#, kde-format
+msgctxt "@info:status Package state"
+msgid "Broken"
+msgstr "Pokvarjeno"
+
+#: src/muonapt/MuonStrings.cpp:206
+#, kde-format
+msgctxt "@info:status Package state"
+msgid "Install Broken"
+msgstr "Pokvarjena namestitev"
+
+#: src/muonapt/MuonStrings.cpp:207
+#, kde-format
+msgctxt "@info:status Package state"
+msgid "Orphaned"
+msgstr "Osirotel"
+
+#: src/muonapt/MuonStrings.cpp:208
+#, kde-format
+msgctxt "@info:status Package state"
+msgid "Locked"
+msgstr "Zaklenjen"
+
+#: src/muonapt/MuonStrings.cpp:209
+#, kde-format
+msgctxt "@info:status Package state"
+msgid "New in repository"
+msgstr "Nov v skladišču"
+
+#: src/muonapt/MuonStrings.cpp:210
+#, kde-format
+msgctxt "@info:status Package state"
+msgid "Residual Configuration"
+msgstr "Preostala nastavitev"
+
+#: src/muonapt/MuonStrings.cpp:211
+#, kde-format
+msgctxt "@info:status Package state"
+msgid "Not Downloadable"
+msgstr "Ni mogoče prejeti"
+
+#: src/muonapt/MuonStrings.cpp:212
+#, kde-format
+msgctxt "@info:status Requested action"
+msgid "Purge"
+msgstr "Počisti"
+
+#: src/muonapt/MuonStrings.cpp:213
+#, kde-format
+msgctxt "@info:status Package state"
+msgid "Important for base install"
+msgstr "Pomemben za osnovno namest."
+
+#: src/muonapt/MuonStrings.cpp:214
+#, kde-format
+msgctxt "@info:status Package state"
+msgid "Version overridden"
+msgstr "Prepisana različica"
+
+#: src/muonapt/MuonStrings.cpp:215
+#, kde-format
+msgctxt "@info:status Package state"
+msgid "Required by other packages"
+msgstr "Zahtevan s strani drugih paketov"
+
+#: src/muonapt/MuonStrings.cpp:216
+#, kde-format
+msgctxt "@info:status Package state"
+msgid "Installed (auto-removable)"
+msgstr "Nameščeno (samodejno odstranljivo)"
+
+#: src/muonapt/MuonStrings.cpp:217 src/muonapt/MuonStrings.cpp:218
+#, kde-format
+msgctxt "@info:status Package state"
+msgid "Policy Broken"
+msgstr "Pokvarjen pravilnik"
+
+#: src/muonapt/MuonStrings.cpp:219
+#, kde-format
+msgctxt "@info:status Package state"
+msgid "Not Installed"
+msgstr "Ni nameščeno"
+
+#: src/muonapt/MuonStrings.cpp:221
+#, kde-format
+msgctxt "@info:status Package locked at a certain version"
+msgid "Locked"
+msgstr "Zaklenjeno"
+
+#: src/muonapt/MuonStrings.cpp:222
+#, kde-format
+msgctxt "@info:status Package state"
+msgid "Manually held back"
+msgstr "Ročno zadržan"
+
+#: src/muonapt/MuonStrings.cpp:243
+#, kde-format
+msgctxt "@item:inlistbox"
+msgid "Common"
+msgstr "Skupno"
+
+#: src/muonapt/MuonStrings.cpp:244
+#, kde-format
+msgctxt "@item:inlistbox CPU architecture"
+msgid "32-bit"
+msgstr "32-bit"
+
+#: src/muonapt/MuonStrings.cpp:245
+#, kde-format
+msgctxt "@item:inlistbox CPU architecture"
+msgid "64-bit"
+msgstr "64-bit"
+
+#: src/muonapt/MuonStrings.cpp:246
+#, kde-format
+msgctxt "@item:inlistbox PU architecture"
+msgid "Power PC"
+msgstr "Power PC"
+
+#: src/muonapt/MuonStrings.cpp:265
+#, kde-format
+msgctxt "@title:window"
+msgid "Initialization Error"
+msgstr "Napaka med začenjanjem"
+
+#: src/muonapt/MuonStrings.cpp:267
+#, kde-format
+msgctxt "@title:window"
+msgid "Unable to Obtain Package System Lock"
+msgstr "Ni mogoče zakleniti sistema za pakete"
+
+#: src/muonapt/MuonStrings.cpp:269
+#, kde-format
+msgctxt "@title:window"
+msgid "Low Disk Space"
+msgstr "Prostora na disku je malo"
+
+#: src/muonapt/MuonStrings.cpp:272
+#, kde-format
+msgctxt "@title:window"
+msgid "Failed to Apply Changes"
+msgstr "Sprememb ni bilo mogoče uveljaviti"
+
+#: src/muonapt/MuonStrings.cpp:274
+#, kde-format
+msgctxt "@title:window"
+msgid "Authentication error"
+msgstr "Napaka med overitvijo"
+
+#: src/muonapt/MuonStrings.cpp:276
+#, kde-format
+msgctxt "@title:window"
+msgid "Unexpected Error"
+msgstr "Nepričakovana napaka"
+
+#: src/muonapt/MuonStrings.cpp:278
+#, kde-format
+msgctxt "@title:window"
+msgid "Untrusted Packages"
+msgstr "Paketi, ki niso zaupanja vredni"
+
+#: src/muonapt/MuonStrings.cpp:281
+#, kde-format
+msgctxt "@title:window"
+msgid "Unknown Error"
+msgstr "Neznana napaka"
+
+#: src/muonapt/MuonStrings.cpp:291
+#, kde-format
+msgctxt "@label"
+msgid ""
+"The package system could not be initialized, your configuration may be "
+"broken."
+msgstr ""
+"Sistema za pakete ni bilo mogoče začeti. Morda so nastavitve pokvarjene."
+
+#: src/muonapt/MuonStrings.cpp:296
+#, kde-format
+msgctxt "@label"
+msgid ""
+"Another application seems to be using the package system at this time. You "
+"must close all other package managers before you will be able to install or "
+"remove any packages."
+msgstr ""
+"Kot kaže v tem trenutku sistem za pakete že uporablja nek drug program. "
+"Preden lahko namestite ali odstranite pakete morate zapreti vse druge "
+"upravljalnike paketov."
+
+#: src/muonapt/MuonStrings.cpp:303
+#, kde-format
+msgctxt "@label"
+msgid ""
+"You do not have enough disk space in the directory at %1 to continue with "
+"this operation."
+msgstr "Za nadaljevanje tega dejanja ni na voljo dovolj prostora v mapi %1."
+
+#: src/muonapt/MuonStrings.cpp:307
+#, kde-format
+msgctxt "@label"
+msgid "Could not download packages"
+msgstr "Paketov ni bilo mogoče prejeti"
+
+#: src/muonapt/MuonStrings.cpp:310
+#, kde-format
+msgctxt "@label"
+msgid "An error occurred while applying changes:"
+msgstr "Med uveljavljanjem sprememb je prišlo do napake:"
+
+#: src/muonapt/MuonStrings.cpp:314
+#, kde-format
+msgctxt "@label"
+msgid ""
+"This operation cannot continue since proper authorization was not provided"
+msgstr ""
+"Tega dejanja ni mogoče nadaljevati saj ni bila pridobljena ustrezna "
+"pooblastitev"
+
+#: src/muonapt/MuonStrings.cpp:318
+#, kde-format
+msgctxt "@label"
+msgid ""
+"It appears that the QApt worker has either crashed or disappeared. Please "
+"report a bug to the QApt maintainers"
+msgstr ""
+"Kot kaže se je proces QApt sesul ali pa je izginil. O tej napaki obvestite "
+"razvijalce QApt."
+
+#: src/muonapt/MuonStrings.cpp:323
+#, kde-format
+msgctxt "@label"
+msgid ""
+"The following package has not been verified by its author. Downloading "
+"untrusted packages has been disallowed by your current configuration."
+msgid_plural ""
+"The following packages have not been verified by their authors. Downloading "
+"untrusted packages has been disallowed by your current configuration."
+msgstr[0] ""
+"Naslednji paketi nimajo potrdil svojih avtorjev. Glede na trenutne "
+"nastavitve je prejemanje paketov, ki niso zaupanja vredni, prepovedano."
+msgstr[1] ""
+"Naslednji paket nima potrdil svojih avtorjev. Glede na trenutne nastavitve "
+"je prejemanje paketov, ki niso zaupanja vredni, prepovedano."
+msgstr[2] ""
+"Naslednja paketa nimata potrdil svojih avtorjev. Glede na trenutne "
+"nastavitve je prejemanje paketov, ki niso zaupanja vredni, prepovedano."
+msgstr[3] ""
+"Naslednji paketi nimajo potrdil svojih avtorjev. Glede na trenutne "
+"nastavitve je prejemanje paketov, ki niso zaupanja vredni, prepovedano."
+
+#: src/muonapt/QAptActions.cpp:118
+#, kde-format
+msgctxt "@action Reverts all potential changes to the cache"
+msgid "Unmark All"
+msgstr "Odstrani vse oznake"
+
+#: src/muonapt/QAptActions.cpp:125
+#, kde-format
+msgctxt "@action Opens the software sources configuration dialog"
+msgid "Configure Software Sources"
+msgstr "Nastavite programske vire"
+
+#: src/muonapt/QAptActions.cpp:131
+#, kde-format
+msgctxt "@action"
+msgid "Read Markings..."
+msgstr "Preberi oznake ..."
+
+#: src/muonapt/QAptActions.cpp:137
+#, kde-format
+msgctxt "@action"
+msgid "Save Markings As..."
+msgstr "Shrani oznake kot  ..."
+
+#: src/muonapt/QAptActions.cpp:144
+#, kde-format
+msgctxt "@action"
+msgid "Save Package Download List..."
+msgstr "Shrani seznam prejemanj paketov ..."
+
+#: src/muonapt/QAptActions.cpp:151
+#, kde-format
+msgctxt "@action"
+msgid "Download Packages From List..."
+msgstr "Prejmi pakete iz seznama ..."
+
+#: src/muonapt/QAptActions.cpp:160
+#, kde-format
+msgctxt "@action"
+msgid "Add Downloaded Packages"
+msgstr "Dodaj prejete pakete"
+
+#: src/muonapt/QAptActions.cpp:167
+#, kde-format
+msgctxt "@action"
+msgid "Save Installed Packages List..."
+msgstr "Shrani seznam nameščenih paketov ..."
+
+#: src/muonapt/QAptActions.cpp:173
+#, kde-format
+msgctxt "@action::inmenu"
+msgid "History..."
+msgstr "Zgodovina ..."
+
+#: src/muonapt/QAptActions.cpp:179
+#, kde-format
+msgctxt "@action"
+msgid "Upgrade"
+msgstr "Nadgradi"
+
+#: src/muonapt/QAptActions.cpp:182
+#, kde-format
+msgctxt "Notification when a new version of Kubuntu is available"
+msgid "A new version of Kubuntu is available."
+msgstr "Na voljo je nova različica Kubuntu."
+
+#: src/muonapt/QAptActions.cpp:226
+#, kde-format
+msgctxt "@title:window"
+msgid "Save Markings As"
+msgstr "Shrani oznake kot "
+
+#: src/muonapt/QAptActions.cpp:233 src/muonapt/QAptActions.cpp:258
+#: src/muonapt/QAptActions.cpp:282
+#, kde-kuit-format
+msgctxt "@label"
+msgid ""
+"The document could not be saved, as it was not possible to write to "
+"<filename>%1</filename>\n"
+"\n"
+"Check that you have write access to this file or that enough disk space is "
+"available."
+msgstr ""
+"Dokument ni bil shranjen, ker ni bilo mogoče pisati v <filename>%1</"
+"filename>\n"
+"\n"
+"Preverite, da imate pravice do pisanja v to datoteko oz. da je na voljo "
+"dovolj prostora."
+
+#: src/muonapt/QAptActions.cpp:251
+#, kde-format
+msgctxt "@title:window"
+msgid "Save Installed Packages List As"
+msgstr "Shrani seznam nameščenih paketov kot"
+
+#: src/muonapt/QAptActions.cpp:275
+#, kde-format
+msgctxt "@title:window"
+msgid "Save Download List As"
+msgstr "Shrani seznam prejemanj paketov kot"
+
+#: src/muonapt/QAptActions.cpp:297 src/muonapt/QAptActions.cpp:314
+#, kde-format
+msgctxt "@title:window"
+msgid "Open File"
+msgstr "Odpri datoteko"
+
+#: src/muonapt/QAptActions.cpp:322
+#, kde-format
+msgctxt "@label"
+msgid ""
+"Could not mark changes. Please make sure that the file is a markings file "
+"created by either the Muon Package Manager or the Synaptic Package Manager."
+msgstr ""
+"Ni bilo mogoče označiti sprememb. Prepričajte se, da je bila datoteka z "
+"oznakami ustvarjena z Upravljalnikom paketov Muon ali Upravljalnikom paketov "
+"Synaptic."
+
+#: src/muonapt/QAptActions.cpp:333
+#, kde-format
+msgctxt "@title:window"
+msgid "Choose a Directory"
+msgstr "Izberite mapo"
+
+#: src/muonapt/QAptActions.cpp:356
+#, kde-format
+msgctxt "@label"
+msgid "%1 package was successfully added to the cache"
+msgid_plural "%1 packages were successfully added to the cache"
+msgstr[0] "%1 paketov je bilo uspešno dodanih v predpomnilnik"
+msgstr[1] "%1 paket je bil uspešno dodan v predpomnilnik"
+msgstr[2] "%1 paketa sta bila uspešno dodana v predpomnilnik"
+msgstr[3] "%1 paketi so bili uspešno dodani v predpomnilnik"
+
+#: src/muonapt/QAptActions.cpp:362
+#, kde-format
+msgctxt "@label"
+msgid ""
+"No valid packages could be found in this directory. Please make sure the "
+"packages are compatible with your computer and are at the latest version."
+msgstr ""
+"V mapi ni bilo mogoče najti veljavnih paketov. Prepričajte se, da so paketi "
+"združljivi z vašim računalnikom in so najnovejših različic."
+
+#: src/muonapt/QAptActions.cpp:366
+#, kde-format
+msgctxt "@title:window"
+msgid "Packages Could Not be Found"
+msgstr "Paketov ni bilo mogoče najti"
+
+#: src/muonapt/QAptActions.cpp:398
+#, kde-format
+msgctxt "@label"
+msgid ""
+"Could not find <command>software-properties-kde</command> on your system, "
+"please install it. Alternatively, you can use <application>Plasma Discover</"
+"application> to configure software sources."
+msgstr ""
+"Na vašem sistemu ni bilo mogoče najti ukaza <command>software-properties-"
+"kde</command>. Morali ga boste namestiti ali pa za nastavitev programskih "
+"virov uporabiti <application>Plasma Discover</application>."
+
+#: src/muonapt/QAptActions.cpp:403
+#, kde-format
+msgctxt "@title:window"
+msgid "Cannot find <command>software-properties-kde</command>"
+msgstr "Ni mogoče najti ukaza <command>software-properties-kde</command>"
+
+#: src/muonapt/QAptActions.cpp:494
+#, kde-format
+msgctxt "@title:window"
+msgid "Package History"
+msgstr "Zgodovina paketov"
+
+#: src/PackageModel/PackageModel.cpp:88
+#, kde-format
+msgid "Package"
+msgstr "Paket"
+
+#: src/PackageModel/PackageModel.cpp:90
+#, kde-format
+msgid "Status"
+msgstr "Stanje"
+
+#: src/PackageModel/PackageModel.cpp:92
+#, kde-format
+msgid "Requested"
+msgstr "Zahtevano"
+
+#: src/PackageModel/PackageModel.cpp:94
+#, kde-format
+msgid "Installed Size"
+msgstr "Nameščena velikost"
+
+#: src/PackageModel/PackageModel.cpp:96
+#, kde-format
+msgid "Installed Version"
+msgstr "Nameščena različica"
+
+#: src/PackageModel/PackageModel.cpp:98
+#, kde-format
+msgid "Available Version"
+msgstr "Razpoložljiva različica"
+
+#: src/PackageModel/PackageWidget.cpp:166
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Mark for Installation"
+msgstr "Označi za namestitev"
+
+#: src/PackageModel/PackageWidget.cpp:171
+#, kde-format
+msgctxt "@action:button"
+msgid "Mark for Removal"
+msgstr "Označi za odstranitev"
+
+#: src/PackageModel/PackageWidget.cpp:176
+#, kde-format
+msgctxt "@action:button"
+msgid "Mark for Upgrade"
+msgstr "Označi za nadgradnjo"
+
+#: src/PackageModel/PackageWidget.cpp:181
+#, kde-format
+msgctxt "@action:button"
+msgid "Mark for Reinstallation"
+msgstr "Označi za ponovno namestitev"
+
+#: src/PackageModel/PackageWidget.cpp:186
+#, kde-format
+msgctxt "@action:button"
+msgid "Mark for Purge"
+msgstr "Označi za čiščenje"
+
+#: src/PackageModel/PackageWidget.cpp:197
+#, kde-format
+msgctxt "@action:button"
+msgid "Lock Package at Current Version"
+msgstr "Zakleni paket na trenutno različico"
+
+#: src/PackageModel/PackageWidget.cpp:377
+#, kde-format
+msgctxt "@action:button"
+msgid "Unlock package"
+msgstr "Odkleni paket"
+
+#: src/PackageModel/PackageWidget.cpp:381
+#, kde-format
+msgctxt "@action:button"
+msgid "Lock at Current Version"
+msgstr "Zakleni na trenutno različico"
+
+#: src/PackageModel/PackageWidget.cpp:422
+#, kde-format
+msgctxt "@label"
+msgid ""
+"Removing this package may break your system. Are you sure you want to remove "
+"it?"
+msgstr ""
+"Odstranitev tega paketa lahko pokvari vaš sistem. Ali ste prepričani, da ga "
+"želite odstraniti?"
+
+#: src/PackageModel/PackageWidget.cpp:423
+#, kde-format
+msgctxt "@label"
+msgid "Warning - Removing Important Package"
+msgstr "Pozor - odstranjevanje pomembnega paketa"
+
+#: src/PackageModel/PackageWidget.cpp:609
+#, kde-format
+msgctxt "@title:window"
+msgid "Failed to Lock Package"
+msgstr "Ni bilo mogoče zakleniti paketa"
+
+#: src/PackageModel/PackageWidget.cpp:610
+#, kde-format
+msgctxt "@info Error text"
+msgid "The package %1 could not be locked. Failed to write lock file."
+msgstr ""
+"Paketa %1 ni bilo mogoče zakleniti, saj ni bilo mogoče zapisati zaklepne "
+"datoteke."
+
+#: src/PackageModel/PackageWidget.cpp:659
+#, kde-format
+msgctxt "@label"
+msgid "The \"%1\" package could not be marked for installation or upgrade:"
+msgstr "Paketa '%1' ni bilo mogoče označiti za namestitev ali nadgradnjo:"
+
+#: src/PackageModel/PackageWidget.cpp:662
+#, kde-format
+msgctxt "@title:window"
+msgid "Unable to Mark Package"
+msgstr "Ni bilo mogoče označiti paketa"
+
+#: src/PackageModel/PackageWidget.cpp:679
+#, kde-format
+msgctxt "@label"
+msgid ""
+"The \"%1\" package has no available version, but exists in the database.\n"
+"\tThis typically means that the package was mentioned in a dependency and "
+"never uploaded, has been obsoleted, or is not available from the currently-"
+"enabled repositories."
+msgstr ""
+"Paket '%1' nima razpoložljive različice, obstaja pa v podatkovni zbirki.\n"
+"\tTo ponavadi pomeni, da je bil omenjen v odvisnosti, a ni bil poslan, je "
+"zastarel ali pa ni na voljo iz trenutno omogočenih skladišč."
+
+#: src/PackageModel/PackageWidget.cpp:686
+#, kde-format
+msgctxt "@label Example: Depends: libqapt 0.1, but 0.2 is to be installed"
+msgid "%1: %2 %3, but %4 is to be installed"
+msgstr "%1: %2 %3, ampak nameščen bo %4"
+
+#: src/PackageModel/PackageWidget.cpp:692
+#, kde-format
+msgctxt "@label Example: Depends: libqapt, but is not installable"
+msgid "%1: %2, but it is not installable"
+msgstr "%1: %2, ampak ga ni mogoče namestiti"
+
+#: src/PackageModel/PackageWidget.cpp:697
+#, kde-format
+msgctxt "@label Example: Depends: libqapt, but it is a virtual package"
+msgid "%1: %2, but it is a virtual package"
+msgstr "%1: %2, ampak je navidezni paket"
+
+#: src/ReviewWidget.cpp:32
+#, kde-format
+msgid "<b>Review and Apply Changes</b>"
+msgstr "<b>Preglejte in uveljavite spremembe</b>"
+
+#: src/StatusWidget.cpp:52
+#, kde-format
+msgctxt "@info:status"
+msgid "Rebuilding Search Index"
+msgstr "Ponovna izgradnja iskalnega kazala"
+
+#: src/StatusWidget.cpp:93
+#, kde-format
+msgctxt "@info:status"
+msgid "1 package available, "
+msgid_plural "%1 packages available, "
+msgstr[0] "%1 paketov je na voljo, "
+msgstr[1] "%1 paket je na voljo, "
+msgstr[2] "%1 paketa sta na voljo, "
+msgstr[3] "%1 paketi so na voljo, "
+
+#: src/StatusWidget.cpp:94
+#, kde-format
+msgctxt "@info:status"
+msgid "%1 installed, "
+msgstr "%1 nameščenih, "
+
+#: src/StatusWidget.cpp:98
+#, kde-format
+msgctxt "@info:status"
+msgid "%1 upgradeable,"
+msgstr "%1 ima nadgradnjo,"
+
+#: src/StatusWidget.cpp:100
+#, kde-format
+msgctxt "@info:status"
+msgid "%1 upgradeable"
+msgstr "%1 ima nadgradnjo"
+
+#: src/StatusWidget.cpp:112
+#, kde-format
+msgctxt "@info:status Part of the status label"
+msgid " %1 to install/upgrade"
+msgstr " %1 za namestitev/nadgradnjo"
+
+#: src/StatusWidget.cpp:117
+#, kde-format
+msgctxt ""
+"@info:status Label for the number of packages pending removal when packages "
+"are also pending upgrade"
+msgid ", %1 to remove"
+msgstr ", %1 za odstranitev"
+
+#: src/StatusWidget.cpp:120
+#, kde-format
+msgctxt ""
+"@info:status Label for the number of packages pending removal when there are "
+"only removals"
+msgid " %1 to remove"
+msgstr " %1 za odstranitev"
+
+#: src/StatusWidget.cpp:129
+#, kde-format
+msgctxt "@label showing download and install size"
+msgid "%1 to download, %2 of space to be freed"
+msgstr "%1 za prejem, %2 prostora bo sproščenega"
+
+#: src/StatusWidget.cpp:133
+#, kde-format
+msgctxt "@label showing download and install size"
+msgid "%1 to download, %2 of space to be used"
+msgstr "%1 za prejem, %2 prostora bo uporabljenega"
+
+#: src/TransactionWidget.cpp:103
+#, kde-format
+msgctxt "@action:button Cancels the download"
+msgid "Cancel"
+msgstr "Prekliči"
+
+#: src/TransactionWidget.cpp:148
+#, kde-kuit-format
+msgctxt "@info Status information, widget title"
+msgid "<title>Starting</title>"
+msgstr "<title>Začenjanje</title>"
+
+#: src/TransactionWidget.cpp:150
+#, kde-format
+msgctxt "@info Status info"
+msgid "Waiting for service to start"
+msgstr "Čakanje na zagon storitve"
+
+#: src/TransactionWidget.cpp:155
+#, kde-format
+msgctxt "@info Status info"
+msgid "Waiting for authentication"
+msgstr "Čakanje na overitev"
+
+#: src/TransactionWidget.cpp:159 src/TransactionWidget.cpp:166
+#: src/TransactionWidget.cpp:173 src/TransactionWidget.cpp:180
+#, kde-kuit-format
+msgctxt "@info Status information, widget title"
+msgid "<title>Waiting</title>"
+msgstr "<title>Čakanje</title>"
+
+#: src/TransactionWidget.cpp:161
+#, kde-format
+msgctxt "@info Status info"
+msgid "Waiting for other transactions to finish"
+msgstr "Čakanje, da se zaključijo druge transakcije"
+
+#: src/TransactionWidget.cpp:168
+#, kde-format
+msgctxt "@info Status info"
+msgid "Waiting for other software managers to quit"
+msgstr "Čakanje, da se drugi upravljalniki programske opreme končajo"
+
+#: src/TransactionWidget.cpp:175
+#, kde-format
+msgctxt "@info Status info"
+msgid "Waiting for required medium"
+msgstr "Čakanje na zahtevan nosilec"
+
+#: src/TransactionWidget.cpp:182
+#, kde-format
+msgctxt "@info Status info"
+msgid "Waiting for configuration file"
+msgstr "Čakanje na nastavitveno datoteko"
+
+#: src/TransactionWidget.cpp:193
+#, kde-kuit-format
+msgctxt "@info Status info"
+msgid "<title>Loading Software List</title>"
+msgstr "<title>Nalaganje seznama programske opreme</title>"
+
+#: src/TransactionWidget.cpp:201
+#, kde-kuit-format
+msgctxt "@info Status information, widget title"
+msgid "<title>Updating software sources</title>"
+msgstr "<title>Posodabljanje programskih virov</title>"
+
+#: src/TransactionWidget.cpp:206
+#, kde-kuit-format
+msgctxt "@info Status information, widget title"
+msgid "<title>Downloading Packages</title>"
+msgstr "<title>Prejemanje paketov</title>"
+
+#: src/TransactionWidget.cpp:218
+#, kde-kuit-format
+msgctxt "@info Status information, widget title"
+msgid "<title>Committing Changes</title>"
+msgstr "<title>Uveljavljanje sprememb</title>"
+
+#: src/TransactionWidget.cpp:225
+#, kde-kuit-format
+msgctxt "@info Status information, widget title"
+msgid "<title>Finished</title>"
+msgstr "<title>Zaključeno</title>"
+
+#: src/TransactionWidget.cpp:254
+#, kde-format
+msgctxt "@title:window"
+msgid "Media Change Required"
+msgstr "Zahtevana je zamenjava nosilca"
+
+#: src/TransactionWidget.cpp:255
+#, kde-kuit-format
+msgctxt "@label"
+msgid "Please insert %1 into <filename>%2</filename>"
+msgstr "V <filename>%2</filename> vstavite %1"
+
+#: src/TransactionWidget.cpp:264
+#, kde-format
+msgctxt "@title:window"
+msgid "Warning - Unverified Software"
+msgstr "Opozorilo – nepreverjena programska oprema"
+
+#: src/TransactionWidget.cpp:266
+#, kde-kuit-format
+msgctxt "@label"
+msgid ""
+"The following piece of software cannot be verified. <warning>Installing "
+"unverified software represents a security risk, as the presence of "
+"unverifiable software can be a sign of tampering.</warning> Do you wish to "
+"continue?"
+msgid_plural ""
+"The following pieces of software cannot be verified. <warning>Installing "
+"unverified software represents a security risk, as the presence of "
+"unverifiable software can be a sign of tampering.</warning> Do you wish to "
+"continue?"
+msgstr[0] ""
+"Naslednjih paketov ni mogoče preveriti. <warning>Nameščanje nepreverjenih "
+"paketov predstavlja varnostno tveganje, saj lahko nepreverljivost kaže na "
+"znake nedovoljenega spreminjanja.</warning> Ali želite nadaljevati?"
+msgstr[1] ""
+"Naslednjega paketa ni mogoče preveriti. <warning>Nameščanje nepreverjenih "
+"paketov predstavlja varnostno tveganje, saj lahko nepreverljivost kaže na "
+"znake nedovoljenega spreminjanja.</warning> Ali želite nadaljevati?"
+msgstr[2] ""
+"Naslednjih paketov ni mogoče preveriti. <warning>Nameščanje nepreverjenih "
+"paketov predstavlja varnostno tveganje, saj lahko nepreverljivost kaže na "
+"znake nedovoljenega spreminjanja.</warning> Ali želite nadaljevati?"
+msgstr[3] ""
+"Naslednjih paketov ni mogoče preveriti. <warning>Nameščanje nepreverjenih "
+"paketov predstavlja varnostno tveganje, saj lahko nepreverljivost kaže na "
+"znake nedovoljenega spreminjanja.</warning> Ali želite nadaljevati?"
+
+#: src/TransactionWidget.cpp:284
+#, kde-format
+msgctxt "@title:window"
+msgid "Configuration File Changed"
+msgstr "Nastavitvena datoteka je bila spremenjena"
+
+#: src/TransactionWidget.cpp:286
+#, kde-kuit-format
+msgctxt "@label Notifies a config file change"
+msgid ""
+"A new version of the configuration file <filename>%1</filename> is "
+"available, but your version has been modified. Would you like to keep your "
+"current version or install the new version?"
+msgstr ""
+"Na voljo je nova različica nastavitvene datoteke <filename>%1</filename>, "
+"vendar je bila vaša različica spremenjena. Ali bi želeli ohraniti trenutno "
+"različico ali namestiti novo?"
+
+#: src/TransactionWidget.cpp:291
+#, kde-format
+msgctxt "@action Use the new config file"
+msgid "Use New Version"
+msgstr "Uporabi novo različico"
+
+#: src/TransactionWidget.cpp:292
+#, kde-format
+msgctxt "@action Keep the old config file"
+msgid "Keep Old Version"
+msgstr "Ohrani staro različico"

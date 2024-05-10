@@ -1,0 +1,1977 @@
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+# Shinjo Park <kde@peremen.name>, 2015.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2018-03-15 03:18+0100\n"
+"PO-Revision-Date: 2015-04-26 16:06+0200\n"
+"Last-Translator: Shinjo Park <kde@peremen.name>\n"
+"Language-Team: Korean <kde@peremen.name>\n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Lokalize 1.5\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Shinjo Park"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "kde@peremen.name"
+
+#. i18n: ectx: label, entry (SplitterSizes), group (muon)
+#: muonrc.cpp:3 src/config/muon.kcfg:9
+#, kde-format
+msgid "How the main window is divided."
+msgstr "주 창이 나뉘는 방법입니다."
+
+#. i18n: ectx: label, entry (Width), group (muon)
+#: muonrc.cpp:6 src/config/muon.kcfg:12
+#, kde-format
+msgid "Width of the main window."
+msgstr "주 창의 너비입니다."
+
+#. i18n: ectx: label, entry (Height), group (muon)
+#: muonrc.cpp:9 src/config/muon.kcfg:16
+#, kde-format
+msgid "Height of the main window."
+msgstr "주 창의 높이입니다."
+
+#. i18n: ectx: label, entry (UndoStackSize), group (muon)
+#: muonrc.cpp:12 src/config/muon.kcfg:20
+#, kde-format
+msgid "The amount of history kept for undo/redo."
+msgstr "저장할 실행 취소 및 재실행 기록 개수입니다."
+
+#. i18n: ectx: label, entry (AskChanges), group (muon)
+#: muonrc.cpp:15 src/config/muon.kcfg:24
+#, kde-format
+msgid "Whether or not to confirm additional changes."
+msgstr "변경 사항을 저장할 지 여부입니다."
+
+#. i18n: ectx: label, entry (ShowMultiArchDupes), group (muon)
+#: muonrc.cpp:18 src/config/muon.kcfg:28
+#, kde-format
+msgid "Show foreign architecture packages also available natively."
+msgstr "현재 아키텍처에 없는 패키지 목록을 표시합니다."
+
+#. i18n: ectx: label, entry (ManagerListColumns), group (muon)
+#: muonrc.cpp:21 src/config/muon.kcfg:32
+#, kde-format
+msgid "Status of columns in the manager list of packages."
+msgstr ""
+
+#. i18n: ectx: label, entry (ReviewListColumns), group (muon)
+#: muonrc.cpp:24 src/config/muon.kcfg:36
+#, kde-format
+msgid "Status of columns in the changes review list of packages."
+msgstr ""
+
+#: src/config/GeneralSettingsPage.cpp:51
+#, kde-format
+msgid "Ask to confirm changes that affect other packages"
+msgstr "다른 패키지에 영향을 주는 변경 사항 확인"
+
+#: src/config/GeneralSettingsPage.cpp:52
+#, kde-format
+msgid "Show foreign-architecture packages that are available natively"
+msgstr "현재 아키텍처에 없는 패키지 목록 표시"
+
+#: src/config/GeneralSettingsPage.cpp:53
+#, kde-format
+msgid "Treat recommended packages as dependencies"
+msgstr "추천하는 패키지를 의존성으로 취급"
+
+#: src/config/GeneralSettingsPage.cpp:54
+#, kde-format
+msgid "Treat suggested packages as dependencies"
+msgstr "제안하는 패키지를 의존성으로 취급"
+
+#: src/config/GeneralSettingsPage.cpp:55
+#, kde-format
+msgid "Allow the installation of untrusted packages"
+msgstr "신뢰할 수 없는 패키지 설치 허용"
+
+#: src/config/GeneralSettingsPage.cpp:66
+#, kde-format
+msgid "Delete obsolete cached packages every:"
+msgstr "과거에 캐시된 패키지를 다음마다 삭제:"
+
+#: src/config/GeneralSettingsPage.cpp:84
+#, kde-format
+msgid "Number of undo operations:"
+msgstr "실행 취소 최대 횟수:"
+
+#: src/config/GeneralSettingsPage.cpp:160
+#, kde-format
+msgid " day"
+msgid_plural " days"
+msgstr[0] "일"
+
+#: src/config/ManagerSettingsDialog.cpp:40
+#, kde-format
+msgctxt "@title:window"
+msgid "Muon Preferences"
+msgstr "Muon 설정"
+
+#: src/config/ManagerSettingsDialog.cpp:47
+#, kde-format
+msgctxt "@title:group Title of the general group"
+msgid "General"
+msgstr "일반"
+
+#: src/DetailsTabs/ChangelogTab.cpp:45
+#, kde-format
+msgctxt "@title:tab"
+msgid "Changes List"
+msgstr "변경 사항 목록"
+
+#: src/DetailsTabs/ChangelogTab.cpp:94
+#, kde-kuit-format
+msgctxt "@info/rich"
+msgid ""
+"The list of changes is not yet available. Please use <link "
+"url='%1'>Launchpad</link> instead."
+msgstr ""
+"채널 목록을 사용할 수 없습니다. <link url='%1'>Launchpad</link>를 사용하십시"
+"오."
+
+#: src/DetailsTabs/ChangelogTab.cpp:98
+#, kde-format
+msgctxt "@info"
+msgid "The list of changes is not yet available."
+msgstr "변경 사항 목록을 사용할 수 없습니다."
+
+#: src/DetailsTabs/DependsTab.cpp:37
+#, kde-format
+msgctxt "@title:tab"
+msgid "Dependencies"
+msgstr "의존성"
+
+#: src/DetailsTabs/DependsTab.cpp:40
+#, kde-format
+msgctxt "@item:inlistbox"
+msgid "Dependencies of the Current Version"
+msgstr "현재 버전의 의존성"
+
+#: src/DetailsTabs/DependsTab.cpp:41
+#, kde-format
+msgctxt "@item:inlistbox"
+msgid "Dependencies of the Latest Version"
+msgstr "최신 버전의 의존성"
+
+#: src/DetailsTabs/DependsTab.cpp:42
+#, kde-format
+msgctxt "@item:inlistbox"
+msgid "Dependants (Reverse Dependencies)"
+msgstr "의존하는 것 (역 의존성)"
+
+#: src/DetailsTabs/DependsTab.cpp:43
+#, kde-format
+msgctxt "@item:inlistbox"
+msgid "Virtual Packages Provided"
+msgstr "제공하는 가상 패키지"
+
+#: src/DetailsTabs/DependsTab.cpp:71 src/DetailsTabs/DependsTab.cpp:78
+#, kde-format
+msgctxt "@label"
+msgid "This package does not have any dependencies"
+msgstr "이 패키지는 의존성이 필요하지 않습니다"
+
+#: src/DetailsTabs/DependsTab.cpp:85
+#, kde-format
+msgctxt "@label"
+msgid "This package has no dependents. (Nothing depends on it.)"
+msgstr "이 패키지에 의존하는 것이 없습니다."
+
+#: src/DetailsTabs/DependsTab.cpp:92
+#, kde-format
+msgctxt "@label"
+msgid "This package does not provide any virtual packages"
+msgstr "이 패키지는 가상 패키지를 제공하지 않습니다"
+
+#: src/DetailsTabs/InstalledFilesTab.cpp:35
+#, kde-format
+msgctxt "@title:tab"
+msgid "Installed Files"
+msgstr "설치된 파일"
+
+#: src/DetailsTabs/MainTab.cpp:43
+#, kde-format
+msgctxt "@title:tab"
+msgid "Details"
+msgstr "자세히"
+
+#: src/DetailsTabs/MainTab.cpp:57
+#, kde-format
+msgctxt "@label"
+msgid "Mark for:"
+msgstr "다음으로 표시:"
+
+#: src/DetailsTabs/MainTab.cpp:62
+#, kde-format
+msgctxt "@action:button"
+msgid "Installation"
+msgstr "설치"
+
+#: src/DetailsTabs/MainTab.cpp:70
+#, kde-format
+msgctxt "@action:button"
+msgid "Removal"
+msgstr "삭제"
+
+#: src/DetailsTabs/MainTab.cpp:76
+#, kde-format
+msgctxt "@action:button"
+msgid "Upgrade"
+msgstr "업그레이드"
+
+#: src/DetailsTabs/MainTab.cpp:82
+#, kde-format
+msgctxt "@action:button"
+msgid "Reinstallation"
+msgstr "다시 설치"
+
+#: src/DetailsTabs/MainTab.cpp:89
+#, kde-format
+msgctxt "@action:button"
+msgid "Purge"
+msgstr "깨끗이 삭제"
+
+#: src/DetailsTabs/MainTab.cpp:102 src/PackageModel/PackageWidget.cpp:191
+#, kde-format
+msgctxt "@action:button"
+msgid "Unmark"
+msgstr "표시 해제"
+
+#: src/DetailsTabs/MainTab.cpp:188
+#, kde-format
+msgctxt "@info Tells how long Canonical, Ltd. will support a package"
+msgid "Canonical provides critical updates for %1 until %2."
+msgstr "캐노니컬은 %1의 중요 업데이트를 %2까지 제공합니다."
+
+#: src/DetailsTabs/MainTab.cpp:192
+#, kde-format
+msgctxt "@info Tells how long Canonical, Ltd. will support a package"
+msgid ""
+"Canonical does not provide updates for %1. Some updates may be provided by "
+"the Ubuntu community."
+msgstr ""
+"캐노니컬은 %1의 업데이트를 제공하지 않습니다. 일부 업데이트는 우분투 커뮤니티"
+"에서 제공합니다."
+
+#: src/DetailsTabs/TechnicalDetailsTab.cpp:43
+#, kde-format
+msgctxt "@title:tab"
+msgid "Technical Details"
+msgstr "기술 정보"
+
+#: src/DetailsTabs/TechnicalDetailsTab.cpp:57
+#, kde-format
+msgctxt "@label Label preceding the package maintainer"
+msgid "Maintainer:"
+msgstr "관리자:"
+
+#: src/DetailsTabs/TechnicalDetailsTab.cpp:66
+#, kde-format
+msgctxt "@label Label preceding the package category"
+msgid "Category:"
+msgstr "분류:"
+
+#: src/DetailsTabs/TechnicalDetailsTab.cpp:76
+#, kde-format
+msgctxt "@label The parent package that this package comes from"
+msgid "Source Package:"
+msgstr "원본 패키지:"
+
+#: src/DetailsTabs/TechnicalDetailsTab.cpp:86
+#, kde-format
+msgctxt "@label The software source that this package comes from"
+msgid "Origin:"
+msgstr "원본:"
+
+#: src/DetailsTabs/TechnicalDetailsTab.cpp:96
+#, kde-format
+msgctxt "@label The package archive component that this package comes from"
+msgid "Component:"
+msgstr "구성 요소:"
+
+#: src/DetailsTabs/TechnicalDetailsTab.cpp:106
+#, kde-format
+msgctxt "@title:group"
+msgid "Installed Version"
+msgstr "설치된 버전"
+
+#: src/DetailsTabs/TechnicalDetailsTab.cpp:113
+#: src/DetailsTabs/TechnicalDetailsTab.cpp:138
+#, kde-format
+msgctxt "@label Label preceding the package version"
+msgid "Version:"
+msgstr "버전:"
+
+#: src/DetailsTabs/TechnicalDetailsTab.cpp:121
+#: src/DetailsTabs/TechnicalDetailsTab.cpp:146
+#, kde-format
+msgctxt "@label Label preceding the package size"
+msgid "Installed Size:"
+msgstr "설치된 크기:"
+
+#: src/DetailsTabs/TechnicalDetailsTab.cpp:131
+#, kde-format
+msgctxt "@title:group"
+msgid "Available Version"
+msgstr "사용 가능한 버전"
+
+#: src/DetailsTabs/TechnicalDetailsTab.cpp:154
+#, kde-format
+msgctxt "@label Label preceding the package's download size"
+msgid "Download Size:"
+msgstr "다운로드 크기:"
+
+#: src/DetailsTabs/VersionTab.cpp:39
+#, kde-format
+msgctxt "@title:tab"
+msgid "Versions"
+msgstr "버전"
+
+#: src/DetailsTabs/VersionTab.cpp:42
+#, kde-format
+msgctxt "@label"
+msgid "Available versions:"
+msgstr "사용 가능한 버전:"
+
+#: src/DetailsTabs/VersionTab.cpp:60
+#, kde-format
+msgctxt "@label"
+msgid ""
+"Muon always selects the most applicable version available. If you force a "
+"different version from the default one, errors in the dependency handling "
+"can occur."
+msgstr ""
+"Muon은 가장 적합한 버전을 선택합니다. 기본 버전과 다른 버전을 선택했을 경우 "
+"의존성 처리 오류가 발생할 수도 있습니다."
+
+#: src/DetailsTabs/VersionTab.cpp:68
+#, kde-format
+msgctxt "@action:button"
+msgid "Force Version"
+msgstr "버전 강제"
+
+#: src/DownloadModel/DownloadDelegate.cpp:66
+#, kde-format
+msgctxt "@info:status Progress text when done"
+msgid "Done"
+msgstr "완료"
+
+#: src/DownloadModel/DownloadModel.cpp:60
+#, kde-format
+msgctxt "@title:column"
+msgid "Package"
+msgstr "패키지"
+
+#: src/DownloadModel/DownloadModel.cpp:62
+#, kde-format
+msgctxt "@title:column"
+msgid "Location"
+msgstr "위치"
+
+#: src/DownloadModel/DownloadModel.cpp:64
+#, kde-format
+msgctxt "@title:column"
+msgid "Size"
+msgstr "크기"
+
+#: src/DownloadModel/DownloadModel.cpp:66
+#, kde-format
+msgctxt "@title:column"
+msgid "Progress"
+msgstr "진행"
+
+#: src/FilterWidget/ArchitectureFilter.cpp:47
+#: src/FilterWidget/CategoryFilter.cpp:57 src/FilterWidget/OriginFilter.cpp:42
+#: src/FilterWidget/StatusFilter.cpp:43 src/ManagerWidget.cpp:69
+#, kde-format
+msgctxt "@item:inlistbox Item that resets the filter to \"all\""
+msgid "All"
+msgstr "모두"
+
+#: src/FilterWidget/FilterWidget.cpp:46
+#, kde-format
+msgctxt "@title:window"
+msgid "Filter:"
+msgstr "필터:"
+
+#: src/FilterWidget/FilterWidget.cpp:55
+#, kde-format
+msgctxt "@title:tab"
+msgid "By Category"
+msgstr "분류별"
+
+#: src/FilterWidget/FilterWidget.cpp:61
+#, kde-format
+msgctxt "@title:tab"
+msgid "By Status"
+msgstr "상태별"
+
+#: src/FilterWidget/FilterWidget.cpp:67
+#, kde-format
+msgctxt "@title:tab"
+msgid "By Origin"
+msgstr "원본별"
+
+#: src/FilterWidget/FilterWidget.cpp:73
+#, kde-format
+msgctxt "@title:tab"
+msgid "By Architecture"
+msgstr "아키텍처별"
+
+#: src/main.cpp:36
+#, kde-format
+msgid "Muon Package Manager"
+msgstr "Muon 패키지 관리자"
+
+#: src/main.cpp:36
+#, kde-format
+msgid "A package manager"
+msgstr "패키지 관리자"
+
+#: src/main.cpp:37
+#, kde-format
+msgid "© 2009-2013 Jonathan Thomas"
+msgstr "© 2009-2013 Jonathan Thomas"
+
+#: src/main.cpp:38
+#, kde-format
+msgid "Jonathan Thomas"
+msgstr "Jonathan Thomas"
+
+#: src/main.cpp:39
+#, kde-format
+msgid "Harald Sitter"
+msgstr ""
+
+#: src/main.cpp:39
+#, kde-format
+msgid "Top Gardener"
+msgstr ""
+
+#: src/MainWindow.cpp:180
+#, kde-format
+msgctxt "@action Marks upgradeable packages for upgrade"
+msgid "Cautious Upgrade"
+msgstr "주의 깊은 업그레이드"
+
+#: src/MainWindow.cpp:186
+#, kde-format
+msgctxt ""
+"@action Marks upgradeable packages, including ones that install/remove new "
+"things"
+msgid "Full Upgrade"
+msgstr "완전한 업그레이드"
+
+#: src/MainWindow.cpp:192
+#, kde-format
+msgctxt "@action Marks packages no longer needed for removal"
+msgid "Remove Unnecessary Packages"
+msgstr "필요하지 않은 패키지 삭제"
+
+#: src/MainWindow.cpp:197
+#, kde-format
+msgctxt "@action Takes the user to the preview page"
+msgid "Preview Changes"
+msgstr "변경 사항 미리 보기"
+
+#: src/MainWindow.cpp:202
+#, kde-format
+msgctxt "@action Applys the changes a user has made"
+msgid "Apply Changes"
+msgstr "변경 사항 적용"
+
+#: src/MainWindow.cpp:207
+#, kde-format
+msgctxt "@action Checks the Internet for updates"
+msgid "Check for Updates"
+msgstr "업데이트 확인"
+
+#: src/MainWindow.cpp:233
+#, kde-kuit-format
+msgctxt "@label"
+msgid ""
+"Unable to mark upgrades. The available upgrades may require new packages to "
+"be installed or removed. You may wish to try a full upgrade by clicking the "
+"<interface>Full Upgrade</interface> button."
+msgstr ""
+"업그레이드를 표시할 수 없습니다. 업그레이드를 진행하려면 새 패키지를 설치하거"
+"나 삭제해야 합니다. <interface>완전한 업그레이드</interface> 단추를 눌러서 완"
+"전한 업그레이드를 시도하십시오."
+
+#: src/MainWindow.cpp:238 src/MainWindow.cpp:253
+#, kde-format
+msgctxt "@title:window"
+msgid "Unable to Mark Upgrades"
+msgstr "업그레이드를 표시할 수 없음"
+
+#: src/MainWindow.cpp:250
+#, kde-format
+msgctxt "@label"
+msgid ""
+"Unable to mark upgrades. Some upgrades may have unsatisfiable dependencies "
+"at the moment, or may have been manually held back."
+msgstr ""
+"업그레이드를 표시할 수 없습니다. 일부 패키지는 현재 의존성을 만족하지 못하거"
+"나, 수동으로 고정되어 있습니다."
+
+#: src/MainWindow.cpp:326
+#, kde-format
+msgctxt "@action:intoolbar Return from the preview page"
+msgid "Back"
+msgstr "뒤로"
+
+#: src/MainWindow.cpp:340
+#, kde-format
+msgctxt "@action"
+msgid "Preview Changes"
+msgstr "변경 사항 미리 보기"
+
+#: src/muonapt/ChangesDialog.cpp:39
+#, fuzzy, kde-format
+#| msgctxt "@title:window"
+#| msgid "Configuration File Changed"
+msgctxt "@title:window"
+msgid "Confirm Additional Changes"
+msgstr "설정 파일 변경됨"
+
+#: src/muonapt/ChangesDialog.cpp:44
+#, kde-format
+msgctxt "@info"
+msgid "<h2>Mark additional changes?</h2>"
+msgstr ""
+
+#: src/muonapt/ChangesDialog.cpp:48
+#, fuzzy, kde-format
+#| msgid "Ask to confirm changes that affect other packages"
+msgid "This action requires a change to another package:"
+msgid_plural "This action requires changes to other packages:"
+msgstr[0] "다른 패키지에 영향을 주는 변경 사항 확인"
+
+#: src/muonapt/HistoryView/HistoryView.cpp:49
+#, fuzzy, kde-kuit-format
+#| msgctxt "@info Status information, widget title"
+#| msgid "<title>Waiting</title>"
+msgctxt "@info"
+msgid "<title>History</title>"
+msgstr "<title>대기 중</title>"
+
+#: src/muonapt/HistoryView/HistoryView.cpp:55
+#: src/PackageModel/PackageWidget.cpp:102
+#, kde-format
+msgctxt "@label Line edit click message"
+msgid "Search"
+msgstr "찾기"
+
+#: src/muonapt/HistoryView/HistoryView.cpp:67
+#, fuzzy, kde-format
+#| msgctxt "@action Applys the changes a user has made"
+#| msgid "Apply Changes"
+msgctxt "@item:inlistbox Filters all changes in the history view"
+msgid "All changes"
+msgstr "변경 사항 적용"
+
+#: src/muonapt/HistoryView/HistoryView.cpp:71
+#, fuzzy, kde-format
+#| msgctxt "@action:button"
+#| msgid "Installation"
+msgctxt "@item:inlistbox Filters installations in the history view"
+msgid "Installations"
+msgstr "설치"
+
+#: src/muonapt/HistoryView/HistoryView.cpp:75
+#, kde-format
+msgctxt "@item:inlistbox Filters updates in the history view"
+msgid "Updates"
+msgstr ""
+
+#: src/muonapt/HistoryView/HistoryView.cpp:79
+#, fuzzy, kde-format
+#| msgctxt "@action:button"
+#| msgid "Removal"
+msgctxt "@item:inlistbox Filters removals in the history view"
+msgid "Removals"
+msgstr "삭제"
+
+#: src/muonapt/HistoryView/HistoryView.cpp:90
+#, kde-format
+msgctxt "@title:column"
+msgid "Date"
+msgstr ""
+
+#: src/muonapt/HistoryView/HistoryView.cpp:98
+#, fuzzy, kde-format
+#| msgctxt "@title:tab"
+#| msgid "Installed Files"
+msgctxt "@info:status describes a past-tense action"
+msgid "Installed"
+msgstr "설치된 파일"
+
+#: src/muonapt/HistoryView/HistoryView.cpp:99
+#, fuzzy, kde-format
+#| msgctxt "@action:button"
+#| msgid "Upgrade"
+msgctxt "@info:status describes a past-tense action"
+msgid "Upgraded"
+msgstr "업그레이드"
+
+#: src/muonapt/HistoryView/HistoryView.cpp:100
+#, kde-format
+msgctxt "@status describes a past-tense action"
+msgid "Downgraded"
+msgstr ""
+
+#: src/muonapt/HistoryView/HistoryView.cpp:101
+#, fuzzy, kde-format
+#| msgctxt "@action:button"
+#| msgid "Removal"
+msgctxt "@status describes a past-tense action"
+msgid "Removed"
+msgstr "삭제"
+
+#: src/muonapt/HistoryView/HistoryView.cpp:102
+#, fuzzy, kde-format
+#| msgctxt "@action:button"
+#| msgid "Purge"
+msgctxt "@status describes a past-tense action"
+msgid "Purged"
+msgstr "깨끗이 삭제"
+
+#: src/muonapt/HistoryView/HistoryView.cpp:137
+#: src/muonapt/HistoryView/HistoryView.cpp:152
+#: src/muonapt/HistoryView/HistoryView.cpp:167
+#: src/muonapt/HistoryView/HistoryView.cpp:182
+#: src/muonapt/HistoryView/HistoryView.cpp:197
+#, kde-format
+msgctxt "@item example: muon installed at 16:00"
+msgid "%1 %2 at %3"
+msgstr ""
+
+#: src/muonapt/MuonStrings.cpp:49
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"admin\""
+msgid "System Administration"
+msgstr ""
+
+#: src/muonapt/MuonStrings.cpp:51
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"base\""
+msgid "Base System"
+msgstr ""
+
+#: src/muonapt/MuonStrings.cpp:53
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"cli-mono"
+"\""
+msgid "Mono/CLI Infrastructure"
+msgstr ""
+
+#: src/muonapt/MuonStrings.cpp:55
+#, fuzzy, kde-format
+#| msgctxt "@title:column"
+#| msgid "Location"
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"comm\""
+msgid "Communication"
+msgstr "위치"
+
+#: src/muonapt/MuonStrings.cpp:57
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"database"
+"\""
+msgid "Databases"
+msgstr ""
+
+#: src/muonapt/MuonStrings.cpp:59
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"devel\""
+msgid "Development"
+msgstr ""
+
+#: src/muonapt/MuonStrings.cpp:61
+#, fuzzy, kde-format
+#| msgctxt "@title:column"
+#| msgid "Location"
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"doc\""
+msgid "Documentation"
+msgstr "위치"
+
+#: src/muonapt/MuonStrings.cpp:63
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"debug\""
+msgid "Debug"
+msgstr ""
+
+#: src/muonapt/MuonStrings.cpp:65
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"editors"
+"\""
+msgid "Editors"
+msgstr ""
+
+#: src/muonapt/MuonStrings.cpp:67
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section "
+"\"electronics\""
+msgid "Electronics"
+msgstr ""
+
+#: src/muonapt/MuonStrings.cpp:69
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"embedded"
+"\""
+msgid "Embedded Devices"
+msgstr ""
+
+#: src/muonapt/MuonStrings.cpp:71
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"fonts\""
+msgid "Fonts"
+msgstr ""
+
+#: src/muonapt/MuonStrings.cpp:73
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"games\""
+msgid "Games and Amusement"
+msgstr ""
+
+#: src/muonapt/MuonStrings.cpp:75
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"gnome\""
+msgid "GNOME Desktop Environment"
+msgstr ""
+
+#: src/muonapt/MuonStrings.cpp:77
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"graphics"
+"\""
+msgid "Graphics"
+msgstr ""
+
+#: src/muonapt/MuonStrings.cpp:79
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"gnu-r\""
+msgid "GNU R Statistical System"
+msgstr ""
+
+#: src/muonapt/MuonStrings.cpp:81
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"gnustep"
+"\""
+msgid "Gnustep Desktop Environment"
+msgstr ""
+
+#: src/muonapt/MuonStrings.cpp:83
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"hamradio"
+"\""
+msgid "Amateur Radio"
+msgstr ""
+
+#: src/muonapt/MuonStrings.cpp:85
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"haskell"
+"\""
+msgid "Haskell Programming Language"
+msgstr ""
+
+#: src/muonapt/MuonStrings.cpp:87
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"httpd\""
+msgid "Web Servers"
+msgstr ""
+
+#: src/muonapt/MuonStrings.cpp:89
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section "
+"\"interpreters\""
+msgid "Interpreted Computer Languages"
+msgstr ""
+
+#: src/muonapt/MuonStrings.cpp:91
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"java\""
+msgid "Java Programming Language"
+msgstr ""
+
+#: src/muonapt/MuonStrings.cpp:93
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"kde\""
+msgid "KDE Software Compilation"
+msgstr ""
+
+#: src/muonapt/MuonStrings.cpp:95
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"kernel\""
+msgid "Kernel and Modules"
+msgstr ""
+
+#: src/muonapt/MuonStrings.cpp:97
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"libdevel"
+"\""
+msgid "Libraries - Development"
+msgstr ""
+
+#: src/muonapt/MuonStrings.cpp:99
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"libs\""
+msgid "Libraries"
+msgstr ""
+
+#: src/muonapt/MuonStrings.cpp:101
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"lisp\""
+msgid "Lisp Programming Language"
+msgstr ""
+
+#: src/muonapt/MuonStrings.cpp:103
+#, fuzzy, kde-format
+#| msgctxt "@title:column"
+#| msgid "Location"
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section "
+"\"localization\""
+msgid "Localization"
+msgstr "위치"
+
+#: src/muonapt/MuonStrings.cpp:105
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"mail\""
+msgid "Email"
+msgstr ""
+
+#: src/muonapt/MuonStrings.cpp:107
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"math\""
+msgid "Mathematics"
+msgstr ""
+
+#: src/muonapt/MuonStrings.cpp:109
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"misc\""
+msgid "Miscellaneous - Text-based"
+msgstr ""
+
+#: src/muonapt/MuonStrings.cpp:111
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"net\""
+msgid "Networking"
+msgstr ""
+
+#: src/muonapt/MuonStrings.cpp:113
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"news\""
+msgid "Newsgroups"
+msgstr ""
+
+#: src/muonapt/MuonStrings.cpp:115
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"ocaml\""
+msgid "OCaml Programming Language"
+msgstr ""
+
+#: src/muonapt/MuonStrings.cpp:117
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"oldlibs"
+"\""
+msgid "Libraries - Old"
+msgstr ""
+
+#: src/muonapt/MuonStrings.cpp:119
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section "
+"\"otherosfs\""
+msgid "Cross Platform"
+msgstr ""
+
+#: src/muonapt/MuonStrings.cpp:121
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"perl\""
+msgid "Perl Programming Language"
+msgstr ""
+
+#: src/muonapt/MuonStrings.cpp:123
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"php\""
+msgid "PHP Programming Language"
+msgstr ""
+
+#: src/muonapt/MuonStrings.cpp:125
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"python\""
+msgid "Python Programming Language"
+msgstr ""
+
+#: src/muonapt/MuonStrings.cpp:127
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"ruby\""
+msgid "Ruby Programming Language"
+msgstr ""
+
+#: src/muonapt/MuonStrings.cpp:129
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"science"
+"\""
+msgid "Science"
+msgstr ""
+
+#: src/muonapt/MuonStrings.cpp:131
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"shells\""
+msgid "Shells"
+msgstr ""
+
+#: src/muonapt/MuonStrings.cpp:133
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"sound\""
+msgid "Multimedia"
+msgstr ""
+
+#: src/muonapt/MuonStrings.cpp:135
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"tex\""
+msgid "TeX Authoring"
+msgstr ""
+
+#: src/muonapt/MuonStrings.cpp:137
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"text\""
+msgid "Word Processing"
+msgstr ""
+
+#: src/muonapt/MuonStrings.cpp:139
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"utils\""
+msgid "Utilities"
+msgstr ""
+
+#: src/muonapt/MuonStrings.cpp:141
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"vcs\""
+msgid "Version Control Systems"
+msgstr ""
+
+#: src/muonapt/MuonStrings.cpp:143
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"video\""
+msgid "Video Software"
+msgstr ""
+
+#: src/muonapt/MuonStrings.cpp:145
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"web\""
+msgid "Internet"
+msgstr ""
+
+#: src/muonapt/MuonStrings.cpp:147
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"x11\""
+msgid "Miscellaneous - Graphical"
+msgstr ""
+
+#: src/muonapt/MuonStrings.cpp:149
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"xfce\""
+msgid "Xfce Desktop Environment"
+msgstr ""
+
+#: src/muonapt/MuonStrings.cpp:151
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"zope\""
+msgid "Zope/Plone Environment"
+msgstr ""
+
+#: src/muonapt/MuonStrings.cpp:153
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"unknown"
+"\""
+msgid "Unknown"
+msgstr ""
+
+#: src/muonapt/MuonStrings.cpp:155
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"alien\""
+msgid "Converted from RPM by Alien"
+msgstr ""
+
+#: src/muonapt/MuonStrings.cpp:157
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section "
+"\"translations\""
+msgid "Internationalization and Localization"
+msgstr ""
+
+#: src/muonapt/MuonStrings.cpp:159
+#, fuzzy, kde-format
+#| msgid "Package"
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section "
+"\"metapackages\""
+msgid "Meta Packages"
+msgstr "패키지"
+
+#: src/muonapt/MuonStrings.cpp:161
+#, kde-format
+msgctxt ""
+"@item:inlistbox Debian package section \"non-US\", for packages that cannot "
+"be shipped in the US"
+msgid "Restricted On Export"
+msgstr ""
+
+#: src/muonapt/MuonStrings.cpp:163
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"non-free"
+"\""
+msgid "Non-free"
+msgstr ""
+
+#: src/muonapt/MuonStrings.cpp:165
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"contrib"
+"\""
+msgid "Contrib"
+msgstr ""
+
+#: src/muonapt/MuonStrings.cpp:167
+#, fuzzy, kde-format
+#| msgctxt "@title:column"
+#| msgid "Location"
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section "
+"\"education\""
+msgid "Education"
+msgstr "위치"
+
+#: src/muonapt/MuonStrings.cpp:169
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section "
+"\"introspection\""
+msgid "GObject Introspection Data"
+msgstr ""
+
+#: src/muonapt/MuonStrings.cpp:195
+#, fuzzy, kde-format
+#| msgctxt "@action Applys the changes a user has made"
+#| msgid "Apply Changes"
+msgctxt "@info:status Package state"
+msgid "No Change"
+msgstr "변경 사항 적용"
+
+#: src/muonapt/MuonStrings.cpp:196 src/muonapt/MuonStrings.cpp:197
+#, fuzzy, kde-format
+#| msgctxt "@action:button"
+#| msgid "Installation"
+msgctxt "@info:status Requested action"
+msgid "Install"
+msgstr "설치"
+
+#: src/muonapt/MuonStrings.cpp:198
+#, fuzzy, kde-format
+#| msgctxt "@action:button"
+#| msgid "Reinstallation"
+msgctxt "@info:status Requested action"
+msgid "Reinstall"
+msgstr "다시 설치"
+
+#: src/muonapt/MuonStrings.cpp:199
+#, fuzzy, kde-format
+#| msgctxt "@action:button"
+#| msgid "Upgrade"
+msgctxt "@info:status Requested action"
+msgid "Upgrade"
+msgstr "업그레이드"
+
+#: src/muonapt/MuonStrings.cpp:200
+#, fuzzy, kde-format
+#| msgctxt "@action:button"
+#| msgid "Upgrade"
+msgctxt "@info:status Requested action"
+msgid "Downgrade"
+msgstr "업그레이드"
+
+#: src/muonapt/MuonStrings.cpp:201
+#, fuzzy, kde-format
+#| msgctxt "@action:button"
+#| msgid "Removal"
+msgctxt "@info:status Requested action"
+msgid "Remove"
+msgstr "삭제"
+
+#: src/muonapt/MuonStrings.cpp:202
+#, kde-format
+msgctxt "@info:status Package state"
+msgid "Held"
+msgstr ""
+
+#: src/muonapt/MuonStrings.cpp:203
+#, fuzzy, kde-format
+#| msgctxt "@title:tab"
+#| msgid "Installed Files"
+msgctxt "@info:status Package state"
+msgid "Installed"
+msgstr "설치된 파일"
+
+#: src/muonapt/MuonStrings.cpp:204
+#, fuzzy, kde-format
+#| msgctxt "@info:status"
+#| msgid "%1 upgradeable"
+msgctxt "@info:status Package state"
+msgid "Upgradeable"
+msgstr "%1개 업그레이드 가능"
+
+#: src/muonapt/MuonStrings.cpp:205
+#, kde-format
+msgctxt "@info:status Package state"
+msgid "Broken"
+msgstr ""
+
+#: src/muonapt/MuonStrings.cpp:206
+#, fuzzy, kde-format
+#| msgctxt "@title:group"
+#| msgid "Installed Version"
+msgctxt "@info:status Package state"
+msgid "Install Broken"
+msgstr "설치된 버전"
+
+#: src/muonapt/MuonStrings.cpp:207
+#, kde-format
+msgctxt "@info:status Package state"
+msgid "Orphaned"
+msgstr ""
+
+#: src/muonapt/MuonStrings.cpp:208
+#, kde-format
+msgctxt "@info:status Package state"
+msgid "Locked"
+msgstr ""
+
+#: src/muonapt/MuonStrings.cpp:209
+#, kde-format
+msgctxt "@info:status Package state"
+msgid "New in repository"
+msgstr ""
+
+#: src/muonapt/MuonStrings.cpp:210
+#, kde-format
+msgctxt "@info:status Package state"
+msgid "Residual Configuration"
+msgstr ""
+
+#: src/muonapt/MuonStrings.cpp:211
+#, kde-format
+msgctxt "@info:status Package state"
+msgid "Not Downloadable"
+msgstr ""
+
+#: src/muonapt/MuonStrings.cpp:212
+#, fuzzy, kde-format
+#| msgctxt "@action:button"
+#| msgid "Purge"
+msgctxt "@info:status Requested action"
+msgid "Purge"
+msgstr "깨끗이 삭제"
+
+#: src/muonapt/MuonStrings.cpp:213
+#, kde-format
+msgctxt "@info:status Package state"
+msgid "Important for base install"
+msgstr ""
+
+#: src/muonapt/MuonStrings.cpp:214
+#, kde-format
+msgctxt "@info:status Package state"
+msgid "Version overridden"
+msgstr ""
+
+#: src/muonapt/MuonStrings.cpp:215
+#, kde-format
+msgctxt "@info:status Package state"
+msgid "Required by other packages"
+msgstr ""
+
+#: src/muonapt/MuonStrings.cpp:216
+#, kde-format
+msgctxt "@info:status Package state"
+msgid "Installed (auto-removable)"
+msgstr ""
+
+#: src/muonapt/MuonStrings.cpp:217 src/muonapt/MuonStrings.cpp:218
+#, kde-format
+msgctxt "@info:status Package state"
+msgid "Policy Broken"
+msgstr ""
+
+#: src/muonapt/MuonStrings.cpp:219
+#, fuzzy, kde-format
+#| msgctxt "@info:status"
+#| msgid "%1 installed, "
+msgctxt "@info:status Package state"
+msgid "Not Installed"
+msgstr "%1개 설치됨, "
+
+#: src/muonapt/MuonStrings.cpp:221
+#, kde-format
+msgctxt "@info:status Package locked at a certain version"
+msgid "Locked"
+msgstr ""
+
+#: src/muonapt/MuonStrings.cpp:222
+#, kde-format
+msgctxt "@info:status Package state"
+msgid "Manually held back"
+msgstr ""
+
+#: src/muonapt/MuonStrings.cpp:243
+#, kde-format
+msgctxt "@item:inlistbox"
+msgid "Common"
+msgstr ""
+
+#: src/muonapt/MuonStrings.cpp:244
+#, kde-format
+msgctxt "@item:inlistbox CPU architecture"
+msgid "32-bit"
+msgstr ""
+
+#: src/muonapt/MuonStrings.cpp:245
+#, kde-format
+msgctxt "@item:inlistbox CPU architecture"
+msgid "64-bit"
+msgstr ""
+
+#: src/muonapt/MuonStrings.cpp:246
+#, kde-format
+msgctxt "@item:inlistbox PU architecture"
+msgid "Power PC"
+msgstr ""
+
+#: src/muonapt/MuonStrings.cpp:265
+#, fuzzy, kde-format
+#| msgctxt "@action:button"
+#| msgid "Installation"
+msgctxt "@title:window"
+msgid "Initialization Error"
+msgstr "설치"
+
+#: src/muonapt/MuonStrings.cpp:267
+#, fuzzy, kde-format
+#| msgctxt "@title:window"
+#| msgid "Unable to Mark Package"
+msgctxt "@title:window"
+msgid "Unable to Obtain Package System Lock"
+msgstr "패키지를 표시할 수 없음"
+
+#: src/muonapt/MuonStrings.cpp:269
+#, kde-format
+msgctxt "@title:window"
+msgid "Low Disk Space"
+msgstr ""
+
+#: src/muonapt/MuonStrings.cpp:272
+#, fuzzy, kde-format
+#| msgctxt "@action Applys the changes a user has made"
+#| msgid "Apply Changes"
+msgctxt "@title:window"
+msgid "Failed to Apply Changes"
+msgstr "변경 사항 적용"
+
+#: src/muonapt/MuonStrings.cpp:274
+#, kde-format
+msgctxt "@title:window"
+msgid "Authentication error"
+msgstr ""
+
+#: src/muonapt/MuonStrings.cpp:276
+#, kde-format
+msgctxt "@title:window"
+msgid "Unexpected Error"
+msgstr ""
+
+#: src/muonapt/MuonStrings.cpp:278
+#, fuzzy, kde-format
+#| msgctxt "@label The parent package that this package comes from"
+#| msgid "Source Package:"
+msgctxt "@title:window"
+msgid "Untrusted Packages"
+msgstr "원본 패키지:"
+
+#: src/muonapt/MuonStrings.cpp:281
+#, kde-format
+msgctxt "@title:window"
+msgid "Unknown Error"
+msgstr ""
+
+#: src/muonapt/MuonStrings.cpp:291
+#, kde-format
+msgctxt "@label"
+msgid ""
+"The package system could not be initialized, your configuration may be "
+"broken."
+msgstr ""
+
+#: src/muonapt/MuonStrings.cpp:296
+#, kde-format
+msgctxt "@label"
+msgid ""
+"Another application seems to be using the package system at this time. You "
+"must close all other package managers before you will be able to install or "
+"remove any packages."
+msgstr ""
+
+#: src/muonapt/MuonStrings.cpp:303
+#, kde-format
+msgctxt "@label"
+msgid ""
+"You do not have enough disk space in the directory at %1 to continue with "
+"this operation."
+msgstr ""
+
+#: src/muonapt/MuonStrings.cpp:307
+#, kde-format
+msgctxt "@label"
+msgid "Could not download packages"
+msgstr ""
+
+#: src/muonapt/MuonStrings.cpp:310
+#, kde-format
+msgctxt "@label"
+msgid "An error occurred while applying changes:"
+msgstr ""
+
+#: src/muonapt/MuonStrings.cpp:314
+#, kde-format
+msgctxt "@label"
+msgid ""
+"This operation cannot continue since proper authorization was not provided"
+msgstr ""
+
+#: src/muonapt/MuonStrings.cpp:318
+#, kde-format
+msgctxt "@label"
+msgid ""
+"It appears that the QApt worker has either crashed or disappeared. Please "
+"report a bug to the QApt maintainers"
+msgstr ""
+
+#: src/muonapt/MuonStrings.cpp:323
+#, kde-format
+msgctxt "@label"
+msgid ""
+"The following package has not been verified by its author. Downloading "
+"untrusted packages has been disallowed by your current configuration."
+msgid_plural ""
+"The following packages have not been verified by their authors. Downloading "
+"untrusted packages has been disallowed by your current configuration."
+msgstr[0] ""
+
+#: src/muonapt/QAptActions.cpp:118
+#, fuzzy, kde-format
+#| msgctxt "@action:button"
+#| msgid "Unmark"
+msgctxt "@action Reverts all potential changes to the cache"
+msgid "Unmark All"
+msgstr "표시 해제"
+
+#: src/muonapt/QAptActions.cpp:125
+#, kde-format
+msgctxt "@action Opens the software sources configuration dialog"
+msgid "Configure Software Sources"
+msgstr ""
+
+#: src/muonapt/QAptActions.cpp:131
+#, kde-format
+msgctxt "@action"
+msgid "Read Markings..."
+msgstr ""
+
+#: src/muonapt/QAptActions.cpp:137
+#, kde-format
+msgctxt "@action"
+msgid "Save Markings As..."
+msgstr ""
+
+#: src/muonapt/QAptActions.cpp:144
+#, kde-format
+msgctxt "@action"
+msgid "Save Package Download List..."
+msgstr ""
+
+#: src/muonapt/QAptActions.cpp:151
+#, kde-format
+msgctxt "@action"
+msgid "Download Packages From List..."
+msgstr ""
+
+#: src/muonapt/QAptActions.cpp:160
+#, kde-format
+msgctxt "@action"
+msgid "Add Downloaded Packages"
+msgstr ""
+
+#: src/muonapt/QAptActions.cpp:167
+#, kde-format
+msgctxt "@action"
+msgid "Save Installed Packages List..."
+msgstr ""
+
+#: src/muonapt/QAptActions.cpp:173
+#, kde-format
+msgctxt "@action::inmenu"
+msgid "History..."
+msgstr ""
+
+#: src/muonapt/QAptActions.cpp:179
+#, fuzzy, kde-format
+#| msgctxt "@action:button"
+#| msgid "Upgrade"
+msgctxt "@action"
+msgid "Upgrade"
+msgstr "업그레이드"
+
+#: src/muonapt/QAptActions.cpp:182
+#, kde-format
+msgctxt "Notification when a new version of Kubuntu is available"
+msgid "A new version of Kubuntu is available."
+msgstr ""
+
+#: src/muonapt/QAptActions.cpp:226
+#, kde-format
+msgctxt "@title:window"
+msgid "Save Markings As"
+msgstr ""
+
+#: src/muonapt/QAptActions.cpp:233 src/muonapt/QAptActions.cpp:258
+#: src/muonapt/QAptActions.cpp:282
+#, kde-kuit-format
+msgctxt "@label"
+msgid ""
+"The document could not be saved, as it was not possible to write to "
+"<filename>%1</filename>\n"
+"\n"
+"Check that you have write access to this file or that enough disk space is "
+"available."
+msgstr ""
+
+#: src/muonapt/QAptActions.cpp:251
+#, kde-format
+msgctxt "@title:window"
+msgid "Save Installed Packages List As"
+msgstr ""
+
+#: src/muonapt/QAptActions.cpp:275
+#, kde-format
+msgctxt "@title:window"
+msgid "Save Download List As"
+msgstr ""
+
+#: src/muonapt/QAptActions.cpp:297 src/muonapt/QAptActions.cpp:314
+#, kde-format
+msgctxt "@title:window"
+msgid "Open File"
+msgstr ""
+
+#: src/muonapt/QAptActions.cpp:322
+#, kde-format
+msgctxt "@label"
+msgid ""
+"Could not mark changes. Please make sure that the file is a markings file "
+"created by either the Muon Package Manager or the Synaptic Package Manager."
+msgstr ""
+
+#: src/muonapt/QAptActions.cpp:333
+#, kde-format
+msgctxt "@title:window"
+msgid "Choose a Directory"
+msgstr ""
+
+#: src/muonapt/QAptActions.cpp:356
+#, kde-format
+msgctxt "@label"
+msgid "%1 package was successfully added to the cache"
+msgid_plural "%1 packages were successfully added to the cache"
+msgstr[0] ""
+
+#: src/muonapt/QAptActions.cpp:362
+#, kde-format
+msgctxt "@label"
+msgid ""
+"No valid packages could be found in this directory. Please make sure the "
+"packages are compatible with your computer and are at the latest version."
+msgstr ""
+
+#: src/muonapt/QAptActions.cpp:366
+#, kde-format
+msgctxt "@title:window"
+msgid "Packages Could Not be Found"
+msgstr ""
+
+#: src/muonapt/QAptActions.cpp:398
+#, kde-format
+msgctxt "@label"
+msgid ""
+"Could not find <command>software-properties-kde</command> on your system, "
+"please install it. Alternatively, you can use <application>Plasma Discover</"
+"application> to configure software sources."
+msgstr ""
+
+#: src/muonapt/QAptActions.cpp:403
+#, kde-format
+msgctxt "@title:window"
+msgid "Cannot find <command>software-properties-kde</command>"
+msgstr ""
+
+#: src/muonapt/QAptActions.cpp:494
+#, fuzzy, kde-format
+#| msgid "Package"
+msgctxt "@title:window"
+msgid "Package History"
+msgstr "패키지"
+
+#: src/PackageModel/PackageModel.cpp:88
+#, kde-format
+msgid "Package"
+msgstr "패키지"
+
+#: src/PackageModel/PackageModel.cpp:90
+#, kde-format
+msgid "Status"
+msgstr "상태"
+
+#: src/PackageModel/PackageModel.cpp:92
+#, kde-format
+msgid "Requested"
+msgstr "요청함"
+
+#: src/PackageModel/PackageModel.cpp:94
+#, fuzzy, kde-format
+#| msgctxt "@label Label preceding the package size"
+#| msgid "Installed Size:"
+msgid "Installed Size"
+msgstr "설치된 크기:"
+
+#: src/PackageModel/PackageModel.cpp:96
+#, fuzzy, kde-format
+#| msgctxt "@title:group"
+#| msgid "Installed Version"
+msgid "Installed Version"
+msgstr "설치된 버전"
+
+#: src/PackageModel/PackageModel.cpp:98
+#, fuzzy, kde-format
+#| msgctxt "@title:group"
+#| msgid "Available Version"
+msgid "Available Version"
+msgstr "사용 가능한 버전"
+
+#: src/PackageModel/PackageWidget.cpp:166
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Mark for Installation"
+msgstr "설치할 것으로 표시"
+
+#: src/PackageModel/PackageWidget.cpp:171
+#, kde-format
+msgctxt "@action:button"
+msgid "Mark for Removal"
+msgstr "삭제할 것으로 표시"
+
+#: src/PackageModel/PackageWidget.cpp:176
+#, kde-format
+msgctxt "@action:button"
+msgid "Mark for Upgrade"
+msgstr "업그레이드할 것으로 표시"
+
+#: src/PackageModel/PackageWidget.cpp:181
+#, kde-format
+msgctxt "@action:button"
+msgid "Mark for Reinstallation"
+msgstr "다시 설치할 것으로 표시"
+
+#: src/PackageModel/PackageWidget.cpp:186
+#, kde-format
+msgctxt "@action:button"
+msgid "Mark for Purge"
+msgstr "깨끗이 지울 것으로 표시"
+
+#: src/PackageModel/PackageWidget.cpp:197
+#, kde-format
+msgctxt "@action:button"
+msgid "Lock Package at Current Version"
+msgstr "패키지를 현재 버전으로 고정"
+
+#: src/PackageModel/PackageWidget.cpp:377
+#, kde-format
+msgctxt "@action:button"
+msgid "Unlock package"
+msgstr "패키지 고정 해제"
+
+#: src/PackageModel/PackageWidget.cpp:381
+#, kde-format
+msgctxt "@action:button"
+msgid "Lock at Current Version"
+msgstr "현재 버전으로 고정"
+
+#: src/PackageModel/PackageWidget.cpp:422
+#, kde-format
+msgctxt "@label"
+msgid ""
+"Removing this package may break your system. Are you sure you want to remove "
+"it?"
+msgstr ""
+"이 패키지를 삭제하면 시스템을 사용할 수 없을 수도 있습니다. 그래도 삭제하시겠"
+"습니까?"
+
+#: src/PackageModel/PackageWidget.cpp:423
+#, kde-format
+msgctxt "@label"
+msgid "Warning - Removing Important Package"
+msgstr "경고 - 중요한 패키지 삭제"
+
+#: src/PackageModel/PackageWidget.cpp:609
+#, kde-format
+msgctxt "@title:window"
+msgid "Failed to Lock Package"
+msgstr "패키지를 잠글 수 없음"
+
+#: src/PackageModel/PackageWidget.cpp:610
+#, kde-format
+msgctxt "@info Error text"
+msgid "The package %1 could not be locked. Failed to write lock file."
+msgstr "패키지 %1을(를) 잠글 수 없습니다. 잠금 파일에 쓸 수 없습니다."
+
+#: src/PackageModel/PackageWidget.cpp:659
+#, kde-format
+msgctxt "@label"
+msgid "The \"%1\" package could not be marked for installation or upgrade:"
+msgstr ""
+"패키지 \"%1\"을(를) 설치하거나 업그레이드하는 것으로 표시할 수 없습니다:"
+
+#: src/PackageModel/PackageWidget.cpp:662
+#, kde-format
+msgctxt "@title:window"
+msgid "Unable to Mark Package"
+msgstr "패키지를 표시할 수 없음"
+
+#: src/PackageModel/PackageWidget.cpp:679
+#, kde-format
+msgctxt "@label"
+msgid ""
+"The \"%1\" package has no available version, but exists in the database.\n"
+"\tThis typically means that the package was mentioned in a dependency and "
+"never uploaded, has been obsoleted, or is not available from the currently-"
+"enabled repositories."
+msgstr ""
+"패키지 \"%1\"의 사용 가능한 버전이 없지만 데이터베이스에는 존재합니다.\n"
+"\t이는 이 패키지에 의존하는 것이 있었지만 업로드되지 않았거나, 다른 패키지로 "
+"대체되거나, 더 이상 사용하지 않거나, 현재 활성화된 저장소에 없음을 의미합니"
+"다."
+
+#: src/PackageModel/PackageWidget.cpp:686
+#, kde-format
+msgctxt "@label Example: Depends: libqapt 0.1, but 0.2 is to be installed"
+msgid "%1: %2 %3, but %4 is to be installed"
+msgstr "%1: %2 %3, %4이(가) 설치될 예정"
+
+#: src/PackageModel/PackageWidget.cpp:692
+#, kde-format
+msgctxt "@label Example: Depends: libqapt, but is not installable"
+msgid "%1: %2, but it is not installable"
+msgstr "%1: %2, 설치할 수 없음"
+
+#: src/PackageModel/PackageWidget.cpp:697
+#, kde-format
+msgctxt "@label Example: Depends: libqapt, but it is a virtual package"
+msgid "%1: %2, but it is a virtual package"
+msgstr "%1: %2, 가상 패키지임"
+
+#: src/ReviewWidget.cpp:32
+#, kde-format
+msgid "<b>Review and Apply Changes</b>"
+msgstr "<b>변경 사항을 보고 적용하기</b>"
+
+#: src/StatusWidget.cpp:52
+#, kde-format
+msgctxt "@info:status"
+msgid "Rebuilding Search Index"
+msgstr "검색 색인 다시 생성 중"
+
+#: src/StatusWidget.cpp:93
+#, kde-format
+msgctxt "@info:status"
+msgid "1 package available, "
+msgid_plural "%1 packages available, "
+msgstr[0] "패키지 %1개 사용 가능, "
+
+#: src/StatusWidget.cpp:94
+#, kde-format
+msgctxt "@info:status"
+msgid "%1 installed, "
+msgstr "%1개 설치됨, "
+
+#: src/StatusWidget.cpp:98
+#, kde-format
+msgctxt "@info:status"
+msgid "%1 upgradeable,"
+msgstr "%1개 업그레이드 가능, "
+
+#: src/StatusWidget.cpp:100
+#, kde-format
+msgctxt "@info:status"
+msgid "%1 upgradeable"
+msgstr "%1개 업그레이드 가능"
+
+#: src/StatusWidget.cpp:112
+#, kde-format
+msgctxt "@info:status Part of the status label"
+msgid " %1 to install/upgrade"
+msgstr " 설치/업그레이드 %1개"
+
+#: src/StatusWidget.cpp:117
+#, kde-format
+msgctxt ""
+"@info:status Label for the number of packages pending removal when packages "
+"are also pending upgrade"
+msgid ", %1 to remove"
+msgstr ", 삭제 %1개"
+
+#: src/StatusWidget.cpp:120
+#, kde-format
+msgctxt ""
+"@info:status Label for the number of packages pending removal when there are "
+"only removals"
+msgid " %1 to remove"
+msgstr " 삭제 %1개"
+
+#: src/StatusWidget.cpp:129
+#, kde-format
+msgctxt "@label showing download and install size"
+msgid "%1 to download, %2 of space to be freed"
+msgstr "다운로드 크기 %1, 비는 디스크 공간 %2"
+
+#: src/StatusWidget.cpp:133
+#, kde-format
+msgctxt "@label showing download and install size"
+msgid "%1 to download, %2 of space to be used"
+msgstr "다운로드 크기 %1, 사용할 디스크 공간 %2"
+
+#: src/TransactionWidget.cpp:103
+#, kde-format
+msgctxt "@action:button Cancels the download"
+msgid "Cancel"
+msgstr "취소"
+
+#: src/TransactionWidget.cpp:148
+#, kde-kuit-format
+msgctxt "@info Status information, widget title"
+msgid "<title>Starting</title>"
+msgstr "<title>시작 중</title>"
+
+#: src/TransactionWidget.cpp:150
+#, kde-format
+msgctxt "@info Status info"
+msgid "Waiting for service to start"
+msgstr "서비스 시작 대기 중"
+
+#: src/TransactionWidget.cpp:155
+#, kde-format
+msgctxt "@info Status info"
+msgid "Waiting for authentication"
+msgstr "인증 대기 중"
+
+#: src/TransactionWidget.cpp:159 src/TransactionWidget.cpp:166
+#: src/TransactionWidget.cpp:173 src/TransactionWidget.cpp:180
+#, kde-kuit-format
+msgctxt "@info Status information, widget title"
+msgid "<title>Waiting</title>"
+msgstr "<title>대기 중</title>"
+
+#: src/TransactionWidget.cpp:161
+#, kde-format
+msgctxt "@info Status info"
+msgid "Waiting for other transactions to finish"
+msgstr "다른 트랜잭션 완료 대기 중"
+
+#: src/TransactionWidget.cpp:168
+#, kde-format
+msgctxt "@info Status info"
+msgid "Waiting for other software managers to quit"
+msgstr "다른 소프트웨어 관리자 종료 대기 중"
+
+#: src/TransactionWidget.cpp:175
+#, kde-format
+msgctxt "@info Status info"
+msgid "Waiting for required medium"
+msgstr "필요한 미디어 대기 중"
+
+#: src/TransactionWidget.cpp:182
+#, kde-format
+msgctxt "@info Status info"
+msgid "Waiting for configuration file"
+msgstr "설정 파일 대기 중"
+
+#: src/TransactionWidget.cpp:193
+#, kde-kuit-format
+msgctxt "@info Status info"
+msgid "<title>Loading Software List</title>"
+msgstr "<title>소프트웨어 목록 불러오는 중</title>"
+
+#: src/TransactionWidget.cpp:201
+#, kde-kuit-format
+msgctxt "@info Status information, widget title"
+msgid "<title>Updating software sources</title>"
+msgstr "<title>소프트웨어 원본 불러오는 중</title>"
+
+#: src/TransactionWidget.cpp:206
+#, kde-kuit-format
+msgctxt "@info Status information, widget title"
+msgid "<title>Downloading Packages</title>"
+msgstr "<title>패키지 다운로드 중</title>"
+
+#: src/TransactionWidget.cpp:218
+#, kde-kuit-format
+msgctxt "@info Status information, widget title"
+msgid "<title>Committing Changes</title>"
+msgstr "<title>변경 사항 적용 중</title>"
+
+#: src/TransactionWidget.cpp:225
+#, kde-kuit-format
+msgctxt "@info Status information, widget title"
+msgid "<title>Finished</title>"
+msgstr "<title>완료됨</title>"
+
+#: src/TransactionWidget.cpp:254
+#, kde-format
+msgctxt "@title:window"
+msgid "Media Change Required"
+msgstr "미디어 변경 필요함"
+
+#: src/TransactionWidget.cpp:255
+#, kde-kuit-format
+msgctxt "@label"
+msgid "Please insert %1 into <filename>%2</filename>"
+msgstr "%1을(를) <filename>%2</filename>에 넣으십시오"
+
+#: src/TransactionWidget.cpp:264
+#, kde-format
+msgctxt "@title:window"
+msgid "Warning - Unverified Software"
+msgstr "경고 - 확인되지 않은 소프트웨어"
+
+#: src/TransactionWidget.cpp:266
+#, kde-kuit-format
+msgctxt "@label"
+msgid ""
+"The following piece of software cannot be verified. <warning>Installing "
+"unverified software represents a security risk, as the presence of "
+"unverifiable software can be a sign of tampering.</warning> Do you wish to "
+"continue?"
+msgid_plural ""
+"The following pieces of software cannot be verified. <warning>Installing "
+"unverified software represents a security risk, as the presence of "
+"unverifiable software can be a sign of tampering.</warning> Do you wish to "
+"continue?"
+msgstr[0] ""
+"다음 소프트웨어를 확인할 수 없습니다. <warning>서명이 없다는 것은 훼손되었음"
+"을 뜻할 수도 있으므로 확인되지 않은 소프트웨어를 설치하는 것은 위험할 수도 있"
+"습니다.</warning> 계속 진행하시겠습니까?"
+
+#: src/TransactionWidget.cpp:284
+#, kde-format
+msgctxt "@title:window"
+msgid "Configuration File Changed"
+msgstr "설정 파일 변경됨"
+
+#: src/TransactionWidget.cpp:286
+#, kde-kuit-format
+msgctxt "@label Notifies a config file change"
+msgid ""
+"A new version of the configuration file <filename>%1</filename> is "
+"available, but your version has been modified. Would you like to keep your "
+"current version or install the new version?"
+msgstr ""
+"설정 파일의 새 버전 <filename>%1</filename>을(를) 사용할 수 있으나, 현재 설치"
+"된 설정 파일이 수정되었습니다. 현재 버전을 유지하시겠습니까, 아니면 새 버전"
+"을 설치하시겠습니까?"
+
+#: src/TransactionWidget.cpp:291
+#, kde-format
+msgctxt "@action Use the new config file"
+msgid "Use New Version"
+msgstr "새 버전 사용"
+
+#: src/TransactionWidget.cpp:292
+#, kde-format
+msgctxt "@action Keep the old config file"
+msgid "Keep Old Version"
+msgstr "기존 버전 유지"

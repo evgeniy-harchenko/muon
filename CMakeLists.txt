@@ -37,3 +37,6 @@ set_package_properties(QApt PROPERTIES
     TYPE REQUIRED)
 
 feature_summary(WHAT ALL FATAL_ON_MISSING_REQUIRED_PACKAGES)
+
+find_package(KF6I18n CONFIG REQUIRED)
+ki18n_install(po)

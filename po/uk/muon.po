@@ -1,0 +1,1983 @@
+# Translation of muon.po to Ukrainian
+# Copyright (C) 2010-2016 This_file_is_part_of_KDE
+# This file is distributed under the license LGPL version 2.1 or
+# version 3 or later versions approved by the membership of KDE e.V.
+#
+# Yuri Chornoivan <yurchor@ukr.net>, 2010, 2011, 2012, 2013, 2014, 2015, 2016.
+# I. Petrouchtchak <fr.ivan@ukrainian-orthodox.org>, 2010.
+msgid ""
+msgstr ""
+"Project-Id-Version: muon\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2018-03-15 03:18+0100\n"
+"PO-Revision-Date: 2016-08-21 12:23+0300\n"
+"Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
+"Language-Team: Ukrainian <kde-i18n-uk@kde.org>\n"
+"Language: uk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.5\n"
+"Plural-Forms: nplurals=4; plural=n==1 ? 3 : n%10==1 && n%100!=11 ? 0 : n"
+"%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Юрій Чорноіван"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "yurchor@ukr.net"
+
+#. i18n: ectx: label, entry (SplitterSizes), group (muon)
+#: muonrc.cpp:3 src/config/muon.kcfg:9
+#, kde-format
+msgid "How the main window is divided."
+msgstr "Як поділено головне вікно."
+
+#. i18n: ectx: label, entry (Width), group (muon)
+#: muonrc.cpp:6 src/config/muon.kcfg:12
+#, kde-format
+msgid "Width of the main window."
+msgstr "Ширина головного вікна."
+
+#. i18n: ectx: label, entry (Height), group (muon)
+#: muonrc.cpp:9 src/config/muon.kcfg:16
+#, kde-format
+msgid "Height of the main window."
+msgstr "Висота головного вікна."
+
+#. i18n: ectx: label, entry (UndoStackSize), group (muon)
+#: muonrc.cpp:12 src/config/muon.kcfg:20
+#, kde-format
+msgid "The amount of history kept for undo/redo."
+msgstr "Довжина списку дій скасування/відновлення у журналі."
+
+#. i18n: ectx: label, entry (AskChanges), group (muon)
+#: muonrc.cpp:15 src/config/muon.kcfg:24
+#, kde-format
+msgid "Whether or not to confirm additional changes."
+msgstr "Чи слід підтверджувати додаткові зміни."
+
+#. i18n: ectx: label, entry (ShowMultiArchDupes), group (muon)
+#: muonrc.cpp:18 src/config/muon.kcfg:28
+#, kde-format
+msgid "Show foreign architecture packages also available natively."
+msgstr ""
+"Показувати пакунки сторонніх архітектур, які можна також встановити на вашу "
+"архітектуру."
+
+#. i18n: ectx: label, entry (ManagerListColumns), group (muon)
+#: muonrc.cpp:21 src/config/muon.kcfg:32
+#, kde-format
+msgid "Status of columns in the manager list of packages."
+msgstr "Стан стовпчиків у списку пакунків засобу керування."
+
+#. i18n: ectx: label, entry (ReviewListColumns), group (muon)
+#: muonrc.cpp:24 src/config/muon.kcfg:36
+#, kde-format
+msgid "Status of columns in the changes review list of packages."
+msgstr "Стан стовпчиків у списку пакунків вікна перегляду змін."
+
+#: src/config/GeneralSettingsPage.cpp:51
+#, kde-format
+msgid "Ask to confirm changes that affect other packages"
+msgstr "Запитувати, щодо підтвердження змін у інших пакунках"
+
+#: src/config/GeneralSettingsPage.cpp:52
+#, kde-format
+msgid "Show foreign-architecture packages that are available natively"
+msgstr ""
+"Показувати пакунки сторонніх архітектур, які можна встановити на вашу "
+"архітектуру"
+
+#: src/config/GeneralSettingsPage.cpp:53
+#, kde-format
+msgid "Treat recommended packages as dependencies"
+msgstr "Вважати рекомендовані пакунки залежностями"
+
+#: src/config/GeneralSettingsPage.cpp:54
+#, kde-format
+msgid "Treat suggested packages as dependencies"
+msgstr "Вважати запропоновані пакунки залежностями"
+
+#: src/config/GeneralSettingsPage.cpp:55
+#, kde-format
+msgid "Allow the installation of untrusted packages"
+msgstr "Дозволити встановлення ненадійних пакунків"
+
+#: src/config/GeneralSettingsPage.cpp:66
+#, kde-format
+msgid "Delete obsolete cached packages every:"
+msgstr "Вилучати застарілі пакунки з кешу з інтервалом:"
+
+#: src/config/GeneralSettingsPage.cpp:84
+#, kde-format
+msgid "Number of undo operations:"
+msgstr "Кількість дій зі скасування:"
+
+#: src/config/GeneralSettingsPage.cpp:160
+#, kde-format
+msgid " day"
+msgid_plural " days"
+msgstr[0] " день"
+msgstr[1] " дні"
+msgstr[2] " днів"
+msgstr[3] " день"
+
+#: src/config/ManagerSettingsDialog.cpp:40
+#, kde-format
+msgctxt "@title:window"
+msgid "Muon Preferences"
+msgstr "Налаштування Muon"
+
+#: src/config/ManagerSettingsDialog.cpp:47
+#, kde-format
+msgctxt "@title:group Title of the general group"
+msgid "General"
+msgstr "Загальне"
+
+#: src/DetailsTabs/ChangelogTab.cpp:45
+#, kde-format
+msgctxt "@title:tab"
+msgid "Changes List"
+msgstr "Список змін"
+
+#: src/DetailsTabs/ChangelogTab.cpp:94
+#, kde-kuit-format
+msgctxt "@info/rich"
+msgid ""
+"The list of changes is not yet available. Please use <link "
+"url='%1'>Launchpad</link> instead."
+msgstr ""
+"Список змін ще не готовий. Будь ласка, скористайтеся <link "
+"url='%1'>Launchpad</link> для перегляду списку."
+
+#: src/DetailsTabs/ChangelogTab.cpp:98
+#, kde-format
+msgctxt "@info"
+msgid "The list of changes is not yet available."
+msgstr "Журнал змін недоступний"
+
+#: src/DetailsTabs/DependsTab.cpp:37
+#, kde-format
+msgctxt "@title:tab"
+msgid "Dependencies"
+msgstr "Залежності"
+
+#: src/DetailsTabs/DependsTab.cpp:40
+#, kde-format
+msgctxt "@item:inlistbox"
+msgid "Dependencies of the Current Version"
+msgstr "Залежності поточної версії"
+
+#: src/DetailsTabs/DependsTab.cpp:41
+#, kde-format
+msgctxt "@item:inlistbox"
+msgid "Dependencies of the Latest Version"
+msgstr "Залежності найсвіжішої версії"
+
+#: src/DetailsTabs/DependsTab.cpp:42
+#, kde-format
+msgctxt "@item:inlistbox"
+msgid "Dependants (Reverse Dependencies)"
+msgstr "Залежні (зворотні залежності)"
+
+#: src/DetailsTabs/DependsTab.cpp:43
+#, kde-format
+msgctxt "@item:inlistbox"
+msgid "Virtual Packages Provided"
+msgstr "Залежні віртуальні пакунки"
+
+#: src/DetailsTabs/DependsTab.cpp:71 src/DetailsTabs/DependsTab.cpp:78
+#, kde-format
+msgctxt "@label"
+msgid "This package does not have any dependencies"
+msgstr "У цього пакунка немає залежностей"
+
+#: src/DetailsTabs/DependsTab.cpp:85
+#, kde-format
+msgctxt "@label"
+msgid "This package has no dependents. (Nothing depends on it.)"
+msgstr "Від цього пакунка не залежить жоден інший пакунок."
+
+#: src/DetailsTabs/DependsTab.cpp:92
+#, kde-format
+msgctxt "@label"
+msgid "This package does not provide any virtual packages"
+msgstr "Від цього пакунка не залежить робота жодного з віртуальних пакунків"
+
+#: src/DetailsTabs/InstalledFilesTab.cpp:35
+#, kde-format
+msgctxt "@title:tab"
+msgid "Installed Files"
+msgstr "Встановлені файли"
+
+#: src/DetailsTabs/MainTab.cpp:43
+#, kde-format
+msgctxt "@title:tab"
+msgid "Details"
+msgstr "Подробиці"
+
+#: src/DetailsTabs/MainTab.cpp:57
+#, kde-format
+msgctxt "@label"
+msgid "Mark for:"
+msgstr "Позначити для:"
+
+#: src/DetailsTabs/MainTab.cpp:62
+#, kde-format
+msgctxt "@action:button"
+msgid "Installation"
+msgstr "Встановити"
+
+#: src/DetailsTabs/MainTab.cpp:70
+#, kde-format
+msgctxt "@action:button"
+msgid "Removal"
+msgstr "Вилучити"
+
+#: src/DetailsTabs/MainTab.cpp:76
+#, kde-format
+msgctxt "@action:button"
+msgid "Upgrade"
+msgstr "Оновити"
+
+#: src/DetailsTabs/MainTab.cpp:82
+#, kde-format
+msgctxt "@action:button"
+msgid "Reinstallation"
+msgstr "Перевстановити"
+
+#: src/DetailsTabs/MainTab.cpp:89
+#, kde-format
+msgctxt "@action:button"
+msgid "Purge"
+msgstr "Очистити"
+
+#: src/DetailsTabs/MainTab.cpp:102 src/PackageModel/PackageWidget.cpp:191
+#, kde-format
+msgctxt "@action:button"
+msgid "Unmark"
+msgstr "Зняти позначення"
+
+#: src/DetailsTabs/MainTab.cpp:188
+#, kde-format
+msgctxt "@info Tells how long Canonical, Ltd. will support a package"
+msgid "Canonical provides critical updates for %1 until %2."
+msgstr "Canonical надає виправлення критичних помилок у %1 до %2"
+
+#: src/DetailsTabs/MainTab.cpp:192
+#, kde-format
+msgctxt "@info Tells how long Canonical, Ltd. will support a package"
+msgid ""
+"Canonical does not provide updates for %1. Some updates may be provided by "
+"the Ubuntu community."
+msgstr ""
+"Canonical не надає оновлень %1. Деякі оновлення можна знайти у сховищах "
+"спільноти Ubuntu"
+
+#: src/DetailsTabs/TechnicalDetailsTab.cpp:43
+#, kde-format
+msgctxt "@title:tab"
+msgid "Technical Details"
+msgstr "Технічні подробиці"
+
+#: src/DetailsTabs/TechnicalDetailsTab.cpp:57
+#, kde-format
+msgctxt "@label Label preceding the package maintainer"
+msgid "Maintainer:"
+msgstr "Супровідник:"
+
+#: src/DetailsTabs/TechnicalDetailsTab.cpp:66
+#, kde-format
+msgctxt "@label Label preceding the package category"
+msgid "Category:"
+msgstr "Категорія:"
+
+#: src/DetailsTabs/TechnicalDetailsTab.cpp:76
+#, kde-format
+msgctxt "@label The parent package that this package comes from"
+msgid "Source Package:"
+msgstr "Пакунок з кодами:"
+
+#: src/DetailsTabs/TechnicalDetailsTab.cpp:86
+#, kde-format
+msgctxt "@label The software source that this package comes from"
+msgid "Origin:"
+msgstr "Походження:"
+
+#: src/DetailsTabs/TechnicalDetailsTab.cpp:96
+#, kde-format
+msgctxt "@label The package archive component that this package comes from"
+msgid "Component:"
+msgstr "Компонент:"
+
+#: src/DetailsTabs/TechnicalDetailsTab.cpp:106
+#, kde-format
+msgctxt "@title:group"
+msgid "Installed Version"
+msgstr "Встановлена версія"
+
+#: src/DetailsTabs/TechnicalDetailsTab.cpp:113
+#: src/DetailsTabs/TechnicalDetailsTab.cpp:138
+#, kde-format
+msgctxt "@label Label preceding the package version"
+msgid "Version:"
+msgstr "Версія:"
+
+#: src/DetailsTabs/TechnicalDetailsTab.cpp:121
+#: src/DetailsTabs/TechnicalDetailsTab.cpp:146
+#, kde-format
+msgctxt "@label Label preceding the package size"
+msgid "Installed Size:"
+msgstr "Розмір встановленого:"
+
+#: src/DetailsTabs/TechnicalDetailsTab.cpp:131
+#, kde-format
+msgctxt "@title:group"
+msgid "Available Version"
+msgstr "Доступна версія"
+
+#: src/DetailsTabs/TechnicalDetailsTab.cpp:154
+#, kde-format
+msgctxt "@label Label preceding the package's download size"
+msgid "Download Size:"
+msgstr "Розмір отримання:"
+
+#: src/DetailsTabs/VersionTab.cpp:39
+#, kde-format
+msgctxt "@title:tab"
+msgid "Versions"
+msgstr "Версії"
+
+#: src/DetailsTabs/VersionTab.cpp:42
+#, kde-format
+msgctxt "@label"
+msgid "Available versions:"
+msgstr "Доступні версії:"
+
+#: src/DetailsTabs/VersionTab.cpp:60
+#, kde-format
+msgctxt "@label"
+msgid ""
+"Muon always selects the most applicable version available. If you force a "
+"different version from the default one, errors in the dependency handling "
+"can occur."
+msgstr ""
+"Muon завжди вибирає найвідповіднішу версію з доступних. Якщо ви примусово "
+"вкажете версію, відмінну від типової, можуть виникнути помилки з обробкою "
+"залежностей."
+
+#: src/DetailsTabs/VersionTab.cpp:68
+#, kde-format
+msgctxt "@action:button"
+msgid "Force Version"
+msgstr "Встановити примусово"
+
+#: src/DownloadModel/DownloadDelegate.cpp:66
+#, kde-format
+msgctxt "@info:status Progress text when done"
+msgid "Done"
+msgstr "Завершено"
+
+#: src/DownloadModel/DownloadModel.cpp:60
+#, kde-format
+msgctxt "@title:column"
+msgid "Package"
+msgstr "Пакунок"
+
+#: src/DownloadModel/DownloadModel.cpp:62
+#, kde-format
+msgctxt "@title:column"
+msgid "Location"
+msgstr "Розташування"
+
+#: src/DownloadModel/DownloadModel.cpp:64
+#, kde-format
+msgctxt "@title:column"
+msgid "Size"
+msgstr "Розмір"
+
+#: src/DownloadModel/DownloadModel.cpp:66
+#, kde-format
+msgctxt "@title:column"
+msgid "Progress"
+msgstr "Поступ"
+
+#: src/FilterWidget/ArchitectureFilter.cpp:47
+#: src/FilterWidget/CategoryFilter.cpp:57 src/FilterWidget/OriginFilter.cpp:42
+#: src/FilterWidget/StatusFilter.cpp:43 src/ManagerWidget.cpp:69
+#, kde-format
+msgctxt "@item:inlistbox Item that resets the filter to \"all\""
+msgid "All"
+msgstr "всі"
+
+#: src/FilterWidget/FilterWidget.cpp:46
+#, kde-format
+msgctxt "@title:window"
+msgid "Filter:"
+msgstr "Фільтрувати:"
+
+#: src/FilterWidget/FilterWidget.cpp:55
+#, kde-format
+msgctxt "@title:tab"
+msgid "By Category"
+msgstr "за категорією"
+
+#: src/FilterWidget/FilterWidget.cpp:61
+#, kde-format
+msgctxt "@title:tab"
+msgid "By Status"
+msgstr "за станом"
+
+#: src/FilterWidget/FilterWidget.cpp:67
+#, kde-format
+msgctxt "@title:tab"
+msgid "By Origin"
+msgstr "За походженням"
+
+#: src/FilterWidget/FilterWidget.cpp:73
+#, kde-format
+msgctxt "@title:tab"
+msgid "By Architecture"
+msgstr "За архітектурою"
+
+#: src/main.cpp:36
+#, kde-format
+msgid "Muon Package Manager"
+msgstr "Програма для керування пакунками Muon"
+
+#: src/main.cpp:36
+#, kde-format
+msgid "A package manager"
+msgstr "Програма для керування пакунками"
+
+#: src/main.cpp:37
+#, kde-format
+msgid "© 2009-2013 Jonathan Thomas"
+msgstr "© Jonathan Thomas, 2009–2013"
+
+#: src/main.cpp:38
+#, kde-format
+msgid "Jonathan Thomas"
+msgstr "Jonathan Thomas"
+
+#: src/main.cpp:39
+#, kde-format
+msgid "Harald Sitter"
+msgstr "Harald Sitter"
+
+#: src/main.cpp:39
+#, kde-format
+msgid "Top Gardener"
+msgstr "Основний розробник"
+
+#: src/MainWindow.cpp:180
+#, kde-format
+msgctxt "@action Marks upgradeable packages for upgrade"
+msgid "Cautious Upgrade"
+msgstr "Обережне оновлення"
+
+#: src/MainWindow.cpp:186
+#, kde-format
+msgctxt ""
+"@action Marks upgradeable packages, including ones that install/remove new "
+"things"
+msgid "Full Upgrade"
+msgstr "Повне оновлення"
+
+#: src/MainWindow.cpp:192
+#, kde-format
+msgctxt "@action Marks packages no longer needed for removal"
+msgid "Remove Unnecessary Packages"
+msgstr "Вилучити непотрібні пакунки"
+
+#: src/MainWindow.cpp:197
+#, kde-format
+msgctxt "@action Takes the user to the preview page"
+msgid "Preview Changes"
+msgstr "Переглянути список змін"
+
+#: src/MainWindow.cpp:202
+#, kde-format
+msgctxt "@action Applys the changes a user has made"
+msgid "Apply Changes"
+msgstr "Внести зміни"
+
+#: src/MainWindow.cpp:207
+#, kde-format
+msgctxt "@action Checks the Internet for updates"
+msgid "Check for Updates"
+msgstr "Перевірити наявність оновлень"
+
+#: src/MainWindow.cpp:233
+#, kde-kuit-format
+msgctxt "@label"
+msgid ""
+"Unable to mark upgrades. The available upgrades may require new packages to "
+"be installed or removed. You may wish to try a full upgrade by clicking the "
+"<interface>Full Upgrade</interface> button."
+msgstr ""
+"Не вдалося позначити оновлення. Доступні оновлення можуть потребувати "
+"встановлення нових пакунків або вилучення наявних. Можливо, ви захочете "
+"спробувати зробити повне оновлення натиснувши на кнопку <interface>Повне "
+"оновлення</interface>."
+
+#: src/MainWindow.cpp:238 src/MainWindow.cpp:253
+#, kde-format
+msgctxt "@title:window"
+msgid "Unable to Mark Upgrades"
+msgstr "Неможливо позначити оновлення"
+
+#: src/MainWindow.cpp:250
+#, kde-format
+msgctxt "@label"
+msgid ""
+"Unable to mark upgrades. Some upgrades may have unsatisfiable dependencies "
+"at the moment, or may have been manually held back."
+msgstr ""
+"Неможливо позначити оновлення. Можливо, деякі оновлення мають залежності, "
+"які наразі неможливо задовольнити або їх вручну затримано."
+
+#: src/MainWindow.cpp:326
+#, kde-format
+msgctxt "@action:intoolbar Return from the preview page"
+msgid "Back"
+msgstr "Назад"
+
+#: src/MainWindow.cpp:340
+#, kde-format
+msgctxt "@action"
+msgid "Preview Changes"
+msgstr "Переглянути список змін"
+
+#: src/muonapt/ChangesDialog.cpp:39
+#, kde-format
+msgctxt "@title:window"
+msgid "Confirm Additional Changes"
+msgstr "Підтвердження додаткових змін"
+
+#: src/muonapt/ChangesDialog.cpp:44
+#, kde-format
+msgctxt "@info"
+msgid "<h2>Mark additional changes?</h2>"
+msgstr "<h2>Позначити додаткові зміни?</h2>"
+
+#: src/muonapt/ChangesDialog.cpp:48
+#, kde-format
+msgid "This action requires a change to another package:"
+msgid_plural "This action requires changes to other packages:"
+msgstr[0] "Виконання цієї дії потребує змін у інших пакунках:"
+msgstr[1] "Запитувати, щодо підтвердження змін у інших пакунках"
+msgstr[2] "Запитувати, щодо підтвердження змін у інших пакунках"
+msgstr[3] "Запитувати, щодо підтвердження змін у інших пакунках"
+
+#: src/muonapt/HistoryView/HistoryView.cpp:49
+#, kde-kuit-format
+msgctxt "@info"
+msgid "<title>History</title>"
+msgstr "<title>Журнал</title>"
+
+#: src/muonapt/HistoryView/HistoryView.cpp:55
+#: src/PackageModel/PackageWidget.cpp:102
+#, kde-format
+msgctxt "@label Line edit click message"
+msgid "Search"
+msgstr "Шукати"
+
+#: src/muonapt/HistoryView/HistoryView.cpp:67
+#, kde-format
+msgctxt "@item:inlistbox Filters all changes in the history view"
+msgid "All changes"
+msgstr "Всі зміни"
+
+#: src/muonapt/HistoryView/HistoryView.cpp:71
+#, kde-format
+msgctxt "@item:inlistbox Filters installations in the history view"
+msgid "Installations"
+msgstr "Встановлення"
+
+#: src/muonapt/HistoryView/HistoryView.cpp:75
+#, kde-format
+msgctxt "@item:inlistbox Filters updates in the history view"
+msgid "Updates"
+msgstr "Оновлення"
+
+#: src/muonapt/HistoryView/HistoryView.cpp:79
+#, kde-format
+msgctxt "@item:inlistbox Filters removals in the history view"
+msgid "Removals"
+msgstr "Вилучення"
+
+#: src/muonapt/HistoryView/HistoryView.cpp:90
+#, kde-format
+msgctxt "@title:column"
+msgid "Date"
+msgstr "Дата"
+
+#: src/muonapt/HistoryView/HistoryView.cpp:98
+#, kde-format
+msgctxt "@info:status describes a past-tense action"
+msgid "Installed"
+msgstr "Встановлено"
+
+#: src/muonapt/HistoryView/HistoryView.cpp:99
+#, kde-format
+msgctxt "@info:status describes a past-tense action"
+msgid "Upgraded"
+msgstr "Оновлено"
+
+#: src/muonapt/HistoryView/HistoryView.cpp:100
+#, kde-format
+msgctxt "@status describes a past-tense action"
+msgid "Downgraded"
+msgstr "Знижено версію"
+
+#: src/muonapt/HistoryView/HistoryView.cpp:101
+#, kde-format
+msgctxt "@status describes a past-tense action"
+msgid "Removed"
+msgstr "Вилучено"
+
+#: src/muonapt/HistoryView/HistoryView.cpp:102
+#, kde-format
+msgctxt "@status describes a past-tense action"
+msgid "Purged"
+msgstr "Повністю вилучено"
+
+#: src/muonapt/HistoryView/HistoryView.cpp:137
+#: src/muonapt/HistoryView/HistoryView.cpp:152
+#: src/muonapt/HistoryView/HistoryView.cpp:167
+#: src/muonapt/HistoryView/HistoryView.cpp:182
+#: src/muonapt/HistoryView/HistoryView.cpp:197
+#, kde-format
+msgctxt "@item example: muon installed at 16:00"
+msgid "%1 %2 at %3"
+msgstr "%2 %1 о %3"
+
+#: src/muonapt/MuonStrings.cpp:49
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"admin\""
+msgid "System Administration"
+msgstr "Керування системою"
+
+#: src/muonapt/MuonStrings.cpp:51
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"base\""
+msgid "Base System"
+msgstr "Базова система"
+
+#: src/muonapt/MuonStrings.cpp:53
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"cli-mono"
+"\""
+msgid "Mono/CLI Infrastructure"
+msgstr "Інфраструктура Mono/CLI"
+
+#: src/muonapt/MuonStrings.cpp:55
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"comm\""
+msgid "Communication"
+msgstr "Обмін інформацією"
+
+#: src/muonapt/MuonStrings.cpp:57
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"database"
+"\""
+msgid "Databases"
+msgstr "Бази даних"
+
+#: src/muonapt/MuonStrings.cpp:59
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"devel\""
+msgid "Development"
+msgstr "Розробка"
+
+#: src/muonapt/MuonStrings.cpp:61
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"doc\""
+msgid "Documentation"
+msgstr "Документація"
+
+#: src/muonapt/MuonStrings.cpp:63
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"debug\""
+msgid "Debug"
+msgstr "Налагоджування"
+
+#: src/muonapt/MuonStrings.cpp:65
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"editors"
+"\""
+msgid "Editors"
+msgstr "Редактори"
+
+#: src/muonapt/MuonStrings.cpp:67
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section "
+"\"electronics\""
+msgid "Electronics"
+msgstr "Електроніка"
+
+#: src/muonapt/MuonStrings.cpp:69
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"embedded"
+"\""
+msgid "Embedded Devices"
+msgstr "Вбудовані пристрої"
+
+#: src/muonapt/MuonStrings.cpp:71
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"fonts\""
+msgid "Fonts"
+msgstr "Шрифти"
+
+#: src/muonapt/MuonStrings.cpp:73
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"games\""
+msgid "Games and Amusement"
+msgstr "Ігри та розваги"
+
+#: src/muonapt/MuonStrings.cpp:75
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"gnome\""
+msgid "GNOME Desktop Environment"
+msgstr "Робоче середовище GNOME"
+
+#: src/muonapt/MuonStrings.cpp:77
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"graphics"
+"\""
+msgid "Graphics"
+msgstr "Графіка"
+
+#: src/muonapt/MuonStrings.cpp:79
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"gnu-r\""
+msgid "GNU R Statistical System"
+msgstr "Статистична система GNU R"
+
+#: src/muonapt/MuonStrings.cpp:81
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"gnustep"
+"\""
+msgid "Gnustep Desktop Environment"
+msgstr "Стільничне середовище Gnustep"
+
+#: src/muonapt/MuonStrings.cpp:83
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"hamradio"
+"\""
+msgid "Amateur Radio"
+msgstr "Аматорське радіомовлення"
+
+#: src/muonapt/MuonStrings.cpp:85
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"haskell"
+"\""
+msgid "Haskell Programming Language"
+msgstr "Мова програмування Haskell"
+
+#: src/muonapt/MuonStrings.cpp:87
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"httpd\""
+msgid "Web Servers"
+msgstr "Вебсервери"
+
+#: src/muonapt/MuonStrings.cpp:89
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section "
+"\"interpreters\""
+msgid "Interpreted Computer Languages"
+msgstr "Інтерпретовані комп’ютерні мови"
+
+#: src/muonapt/MuonStrings.cpp:91
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"java\""
+msgid "Java Programming Language"
+msgstr "Мова програмування Java"
+
+#: src/muonapt/MuonStrings.cpp:93
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"kde\""
+msgid "KDE Software Compilation"
+msgstr "Збірка програмного забезпечення KDE"
+
+#: src/muonapt/MuonStrings.cpp:95
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"kernel\""
+msgid "Kernel and Modules"
+msgstr "Ядро і модулі"
+
+#: src/muonapt/MuonStrings.cpp:97
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"libdevel"
+"\""
+msgid "Libraries - Development"
+msgstr "Бібліотеки — розробка"
+
+#: src/muonapt/MuonStrings.cpp:99
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"libs\""
+msgid "Libraries"
+msgstr "Бібліотеки"
+
+#: src/muonapt/MuonStrings.cpp:101
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"lisp\""
+msgid "Lisp Programming Language"
+msgstr "Мова програмування Lisp"
+
+#: src/muonapt/MuonStrings.cpp:103
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section "
+"\"localization\""
+msgid "Localization"
+msgstr "Локалізація"
+
+#: src/muonapt/MuonStrings.cpp:105
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"mail\""
+msgid "Email"
+msgstr "Електронна пошта"
+
+#: src/muonapt/MuonStrings.cpp:107
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"math\""
+msgid "Mathematics"
+msgstr "Математика"
+
+#: src/muonapt/MuonStrings.cpp:109
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"misc\""
+msgid "Miscellaneous - Text-based"
+msgstr "Інше — текстовий інтерфейс"
+
+#: src/muonapt/MuonStrings.cpp:111
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"net\""
+msgid "Networking"
+msgstr "Робота у мережі"
+
+#: src/muonapt/MuonStrings.cpp:113
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"news\""
+msgid "Newsgroups"
+msgstr "Групи новин"
+
+#: src/muonapt/MuonStrings.cpp:115
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"ocaml\""
+msgid "OCaml Programming Language"
+msgstr "Мова програмування OCaml"
+
+#: src/muonapt/MuonStrings.cpp:117
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"oldlibs"
+"\""
+msgid "Libraries - Old"
+msgstr "Бібліотеки — застарілі"
+
+#: src/muonapt/MuonStrings.cpp:119
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section "
+"\"otherosfs\""
+msgid "Cross Platform"
+msgstr "Для різних платформ"
+
+#: src/muonapt/MuonStrings.cpp:121
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"perl\""
+msgid "Perl Programming Language"
+msgstr "Мова програмування Perl"
+
+#: src/muonapt/MuonStrings.cpp:123
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"php\""
+msgid "PHP Programming Language"
+msgstr "Мова програмування PHP"
+
+#: src/muonapt/MuonStrings.cpp:125
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"python\""
+msgid "Python Programming Language"
+msgstr "Мова програмування Python"
+
+#: src/muonapt/MuonStrings.cpp:127
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"ruby\""
+msgid "Ruby Programming Language"
+msgstr "Мова програмування Ruby"
+
+#: src/muonapt/MuonStrings.cpp:129
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"science"
+"\""
+msgid "Science"
+msgstr "Наука"
+
+#: src/muonapt/MuonStrings.cpp:131
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"shells\""
+msgid "Shells"
+msgstr "Командні оболонки"
+
+#: src/muonapt/MuonStrings.cpp:133
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"sound\""
+msgid "Multimedia"
+msgstr "Звук та відео"
+
+#: src/muonapt/MuonStrings.cpp:135
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"tex\""
+msgid "TeX Authoring"
+msgstr "Робота у TeX"
+
+#: src/muonapt/MuonStrings.cpp:137
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"text\""
+msgid "Word Processing"
+msgstr "Текстові процесори"
+
+#: src/muonapt/MuonStrings.cpp:139
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"utils\""
+msgid "Utilities"
+msgstr "Інструменти"
+
+#: src/muonapt/MuonStrings.cpp:141
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"vcs\""
+msgid "Version Control Systems"
+msgstr "Системи керування версіями"
+
+#: src/muonapt/MuonStrings.cpp:143
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"video\""
+msgid "Video Software"
+msgstr "Робота з відео"
+
+#: src/muonapt/MuonStrings.cpp:145
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"web\""
+msgid "Internet"
+msgstr "Інтернет"
+
+#: src/muonapt/MuonStrings.cpp:147
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"x11\""
+msgid "Miscellaneous - Graphical"
+msgstr "Інше — графічний інтерфейс"
+
+#: src/muonapt/MuonStrings.cpp:149
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"xfce\""
+msgid "Xfce Desktop Environment"
+msgstr "Стільничне середовище Xfce"
+
+#: src/muonapt/MuonStrings.cpp:151
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"zope\""
+msgid "Zope/Plone Environment"
+msgstr "Середовище Zope/Plone"
+
+#: src/muonapt/MuonStrings.cpp:153
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"unknown"
+"\""
+msgid "Unknown"
+msgstr "Невідомі"
+
+#: src/muonapt/MuonStrings.cpp:155
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"alien\""
+msgid "Converted from RPM by Alien"
+msgstr "Перетворене з RPM за допомогою Alien"
+
+#: src/muonapt/MuonStrings.cpp:157
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section "
+"\"translations\""
+msgid "Internationalization and Localization"
+msgstr "Переклади та локалізація"
+
+#: src/muonapt/MuonStrings.cpp:159
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section "
+"\"metapackages\""
+msgid "Meta Packages"
+msgstr "Метапакунки"
+
+#: src/muonapt/MuonStrings.cpp:161
+#, kde-format
+msgctxt ""
+"@item:inlistbox Debian package section \"non-US\", for packages that cannot "
+"be shipped in the US"
+msgid "Restricted On Export"
+msgstr "З обмеженнями на експорт"
+
+#: src/muonapt/MuonStrings.cpp:163
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"non-free"
+"\""
+msgid "Non-free"
+msgstr "Не вільні"
+
+#: src/muonapt/MuonStrings.cpp:165
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section \"contrib"
+"\""
+msgid "Contrib"
+msgstr "Пакунки користувачів"
+
+#: src/muonapt/MuonStrings.cpp:167
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section "
+"\"education\""
+msgid "Education"
+msgstr "Освіта"
+
+#: src/muonapt/MuonStrings.cpp:169
+#, kde-format
+msgctxt ""
+"@item:inlistbox Human-readable name for the Debian package section "
+"\"introspection\""
+msgid "GObject Introspection Data"
+msgstr "Дані інтроспекції GObject-ів"
+
+#: src/muonapt/MuonStrings.cpp:195
+#, kde-format
+msgctxt "@info:status Package state"
+msgid "No Change"
+msgstr "Без змін"
+
+#: src/muonapt/MuonStrings.cpp:196 src/muonapt/MuonStrings.cpp:197
+#, kde-format
+msgctxt "@info:status Requested action"
+msgid "Install"
+msgstr "Встановити"
+
+#: src/muonapt/MuonStrings.cpp:198
+#, kde-format
+msgctxt "@info:status Requested action"
+msgid "Reinstall"
+msgstr "Перевстановити"
+
+#: src/muonapt/MuonStrings.cpp:199
+#, kde-format
+msgctxt "@info:status Requested action"
+msgid "Upgrade"
+msgstr "Оновити"
+
+#: src/muonapt/MuonStrings.cpp:200
+#, kde-format
+msgctxt "@info:status Requested action"
+msgid "Downgrade"
+msgstr "Понизити"
+
+#: src/muonapt/MuonStrings.cpp:201
+#, kde-format
+msgctxt "@info:status Requested action"
+msgid "Remove"
+msgstr "Вилучити"
+
+#: src/muonapt/MuonStrings.cpp:202
+#, kde-format
+msgctxt "@info:status Package state"
+msgid "Held"
+msgstr "Утримання"
+
+#: src/muonapt/MuonStrings.cpp:203
+#, kde-format
+msgctxt "@info:status Package state"
+msgid "Installed"
+msgstr "Встановлено"
+
+#: src/muonapt/MuonStrings.cpp:204
+#, kde-format
+msgctxt "@info:status Package state"
+msgid "Upgradeable"
+msgstr "Можна оновлювати"
+
+#: src/muonapt/MuonStrings.cpp:205
+#, kde-format
+msgctxt "@info:status Package state"
+msgid "Broken"
+msgstr "Пошкоджено"
+
+#: src/muonapt/MuonStrings.cpp:206
+#, kde-format
+msgctxt "@info:status Package state"
+msgid "Install Broken"
+msgstr "Встановлено з помилками"
+
+#: src/muonapt/MuonStrings.cpp:207
+#, kde-format
+msgctxt "@info:status Package state"
+msgid "Orphaned"
+msgstr "Осиротілий"
+
+#: src/muonapt/MuonStrings.cpp:208
+#, kde-format
+msgctxt "@info:status Package state"
+msgid "Locked"
+msgstr "Заблокований"
+
+#: src/muonapt/MuonStrings.cpp:209
+#, kde-format
+msgctxt "@info:status Package state"
+msgid "New in repository"
+msgstr "Новий у сховищі"
+
+#: src/muonapt/MuonStrings.cpp:210
+#, kde-format
+msgctxt "@info:status Package state"
+msgid "Residual Configuration"
+msgstr "Залишкове налаштування"
+
+#: src/muonapt/MuonStrings.cpp:211
+#, kde-format
+msgctxt "@info:status Package state"
+msgid "Not Downloadable"
+msgstr "Непридатний до отримання"
+
+#: src/muonapt/MuonStrings.cpp:212
+#, kde-format
+msgctxt "@info:status Requested action"
+msgid "Purge"
+msgstr "Очистити"
+
+#: src/muonapt/MuonStrings.cpp:213
+#, kde-format
+msgctxt "@info:status Package state"
+msgid "Important for base install"
+msgstr "Важливий для базового комплекту"
+
+#: src/muonapt/MuonStrings.cpp:214
+#, kde-format
+msgctxt "@info:status Package state"
+msgid "Version overridden"
+msgstr "Перевизначення версії"
+
+#: src/muonapt/MuonStrings.cpp:215
+#, kde-format
+msgctxt "@info:status Package state"
+msgid "Required by other packages"
+msgstr "Потрібний для роботи інших пакунків"
+
+#: src/muonapt/MuonStrings.cpp:216
+#, kde-format
+msgctxt "@info:status Package state"
+msgid "Installed (auto-removable)"
+msgstr "Встановлено (автоматичне вилучення)"
+
+#: src/muonapt/MuonStrings.cpp:217 src/muonapt/MuonStrings.cpp:218
+#, kde-format
+msgctxt "@info:status Package state"
+msgid "Policy Broken"
+msgstr "Встановлений з порушенням правил"
+
+#: src/muonapt/MuonStrings.cpp:219
+#, kde-format
+msgctxt "@info:status Package state"
+msgid "Not Installed"
+msgstr "Не встановлено"
+
+#: src/muonapt/MuonStrings.cpp:221
+#, kde-format
+msgctxt "@info:status Package locked at a certain version"
+msgid "Locked"
+msgstr "Зафіксовано"
+
+#: src/muonapt/MuonStrings.cpp:222
+#, kde-format
+msgctxt "@info:status Package state"
+msgid "Manually held back"
+msgstr "Утримуваний вручну"
+
+#: src/muonapt/MuonStrings.cpp:243
+#, kde-format
+msgctxt "@item:inlistbox"
+msgid "Common"
+msgstr "Загальний"
+
+#: src/muonapt/MuonStrings.cpp:244
+#, kde-format
+msgctxt "@item:inlistbox CPU architecture"
+msgid "32-bit"
+msgstr "32-бітовий"
+
+#: src/muonapt/MuonStrings.cpp:245
+#, kde-format
+msgctxt "@item:inlistbox CPU architecture"
+msgid "64-bit"
+msgstr "64-бітовий"
+
+#: src/muonapt/MuonStrings.cpp:246
+#, kde-format
+msgctxt "@item:inlistbox PU architecture"
+msgid "Power PC"
+msgstr "Power PC"
+
+#: src/muonapt/MuonStrings.cpp:265
+#, kde-format
+msgctxt "@title:window"
+msgid "Initialization Error"
+msgstr "Помилка ініціалізації"
+
+#: src/muonapt/MuonStrings.cpp:267
+#, kde-format
+msgctxt "@title:window"
+msgid "Unable to Obtain Package System Lock"
+msgstr "Не вдалося заблокувати систему керування пакунками"
+
+#: src/muonapt/MuonStrings.cpp:269
+#, kde-format
+msgctxt "@title:window"
+msgid "Low Disk Space"
+msgstr "Замало місця на диску"
+
+#: src/muonapt/MuonStrings.cpp:272
+#, kde-format
+msgctxt "@title:window"
+msgid "Failed to Apply Changes"
+msgstr "Не вдалося застосувати зміни"
+
+#: src/muonapt/MuonStrings.cpp:274
+#, kde-format
+msgctxt "@title:window"
+msgid "Authentication error"
+msgstr "Помилка розпізнавання"
+
+#: src/muonapt/MuonStrings.cpp:276
+#, kde-format
+msgctxt "@title:window"
+msgid "Unexpected Error"
+msgstr "Неочікувана помилка"
+
+#: src/muonapt/MuonStrings.cpp:278
+#, kde-format
+msgctxt "@title:window"
+msgid "Untrusted Packages"
+msgstr "Ненадійні пакунки"
+
+#: src/muonapt/MuonStrings.cpp:281
+#, kde-format
+msgctxt "@title:window"
+msgid "Unknown Error"
+msgstr "Невідома помилка"
+
+#: src/muonapt/MuonStrings.cpp:291
+#, kde-format
+msgctxt "@label"
+msgid ""
+"The package system could not be initialized, your configuration may be "
+"broken."
+msgstr ""
+"Не вдалося ініціалізувати систему керування пакунками, ймовірно систему "
+"пакунків пошкоджено."
+
+#: src/muonapt/MuonStrings.cpp:296
+#, kde-format
+msgctxt "@label"
+msgid ""
+"Another application seems to be using the package system at this time. You "
+"must close all other package managers before you will be able to install or "
+"remove any packages."
+msgstr ""
+"Зараз з системою керування пакунками працює стороння програма. Вам слід "
+"завершити роботу всіх сторонніх програм, перш ніж ви зможете встановлювати, "
+"вилучати будь-які пакунки."
+
+#: src/muonapt/MuonStrings.cpp:303
+#, kde-format
+msgctxt "@label"
+msgid ""
+"You do not have enough disk space in the directory at %1 to continue with "
+"this operation."
+msgstr "У каталозі %1 недостатньо місця для виконання цієї дії."
+
+#: src/muonapt/MuonStrings.cpp:307
+#, kde-format
+msgctxt "@label"
+msgid "Could not download packages"
+msgstr "Не вдалося завантажити пакунки"
+
+#: src/muonapt/MuonStrings.cpp:310
+#, kde-format
+msgctxt "@label"
+msgid "An error occurred while applying changes:"
+msgstr "Під час внесення змін сталися такі помилки:"
+
+#: src/muonapt/MuonStrings.cpp:314
+#, kde-format
+msgctxt "@label"
+msgid ""
+"This operation cannot continue since proper authorization was not provided"
+msgstr "Виконання цієї дії без належного уповноваження неможливе"
+
+#: src/muonapt/MuonStrings.cpp:318
+#, kde-format
+msgctxt "@label"
+msgid ""
+"It appears that the QApt worker has either crashed or disappeared. Please "
+"report a bug to the QApt maintainers"
+msgstr ""
+"Здається, базова програма QApt аварійно завершила роботу або зникла зі "
+"списку процесів. Будь ласка, повідомте про цю помилку супровідникам QApt."
+
+#: src/muonapt/MuonStrings.cpp:323
+#, kde-format
+msgctxt "@label"
+msgid ""
+"The following package has not been verified by its author. Downloading "
+"untrusted packages has been disallowed by your current configuration."
+msgid_plural ""
+"The following packages have not been verified by their authors. Downloading "
+"untrusted packages has been disallowed by your current configuration."
+msgstr[0] ""
+"Пакунки з наведеного нижче списку не було підписано автором. Отримання таких "
+"ненадійних пакунків заборонено поточними налаштуваннями."
+msgstr[1] ""
+"Пакунки з наведеного нижче списку не було підписано автором. Отримання таких "
+"ненадійних пакунків заборонено поточними налаштуваннями."
+msgstr[2] ""
+"Пакунки з наведеного нижче списку не було підписано автором. Отримання таких "
+"ненадійних пакунків заборонено поточними налаштуваннями."
+msgstr[3] ""
+"Пакунок з вказаною нижче назвою не було підписано автором. Отримання таких "
+"ненадійних пакунків заборонено поточними налаштуваннями."
+
+#: src/muonapt/QAptActions.cpp:118
+#, kde-format
+msgctxt "@action Reverts all potential changes to the cache"
+msgid "Unmark All"
+msgstr "Зняти всі позначення"
+
+#: src/muonapt/QAptActions.cpp:125
+#, kde-format
+msgctxt "@action Opens the software sources configuration dialog"
+msgid "Configure Software Sources"
+msgstr "Змінити список джерел програмного забезпечення"
+
+#: src/muonapt/QAptActions.cpp:131
+#, kde-format
+msgctxt "@action"
+msgid "Read Markings..."
+msgstr "Читати позначення…"
+
+#: src/muonapt/QAptActions.cpp:137
+#, kde-format
+msgctxt "@action"
+msgid "Save Markings As..."
+msgstr "Зберегти позначення як…"
+
+#: src/muonapt/QAptActions.cpp:144
+#, kde-format
+msgctxt "@action"
+msgid "Save Package Download List..."
+msgstr "Зберегти список пакунків для отримання…"
+
+#: src/muonapt/QAptActions.cpp:151
+#, kde-format
+msgctxt "@action"
+msgid "Download Packages From List..."
+msgstr "Отримати пакунки зі списку…"
+
+#: src/muonapt/QAptActions.cpp:160
+#, kde-format
+msgctxt "@action"
+msgid "Add Downloaded Packages"
+msgstr "Додати пакунки для отримання"
+
+#: src/muonapt/QAptActions.cpp:167
+#, kde-format
+msgctxt "@action"
+msgid "Save Installed Packages List..."
+msgstr "Зберегти список встановлених пакунків…"
+
+#: src/muonapt/QAptActions.cpp:173
+#, kde-format
+msgctxt "@action::inmenu"
+msgid "History..."
+msgstr "Журнал…"
+
+#: src/muonapt/QAptActions.cpp:179
+#, kde-format
+msgctxt "@action"
+msgid "Upgrade"
+msgstr "Оновити"
+
+#: src/muonapt/QAptActions.cpp:182
+#, kde-format
+msgctxt "Notification when a new version of Kubuntu is available"
+msgid "A new version of Kubuntu is available."
+msgstr "Випущено нову версію Kubuntu."
+
+#: src/muonapt/QAptActions.cpp:226
+#, kde-format
+msgctxt "@title:window"
+msgid "Save Markings As"
+msgstr "Збереження позначень"
+
+#: src/muonapt/QAptActions.cpp:233 src/muonapt/QAptActions.cpp:258
+#: src/muonapt/QAptActions.cpp:282
+#, kde-kuit-format
+msgctxt "@label"
+msgid ""
+"The document could not be saved, as it was not possible to write to "
+"<filename>%1</filename>\n"
+"\n"
+"Check that you have write access to this file or that enough disk space is "
+"available."
+msgstr ""
+"Документ не вдалося зберегти через помилку запису до <filename>%1</"
+"filename>.\n"
+"\n"
+"Перевірте, чи є у вас права на запис до цього файла, та чи достатньо "
+"вільного місця на диску для запису файла."
+
+#: src/muonapt/QAptActions.cpp:251
+#, kde-format
+msgctxt "@title:window"
+msgid "Save Installed Packages List As"
+msgstr "Збереження списку встановлених пакунків"
+
+#: src/muonapt/QAptActions.cpp:275
+#, kde-format
+msgctxt "@title:window"
+msgid "Save Download List As"
+msgstr "Збереження списку для отримання"
+
+#: src/muonapt/QAptActions.cpp:297 src/muonapt/QAptActions.cpp:314
+#, kde-format
+msgctxt "@title:window"
+msgid "Open File"
+msgstr "Відкриття файла"
+
+#: src/muonapt/QAptActions.cpp:322
+#, kde-format
+msgctxt "@label"
+msgid ""
+"Could not mark changes. Please make sure that the file is a markings file "
+"created by either the Muon Package Manager or the Synaptic Package Manager."
+msgstr ""
+"Не вдалося позначити зміни. Будь ласка, переконайтеся, що файл позначень "
+"було створено програмою для керування пакунками Muon або програмою для "
+"керування пакунками Synaptic."
+
+#: src/muonapt/QAptActions.cpp:333
+#, kde-format
+msgctxt "@title:window"
+msgid "Choose a Directory"
+msgstr "Вибір каталогу"
+
+#: src/muonapt/QAptActions.cpp:356
+#, kde-format
+msgctxt "@label"
+msgid "%1 package was successfully added to the cache"
+msgid_plural "%1 packages were successfully added to the cache"
+msgstr[0] "До кешу було успішно додано %1 пакунок"
+msgstr[1] "До кешу було успішно додано %1 пакунки"
+msgstr[2] "До кешу було успішно додано %1 пакунків"
+msgstr[3] "До кешу було успішно додано один пакунок"
+
+#: src/muonapt/QAptActions.cpp:362
+#, kde-format
+msgctxt "@label"
+msgid ""
+"No valid packages could be found in this directory. Please make sure the "
+"packages are compatible with your computer and are at the latest version."
+msgstr ""
+"У цьому каталозі не вдалося знайти жодного коректного пакунка. Будь ласка, "
+"переконайтеся, що пакунки сумісні з поточною версією вашої системи."
+
+#: src/muonapt/QAptActions.cpp:366
+#, kde-format
+msgctxt "@title:window"
+msgid "Packages Could Not be Found"
+msgstr "Не вдалося знайти пакунки"
+
+#: src/muonapt/QAptActions.cpp:398
+#, kde-format
+msgctxt "@label"
+msgid ""
+"Could not find <command>software-properties-kde</command> on your system, "
+"please install it. Alternatively, you can use <application>Plasma Discover</"
+"application> to configure software sources."
+msgstr ""
+"У вашій операційній системі не знайдено <command>software-properties-kde</"
+"command>. Будь ласка, встановіть цю програму. Для налаштовування джерел "
+"програмного забезпечення ви також можете скористатися програмою "
+"<application>Plasma Discover</application>."
+
+#: src/muonapt/QAptActions.cpp:403
+#, kde-format
+msgctxt "@title:window"
+msgid "Cannot find <command>software-properties-kde</command>"
+msgstr "Не знайдено <command>software-properties-kde</command>"
+
+#: src/muonapt/QAptActions.cpp:494
+#, kde-format
+msgctxt "@title:window"
+msgid "Package History"
+msgstr "Журнал пакунків"
+
+#: src/PackageModel/PackageModel.cpp:88
+#, kde-format
+msgid "Package"
+msgstr "Пакунок"
+
+#: src/PackageModel/PackageModel.cpp:90
+#, kde-format
+msgid "Status"
+msgstr "Стан"
+
+#: src/PackageModel/PackageModel.cpp:92
+#, kde-format
+msgid "Requested"
+msgstr "Запитано"
+
+#: src/PackageModel/PackageModel.cpp:94
+#, kde-format
+msgid "Installed Size"
+msgstr "Розмір встановленого"
+
+#: src/PackageModel/PackageModel.cpp:96
+#, kde-format
+msgid "Installed Version"
+msgstr "Встановлена версія"
+
+#: src/PackageModel/PackageModel.cpp:98
+#, kde-format
+msgid "Available Version"
+msgstr "Доступна версія"
+
+#: src/PackageModel/PackageWidget.cpp:166
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Mark for Installation"
+msgstr "Позначити для встановлення"
+
+#: src/PackageModel/PackageWidget.cpp:171
+#, kde-format
+msgctxt "@action:button"
+msgid "Mark for Removal"
+msgstr "Позначити для вилучення"
+
+#: src/PackageModel/PackageWidget.cpp:176
+#, kde-format
+msgctxt "@action:button"
+msgid "Mark for Upgrade"
+msgstr "Позначити для:"
+
+#: src/PackageModel/PackageWidget.cpp:181
+#, kde-format
+msgctxt "@action:button"
+msgid "Mark for Reinstallation"
+msgstr "Позначити для перевстановлення"
+
+#: src/PackageModel/PackageWidget.cpp:186
+#, kde-format
+msgctxt "@action:button"
+msgid "Mark for Purge"
+msgstr "Позначити для:"
+
+#: src/PackageModel/PackageWidget.cpp:197
+#, kde-format
+msgctxt "@action:button"
+msgid "Lock Package at Current Version"
+msgstr "Залежності поточної версії"
+
+#: src/PackageModel/PackageWidget.cpp:377
+#, kde-format
+msgctxt "@action:button"
+msgid "Unlock package"
+msgstr "Неможливо позначити пакунок"
+
+#: src/PackageModel/PackageWidget.cpp:381
+#, kde-format
+msgctxt "@action:button"
+msgid "Lock at Current Version"
+msgstr "Залежності поточної версії"
+
+#: src/PackageModel/PackageWidget.cpp:422
+#, kde-format
+msgctxt "@label"
+msgid ""
+"Removing this package may break your system. Are you sure you want to remove "
+"it?"
+msgstr ""
+"Вилучення цього пакунка може зашкодити працездатності системи. Ви справді "
+"бажаєте його вилучити?"
+
+#: src/PackageModel/PackageWidget.cpp:423
+#, kde-format
+msgctxt "@label"
+msgid "Warning - Removing Important Package"
+msgstr "Попередження — вилучається важливий пакунок"
+
+#: src/PackageModel/PackageWidget.cpp:609
+#, kde-format
+msgctxt "@title:window"
+msgid "Failed to Lock Package"
+msgstr "Не вдалося заблокувати пакунок"
+
+#: src/PackageModel/PackageWidget.cpp:610
+#, kde-format
+msgctxt "@info Error text"
+msgid "The package %1 could not be locked. Failed to write lock file."
+msgstr ""
+"Не вдалося заблокувати пакунок %1: не вдалося записати файл блокування."
+
+#: src/PackageModel/PackageWidget.cpp:659
+#, kde-format
+msgctxt "@label"
+msgid "The \"%1\" package could not be marked for installation or upgrade:"
+msgstr "Пакунок «%1» не можна позначати для встановлення або оновлення:"
+
+#: src/PackageModel/PackageWidget.cpp:662
+#, kde-format
+msgctxt "@title:window"
+msgid "Unable to Mark Package"
+msgstr "Неможливо позначити пакунок"
+
+#: src/PackageModel/PackageWidget.cpp:679
+#, kde-format
+msgctxt "@label"
+msgid ""
+"The \"%1\" package has no available version, but exists in the database.\n"
+"\tThis typically means that the package was mentioned in a dependency and "
+"never uploaded, has been obsoleted, or is not available from the currently-"
+"enabled repositories."
+msgstr ""
+"Запис пакунка «%1» не містить даних щодо доступної версії, але існує у базі "
+"даних.\n"
+"\tТипово, це означає, що пакунок було згадано у списку залежностей, але "
+"ніколи не було вивантажено, він застарів або його немає у жодному з "
+"увімкнених зараз сховищ пакунків."
+
+#: src/PackageModel/PackageWidget.cpp:686
+#, kde-format
+msgctxt "@label Example: Depends: libqapt 0.1, but 0.2 is to be installed"
+msgid "%1: %2 %3, but %4 is to be installed"
+msgstr "%1: %2 %3, але має бути встановлено %4"
+
+#: src/PackageModel/PackageWidget.cpp:692
+#, kde-format
+msgctxt "@label Example: Depends: libqapt, but is not installable"
+msgid "%1: %2, but it is not installable"
+msgstr "%1: %2, але її не можна встановити"
+
+#: src/PackageModel/PackageWidget.cpp:697
+#, kde-format
+msgctxt "@label Example: Depends: libqapt, but it is a virtual package"
+msgid "%1: %2, but it is a virtual package"
+msgstr "%1: %2, але є віртуальним пакунком"
+
+#: src/ReviewWidget.cpp:32
+#, kde-format
+msgid "<b>Review and Apply Changes</b>"
+msgstr "<b>Переглянути і внести зміни</b>"
+
+#: src/StatusWidget.cpp:52
+#, kde-format
+msgctxt "@info:status"
+msgid "Rebuilding Search Index"
+msgstr "Перебудова покажчика для пошуку"
+
+#: src/StatusWidget.cpp:93
+#, kde-format
+msgctxt "@info:status"
+msgid "1 package available, "
+msgid_plural "%1 packages available, "
+msgstr[0] "Доступний %1 пакунок, "
+msgstr[1] "Доступні %1 пакунки, "
+msgstr[2] "Доступні %1 пакунків, "
+msgstr[3] "Доступний один пакунок, "
+
+#: src/StatusWidget.cpp:94
+#, kde-format
+msgctxt "@info:status"
+msgid "%1 installed, "
+msgstr "Встановлено: %1, "
+
+#: src/StatusWidget.cpp:98
+#, kde-format
+msgctxt "@info:status"
+msgid "%1 upgradeable,"
+msgstr "%1 можна оновити,"
+
+#: src/StatusWidget.cpp:100
+#, kde-format
+msgctxt "@info:status"
+msgid "%1 upgradeable"
+msgstr "Оновлення: %1"
+
+#: src/StatusWidget.cpp:112
+#, kde-format
+msgctxt "@info:status Part of the status label"
+msgid " %1 to install/upgrade"
+msgstr " встановлення/оновлення: %1"
+
+#: src/StatusWidget.cpp:117
+#, kde-format
+msgctxt ""
+"@info:status Label for the number of packages pending removal when packages "
+"are also pending upgrade"
+msgid ", %1 to remove"
+msgstr ", вилучення: %1"
+
+#: src/StatusWidget.cpp:120
+#, kde-format
+msgctxt ""
+"@info:status Label for the number of packages pending removal when there are "
+"only removals"
+msgid " %1 to remove"
+msgstr " %1 для вилучення"
+
+#: src/StatusWidget.cpp:129
+#, kde-format
+msgctxt "@label showing download and install size"
+msgid "%1 to download, %2 of space to be freed"
+msgstr "Буде отримано: %1, буде вивільнено місця: %2"
+
+#: src/StatusWidget.cpp:133
+#, kde-format
+msgctxt "@label showing download and install size"
+msgid "%1 to download, %2 of space to be used"
+msgstr "Буде отримано: %1, буде додатково зайнято місця: %2"
+
+#: src/TransactionWidget.cpp:103
+#, kde-format
+msgctxt "@action:button Cancels the download"
+msgid "Cancel"
+msgstr "Скасувати"
+
+#: src/TransactionWidget.cpp:148
+#, kde-kuit-format
+msgctxt "@info Status information, widget title"
+msgid "<title>Starting</title>"
+msgstr "<title>Розпочинаємо</title>"
+
+#: src/TransactionWidget.cpp:150
+#, kde-format
+msgctxt "@info Status info"
+msgid "Waiting for service to start"
+msgstr "Очікування на запуск служби"
+
+#: src/TransactionWidget.cpp:155
+#, kde-format
+msgctxt "@info Status info"
+msgid "Waiting for authentication"
+msgstr "Очікування на завершення розпізнавання"
+
+#: src/TransactionWidget.cpp:159 src/TransactionWidget.cpp:166
+#: src/TransactionWidget.cpp:173 src/TransactionWidget.cpp:180
+#, kde-kuit-format
+msgctxt "@info Status information, widget title"
+msgid "<title>Waiting</title>"
+msgstr "<title>Очікуємо</title>"
+
+#: src/TransactionWidget.cpp:161
+#, kde-format
+msgctxt "@info Status info"
+msgid "Waiting for other transactions to finish"
+msgstr "Очікуємо на завершення інших операцій"
+
+#: src/TransactionWidget.cpp:168
+#, kde-format
+msgctxt "@info Status info"
+msgid "Waiting for other software managers to quit"
+msgstr "Очікування на завершення роботи інших програм для керування пакунками"
+
+#: src/TransactionWidget.cpp:175
+#, kde-format
+msgctxt "@info Status info"
+msgid "Waiting for required medium"
+msgstr "Очікуємо на потрібний програмі носій з даними"
+
+#: src/TransactionWidget.cpp:182
+#, kde-format
+msgctxt "@info Status info"
+msgid "Waiting for configuration file"
+msgstr "Очікуємо на файл налаштувань"
+
+#: src/TransactionWidget.cpp:193
+#, kde-kuit-format
+msgctxt "@info Status info"
+msgid "<title>Loading Software List</title>"
+msgstr "<title>Завантажуємо список програмного забезпечення</title>"
+
+#: src/TransactionWidget.cpp:201
+#, kde-kuit-format
+msgctxt "@info Status information, widget title"
+msgid "<title>Updating software sources</title>"
+msgstr "<title>Оновлення списку джерел програм</title>"
+
+#: src/TransactionWidget.cpp:206
+#, kde-kuit-format
+msgctxt "@info Status information, widget title"
+msgid "<title>Downloading Packages</title>"
+msgstr "<title>Отримуємо пакунки</title>"
+
+#: src/TransactionWidget.cpp:218
+#, kde-kuit-format
+msgctxt "@info Status information, widget title"
+msgid "<title>Committing Changes</title>"
+msgstr "<title>Вносимо зміни</title>"
+
+#: src/TransactionWidget.cpp:225
+#, kde-kuit-format
+msgctxt "@info Status information, widget title"
+msgid "<title>Finished</title>"
+msgstr "<title>Завершено</title>"
+
+#: src/TransactionWidget.cpp:254
+#, kde-format
+msgctxt "@title:window"
+msgid "Media Change Required"
+msgstr "Потрібна зміна носія даних"
+
+#: src/TransactionWidget.cpp:255
+#, kde-kuit-format
+msgctxt "@label"
+msgid "Please insert %1 into <filename>%2</filename>"
+msgstr "Будь ласка, вставте %1 до <filename>%2</filename>"
+
+#: src/TransactionWidget.cpp:264
+#, kde-format
+msgctxt "@title:window"
+msgid "Warning - Unverified Software"
+msgstr "Попередження: непідписане програмне забезпечення"
+
+#: src/TransactionWidget.cpp:266
+#, kde-kuit-format
+msgctxt "@label"
+msgid ""
+"The following piece of software cannot be verified. <warning>Installing "
+"unverified software represents a security risk, as the presence of "
+"unverifiable software can be a sign of tampering.</warning> Do you wish to "
+"continue?"
+msgid_plural ""
+"The following pieces of software cannot be verified. <warning>Installing "
+"unverified software represents a security risk, as the presence of "
+"unverifiable software can be a sign of tampering.</warning> Do you wish to "
+"continue?"
+msgstr[0] ""
+"Не вдалося перевірити достовірність програмного забезпечення з наведеного "
+"нижче списку. <warning>Встановлення неперевіреного програмного забезпечення "
+"може зашкодити захисту вашої системи, оскільки таке програмне забезпечення "
+"могло бути підроблено зловмисниками.</warning> Бажаєте продовжити "
+"встановлення цього програмного забезпечення?"
+msgstr[1] ""
+"Не вдалося перевірити достовірність програмного забезпечення з наведеного "
+"нижче списку. <warning>Встановлення неперевіреного програмного забезпечення "
+"може зашкодити захисту вашої системи, оскільки таке програмне забезпечення "
+"могло бути підроблено зловмисниками.</warning> Бажаєте продовжити "
+"встановлення цього програмного забезпечення?"
+msgstr[2] ""
+"Не вдалося перевірити достовірність програмного забезпечення з наведеного "
+"нижче списку. <warning>Встановлення неперевіреного програмного забезпечення "
+"може зашкодити захисту вашої системи, оскільки таке програмне забезпечення "
+"могло бути підроблено зловмисниками.</warning> Бажаєте продовжити "
+"встановлення цього програмного забезпечення?"
+msgstr[3] ""
+"Не вдалося перевірити достовірність програмного забезпечення з наведеного "
+"нижче списку. <warning>Встановлення неперевіреного програмного забезпечення "
+"може зашкодити захисту вашої системи, оскільки таке програмне забезпечення "
+"могло бути підроблено зловмисниками.</warning> Бажаєте продовжити "
+"встановлення цього програмного забезпечення?"
+
+#: src/TransactionWidget.cpp:284
+#, kde-format
+msgctxt "@title:window"
+msgid "Configuration File Changed"
+msgstr "Змінено файл налаштувань"
+
+#: src/TransactionWidget.cpp:286
+#, kde-kuit-format
+msgctxt "@label Notifies a config file change"
+msgid ""
+"A new version of the configuration file <filename>%1</filename> is "
+"available, but your version has been modified. Would you like to keep your "
+"current version or install the new version?"
+msgstr ""
+"Маємо доступ до нової версії файла налаштувань <filename>%1</filename>, але "
+"до вашої версії було раніше внесено зміни. Хочете зберегти поточну версію "
+"файла чи встановити нову версію?"
+
+#: src/TransactionWidget.cpp:291
+#, kde-format
+msgctxt "@action Use the new config file"
+msgid "Use New Version"
+msgstr "Використовувати нову версію"
+
+#: src/TransactionWidget.cpp:292
+#, kde-format
+msgctxt "@action Keep the old config file"
+msgid "Keep Old Version"
+msgstr "Зберегти поточну версію"
