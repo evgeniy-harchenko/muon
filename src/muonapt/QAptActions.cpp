@@ -390,14 +390,13 @@ void QAptActions::runSourcesEditor()
     QStringList arguments;
     int winID = m_mainWindow->effectiveWinId();
 
+    QString call = QStringLiteral("bash");
     QStringList libexecpath(QStringLiteral("/" LIBEXECDIR));
 
-    QString call = QStandardPaths::findExecutable(QStringLiteral("kdesu"));
-    if (call.isEmpty()) call = QStandardPaths::findExecutable(QStringLiteral("kdesu"), libexecpath);
-    if (call.isEmpty ()) call = QStandardPaths::findExecutable(QStringLiteral("kdesudo"));
-    if (call.isEmpty ()) call = QStandardPaths::findExecutable(QStringLiteral("kdesudo"), libexecpath);
-    if (call.isEmpty()) {
-        KMessageBox::error(m_mainWindow, i18n("Neither kdesu nor kdesudo could be found. To install as root, please install one of these packages."), i18n("kdesu not found"));
+    QString dialog = QStandardPaths::findExecutable(QStringLiteral("kdialog"));
+    if (dialog.isEmpty()) dialog = QStandardPaths::findExecutable(QStringLiteral("kdialog"), libexecpath);
+    if (dialog.isEmpty()) {
+        KMessageBox::error(m_mainWindow, i18n("kdialog could not be found. To install as root, please install this package."), i18n("kdialog not found"));
         return;
     }
 
@@ -419,10 +418,13 @@ void QAptActions::runSourcesEditor()
         return;
     }
 
-    arguments << QStringLiteral("--") << editor << QStringLiteral("--attach") << QString::number(winID);
-    if (m_reloadWhenEditorFinished) {
-        arguments << QStringLiteral("--dont-update");
-    }
+    arguments << QStringLiteral("-c")
+              << QStringLiteral("echo \"$(") +
+                 dialog + QStringLiteral(" --attach ") + QString::number(winID) +
+                 QStringLiteral(" --password ") + editor + QStringLiteral(")\" | sudo -S ") +
+                 editor + QStringLiteral(" --attach ") + QString::number(winID) +
+                 (m_reloadWhenEditorFinished ? QStringLiteral(" --dont-update ") : QString()) +
+                 QStringLiteral("\"$@\"");
 
     connect(proc, QOverload<int, QProcess::ExitStatus>::of(&QProcess::finished),
             this, &QAptActions::sourcesEditorFinished);

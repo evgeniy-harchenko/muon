@@ -23,7 +23,7 @@ include(GenerateExportHeader)
 
 find_package(Qt6 ${QT_MIN_VERSION} REQUIRED CONFIG COMPONENTS Widgets Concurrent)
 find_package(KF6 ${KF_MIN_VERSION} REQUIRED KIO DBusAddons I18n IconThemes XmlGui)
-find_package(QApt 3.0.5 REQUIRED)
+find_package(QApt 4.0.0 REQUIRED)
 #find_package(DebconfKDE 1.1.0 REQUIRED)
 
 set(MUON_VERSION ${PROJECT_VERSION})
