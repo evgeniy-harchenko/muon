@@ -39,7 +39,8 @@ public:
     virtual ~ManagerSettingsDialog();
 
 private Q_SLOTS:
-    void slotButtonClicked(QAbstractButton* button);
+    void applySettings();
+    void restoreDefaults();
     void changed();
     void authChanged();
 
@@ -48,9 +49,6 @@ Q_SIGNALS:
 
 private:
     QApt::Config *m_aptConfig;
-
-    void applySettings();
-    void restoreDefaults();
 
 private:
     QSet<SettingsPageBase*> m_pages;

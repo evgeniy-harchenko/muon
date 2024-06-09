@@ -417,7 +417,7 @@ void QAptActions::runSourcesEditor()
         KMessageBox::information(m_mainWindow, text, title);
         return;
     }
-
+// TODO to process.startCommand("dir \"My Documents\"");
     arguments << QStringLiteral("-c")
               << QStringLiteral("echo \"$(") +
                  dialog + QStringLiteral(" --attach ") + QString::number(winID) +
