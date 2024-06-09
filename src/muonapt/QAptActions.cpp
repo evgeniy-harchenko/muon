@@ -60,7 +60,7 @@ QAptActions::QAptActions()
     , m_distUpgradeAvailable(false)
 {
     QNetworkInformation::loadDefaultBackend();
-    connect(QNetworkInformation::instance(), &QNetworkInformation::reachabilityChanged, this, &QAptActions::shouldConnect);
+    connect(QNetworkInformation::instance(), &QNetworkInformation::reachabilityChanged, this, &QAptActions::reachabilityChanged);
 }
 
 QAptActions* QAptActions::self()
@@ -567,4 +567,9 @@ void QAptActions::checkerFinished(int res)
     if (!m_mainWindow)
         return;
     actionCollection()->action(QStringLiteral("dist-upgrade"))->setEnabled(m_distUpgradeAvailable);
+}
+
+void QAptActions::reachabilityChanged(QNetworkInformation::Reachability reachability)
+{
+    Q_EMIT shouldConnect(reachability == QNetworkInformation::Reachability::Online);
 }

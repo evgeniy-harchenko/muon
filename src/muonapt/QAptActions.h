@@ -58,7 +58,7 @@ public:
     KActionCollection* actionCollection();
 
 Q_SIGNALS:
-    void shouldConnect(QNetworkInformation::Reachability isConnected);
+    void shouldConnect(bool isConnected);
     void changesReverted();
     void sourcesEditorClosed(bool reload);
     void downloadArchives(QApt::Transaction *trans);
@@ -83,6 +83,7 @@ public Q_SLOTS:
     void setActionsEnabled(bool enabled = true);
 
 private Q_SLOTS:
+    void reachabilityChanged(QNetworkInformation::Reachability);
     void closeHistoryDialog();
     void checkDistUpgrade();
     void launchDistUpgrade();
