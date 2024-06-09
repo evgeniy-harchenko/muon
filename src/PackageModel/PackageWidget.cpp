@@ -107,6 +107,7 @@ PackageWidget::PackageWidget(QWidget *parent)
     m_packageView = new PackageView;
     m_packageView->setModel(m_proxyModel);
     m_packageView->setItemDelegate(delegate);
+    m_packageView->header()->setSectionResizeMode(QHeaderView::ResizeToContents);
     m_packageView->header()->setSectionResizeMode(0, QHeaderView::Stretch);
     const int numColumns = m_packageView->header()->count();
     Q_ASSERT(numColumns >= 3);
@@ -258,6 +259,7 @@ void PackageWidget::setBackend(QApt::Backend *backend)
     m_detailsWidget->setBackend(backend);
     m_proxyModel->setBackend(m_backend);
     m_packageView->setSortingEnabled(true);
+    m_packageView->sortByColumn(0, Qt::AscendingOrder);
     QApt::PackageList packageList = m_backend->availablePackages();
 
     QFuture<QList<QApt::Package*> > future = QtConcurrent::run(sortPackages, packageList);
