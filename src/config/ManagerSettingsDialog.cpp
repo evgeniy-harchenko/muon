@@ -48,14 +48,22 @@ ManagerSettingsDialog::ManagerSettingsDialog(QWidget* parent, QApt::Config *aptC
     generalSettingsFrame->setIcon(QIcon::fromTheme(QStringLiteral("system-run")));
     connect(generalPage, SIGNAL(changed()), this, SLOT(changed()));
     connect(generalPage, SIGNAL(authChanged()), this, SLOT(authChanged()));
-    connect(button(QDialogButtonBox::Apply), &QPushButton::clicked, this,&ManagerSettingsDialog::applySettings);
-    connect(button(QDialogButtonBox::RestoreDefaults), &QPushButton::clicked, this, &ManagerSettingsDialog::restoreDefaults);
+    connect(buttonBox(), SIGNAL(clicked(QAbstractButton*)), this, SLOT(slotButtonClicked(QAbstractButton*)));
 
     m_pages.insert(generalPage);
 }
 
 ManagerSettingsDialog::~ManagerSettingsDialog()
 {
+}
+
+void ManagerSettingsDialog::slotButtonClicked(QAbstractButton* b)
+{
+    if ((b == button(QDialogButtonBox::Ok)) || (b == button(QDialogButtonBox::Apply))) {
+        applySettings();
+    } else if (b == button(QDialogButtonBox::RestoreDefaults)) {
+        restoreDefaults();
+    }
 }
 
 void ManagerSettingsDialog::changed()
