@@ -286,6 +286,7 @@ void PackageWidget::cacheReloadFinished()
     QApt::PackageList packageList = m_backend->availablePackages();
     QFuture<QList<QApt::Package*> > future = QtConcurrent::run(sortPackages, packageList);
     m_watcher->setFuture(future);
+    m_packageView->header()->setSectionResizeMode(QHeaderView::ResizeToContents);
     m_packageView->header()->setSectionResizeMode(0, QHeaderView::Stretch);
     startSearch();
 }
