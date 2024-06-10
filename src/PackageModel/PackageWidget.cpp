@@ -258,8 +258,8 @@ void PackageWidget::setBackend(QApt::Backend *backend)
 
     m_detailsWidget->setBackend(backend);
     m_proxyModel->setBackend(m_backend);
+    m_packageView->header()->setSortIndicator(0, Qt::AscendingOrder);
     m_packageView->setSortingEnabled(true);
-    m_packageView->sortByColumn(0, Qt::AscendingOrder);
     QApt::PackageList packageList = m_backend->availablePackages();
 
     QFuture<QList<QApt::Package*> > future = QtConcurrent::run(sortPackages, packageList);
