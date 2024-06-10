@@ -36,7 +36,7 @@
 
 StatusWidget::StatusWidget(QWidget *parent)
     : QWidget(parent)
-    , m_backend(0)
+    , m_backend(nullptr)
 {
     m_countsLabel = new QLabel(this);
     m_countsLabel->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Preferred);

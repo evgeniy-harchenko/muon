@@ -29,7 +29,7 @@ class InstalledFilesTab : public DetailsTab
 {
     Q_OBJECT
 public:
-    explicit InstalledFilesTab(QWidget *parent = 0);
+    explicit InstalledFilesTab(QWidget *parent = nullptr);
 
     bool shouldShow() const;
 

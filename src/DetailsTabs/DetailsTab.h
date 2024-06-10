@@ -34,7 +34,7 @@ class DetailsTab : public QWidget
 {
     Q_OBJECT
 public:
-    explicit DetailsTab(QWidget *parent = 0);
+    explicit DetailsTab(QWidget *parent = nullptr);
 
     QString name() const;
     virtual bool shouldShow() const;

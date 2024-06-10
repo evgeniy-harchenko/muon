@@ -68,9 +68,9 @@ QApt::PackageList sortPackages(QApt::PackageList list)
 
 PackageWidget::PackageWidget(QWidget *parent)
         : QWidget(parent)
-        , m_backend(0)
-        , m_headerLabel(0)
-        , m_searchEdit(0)
+        , m_backend(nullptr)
+        , m_headerLabel(nullptr)
+        , m_searchEdit(nullptr)
         , m_packagesType(0)
         , m_stop(false)
 {
@@ -293,7 +293,7 @@ void PackageWidget::cacheReloadFinished()
 void PackageWidget::packageActivated(const QModelIndex &index)
 {
     QApt::Package *package = m_proxyModel->packageAt(index);
-    if (package == 0) {
+    if (package == nullptr) {
         m_detailsWidget->hide();
         return;
     }

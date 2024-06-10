@@ -27,7 +27,7 @@ class FilterModel : public QStandardItemModel
 {
     Q_OBJECT
 public:
-    explicit FilterModel(QObject *parent = 0);
+    explicit FilterModel(QObject *parent = nullptr);
     
     virtual void populate() =0;
     void reload();

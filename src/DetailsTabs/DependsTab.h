@@ -31,7 +31,7 @@ class DependsTab : public DetailsTab
 {
     Q_OBJECT
 public:
-    explicit DependsTab(QWidget *parent = 0);
+    explicit DependsTab(QWidget *parent = nullptr);
 
     enum DepTypes {
         CurrentVersionType = 0,

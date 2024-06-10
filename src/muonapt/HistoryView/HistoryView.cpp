@@ -114,7 +114,7 @@ HistoryView::HistoryView(QWidget *parent)
             categoryHash[date] = category;
         }
 
-        QStandardItem *parentItem = 0;
+        QStandardItem *parentItem = nullptr;
 
         if (!m_categoryHash.contains(category)) {
             parentItem = new QStandardItem;

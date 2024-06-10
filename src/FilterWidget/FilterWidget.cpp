@@ -40,7 +40,7 @@
 
 FilterWidget::FilterWidget(QWidget *parent)
     : QDockWidget(parent)
-    , m_backend(0)
+    , m_backend(nullptr)
 {
     setFeatures(QDockWidget::NoDockWidgetFeatures);
     setWindowTitle(i18nc("@title:window", "Filter:"));

@@ -26,7 +26,7 @@
 class StatusFilter : public FilterModel
 {
 public:
-    explicit StatusFilter(QObject *parent = 0);
+    explicit StatusFilter(QObject *parent = nullptr);
 
     void populate();
 };

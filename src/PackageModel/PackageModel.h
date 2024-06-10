@@ -41,7 +41,7 @@ public:
         InstalledVersionRole = Qt::UserRole + 8,
         AvailableVersionRole = Qt::UserRole + 9
     };
-    explicit PackageModel(QObject *parent = 0);
+    explicit PackageModel(QObject *parent = nullptr);
 
     int rowCount(const QModelIndex &parent = QModelIndex()) const;
     int columnCount(const QModelIndex &parent = QModelIndex()) const;

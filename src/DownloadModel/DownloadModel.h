@@ -39,7 +39,7 @@ public:
         StatusRole = Qt::UserRole + 5
     };
 
-    explicit DownloadModel(QObject *parent = 0);
+    explicit DownloadModel(QObject *parent = nullptr);
     QVariant data(const QModelIndex &index, int role = Qt::DisplayRole) const;
     QVariant headerData(int section, Qt::Orientation orientation, int role) const;
     int columnCount(const QModelIndex &parent = QModelIndex()) const;

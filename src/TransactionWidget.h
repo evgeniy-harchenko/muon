@@ -46,7 +46,7 @@ class TransactionWidget : public QWidget
 {
     Q_OBJECT
 public:
-    explicit TransactionWidget(QWidget *parent = 0);
+    explicit TransactionWidget(QWidget *parent = nullptr);
 
     QString pipe() const;
     void setTransaction(QApt::Transaction *trans);

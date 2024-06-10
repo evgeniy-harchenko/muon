@@ -57,7 +57,7 @@ bool packageRequestedLessThan(QApt::Package *p1, QApt::Package *p2)
 
 PackageProxyModel::PackageProxyModel(QObject *parent)
     : QSortFilterProxyModel(parent)
-    , m_backend(0)
+    , m_backend(nullptr)
     , m_stateFilter((QApt::Package::State)0)
     , m_sortByRelevancy(false)
     , m_useSearchResults(false)

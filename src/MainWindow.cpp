@@ -465,7 +465,7 @@ void MainWindow::setupTransaction(QApt::Transaction *trans)
         trans->setProxy(KProtocolManager::proxyFor("http"));
     }*/
 
-    trans->setLocale(QLatin1String(setlocale(LC_MESSAGES, 0)));
+    trans->setLocale(QLatin1String(setlocale(LC_MESSAGES, nullptr)));
 
     trans->setDebconfPipe(m_transWidget->pipe());
     m_transWidget->setTransaction(m_trans);

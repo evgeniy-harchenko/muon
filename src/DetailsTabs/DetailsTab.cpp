@@ -24,8 +24,8 @@
 
 DetailsTab::DetailsTab(QWidget *parent)
     : QWidget(parent)
-    , m_backend(0)
-    , m_package(0)
+    , m_backend(nullptr)
+    , m_package(nullptr)
 {
     m_layout = new QVBoxLayout(this);
     m_layout->setContentsMargins(QMargins());
@@ -59,5 +59,5 @@ void DetailsTab::refresh()
 
 void DetailsTab::clear()
 {
-    m_package = 0;
+    m_package = nullptr;
 }

@@ -30,7 +30,7 @@ class TechnicalDetailsTab : public DetailsTab
 {
     Q_OBJECT
 public:
-    explicit TechnicalDetailsTab(QWidget *parent = 0);
+    explicit TechnicalDetailsTab(QWidget *parent = nullptr);
 
 private:
     QLabel *m_maintainer;

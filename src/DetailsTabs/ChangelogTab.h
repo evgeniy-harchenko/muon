@@ -36,7 +36,7 @@ class ChangelogTab : public DetailsTab
 {
     Q_OBJECT
 public:
-    explicit ChangelogTab(QWidget *parent = 0);
+    explicit ChangelogTab(QWidget *parent = nullptr);
 
 private:
     QTextBrowser *m_changelogBrowser;

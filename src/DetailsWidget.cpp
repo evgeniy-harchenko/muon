@@ -48,8 +48,8 @@ DetailsWidget::DetailsWidget(QWidget *parent)
     m_detailsTabs.append(mainTab);
     m_detailsTabs.append(new TechnicalDetailsTab(this));
     m_detailsTabs.append(new DependsTab(this));
-    m_detailsTabs.append(new InstalledFilesTab(0));
-    m_detailsTabs.append(new VersionTab(0));
+    m_detailsTabs.append(new InstalledFilesTab(nullptr));
+    m_detailsTabs.append(new VersionTab(nullptr));
     m_detailsTabs.append(new ChangelogTab(this));
 
     // Hide until a package is clicked

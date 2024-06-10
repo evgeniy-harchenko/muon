@@ -31,7 +31,7 @@ class VersionTab : public DetailsTab
 {
     Q_OBJECT
 public:
-    explicit VersionTab(QWidget *parent = 0);
+    explicit VersionTab(QWidget *parent = nullptr);
 
     bool shouldShow() const;
 

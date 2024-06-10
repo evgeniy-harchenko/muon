@@ -27,7 +27,7 @@ class PackageView : public QTreeView
 {
     Q_OBJECT
 public:
-    explicit PackageView(QWidget *parent = 0);
+    explicit PackageView(QWidget *parent = nullptr);
 
     int selectionCount() const;
 

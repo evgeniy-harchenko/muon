@@ -28,7 +28,7 @@ class PackageViewHeader : public QHeaderView
 {
     Q_OBJECT
 public:
-    explicit PackageViewHeader(QWidget *parent = 0);
+    explicit PackageViewHeader(QWidget *parent = nullptr);
 
     void setModel(QAbstractItemModel *model) override;
 

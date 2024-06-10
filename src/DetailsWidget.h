@@ -40,7 +40,7 @@ class DetailsWidget : public QTabWidget
 {
     Q_OBJECT
 public:
-    explicit DetailsWidget(QWidget *parent = 0);
+    explicit DetailsWidget(QWidget *parent = nullptr);
     ~DetailsWidget();
 
 private:
