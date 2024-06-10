@@ -89,4 +89,4 @@ void ManagerWidget::filterByArchitecture(const QString &arch)
     m_proxyModel->setArchFilter(arch);
 }
 
-#include "ManagerWidget.moc"
+#include "moc_ManagerWidget.cpp"

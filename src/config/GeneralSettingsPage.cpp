@@ -192,4 +192,4 @@ void GeneralSettingsPage::emitAuthChanged()
     }
 }
 
-#include "GeneralSettingsPage.moc"
+#include "moc_GeneralSettingsPage.cpp"

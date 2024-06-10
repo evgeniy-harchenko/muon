@@ -129,4 +129,4 @@ void DetailsWidget::clear()
     hide();
 }
 
-#include "DetailsWidget.moc"
+#include "moc_DetailsWidget.cpp"

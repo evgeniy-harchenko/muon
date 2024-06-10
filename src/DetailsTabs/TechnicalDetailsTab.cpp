@@ -201,4 +201,4 @@ void TechnicalDetailsTab::refresh()
     m_downloadSize->setText(KFormat().formatByteSize(m_package->downloadSize()));
 }
 
-#include "TechnicalDetailsTab.moc"
+#include "moc_TechnicalDetailsTab.cpp"

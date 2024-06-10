@@ -224,4 +224,4 @@ void MainTab::emitSetPurge()
     Q_EMIT setPurge(m_package);
 }
 
-#include "MainTab.moc"
+#include "moc_MainTab.cpp"

@@ -98,4 +98,4 @@ void ManagerSettingsDialog::restoreDefaults()
     button(QDialogButtonBox::Apply)->setIcon(QIcon::fromTheme(QStringLiteral("dialog-ok-apply")));
 }
 
-#include "ManagerSettingsDialog.moc"
+#include "moc_ManagerSettingsDialog.cpp"

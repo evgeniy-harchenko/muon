@@ -67,4 +67,4 @@ void InstalledFilesTab::populateFilesList()
     m_filesBrowser->setPlainText(filesString);
 }
 
-#include "InstalledFilesTab.moc"
+#include "moc_InstalledFilesTab.cpp"

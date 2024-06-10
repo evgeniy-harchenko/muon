@@ -162,4 +162,4 @@ void FilterWidget::selectFirstRow(const QAbstractItemView *itemView)
     itemView->selectionModel()->select(firstRow, QItemSelectionModel::Select);
 }
 
-#include "FilterWidget.moc"
+#include "moc_FilterWidget.cpp"

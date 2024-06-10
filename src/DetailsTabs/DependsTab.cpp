@@ -104,4 +104,4 @@ void DependsTab::populateDepends(int index)
     m_dependsBrowser->setTextCursor(cursor);
 }
 
-#include "DependsTab.moc"
+#include "moc_DependsTab.cpp"

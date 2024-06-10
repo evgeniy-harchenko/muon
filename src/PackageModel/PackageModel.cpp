@@ -137,4 +137,4 @@ QApt::PackageList PackageModel::packages() const
     return m_packages;
 }
 
-#include "PackageModel.moc"
+#include "moc_PackageModel.cpp"
