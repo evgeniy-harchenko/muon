@@ -1,9 +1,9 @@
-Muon
-----------------------
+# Muon
 
 ### Build instructions
 
-```
+#### Install
+```bash
 cd /where/your/downloaded/muon/source
 mkdir build && cd build
 cmake -DCMAKE_BUILD_TYPE=Release  ..
