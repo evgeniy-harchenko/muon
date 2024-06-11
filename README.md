@@ -1,8 +1,12 @@
-# Muon
+# Muon Qt6
 
-### Build instructions
+## Build instructions
 
-#### Install
+### Requirements
+
+- Install [QApt >= 4.0.0](https://github.com/evgeniy-harchenko/qapt).
+
+### Install
 ```bash
 cd /where/your/downloaded/muon/source
 mkdir build && cd build
@@ -10,5 +14,3 @@ cmake -DCMAKE_BUILD_TYPE=Release  ..
 make
 make install
 ```
-
-Moo.ogg was taken from wikipedia, and is licensed under the GFDL 1.2 license. It is copyright 2007 by Wikipedia user "Secretlondon" (Hint: it is part of an epic easter egg)
