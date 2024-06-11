@@ -47,7 +47,7 @@ StatusWidget::StatusWidget(QWidget *parent)
     const int fontHeight = QFontMetrics(m_countsLabel->font()).height();
 
     m_xapianProgress = new QProgressBar(this);
-    m_xapianProgress->setMaximumSize(250, fontHeight);
+    m_xapianProgress->setMaximumSize(500, fontHeight);
     m_xapianProgress->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Fixed);
     m_xapianProgress->setFormat(i18nc("@info:status", "Rebuilding Search Index"));
     m_xapianProgress->setTextVisible(true);
@@ -79,6 +79,8 @@ void StatusWidget::setBackend(QApt::Backend *backend)
             this, SLOT(showXapianProgress()));
     connect(m_backend, SIGNAL(xapianUpdateProgress(int)),
             this, SLOT(updateXapianProgress(int)));
+    connect(m_backend, SIGNAL(xapianUpdateFinished()),
+            this, SLOT(updateXapianFinished()));
     updateStatus();
 }
 
@@ -143,6 +145,7 @@ void StatusWidget::updateStatus()
 
 void StatusWidget::showXapianProgress()
 {
+    m_xapianProgress->setValue(0);
     m_xapianProgress->show();
     m_xapianTimeout->start();
 }
@@ -158,4 +161,9 @@ void StatusWidget::updateXapianProgress(int percentage)
     m_xapianProgress->setValue(percentage);
     m_xapianProgress->show();
     m_xapianTimeout->start();
+}
+
+void StatusWidget::updateXapianFinished()
+{
+    hideXapianProgress();
 }

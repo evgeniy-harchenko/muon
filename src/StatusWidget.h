@@ -55,6 +55,7 @@ private Q_SLOTS:
     void showXapianProgress();
     void hideXapianProgress();
     void updateXapianProgress(int percentage);
+    void updateXapianFinished();
 };
 
 #endif
