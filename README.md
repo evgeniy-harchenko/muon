@@ -1,4 +1,12 @@
-# Muon Qt6
+<p align="center">
+  <img src="https://github.com/evgeniy-harchenko/muon/blob/master/assets/logo.png" width=150 />
+  <h1 align="center">Muon Qt6</h1>
+  <p align="center">Manage applications and libraries installed on your system to the package level. Search, install and remove packages and inspect their versions and their dependencies.</center>
+</p>
+
+<p align="center">
+  <img src="https://github.com/evgeniy-harchenko/muon/blob/master/assets/image.png"/>
+</p>
 
 ## Build instructions
 
