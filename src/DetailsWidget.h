@@ -24,7 +24,7 @@
 // Qt includes
 #include <QtCore/QVector>
 #include <QTabWidget>
-#include <qt5/QtCore/QStandardPaths>
+#include <QtCore/QStandardPaths>
 
 class QScrollArea;
 
