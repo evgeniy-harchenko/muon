@@ -117,7 +117,7 @@ void PackageDelegate::paintPackageName(QPainter *painter, const QStyleOptionView
     QStyleOptionViewItem name_item(option);
     QStyleOptionViewItem description_item(option);
 
-    description_item.font.setPointSize(name_item.font.pointSize() - 1);
+    description_item.font.setPointSize(name_item.font.pointSize());
 
     int textInner = 2 * m_spacing + m_iconSize;
     const int itemHeight = calcItemHeight(option);
@@ -303,7 +303,7 @@ int PackageDelegate::calcItemHeight(const QStyleOptionViewItem &option) const
     QStyleOptionViewItem name_item(option);
     QStyleOptionViewItem description_item(option);
 
-    description_item.font.setPointSize(name_item.font.pointSize() - 1);
+    description_item.font.setPointSize(name_item.font.pointSize());
 
     int textHeight = QFontInfo(name_item.font).pixelSize() + QFontInfo(description_item.font).pixelSize();
     return qMax(textHeight, m_iconSize) + 2 * m_spacing;
