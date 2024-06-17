@@ -1,15 +1,16 @@
-# Copyright (C) YEAR This_file_is_part_of_KDE
+# SPDX-FileCopyrightText: 2024 YEAR 2024
 # This file is distributed under the same license as the PACKAGE package.
 #
 # Yuri Efremov <yur.arh@gmail.com>, 2010, 2011, 2012, 2013, 2014.
 # Alexander Potashev <aspotashev@gmail.com>, 2010, 2011, 2015, 2018.
+# SPDX-FileCopyrightText: 2024 Evgeniy Harchenko <evgeniyharchenko.dev@gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2018-03-15 03:18+0100\n"
-"PO-Revision-Date: 2018-02-03 02:00+0300\n"
-"Last-Translator: Alexander Potashev <aspotashev@gmail.com>\n"
+"PO-Revision-Date: 2024-06-17 17:50+0300\n"
+"Last-Translator: Evgeniy Harchenko <evgeniyharchenko.dev@gmail.com>\n"
 "Language-Team: Russian <kde-russian@lists.kde.ru>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
@@ -17,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=n==1 ? 3 : n%10==1 && n%100!=11 ? 0 : n"
 "%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Lokalize 2.0\n"
+"X-Generator: Lokalize 24.05.0\n"
 "X-Environment: kde\n"
 "X-Accelerator-Marker: &\n"
 "X-Text-Markup: kde4\n"
@@ -554,36 +555,36 @@ msgid "Preview Changes"
 msgstr "Просмотр изменений"
 
 #: src/muonapt/ChangesDialog.cpp:39
-#, fuzzy, kde-format
+#, kde-format
 #| msgctxt "@title:window"
 #| msgid "Configuration File Changed"
 msgctxt "@title:window"
 msgid "Confirm Additional Changes"
-msgstr "Изменён конфигурационный файл"
+msgstr "Подтверждение дополнительных изменений"
 
 #: src/muonapt/ChangesDialog.cpp:44
 #, kde-format
 msgctxt "@info"
 msgid "<h2>Mark additional changes?</h2>"
-msgstr ""
+msgstr "<h2>Дополнительные изменения</h2>"
 
 #: src/muonapt/ChangesDialog.cpp:48
-#, fuzzy, kde-format
+#, kde-format
 #| msgid "Ask to confirm changes that affect other packages"
 msgid "This action requires a change to another package:"
 msgid_plural "This action requires changes to other packages:"
-msgstr[0] "Спрашивать, о подтверждении изменений в других пакетах"
-msgstr[1] "Спрашивать, о подтверждении изменений в других пакетах"
-msgstr[2] "Спрашивать, о подтверждении изменений в других пакетах"
-msgstr[3] "Спрашивать, о подтверждении изменений в других пакетах"
+msgstr[0] "Выполнение этого действия требует изменения в других пакетах:"
+msgstr[1] "Выполнение этого действия требует изменения в других пакетах:"
+msgstr[2] "Выполнение этого действия требует изменения в других пакетах:"
+msgstr[3] "Выполнение этого действия требует изменение в другом пакете:"
 
 #: src/muonapt/HistoryView/HistoryView.cpp:49
-#, fuzzy, kde-kuit-format
+#, kde-kuit-format
 #| msgctxt "@info Status information, widget title"
 #| msgid "<title>Waiting</title>"
 msgctxt "@info"
 msgid "<title>History</title>"
-msgstr "<title>Ожидание</title>"
+msgstr "<title>История</title>"
 
 #: src/muonapt/HistoryView/HistoryView.cpp:55
 #: src/PackageModel/PackageWidget.cpp:102
@@ -593,15 +594,15 @@ msgid "Search"
 msgstr "Поиск"
 
 #: src/muonapt/HistoryView/HistoryView.cpp:67
-#, fuzzy, kde-format
+#, kde-format
 #| msgctxt "@action Applys the changes a user has made"
 #| msgid "Apply Changes"
 msgctxt "@item:inlistbox Filters all changes in the history view"
 msgid "All changes"
-msgstr "Применить изменения"
+msgstr "Все изменения"
 
 #: src/muonapt/HistoryView/HistoryView.cpp:71
-#, fuzzy, kde-format
+#, kde-format
 #| msgctxt "@action:button"
 #| msgid "Installation"
 msgctxt "@item:inlistbox Filters installations in the history view"
@@ -609,15 +610,15 @@ msgid "Installations"
 msgstr "Установки"
 
 #: src/muonapt/HistoryView/HistoryView.cpp:75
-#, fuzzy, kde-format
+#, kde-format
 #| msgctxt "Start the update"
 #| msgid "Update"
 msgctxt "@item:inlistbox Filters updates in the history view"
 msgid "Updates"
-msgstr "Обновление"
+msgstr "Обновления"
 
 #: src/muonapt/HistoryView/HistoryView.cpp:79
-#, fuzzy, kde-format
+#, kde-format
 #| msgctxt "@action:button"
 #| msgid "Removal"
 msgctxt "@item:inlistbox Filters removals in the history view"
@@ -631,39 +632,39 @@ msgid "Date"
 msgstr ""
 
 #: src/muonapt/HistoryView/HistoryView.cpp:98
-#, fuzzy, kde-format
+#, kde-format
 #| msgid "Installed"
 msgctxt "@info:status describes a past-tense action"
 msgid "Installed"
 msgstr "Установлен"
 
 #: src/muonapt/HistoryView/HistoryView.cpp:99
-#, fuzzy, kde-format
+#, kde-format
 #| msgid "Upgrade"
 msgctxt "@info:status describes a past-tense action"
 msgid "Upgraded"
-msgstr "Обновление"
+msgstr "Обновлен"
 
 #: src/muonapt/HistoryView/HistoryView.cpp:100
-#, fuzzy, kde-format
+#, kde-format
 #| msgid "Downgrade"
 msgctxt "@status describes a past-tense action"
 msgid "Downgraded"
-msgstr "Откат"
+msgstr "Откачен"
 
 #: src/muonapt/HistoryView/HistoryView.cpp:101
-#, fuzzy, kde-format
+#, kde-format
 #| msgid "Remove"
 msgctxt "@status describes a past-tense action"
 msgid "Removed"
-msgstr "Удаление"
+msgstr "Удален"
 
 #: src/muonapt/HistoryView/HistoryView.cpp:102
-#, fuzzy, kde-format
+#, kde-format
 #| msgid "Purge"
 msgctxt "@status describes a past-tense action"
 msgid "Purged"
-msgstr "Полное удаление"
+msgstr "Полностью удален"
 
 #: src/muonapt/HistoryView/HistoryView.cpp:137
 #: src/muonapt/HistoryView/HistoryView.cpp:152
@@ -1110,14 +1111,14 @@ msgid "Contrib"
 msgstr "Пакеты пользователей"
 
 #: src/muonapt/MuonStrings.cpp:167
-#, fuzzy, kde-format
+#, kde-format
 #| msgctxt "@title:column"
 #| msgid "Location"
 msgctxt ""
 "@item:inlistbox Human-readable name for the Debian package section "
 "\"education\""
 msgid "Education"
-msgstr "Расположение"
+msgstr "Образование"
 
 #: src/muonapt/MuonStrings.cpp:169
 #, kde-format
@@ -1128,42 +1129,42 @@ msgid "GObject Introspection Data"
 msgstr ""
 
 #: src/muonapt/MuonStrings.cpp:195
-#, fuzzy, kde-format
+#, kde-format
 #| msgid "No change"
 msgctxt "@info:status Package state"
 msgid "No Change"
 msgstr "Без изменений"
 
 #: src/muonapt/MuonStrings.cpp:196 src/muonapt/MuonStrings.cpp:197
-#, fuzzy, kde-format
+#, kde-format
 #| msgid "Install"
 msgctxt "@info:status Requested action"
 msgid "Install"
 msgstr "Установка"
 
 #: src/muonapt/MuonStrings.cpp:198
-#, fuzzy, kde-format
+#, kde-format
 #| msgid "Reinstall"
 msgctxt "@info:status Requested action"
 msgid "Reinstall"
 msgstr "Переустановка"
 
 #: src/muonapt/MuonStrings.cpp:199
-#, fuzzy, kde-format
+#, kde-format
 #| msgid "Upgrade"
 msgctxt "@info:status Requested action"
 msgid "Upgrade"
 msgstr "Обновление"
 
 #: src/muonapt/MuonStrings.cpp:200
-#, fuzzy, kde-format
+#, kde-format
 #| msgid "Downgrade"
 msgctxt "@info:status Requested action"
 msgid "Downgrade"
 msgstr "Откат"
 
 #: src/muonapt/MuonStrings.cpp:201
-#, fuzzy, kde-format
+#, kde-format
 #| msgid "Remove"
 msgctxt "@info:status Requested action"
 msgid "Remove"
@@ -1194,12 +1195,12 @@ msgid "Broken"
 msgstr "Сломанные"
 
 #: src/muonapt/MuonStrings.cpp:206
-#, fuzzy, kde-format
+#, kde-format
 #| msgctxt "@title:group"
 #| msgid "Installed Version"
 msgctxt "@info:status Package state"
 msgid "Install Broken"
-msgstr "Установленная версия"
+msgstr "Установка сломана"
 
 #: src/muonapt/MuonStrings.cpp:207
 #, kde-format
@@ -1226,7 +1227,7 @@ msgid "Residual Configuration"
 msgstr "Окончательная настройка"
 
 #: src/muonapt/MuonStrings.cpp:211
-#, fuzzy, kde-format
+#, kde-format
 #| msgctxt "@title:window"
 #| msgid "Download failed"
 msgctxt "@info:status Package state"
@@ -1234,7 +1235,7 @@ msgid "Not Downloadable"
 msgstr "Сбой при загрузке"
 
 #: src/muonapt/MuonStrings.cpp:212
-#, fuzzy, kde-format
+#, kde-format
 #| msgid "Purge"
 msgctxt "@info:status Requested action"
 msgid "Purge"
@@ -1265,11 +1266,11 @@ msgid "Installed (auto-removable)"
 msgstr "Установлено (автоматически удаляемое)"
 
 #: src/muonapt/MuonStrings.cpp:217 src/muonapt/MuonStrings.cpp:218
-#, fuzzy, kde-format
+#, kde-format
 #| msgid "Broken"
 msgctxt "@info:status Package state"
 msgid "Policy Broken"
-msgstr "Сломан"
+msgstr "Политика сломана"
 
 #: src/muonapt/MuonStrings.cpp:219
 #, kde-format
@@ -1290,14 +1291,14 @@ msgid "Manually held back"
 msgstr ""
 
 #: src/muonapt/MuonStrings.cpp:243
-#, fuzzy, kde-format
+#, kde-format
 #| msgctxt ""
 #| "@item:inlistbox Human-readable name for the Debian package section \"comm"
 #| "\""
 #| msgid "Communication"
 msgctxt "@item:inlistbox"
 msgid "Common"
-msgstr "Обмен информацией"
+msgstr "Универсальная"
 
 #: src/muonapt/MuonStrings.cpp:244
 #, kde-format
@@ -1318,7 +1319,7 @@ msgid "Power PC"
 msgstr ""
 
 #: src/muonapt/MuonStrings.cpp:265
-#, fuzzy, kde-format
+#, kde-format
 #| msgctxt "@title:window"
 #| msgid "Initialization error"
 msgctxt "@title:window"
@@ -1326,7 +1327,7 @@ msgid "Initialization Error"
 msgstr "Ошибка инициализации"
 
 #: src/muonapt/MuonStrings.cpp:267
-#, fuzzy, kde-format
+#, kde-format
 #| msgctxt "@title:window"
 #| msgid "Unable to obtain package system lock"
 msgctxt "@title:window"
@@ -1334,7 +1335,7 @@ msgid "Unable to Obtain Package System Lock"
 msgstr "Не удалось заблокировать систему управления пакетами"
 
 #: src/muonapt/MuonStrings.cpp:269
-#, fuzzy, kde-format
+#, kde-format
 #| msgctxt "@title:window"
 #| msgid "Low disk space"
 msgctxt "@title:window"
@@ -1342,12 +1343,12 @@ msgid "Low Disk Space"
 msgstr "Недостаточно места на диске"
 
 #: src/muonapt/MuonStrings.cpp:272
-#, fuzzy, kde-format
+#, kde-format
 #| msgctxt "@action Applys the changes a user has made"
 #| msgid "Apply Changes"
 msgctxt "@title:window"
 msgid "Failed to Apply Changes"
-msgstr "Применить изменения"
+msgstr "Ошибка примения изменений"
 
 #: src/muonapt/MuonStrings.cpp:274
 #, kde-format
@@ -1368,14 +1369,14 @@ msgid "Untrusted Packages"
 msgstr "Ненадёжные пакеты"
 
 #: src/muonapt/MuonStrings.cpp:281
-#, fuzzy, kde-format
+#, kde-format
 #| msgctxt ""
 #| "@item:inlistbox Human-readable name for the Debian package section "
 #| "\"unknown\""
 #| msgid "Unknown"
 msgctxt "@title:window"
 msgid "Unknown Error"
-msgstr "Неизвестные"
+msgstr "Неизвестная ошибка"
 
 #: src/muonapt/MuonStrings.cpp:291
 #, kde-format
@@ -1409,15 +1410,15 @@ msgstr ""
 "В каталоге %1 недостаточно места для продолжения выполнения этого действия."
 
 #: src/muonapt/MuonStrings.cpp:307
-#, fuzzy, kde-format
+#, kde-format
 #| msgctxt "@info:status"
 #| msgid "Muon is downloading packages"
 msgctxt "@label"
 msgid "Could not download packages"
-msgstr "Загрузка пакетов"
+msgstr "Не удалось загрузить пакеты"
 
 #: src/muonapt/MuonStrings.cpp:310
-#, fuzzy, kde-format
+#, kde-format
 #| msgctxt "@label"
 #| msgid "An error occurred while applying changes:"
 #| msgid_plural "The following errors occurred while applying changes:"
@@ -1519,14 +1520,14 @@ msgid "History..."
 msgstr "Журнал..."
 
 #: src/muonapt/QAptActions.cpp:179
-#, fuzzy, kde-format
+#, kde-format
 #| msgid "Upgrade"
 msgctxt "@action"
 msgid "Upgrade"
 msgstr "Обновление"
 
 #: src/muonapt/QAptActions.cpp:182
-#, fuzzy, kde-format
+#, kde-format
 #| msgctxt "Notification when a new version of Kubuntu is available"
 #| msgid "A new version of Kubuntu is available"
 msgctxt "Notification when a new version of Kubuntu is available"
@@ -1562,7 +1563,7 @@ msgid "Save Installed Packages List As"
 msgstr "Сохранение списка установленных пакетов"
 
 #: src/muonapt/QAptActions.cpp:275
-#, fuzzy, kde-format
+#, kde-format
 #| msgctxt "@action"
 #| msgid "Save Package Download List..."
 msgctxt "@title:window"
@@ -1610,7 +1611,7 @@ msgid ""
 msgstr ""
 
 #: src/muonapt/QAptActions.cpp:366
-#, fuzzy, kde-format
+#, kde-format
 #| msgctxt "@title:window"
 #| msgid "Some Packages Could not be Downloaded"
 msgctxt "@title:window"
@@ -1654,21 +1655,21 @@ msgid "Requested"
 msgstr "Действие"
 
 #: src/PackageModel/PackageModel.cpp:94
-#, fuzzy, kde-format
+#, kde-format
 #| msgctxt "@label Label preceding the package size"
 #| msgid "Installed Size:"
 msgid "Installed Size"
 msgstr "Размер после установки:"
 
 #: src/PackageModel/PackageModel.cpp:96
-#, fuzzy, kde-format
+#, kde-format
 #| msgctxt "@title:group"
 #| msgid "Installed Version"
 msgid "Installed Version"
 msgstr "Установленная версия"
 
 #: src/PackageModel/PackageModel.cpp:98
-#, fuzzy, kde-format
+#, kde-format
 #| msgctxt "@title:group"
 #| msgid "Available Version"
 msgid "Available Version"
@@ -2027,3 +2028,4 @@ msgstr "Использовать новую версию"
 msgctxt "@action Keep the old config file"
 msgid "Keep Old Version"
 msgstr "Оставить текущую версию"
+
