@@ -387,10 +387,8 @@ void QAptActions::revertChanges()
 void QAptActions::runSourcesEditor()
 {
     QProcess *proc = new QProcess(this);
-    QStringList arguments;
     int winID = m_mainWindow->effectiveWinId();
 
-    QString call = QStringLiteral("bash");
     QStringList libexecpath(QStringLiteral("/" LIBEXECDIR));
 
     QString dialog = QStandardPaths::findExecutable(QStringLiteral("kdialog"));
@@ -417,14 +415,20 @@ void QAptActions::runSourcesEditor()
         KMessageBox::information(m_mainWindow, text, title);
         return;
     }
-// TODO to process.startCommand("dir \"My Documents\"");
-    arguments << QStringLiteral("-c")
-              << QStringLiteral("echo \"$(") +
-                 dialog + QStringLiteral(" --attach ") + QString::number(winID) +
-                 QStringLiteral(" --password ") + editor + QStringLiteral(")\" | sudo -S ") +
-                 editor + QStringLiteral(" --attach ") + QString::number(winID) +
-                 (m_reloadWhenEditorFinished ? QStringLiteral(" --dont-update ") : QString()) +
-                 QStringLiteral("\"$@\"");
+
+    QString call =
+            QStringLiteral("bash -c \"echo $(") %
+            dialog %
+            QStringLiteral(" --attach ") %
+            QString::number(winID) %
+            QStringLiteral(" --password ") %
+            editor %
+            QStringLiteral(") | sudo -S ") %
+            editor %
+            QStringLiteral(" --attach ") %
+            QString::number(winID) %
+            (m_reloadWhenEditorFinished ? QStringLiteral(" --dont-update ") : QString()) %
+            QStringLiteral("\"$@\"\"");
 
     connect(proc, QOverload<int, QProcess::ExitStatus>::of(&QProcess::finished),
             this, &QAptActions::sourcesEditorFinished);
@@ -432,7 +436,7 @@ void QAptActions::runSourcesEditor()
             proc, &QProcess::deleteLater);
     m_mainWindow->find(winID)->setEnabled(false);
     proc->setProcessChannelMode(QProcess::ForwardedChannels);
-    proc->start(call, arguments);
+    proc->startCommand(call);
 }
 
 void QAptActions::sourcesEditorFinished(int exitStatus)
