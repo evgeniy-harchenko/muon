@@ -8,6 +8,14 @@ ecm_install_icons(
         48-apps-muon.png
         64-apps-muon.png
         sc-apps-muon.svgz
+        128-emblems-ubuntu-supported.png
+        16-emblems-ubuntu-supported.png
+        22-emblems-ubuntu-supported.png
+        256-emblems-ubuntu-supported.png
+        32-emblems-ubuntu-supported.png
+        48-emblems-ubuntu-supported.png
+        64-emblems-ubuntu-supported.png
+        sc-emblems-ubuntu-supported.svgz
     DESTINATION ${KDE_INSTALL_ICONDIR}
     THEME hicolor
 )

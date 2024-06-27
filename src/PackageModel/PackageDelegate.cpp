@@ -35,7 +35,7 @@
 PackageDelegate::PackageDelegate(QObject *parent)
     : QAbstractItemDelegate(parent)
     , m_icon(QIcon::fromTheme(QStringLiteral("muon")))
-    , m_supportedEmblem(QIcon::fromTheme(QStringLiteral("ubuntu-logo")).pixmap(QSize(12,12)))
+    , m_supportedEmblem(QIcon::fromTheme(QStringLiteral("ubuntu-supported")).pixmap(QSize(12,12)))
     , m_lockedEmblem(QIcon::fromTheme(QStringLiteral("object-locked")).pixmap(QSize(12,12)))
 {
     m_spacing  = 4;
