@@ -83,7 +83,7 @@ PackageWidget::PackageWidget(QWidget *parent)
     m_proxyModel->setSourceModel(m_model);
 
     QVBoxLayout *topVBox = new QVBoxLayout;
-    topVBox->setContentsMargins(0, 0, 0, 0);
+    topVBox->setContentsMargins(QMargins());
     topVBox->setSpacing(0);
 
     m_headerLabel = new QLabel;
@@ -155,7 +155,7 @@ PackageWidget::PackageWidget(QWidget *parent)
     splitter->addWidget(m_detailsWidget);
 
     setLayout(new QVBoxLayout);
-    layout()->setContentsMargins(0, 0, 0, 0);
+    layout()->setContentsMargins(QMargins());
     layout()->addWidget(splitter);
 }
 

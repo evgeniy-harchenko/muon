@@ -21,13 +21,13 @@
 #include "MainTab.h"
 
 // Qt includes
-#include <QHBoxLayout>
 #include <QMenu>
 #include <QTextBrowser>
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QPushButton>
 #include <QtWidgets/QToolButton>
 #include <QtWidgets/QVBoxLayout>
+#include <QStyle>
 
 // KDE includes
 #include <KLocalizedString>
@@ -106,6 +106,12 @@ MainTab::MainTab(QWidget *parent)
     QHBoxLayout *headerBox = new QHBoxLayout;
     headerBox->addWidget(m_packageShortDescLabel);
     headerBox->addWidget(buttonBox);
+    headerBox->setContentsMargins(
+            style()->pixelMetric(QStyle::PM_LayoutTopMargin),
+            style()->pixelMetric(QStyle::PM_LayoutLeftMargin),
+            style()->pixelMetric(QStyle::PM_LayoutRightMargin),
+            style()->pixelMetric(QStyle::PM_LayoutBottomMargin)
+    );
 
     m_descriptionBrowser = new QTextBrowser(this);
 
