@@ -42,10 +42,11 @@ MainTab::MainTab(QWidget *parent)
 {
     m_name = i18nc("@title:tab", "Details");
 
-    m_packageShortDescLabel = new QLabel;
+    m_packageShortDescLabel = new ElidedLabel;
     m_packageShortDescLabel->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Maximum);
     QFont font;
     font.setBold(true);
+    m_packageShortDescLabel->setTextInteractionFlags(Qt::TextSelectableByMouse);
     m_packageShortDescLabel->setFont(font);
 
     QWidget *buttonBox = new QWidget;
@@ -182,7 +183,7 @@ void MainTab::refresh()
         m_cancelButton->show();
     }
 
-    m_packageShortDescLabel->setText(m_package->shortDescription());
+    m_packageShortDescLabel->setText(m_package->name());
 
     m_descriptionBrowser->setText(m_package->longDescription());
 

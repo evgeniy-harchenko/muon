@@ -22,6 +22,7 @@
 #define MAINTAB_H
 
 #include "DetailsTab.h"
+#include "ElidedLabel.h"
 
 // Qt includes
 #include <QtCore/QVariantMap>
@@ -31,6 +32,7 @@
 
 class QPushButton;
 class QLabel;
+class ElidedLabel;
 class QMenu;
 class QTextBrowser;
 class QToolButton;
@@ -43,7 +45,7 @@ public:
     explicit MainTab(QWidget *parent);
 
 private:
-    QLabel *m_packageShortDescLabel;
+    ElidedLabel *m_packageShortDescLabel;
 
     QLabel *m_buttonLabel;
     QPushButton *m_installButton;

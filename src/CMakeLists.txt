@@ -12,6 +12,8 @@ set(muon_SRCS
     DetailsTabs/InstalledFilesTab.cpp
     DetailsTabs/TechnicalDetailsTab.cpp
     DetailsTabs/VersionTab.cpp
+    DetailsTabs/ElidedLabel.cpp
+    DetailsTabs/ElidedLabel.h
     DetailsWidget.cpp
     DownloadModel/DownloadModel.cpp
     DownloadModel/DownloadDelegate.cpp
