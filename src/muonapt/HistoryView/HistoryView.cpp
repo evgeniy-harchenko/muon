@@ -29,6 +29,7 @@
 #include <QtWidgets/QComboBox>
 #include <QStandardItemModel>
 
+#include <KColorScheme>
 #include <KLocalizedString>
 
 #include <QApt/History>
@@ -36,8 +37,12 @@
 #include "HistoryProxyModel.h"
 
 HistoryView::HistoryView(QWidget *parent)
-    : QWidget(parent)
+    : QWidget(parent),
+      m_colorScheme(QPalette::Current, KColorScheme::Window),
+      m_configWatcher(KConfigWatcher::create(KSharedConfig::openConfig()))
 {
+    connect(m_configWatcher.data(), &KConfigWatcher::configChanged, this, &HistoryView::updateAllItemColors);
+
     QLayout *viewLayout = new QVBoxLayout(this);
     setLayout(viewLayout);
     m_history = new QApt::History(this);
@@ -140,6 +145,8 @@ HistoryView::HistoryView(QWidget *parent)
             historyItem->setData(startDateTime, HistoryProxyModel::HistoryDateRole);
             historyItem->setData(QApt::Package::ToInstall, HistoryProxyModel::HistoryActionRole);
 
+            updateItemColors(historyItem, m_colorScheme);
+
             parentItem->appendRow(historyItem);
         }
 
@@ -154,6 +161,8 @@ HistoryView::HistoryView(QWidget *parent)
             historyItem->setText(text);
             historyItem->setData(startDateTime, HistoryProxyModel::HistoryDateRole);
             historyItem->setData(QApt::Package::ToUpgrade, HistoryProxyModel::HistoryActionRole);
+
+            updateItemColors(historyItem, m_colorScheme);
 
             parentItem->appendRow(historyItem);
         }
@@ -170,6 +179,8 @@ HistoryView::HistoryView(QWidget *parent)
             historyItem->setData(startDateTime, HistoryProxyModel::HistoryDateRole);
             historyItem->setData(QApt::Package::ToDowngrade, HistoryProxyModel::HistoryActionRole);
 
+            updateItemColors(historyItem, m_colorScheme);
+
             parentItem->appendRow(historyItem);
         }
 
@@ -185,6 +196,8 @@ HistoryView::HistoryView(QWidget *parent)
             historyItem->setData(startDateTime, HistoryProxyModel::HistoryDateRole);
             historyItem->setData(QApt::Package::ToRemove, HistoryProxyModel::HistoryActionRole);
 
+            updateItemColors(historyItem, m_colorScheme);
+
             parentItem->appendRow(historyItem);
         }
 
@@ -199,6 +212,8 @@ HistoryView::HistoryView(QWidget *parent)
             historyItem->setText(text);
             historyItem->setData(startDateTime, HistoryProxyModel::HistoryDateRole);
             historyItem->setData(QApt::Package::ToPurge, HistoryProxyModel::HistoryActionRole);
+
+            updateItemColors(historyItem, m_colorScheme);
 
             parentItem->appendRow(historyItem);
         }
@@ -234,4 +249,45 @@ void HistoryView::startSearch()
 {
     m_proxyModel->search(m_searchEdit->text());
 }
+
+void HistoryView::updateItemColors(QStandardItem *item, const KColorScheme &scheme)
+{
+    if (item->data(HistoryProxyModel::HistoryActionRole).isValid()) {
+        int action = item->data(HistoryProxyModel::HistoryActionRole).toInt();
+        QColor color;
+        switch(action) {
+            case QApt::Package::ToInstall:
+                color = scheme.foreground(KColorScheme::PositiveText).color();
+                break;
+            case QApt::Package::ToUpgrade:
+                color = scheme.decoration(KColorScheme::FocusColor).color();
+                break;
+            case QApt::Package::ToDowngrade:
+                color = scheme.foreground(KColorScheme::NeutralText).color();
+                break;
+            case QApt::Package::ToRemove:
+            case QApt::Package::ToPurge:
+                color = scheme.foreground(KColorScheme::NegativeText).color();
+                break;
+            default:
+                color = scheme.foreground(KColorScheme::NormalText).color();
+                break;
+        }
+        item->setData(color, Qt::ForegroundRole);
+    }
+
+    for (int i = 0; i < item->rowCount(); ++i) {
+        updateItemColors(item->child(i), scheme);
+    }
+}
+
+void HistoryView::updateAllItemColors()
+{
+    m_colorScheme = KColorScheme(QPalette::Current, KColorScheme::Window);
+    for (int i = 0; i < m_historyModel->rowCount(); ++i) {
+        QStandardItem *item = m_historyModel->item(i);
+        updateItemColors(item, m_colorScheme);
+    }
+}
+
 

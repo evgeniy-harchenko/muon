@@ -25,6 +25,9 @@
 
 #include <QWidget>
 
+#include <KColorScheme>
+#include <KConfigWatcher>
+
 class QStandardItem;
 class QStandardItemModel;
 class QTimer;
@@ -70,6 +73,12 @@ private:
     QTimer *m_searchTimer;
     QComboBox *m_filterBox;
     QTreeView *m_historyView;
+
+    KColorScheme m_colorScheme;
+    KConfigWatcher::Ptr m_configWatcher;
+
+    void updateItemColors(QStandardItem *item, const KColorScheme &scheme);
+    void updateAllItemColors();
 
 private Q_SLOTS:
     void setStateFilter(int index);
