@@ -386,63 +386,69 @@ void QAptActions::revertChanges()
 
 void QAptActions::runSourcesEditor()
 {
-    QProcess *proc = new QProcess(this);
-    int winID = m_mainWindow->effectiveWinId();
-
-    QStringList libexecpath(QStringLiteral("/" LIBEXECDIR));
-
-    QString dialog = QStandardPaths::findExecutable(QStringLiteral("kdialog"));
-    if (dialog.isEmpty()) dialog = QStandardPaths::findExecutable(QStringLiteral("kdialog"), libexecpath);
-    if (dialog.isEmpty()) {
-        KMessageBox::error(m_mainWindow, i18n("kdialog could not be found. To install as root, please install this package."), i18n("kdialog not found"));
-        return;
-    }
+    WId winID = m_mainWindow->effectiveWinId();
 
     QString editor = QStandardPaths::findExecutable(QStringLiteral("software-properties-qt"));
     if (editor.isEmpty()) {
         editor = QStandardPaths::findExecutable(QStringLiteral("software-properties-kde"));
+        if (editor.isEmpty()) {
+            QString text = xi18nc("@info",
+                                  "<para>Could not find <command>software-properties-qt</command> "
+                                  "nor <command>software-properties-kde</command> "
+                                  "on your system, please install it.</para>"
+                                  "<para>Alternatively, you can use <application>Plasma Discover</application> "
+                                  "to configure software sources.</para>");
+            QString title = xi18nc("@title:window",
+                                   "Cannot find <command>software-properties-qt</command>");
+            KMessageBox::information(m_mainWindow, text, title);
+            return;
+        }
     }
 
-    if (editor.isEmpty()) {
-        QString text = xi18nc("@info",
-                             "<para>Could not find <command>software-properties-qt</command> "
-                             "nor <command>software-properties-kde</command> "
-                             "on your system, please install it.</para>"
-                             "<para>Alternatively, you can use <application>Plasma Discover</application> "
-                             "to configure software sources.</para>");
-        QString title = xi18nc("@title:window",
-                              "Cannot find <command>software-properties-qt</command>");
-        KMessageBox::information(m_mainWindow, text, title);
+    QString pkexec = QStandardPaths::findExecutable(QStringLiteral("pkexec"));
+    if (pkexec.isEmpty()) {
+        KMessageBox::error(m_mainWindow,
+                           i18n("pkexec could not be found. Please install polkit-1."),
+                           i18n("pkexec not found"));
         return;
     }
 
-    QString call =
-            QStringLiteral("bash -c \"echo $(") %
-            dialog %
-            QStringLiteral(" --attach ") %
-            QString::number(winID) %
-            QStringLiteral(" --password ") %
-            editor %
-            QStringLiteral(") | sudo -S ") %
-            editor %
-            QStringLiteral(" --attach ") %
-            QString::number(winID) %
-            (m_reloadWhenEditorFinished ? QStringLiteral(" --dont-update ") : QString()) %
-            QStringLiteral("\"$@\"\"");
+    QStringList args;
+    args << QStringLiteral("env");
+    args << QStringLiteral("DISPLAY=%1").arg(QString::fromUtf8(qgetenv("DISPLAY")));
+    args << QStringLiteral("XAUTHORITY=%1").arg(QString::fromUtf8(qgetenv("XAUTHORITY")));
+    args << QStringLiteral("WAYLAND_DISPLAY=%1").arg(QString::fromUtf8(qgetenv("WAYLAND_DISPLAY")));
+    args << QStringLiteral("XDG_CURRENT_DESKTOP=%1").arg(QString::fromUtf8(qgetenv("XDG_CURRENT_DESKTOP")));
+    args << QStringLiteral("XDG_CONFIG_DIRS=%1").arg(QString::fromUtf8(qgetenv("XDG_CONFIG_DIRS")));
 
+    args << editor;
+    args << QStringLiteral("--attach") << QString::number(winID);
+    if (m_reloadWhenEditorFinished)
+        args << QStringLiteral("--dont-update");
+
+    qDebug() << "Executing pkexec command:" << pkexec << args;
+
+    QProcess *proc = new QProcess(this);
     connect(proc, QOverload<int, QProcess::ExitStatus>::of(&QProcess::finished),
             this, &QAptActions::sourcesEditorFinished);
     connect(proc, QOverload<int, QProcess::ExitStatus>::of(&QProcess::finished),
             proc, &QProcess::deleteLater);
-    m_mainWindow->find(winID)->setEnabled(false);
+
+    if (auto *win = KXmlGuiWindow::find(winID)) {
+        win->setEnabled(false);
+    } else {
+        qWarning() << "No window found for winID:" << winID;
+    }
+
     proc->setProcessChannelMode(QProcess::ForwardedChannels);
-    proc->startCommand(call);
+
+    proc->start(pkexec, args);
 }
 
 void QAptActions::sourcesEditorFinished(int exitStatus)
 {
-    bool reload = (exitStatus != 0);
-    m_mainWindow->find(m_mainWindow->effectiveWinId())->setEnabled(true);
+    bool reload = (exitStatus == 1);
+    KXmlGuiWindow::find(m_mainWindow->effectiveWinId())->setEnabled(true);
     if (m_reloadWhenEditorFinished && reload) {
         actionCollection()->action(QStringLiteral("update"))->trigger();
     }

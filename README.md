@@ -20,7 +20,7 @@ cmake build-essential extra-cmake-modules qt6-base-dev libkf6kio-dev kf6-kdbusad
 ```
 ### Runtime dependencies:
 ```bash
-apt-xapian-index kdialog software-properties-qt
+apt-xapian-index software-properties-qt
 ```
 ### Install
 ```bash

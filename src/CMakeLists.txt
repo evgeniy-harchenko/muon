@@ -34,7 +34,7 @@ set(muon_SRCS
     config/ManagerSettingsDialog.cpp
     config/GeneralSettingsPage.cpp
     settings/SettingsPageBase.cpp
-    
+
     muonapt/ChangesDialog.cpp
     muonapt/MuonStrings.cpp
     muonapt/QAptActions.cpp

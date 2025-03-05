@@ -27,7 +27,6 @@
 #include <QApt/Globals>
 #include <QNetworkInformation>
 
-
 class KXmlGuiWindow;
 class KDialog;
 class KXmlGuiWindow;
@@ -101,7 +100,6 @@ private:
     QPointer<QDialog> m_historyDialog;
     QList<QAction *> m_actions;
     bool m_distUpgradeAvailable;
-
 };
 
 #endif // QAPTACTIONS_H
