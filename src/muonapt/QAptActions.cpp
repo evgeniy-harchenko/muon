@@ -34,6 +34,7 @@
 #include <QDialogButtonBox>
 #include <QLayout>
 #include <QNetworkInformation>
+#include <QTimer>
 
 // KDE includes
 #include <KActionCollection>
@@ -512,10 +513,6 @@ void QAptActions::showHistoryDialog()
         m_historyDialog = new QDialog(mainWindow());
         m_historyDialog->setLayout(new QVBoxLayout(m_historyDialog));
 
-        KConfigGroup dialogConfig(KSharedConfig::openConfig(QStringLiteral("muonrc")), QStringLiteral("HistoryDialog"));
-        KWindowConfig::restoreWindowSize(m_historyDialog->windowHandle(), dialogConfig);
-
-
         connect(m_historyDialog, SIGNAL(finished(int)), SLOT(closeHistoryDialog()));
         HistoryView *historyView = new HistoryView(m_historyDialog);
         m_historyDialog->layout()->addWidget(historyView);
@@ -529,6 +526,12 @@ void QAptActions::showHistoryDialog()
         m_historyDialog->layout()->addWidget(box);
 
         m_historyDialog->show();
+
+        QTimer::singleShot(0, this, [this]() {
+            KConfigGroup dialogConfig(KSharedConfig::openConfig(QStringLiteral("muonrc")), QStringLiteral("HistoryDialog"));
+            KWindowConfig::restoreWindowSize(m_historyDialog->windowHandle(), dialogConfig);
+            KWindowConfig::restoreWindowPosition(m_historyDialog->windowHandle(), dialogConfig);
+        });
     } else {
         m_historyDialog->raise();
     }
@@ -537,7 +540,8 @@ void QAptActions::showHistoryDialog()
 void QAptActions::closeHistoryDialog()
 {
     KConfigGroup dialogConfig(KSharedConfig::openConfig(QStringLiteral("muonrc")), QStringLiteral("HistoryDialog"));
-    KWindowConfig::restoreWindowSize(m_historyDialog->windowHandle(), dialogConfig);
+    KWindowConfig::saveWindowSize(m_historyDialog->windowHandle(), dialogConfig);
+    KWindowConfig::saveWindowPosition(m_historyDialog->windowHandle(), dialogConfig);
     m_historyDialog->deleteLater();
     m_historyDialog = nullptr;
 }
