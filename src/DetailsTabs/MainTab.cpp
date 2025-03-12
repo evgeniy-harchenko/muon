@@ -31,7 +31,6 @@
 
 // KDE includes
 #include <KLocalizedString>
-#include <KMessageBox>
 
 // QApt includes
 #include <QApt/Backend>
