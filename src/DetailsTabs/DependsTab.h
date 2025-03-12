@@ -25,7 +25,7 @@
 
 class QTextBrowser;
 
-class KComboBox;
+class QComboBox;
 
 class DependsTab : public DetailsTab
 {
@@ -41,7 +41,7 @@ public:
     };
 
 private:
-    KComboBox *m_comboBox;
+    QComboBox *m_comboBox;
     QTextBrowser *m_dependsBrowser;
 
 public Q_SLOTS:

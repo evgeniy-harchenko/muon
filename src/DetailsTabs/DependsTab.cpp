@@ -23,9 +23,9 @@
 // Qt includes
 #include <QScrollBar>
 #include <QTextBrowser>
+#include <QComboBox>
 
 // KDE includes
-#include <KComboBox>
 #include <KLocalizedString>
 
 // QApt includes
@@ -36,7 +36,7 @@ DependsTab::DependsTab(QWidget *parent)
 {
     m_name = i18nc("@title:tab", "Dependencies");
 
-    m_comboBox = new KComboBox(this);
+    m_comboBox = new QComboBox(this);
     m_comboBox->addItem(i18nc("@item:inlistbox", "Dependencies of the Current Version"), CurrentVersionType);
     m_comboBox->addItem(i18nc("@item:inlistbox", "Dependencies of the Latest Version"),  LatestVersionType);
     m_comboBox->addItem(i18nc("@item:inlistbox", "Dependants (Reverse Dependencies)"), ReverseDependsType);
