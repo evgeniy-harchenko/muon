@@ -25,10 +25,10 @@
 #include <QtWidgets/QPushButton>
 #include <QtWidgets/QTreeView>
 #include <QtWidgets/QVBoxLayout>
+#include <QDialogButtonBox>
 
 // KDE includes
 #include <KLocalizedString>
-#include <KStandardGuiItem>
 
 // Own includes
 #include "muonapt/MuonStrings.h"
@@ -38,7 +38,6 @@ ChangesDialog::ChangesDialog(QWidget *parent, const QApt::StateChanges &changes)
 {
     setWindowTitle(i18nc("@title:window", "Confirm Additional Changes"));
     QVBoxLayout *layout = new QVBoxLayout(this);
-    setLayout(layout);
 
     QLabel *headerLabel = new QLabel(this);
     headerLabel->setText(i18nc("@info", "<h2>Mark additional changes?</h2>"));
@@ -57,26 +56,16 @@ ChangesDialog::ChangesDialog(QWidget *parent, const QApt::StateChanges &changes)
     QHBoxLayout *bottomLayout = new QHBoxLayout(bottomBox);
     bottomLayout->setSpacing(0);
     bottomLayout->setContentsMargins(QMargins());
-    bottomBox->setLayout(bottomLayout);
 
     QWidget *bottomSpacer = new QWidget(bottomBox);
     bottomSpacer->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Minimum);
 
-    QPushButton *okButton = new QPushButton(bottomBox);
-    KGuiItem okItem = KStandardGuiItem::ok();
-    okButton->setText(okItem.text());
-    okButton->setIcon(okItem.icon());
-    connect(okButton, SIGNAL(clicked()), this, SLOT(accept()));
-
-    QPushButton *cancelButton = new QPushButton(bottomBox);
-    KGuiItem cancelItem = KStandardGuiItem::cancel();
-    cancelButton->setText(cancelItem.text());
-    cancelButton->setIcon(cancelItem.icon());
-    connect(cancelButton, SIGNAL(clicked()), this, SLOT(reject()));
+    QDialogButtonBox *buttonBox = new QDialogButtonBox(QDialogButtonBox::Ok | QDialogButtonBox::Cancel, bottomBox);
+    connect(buttonBox, &QDialogButtonBox::accepted, this, &QDialog::accept);
+    connect(buttonBox, &QDialogButtonBox::rejected, this, &QDialog::reject);
 
     bottomLayout->addWidget(bottomSpacer);
-    bottomLayout->addWidget(okButton);
-    bottomLayout->addWidget(cancelButton);
+    bottomLayout->addWidget(buttonBox);
 
     m_model = new QStandardItemModel(this);
     packageView->setModel(m_model);
