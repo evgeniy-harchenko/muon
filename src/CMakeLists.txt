@@ -43,6 +43,9 @@ set(muon_SRCS
     muonapt/HistoryView/HistoryView.cpp
     muonapt/HistoryView/HistoryProxyModel.cpp
 
+    Widgets/BusyIndicator.cpp
+    Widgets/BusyIndicator.h
+
 )
 
 ADD_DEFINITIONS(-DLIBEXECDIR="${KDE_INSTALL_LIBEXECDIR_KF}")

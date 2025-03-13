@@ -31,13 +31,12 @@
 #include <KIO/FileCopyJob>
 #include <KJob>
 #include <KLocalizedString>
-#include <KPixmapSequence>
-#include <KPixmapSequenceOverlayPainter>
-#include <KIconLoader>
 
 // QApt includes
 #include <QApt/Package>
 #include <QApt/Changelog>
+
+#include "Widgets/BusyIndicator.h"
 
 ChangelogTab::ChangelogTab(QWidget *parent)
     : DetailsTab(parent)
@@ -46,10 +45,7 @@ ChangelogTab::ChangelogTab(QWidget *parent)
 
     m_changelogBrowser = new QTextBrowser(this);
 
-    m_busyWidget = new KPixmapSequenceOverlayPainter(this);
-    m_busyWidget->setSequence(KPixmapSequence(KIconLoader::global()->loadIcon(QStringLiteral("process-working"), KIconLoader::Small, KIconLoader::SizeSmallMedium)));
-    m_busyWidget->setAlignment(Qt::AlignHCenter | Qt::AlignVCenter);
-    m_busyWidget->setWidget(m_changelogBrowser->viewport());
+    m_busyWidget = new BusyIndicator(m_changelogBrowser->viewport());
 
     m_layout->addWidget(m_changelogBrowser);
 }

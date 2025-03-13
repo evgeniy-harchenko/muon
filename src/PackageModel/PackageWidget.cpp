@@ -37,9 +37,6 @@
 #include <KComboBox>
 #include <KLocalizedString>
 #include <KMessageBox>
-#include <KPixmapSequence>
-#include <KPixmapSequenceOverlayPainter>
-#include <KIconLoader>
 
 // QApt includes
 #include <QApt/Backend>
@@ -54,6 +51,7 @@
 #include "PackageProxyModel.h"
 #include "PackageView.h"
 #include "PackageDelegate.h"
+#include "Widgets/BusyIndicator.h"
 
 bool packageNameLessThan(QApt::Package *p1, QApt::Package *p2)
 {
@@ -129,10 +127,7 @@ PackageWidget::PackageWidget(QWidget *parent)
     connect(m_detailsWidget, SIGNAL(setPurge(QApt::Package*)),
             this, SLOT(setPurge(QApt::Package*)));
 
-    m_busyWidget = new KPixmapSequenceOverlayPainter(this);
-    m_busyWidget->setSequence(KPixmapSequence(QStringLiteral("process-working"), KIconLoader::SizeSmallMedium));
-    m_busyWidget->setAlignment(Qt::AlignHCenter | Qt::AlignVCenter);
-    m_busyWidget->setWidget(m_packageView->viewport());
+    m_busyWidget = new BusyIndicator(m_packageView->viewport());
 
     QApplication::setOverrideCursor(Qt::WaitCursor);
 
