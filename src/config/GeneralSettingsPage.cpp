@@ -150,6 +150,7 @@ void GeneralSettingsPage::applySettings()
     }
 }
 
+// FIXME: load from default config file
 void GeneralSettingsPage::restoreDefaults()
 {
     m_undoStackSpinbox->setValue(20);

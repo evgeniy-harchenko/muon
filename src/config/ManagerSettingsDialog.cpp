@@ -20,7 +20,12 @@
 
 #include "ManagerSettingsDialog.h"
 
+#include <QTabWidget>
+#include <QVBoxLayout>
+#include <QDialogButtonBox>
 #include <QPushButton>
+#include <QAbstractButton>
+#include <QIcon>
 #include <KLocalizedString>
 
 #include <QApt/Config>
@@ -29,28 +34,33 @@
 #include "GeneralSettingsPage.h"
 
 ManagerSettingsDialog::ManagerSettingsDialog(QWidget* parent, QApt::Config *aptConfig) :
-    KPageDialog(parent),
+    QDialog(parent),
     m_aptConfig(aptConfig)
 
 {
-    const QSize minSize = minimumSize();
-    setMinimumSize(QSize(512, minSize.height()));
-
-    setFaceType(Tabbed);
     setWindowTitle(i18nc("@title:window", "Muon Preferences"));
-    setStandardButtons(QDialogButtonBox::Apply | QDialogButtonBox::Cancel | QDialogButtonBox::RestoreDefaults);
-    button(QDialogButtonBox::Apply)->setEnabled(false);
 
-    // General settings
+    QVBoxLayout *mainLayout = new QVBoxLayout(this);
+    m_tabWidget = new QTabWidget(this);
+    mainLayout->addWidget(m_tabWidget);
+
+    m_buttonBox = new QDialogButtonBox(QDialogButtonBox::Apply
+                                       | QDialogButtonBox::Cancel
+                                       | QDialogButtonBox::RestoreDefaults,
+                                       this);
+    mainLayout->addWidget(m_buttonBox);
+
+    if (QPushButton *applyButton = m_buttonBox->button(QDialogButtonBox::Apply))
+        applyButton->setEnabled(false);
+
+    connect(m_buttonBox, &QDialogButtonBox::clicked, this, &ManagerSettingsDialog::slotButtonClicked);
+
     GeneralSettingsPage *generalPage = new GeneralSettingsPage(this, m_aptConfig);
-    KPageWidgetItem *generalSettingsFrame = addPage(generalPage,
-                                                    i18nc("@title:group Title of the general group", "General"));
-    generalSettingsFrame->setIcon(QIcon::fromTheme(QStringLiteral("system-run")));
+    m_tabWidget->addTab(generalPage, QIcon::fromTheme(QStringLiteral("system-run")), i18nc("@title:group Title of the general group", "General"));
+    m_pages.insert(generalPage);
+
     connect(generalPage, SIGNAL(changed()), this, SLOT(changed()));
     connect(generalPage, SIGNAL(authChanged()), this, SLOT(authChanged()));
-    connect(buttonBox(), SIGNAL(clicked(QAbstractButton*)), this, SLOT(slotButtonClicked(QAbstractButton*)));
-
-    m_pages.insert(generalPage);
 }
 
 ManagerSettingsDialog::~ManagerSettingsDialog()
@@ -59,23 +69,30 @@ ManagerSettingsDialog::~ManagerSettingsDialog()
 
 void ManagerSettingsDialog::slotButtonClicked(QAbstractButton* b)
 {
-    if ((b == button(QDialogButtonBox::Ok)) || (b == button(QDialogButtonBox::Apply))) {
+    if (b == m_buttonBox->button(QDialogButtonBox::Apply) ||
+        b == m_buttonBox->button(QDialogButtonBox::Ok)) {
         applySettings();
-    } else if (b == button(QDialogButtonBox::RestoreDefaults)) {
+    } else if (b == m_buttonBox->button(QDialogButtonBox::RestoreDefaults)) {
         restoreDefaults();
+    } else if (b == m_buttonBox->button(QDialogButtonBox::Cancel)) {
+        reject();
     }
 }
 
 void ManagerSettingsDialog::changed()
 {
-    button(QDialogButtonBox::Apply)->setIcon(QIcon::fromTheme(QStringLiteral("dialog-ok-apply")));
-    button(QDialogButtonBox::Apply)->setEnabled(true);
+    if (QPushButton *applyButton = m_buttonBox->button(QDialogButtonBox::Apply)) {
+        applyButton->setIcon(QIcon::fromTheme(QStringLiteral("dialog-ok-apply")));
+        applyButton->setEnabled(true);
+    }
 }
 
 void ManagerSettingsDialog::authChanged()
 {
-    button(QDialogButtonBox::Apply)->setIcon(QIcon::fromTheme(QStringLiteral("dialog-password")));
-    button(QDialogButtonBox::Apply)->setEnabled(true);
+    if (QPushButton *applyButton = m_buttonBox->button(QDialogButtonBox::Apply)) {
+        applyButton->setIcon(QIcon::fromTheme(QStringLiteral("dialog-password")));
+        applyButton->setEnabled(true);
+    }
 }
 
 void ManagerSettingsDialog::applySettings()
@@ -85,8 +102,10 @@ void ManagerSettingsDialog::applySettings()
     }
 
     Q_EMIT settingsChanged();
-    button(QDialogButtonBox::Apply)->setIcon(QIcon::fromTheme(QStringLiteral("dialog-ok-apply")));
-    button(QDialogButtonBox::Apply)->setEnabled(false);
+    if (QPushButton *applyButton = m_buttonBox->button(QDialogButtonBox::Apply)) {
+        applyButton->setIcon(QIcon::fromTheme(QStringLiteral("dialog-ok-apply")));
+        applyButton->setEnabled(false);
+    }
 }
 
 void ManagerSettingsDialog::restoreDefaults()
@@ -95,7 +114,9 @@ void ManagerSettingsDialog::restoreDefaults()
         page->restoreDefaults();
     }
 
-    button(QDialogButtonBox::Apply)->setIcon(QIcon::fromTheme(QStringLiteral("dialog-ok-apply")));
+    if (QPushButton *applyButton = m_buttonBox->button(QDialogButtonBox::Apply)) {
+        applyButton->setIcon(QIcon::fromTheme(QStringLiteral("dialog-ok-apply")));
+    }
 }
 
 #include "moc_ManagerSettingsDialog.cpp"

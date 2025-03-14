@@ -23,15 +23,18 @@
 
 #include <QtCore/QSet>
 
-#include <KPageDialog>
+#include <QDialog>
 
 class SettingsPageBase;
+class QAbstractButton;
+class QTabWidget;
+class QDialogButtonBox;
 
 namespace QApt {
     class Config;
 }
 
-class ManagerSettingsDialog : public KPageDialog
+class ManagerSettingsDialog : public QDialog
 {
     Q_OBJECT
 public:
@@ -53,6 +56,8 @@ private:
     void restoreDefaults();
 
 private:
+    QTabWidget *m_tabWidget;
+    QDialogButtonBox *m_buttonBox;
     QSet<SettingsPageBase*> m_pages;
 };
 
