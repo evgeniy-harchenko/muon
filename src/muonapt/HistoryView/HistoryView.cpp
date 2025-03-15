@@ -42,6 +42,7 @@ HistoryView::HistoryView(QWidget *parent)
       m_configWatcher(KConfigWatcher::create(KSharedConfig::openConfig()))
 {
     connect(m_configWatcher.data(), &KConfigWatcher::configChanged, this, &HistoryView::updateAllItemColors);
+    //connect(qApp, &QApplication::paletteChanged, this, &HistoryView::updateAllItemColors);
 
     QLayout *viewLayout = new QVBoxLayout(this);
     setLayout(viewLayout);
@@ -66,20 +67,26 @@ HistoryView::HistoryView(QWidget *parent)
     connect(m_searchTimer, SIGNAL(timeout()), this, SLOT(startSearch()));
     connect(m_searchEdit, SIGNAL(textChanged(QString)), m_searchTimer, SLOT(start()));
 
+    QIcon installIcon = QIcon::fromTheme(QStringLiteral("download"));
+    QIcon upgradeIcon = QIcon::fromTheme(QStringLiteral("system-software-update"));
+    QIcon removeIcon = QIcon::fromTheme(QStringLiteral("edit-delete"));
+    QIcon downgradeIcon = QIcon::fromTheme(QStringLiteral("go-down"));
+    QIcon purgeIcon = QIcon::fromTheme(QStringLiteral("edit-delete-shred"));
+
     m_filterBox = new QComboBox(headerWidget);
     m_filterBox->insertItem(AllChangesItem, QIcon::fromTheme(QStringLiteral("bookmark-new-list")),
                             i18nc("@item:inlistbox Filters all changes in the history view",
                                   "All changes"),
                             0);
-    m_filterBox->insertItem(InstallationsItem, QIcon::fromTheme(QStringLiteral("download")),
+    m_filterBox->insertItem(InstallationsItem, installIcon,
                             i18nc("@item:inlistbox Filters installations in the history view",
                                   "Installations"),
                             QApt::Package::ToInstall);
-    m_filterBox->insertItem(UpdatesItem, QIcon::fromTheme(QStringLiteral("system-software-update")),
+    m_filterBox->insertItem(UpdatesItem, upgradeIcon,
                             i18nc("@item:inlistbox Filters updates in the history view",
                                   "Updates"),
                             QApt::Package::ToUpgrade);
-    m_filterBox->insertItem(RemovalsItem, QIcon::fromTheme(QStringLiteral("edit-delete")),
+    m_filterBox->insertItem(RemovalsItem, removeIcon,
                             i18nc("@item:inlistbox Filters removals in the history view",
                                   "Removals"),
                             (QApt::Package::State)(QApt::Package::ToRemove | QApt::Package::ToPurge));
@@ -94,8 +101,6 @@ HistoryView::HistoryView(QWidget *parent)
     m_historyModel->setColumnCount(1);
     m_historyModel->setHeaderData(0, Qt::Horizontal, i18nc("@title:column", "Date"));
     m_historyView = new QTreeView(this);
-
-    QIcon itemIcon(QIcon::fromTheme(QStringLiteral("applications-other")));
 
     QHash<QString, QString> categoryHash;
 
@@ -136,11 +141,11 @@ HistoryView::HistoryView(QWidget *parent)
         for (const QString &package: item.installedPackages()) {
             QStandardItem *historyItem = new QStandardItem;
             historyItem->setEditable(false);
-            historyItem->setIcon(itemIcon);
 
             QString action = actionHash.value(InstalledAction);
             QString text = i18nc("@item example: muon installed at 16:00", "%1 %2 at %3",
                                  package, action, formattedTime);
+            historyItem->setIcon(installIcon);
             historyItem->setText(text);
             historyItem->setData(startDateTime, HistoryProxyModel::HistoryDateRole);
             historyItem->setData(QApt::Package::ToInstall, HistoryProxyModel::HistoryActionRole);
@@ -153,11 +158,11 @@ HistoryView::HistoryView(QWidget *parent)
         for (const QString &package: item.upgradedPackages()) {
             QStandardItem *historyItem = new QStandardItem;
             historyItem->setEditable(false);
-            historyItem->setIcon(itemIcon);
 
             QString action = actionHash.value(UpgradedAction);
             QString text = i18nc("@item example: muon installed at 16:00", "%1 %2 at %3",
                                  package, action, formattedTime);
+            historyItem->setIcon(upgradeIcon);
             historyItem->setText(text);
             historyItem->setData(startDateTime, HistoryProxyModel::HistoryDateRole);
             historyItem->setData(QApt::Package::ToUpgrade, HistoryProxyModel::HistoryActionRole);
@@ -170,11 +175,11 @@ HistoryView::HistoryView(QWidget *parent)
         for (const QString &package: item.downgradedPackages()) {
             QStandardItem *historyItem = new QStandardItem;
             historyItem->setEditable(false);
-            historyItem->setIcon(itemIcon);
 
             QString action = actionHash.value(DowngradedAction);
             QString text = i18nc("@item example: muon installed at 16:00", "%1 %2 at %3",
                                  package, action, formattedTime);
+            historyItem->setIcon(downgradeIcon);
             historyItem->setText(text);
             historyItem->setData(startDateTime, HistoryProxyModel::HistoryDateRole);
             historyItem->setData(QApt::Package::ToDowngrade, HistoryProxyModel::HistoryActionRole);
@@ -187,11 +192,11 @@ HistoryView::HistoryView(QWidget *parent)
         for (const QString &package: item.removedPackages()) {
             QStandardItem *historyItem = new QStandardItem;
             historyItem->setEditable(false);
-            historyItem->setIcon(itemIcon);
 
             QString action = actionHash.value(RemovedAction);
             QString text = i18nc("@item example: muon installed at 16:00", "%1 %2 at %3",
                                  package, action, formattedTime);
+            historyItem->setIcon(removeIcon);
             historyItem->setText(text);
             historyItem->setData(startDateTime, HistoryProxyModel::HistoryDateRole);
             historyItem->setData(QApt::Package::ToRemove, HistoryProxyModel::HistoryActionRole);
@@ -204,11 +209,11 @@ HistoryView::HistoryView(QWidget *parent)
         for (const QString &package: item.purgedPackages()) {
             QStandardItem *historyItem = new QStandardItem;
             historyItem->setEditable(false);
-            historyItem->setIcon(itemIcon);
 
             QString action = actionHash.value(PurgedAction);
             QString text = i18nc("@item example: muon installed at 16:00", "%1 %2 at %3",
                                  package, action, formattedTime);
+            historyItem->setIcon(purgeIcon);
             historyItem->setText(text);
             historyItem->setData(startDateTime, HistoryProxyModel::HistoryDateRole);
             historyItem->setData(QApt::Package::ToPurge, HistoryProxyModel::HistoryActionRole);
