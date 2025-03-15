@@ -523,13 +523,13 @@ void QAptActions::showHistoryDialog()
         connect(box, SIGNAL(rejected()), m_historyDialog, SLOT(reject()));
         m_historyDialog->layout()->addWidget(box);
 
-        m_historyDialog->show();
+        m_historyDialog->createWinId();
 
-        QTimer::singleShot(0, this, [this]() {
-            KConfigGroup dialogConfig(KSharedConfig::openConfig(QStringLiteral("muonrc")), QStringLiteral("HistoryDialog"));
-            KWindowConfig::restoreWindowSize(m_historyDialog->windowHandle(), dialogConfig);
-            KWindowConfig::restoreWindowPosition(m_historyDialog->windowHandle(), dialogConfig);
-        });
+        KConfigGroup dialogConfig(KSharedConfig::openConfig(QStringLiteral("muonrc")), QStringLiteral("HistoryDialog"));
+        KWindowConfig::restoreWindowSize(m_historyDialog->windowHandle(), dialogConfig);
+        KWindowConfig::restoreWindowPosition(m_historyDialog->windowHandle(), dialogConfig);
+
+        m_historyDialog->show();
     } else {
         m_historyDialog->raise();
     }
@@ -544,6 +544,7 @@ void QAptActions::closeHistoryDialog()
     m_historyDialog = nullptr;
 }
 
+// TODO: replace with /usr/bin/kubuntu-devel-release-upgrade and ubuntu-release-upgrader
 void QAptActions::launchDistUpgrade()
 {
     const QString kdesu = QFile::decodeName(CMAKE_INSTALL_FULL_LIBEXECDIR_KF6 "/kdesu");
