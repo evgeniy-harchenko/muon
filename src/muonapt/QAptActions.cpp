@@ -396,9 +396,7 @@ void QAptActions::runSourcesEditor()
             QString text = xi18nc("@info",
                                   "<para>Could not find <command>software-properties-qt</command> "
                                   "nor <command>software-properties-kde</command> "
-                                  "on your system, please install it.</para>"
-                                  "<para>Alternatively, you can use <application>Plasma Discover</application> "
-                                  "to configure software sources.</para>");
+                                  "on your system, please install it.</para>");
             QString title = xi18nc("@title:window",
                                    "Cannot find <command>software-properties-qt</command>");
             KMessageBox::information(m_mainWindow, text, title);
