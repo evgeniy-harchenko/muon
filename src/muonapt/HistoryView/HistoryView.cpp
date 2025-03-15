@@ -28,22 +28,22 @@
 #include <QtWidgets/QLineEdit>
 #include <QtWidgets/QComboBox>
 #include <QStandardItemModel>
+#include <QEvent>
+#include <QHeaderView>
 
-#include <KColorScheme>
+#include <QApplication>
 #include <KLocalizedString>
 
 #include <QApt/History>
 
 #include "HistoryProxyModel.h"
 
+const QString itemStyleSheet = QStringLiteral("QTreeView::item { padding-left: 10px; padding-right: 10px; }");
+
 HistoryView::HistoryView(QWidget *parent)
     : QWidget(parent),
-      m_colorScheme(QPalette::Current, KColorScheme::Window),
-      m_configWatcher(KConfigWatcher::create(KSharedConfig::openConfig()))
+      m_palette(QApplication::palette())
 {
-    connect(m_configWatcher.data(), &KConfigWatcher::configChanged, this, &HistoryView::updateAllItemColors);
-    //connect(qApp, &QApplication::paletteChanged, this, &HistoryView::updateAllItemColors);
-
     QLayout *viewLayout = new QVBoxLayout(this);
     setLayout(viewLayout);
     m_history = new QApt::History(this);
@@ -64,14 +64,15 @@ HistoryView::HistoryView(QWidget *parent)
     m_searchTimer = new QTimer(this);
     m_searchTimer->setInterval(300);
     m_searchTimer->setSingleShot(true);
-    connect(m_searchTimer, SIGNAL(timeout()), this, SLOT(startSearch()));
-    connect(m_searchEdit, SIGNAL(textChanged(QString)), m_searchTimer, SLOT(start()));
+    connect(m_searchTimer, &QTimer::timeout, this, &HistoryView::startSearch);
+    connect(m_searchEdit, &QLineEdit::textChanged, m_searchTimer, [this](){ m_searchTimer->start(); });
 
     QIcon installIcon = QIcon::fromTheme(QStringLiteral("download"));
     QIcon upgradeIcon = QIcon::fromTheme(QStringLiteral("system-software-update"));
     QIcon removeIcon = QIcon::fromTheme(QStringLiteral("edit-delete"));
     QIcon downgradeIcon = QIcon::fromTheme(QStringLiteral("go-down"));
     QIcon purgeIcon = QIcon::fromTheme(QStringLiteral("edit-delete-shred"));
+    QIcon reinstallIcon = QIcon::fromTheme(QStringLiteral("view-refresh"));
 
     m_filterBox = new QComboBox(headerWidget);
     m_filterBox->insertItem(AllChangesItem, QIcon::fromTheme(QStringLiteral("bookmark-new-list")),
@@ -97,137 +98,105 @@ HistoryView::HistoryView(QWidget *parent)
     headerLayout->addWidget(m_searchEdit);
     headerLayout->addWidget(m_filterBox);
 
+    viewLayout->addWidget(headerWidget);
+
     m_historyModel = new QStandardItemModel(this);
-    m_historyModel->setColumnCount(1);
-    m_historyModel->setHeaderData(0, Qt::Horizontal, i18nc("@title:column", "Date"));
+    m_historyModel->setColumnCount(3);
+    m_historyModel->setHeaderData(0, Qt::Horizontal, i18nc("@title:column", "Package"));
+    m_historyModel->setHeaderData(1, Qt::Horizontal, i18nc("@title:column", "Action"));
+    m_historyModel->setHeaderData(2, Qt::Horizontal, i18nc("@title:column", "Time"));
+
     m_historyView = new QTreeView(this);
+    m_historyView->setRootIsDecorated(true);
+    m_historyView->setAlternatingRowColors(true);
+    m_historyView->setMouseTracking(true);
+    m_historyView->setVerticalScrollMode(QAbstractItemView::ScrollPerPixel);
+    m_historyView->setStyleSheet(itemStyleSheet);
+    m_historyView->header()->setStretchLastSection(false);
 
     QHash<QString, QString> categoryHash;
 
-    QHash<PastActions, QString> actionHash;
-    actionHash[InstalledAction] = i18nc("@info:status describes a past-tense action", "Installed");
-    actionHash[UpgradedAction] = i18nc("@info:status describes a past-tense action", "Upgraded");
-    actionHash[DowngradedAction] = i18nc("@status describes a past-tense action", "Downgraded");
-    actionHash[RemovedAction] = i18nc("@status describes a past-tense action", "Removed");
-    actionHash[PurgedAction] = i18nc("@status describes a past-tense action", "Purged");
+    QHash<QApt::Package::State, QString> actionHash;
+    actionHash[QApt::Package::ToInstall] = i18nc("@info:status describes a past-tense action", "Installed");
+    actionHash[QApt::Package::ToUpgrade] = i18nc("@info:status describes a past-tense action", "Upgraded");
+    actionHash[QApt::Package::ToDowngrade] = i18nc("@status describes a past-tense action", "Downgraded");
+    actionHash[QApt::Package::ToRemove] = i18nc("@status describes a past-tense action", "Removed");
+    actionHash[QApt::Package::ToPurge] = i18nc("@status describes a past-tense action", "Purged");
+    actionHash[QApt::Package::ToReInstall] = i18nc("@status describes a past-tense action", "Reinstalled");
 
     for (const QApt::HistoryItem &item: m_history->historyItems()) {
+        QLocale locale;
         QDateTime startDateTime = item.startDate();
-        QString formattedTime = startDateTime.toString();
+        QString formattedTime = locale.toString(startDateTime, QLocale::LongFormat);
         QString category;
 
         QString date = startDateTime.date().toString();
         if (categoryHash.contains(date)) {
             category = categoryHash.value(date);
         } else {
-            category = QLocale().toString(startDateTime.date(), QLocale::ShortFormat);
+            category = locale.toString(startDateTime.date(), QLocale::ShortFormat);
             categoryHash[date] = category;
         }
 
         QStandardItem *parentItem = nullptr;
-
-        if (!m_categoryHash.contains(category)) {
-            parentItem = new QStandardItem;
-            parentItem->setEditable(false);
-            parentItem->setText(category);
-            parentItem->setData(startDateTime, HistoryProxyModel::HistoryDateRole);
-
-            m_historyModel->appendRow(parentItem);
-            m_categoryHash[category] = parentItem;
+        if (!m_dateCategoryItems.contains(category)) {
+            QList<QStandardItem*> parentRow;
+            QStandardItem *dateItem = new QStandardItem(category);
+            dateItem->setEditable(false);
+            dateItem->setData(startDateTime, HistoryProxyModel::HistoryDateRole);
+            parentRow << dateItem;
+            m_historyModel->appendRow(parentRow);
+            m_dateCategoryItems[category] = dateItem;
+            parentItem = dateItem;
         } else {
-            parentItem = m_categoryHash.value(category);
+            parentItem = m_dateCategoryItems.value(category);
         }
+
+        auto addChildRow = [&](const QString &pkg, QApt::Package::State pastAction, const QIcon &icon) {
+            QList<QStandardItem*> childRow;
+            QStandardItem *pkgItem = new QStandardItem(icon, pkg);
+            pkgItem->setEditable(false);
+            pkgItem->setData(startDateTime, HistoryProxyModel::HistoryDateRole);
+            pkgItem->setData(pastAction, HistoryProxyModel::HistoryActionRole);
+
+            QStandardItem *actionItem = new QStandardItem(actionHash.value(pastAction));
+            actionItem->setEditable(false);
+            actionItem->setData(startDateTime, HistoryProxyModel::HistoryDateRole);
+            actionItem->setData(pastAction, HistoryProxyModel::HistoryActionRole);
+
+            QStandardItem *timeItem = new QStandardItem(formattedTime);
+            timeItem->setEditable(false);
+            timeItem->setData(startDateTime, HistoryProxyModel::HistoryDateRole);
+            timeItem->setData(pastAction, HistoryProxyModel::HistoryActionRole);
+
+            updateItemColors(pkgItem, m_palette);
+            updateItemColors(actionItem, m_palette);
+            updateItemColors(timeItem, m_palette);
+
+            childRow << pkgItem << actionItem << timeItem;
+            parentItem->appendRow(childRow);
+        };
 
         for (const QString &package: item.installedPackages()) {
-            QStandardItem *historyItem = new QStandardItem;
-            historyItem->setEditable(false);
-
-            QString action = actionHash.value(InstalledAction);
-            QString text = i18nc("@item example: muon installed at 16:00", "%1 %2 at %3",
-                                 package, action, formattedTime);
-            historyItem->setIcon(installIcon);
-            historyItem->setText(text);
-            historyItem->setData(startDateTime, HistoryProxyModel::HistoryDateRole);
-            historyItem->setData(QApt::Package::ToInstall, HistoryProxyModel::HistoryActionRole);
-
-            updateItemColors(historyItem, m_colorScheme);
-
-            parentItem->appendRow(historyItem);
+            addChildRow(package, QApt::Package::ToInstall, installIcon);
         }
-
         for (const QString &package: item.upgradedPackages()) {
-            QStandardItem *historyItem = new QStandardItem;
-            historyItem->setEditable(false);
-
-            QString action = actionHash.value(UpgradedAction);
-            QString text = i18nc("@item example: muon installed at 16:00", "%1 %2 at %3",
-                                 package, action, formattedTime);
-            historyItem->setIcon(upgradeIcon);
-            historyItem->setText(text);
-            historyItem->setData(startDateTime, HistoryProxyModel::HistoryDateRole);
-            historyItem->setData(QApt::Package::ToUpgrade, HistoryProxyModel::HistoryActionRole);
-
-            updateItemColors(historyItem, m_colorScheme);
-
-            parentItem->appendRow(historyItem);
+            addChildRow(package, QApt::Package::ToUpgrade, upgradeIcon);
         }
-
         for (const QString &package: item.downgradedPackages()) {
-            QStandardItem *historyItem = new QStandardItem;
-            historyItem->setEditable(false);
-
-            QString action = actionHash.value(DowngradedAction);
-            QString text = i18nc("@item example: muon installed at 16:00", "%1 %2 at %3",
-                                 package, action, formattedTime);
-            historyItem->setIcon(downgradeIcon);
-            historyItem->setText(text);
-            historyItem->setData(startDateTime, HistoryProxyModel::HistoryDateRole);
-            historyItem->setData(QApt::Package::ToDowngrade, HistoryProxyModel::HistoryActionRole);
-
-            updateItemColors(historyItem, m_colorScheme);
-
-            parentItem->appendRow(historyItem);
+            addChildRow(package, QApt::Package::ToDowngrade, downgradeIcon);
         }
-
         for (const QString &package: item.removedPackages()) {
-            QStandardItem *historyItem = new QStandardItem;
-            historyItem->setEditable(false);
-
-            QString action = actionHash.value(RemovedAction);
-            QString text = i18nc("@item example: muon installed at 16:00", "%1 %2 at %3",
-                                 package, action, formattedTime);
-            historyItem->setIcon(removeIcon);
-            historyItem->setText(text);
-            historyItem->setData(startDateTime, HistoryProxyModel::HistoryDateRole);
-            historyItem->setData(QApt::Package::ToRemove, HistoryProxyModel::HistoryActionRole);
-
-            updateItemColors(historyItem, m_colorScheme);
-
-            parentItem->appendRow(historyItem);
+            addChildRow(package, QApt::Package::ToRemove, removeIcon);
         }
-
         for (const QString &package: item.purgedPackages()) {
-            QStandardItem *historyItem = new QStandardItem;
-            historyItem->setEditable(false);
-
-            QString action = actionHash.value(PurgedAction);
-            QString text = i18nc("@item example: muon installed at 16:00", "%1 %2 at %3",
-                                 package, action, formattedTime);
-            historyItem->setIcon(purgeIcon);
-            historyItem->setText(text);
-            historyItem->setData(startDateTime, HistoryProxyModel::HistoryDateRole);
-            historyItem->setData(QApt::Package::ToPurge, HistoryProxyModel::HistoryActionRole);
-
-            updateItemColors(historyItem, m_colorScheme);
-
-            parentItem->appendRow(historyItem);
+            addChildRow(package, QApt::Package::ToPurge, purgeIcon);
+        }
+        for (const QString &package: item.reinstalledPackages()) {
+            addChildRow(package, QApt::Package::ToReInstall, reinstallIcon);
         }
     }
 
-    m_historyView->setMouseTracking(true);
-    m_historyView->setVerticalScrollMode(QListView::ScrollPerPixel);
-
-    viewLayout->addWidget(headerWidget);
     viewLayout->addWidget(m_historyView);
 
     m_proxyModel = new HistoryProxyModel(this);
@@ -236,12 +205,17 @@ HistoryView::HistoryView(QWidget *parent)
 
     m_historyView->setModel(m_proxyModel);
 
+    connect(m_proxyModel, &QAbstractItemModel::layoutChanged, this, &HistoryView::updateSpanning);
+    connect(m_proxyModel, &QAbstractItemModel::modelReset, this, &HistoryView::updateSpanning);
+
+    updateSpanning();
+
     setSizePolicy(QSizePolicy::MinimumExpanding, QSizePolicy::MinimumExpanding);
 }
 
 QSize HistoryView::sizeHint() const
 {
-    return QWidget::sizeHint().expandedTo(QSize(500, 500));
+    return QWidget::sizeHint().expandedTo(QSize(750, 500));
 }
 
 void HistoryView::setStateFilter(int index)
@@ -255,43 +229,77 @@ void HistoryView::startSearch()
     m_proxyModel->search(m_searchEdit->text());
 }
 
-void HistoryView::updateItemColors(QStandardItem *item, const KColorScheme &scheme)
+void HistoryView::updateItemColors(QStandardItem *item, const QPalette &palette)
 {
     if (item->data(HistoryProxyModel::HistoryActionRole).isValid()) {
         int action = item->data(HistoryProxyModel::HistoryActionRole).toInt();
         QColor color;
-        switch(action) {
+        switch (action) {
             case QApt::Package::ToInstall:
-                color = scheme.foreground(KColorScheme::PositiveText).color();
+                color = palette.color(QPalette::Highlight);
                 break;
             case QApt::Package::ToUpgrade:
-                color = scheme.decoration(KColorScheme::FocusColor).color();
+                color = palette.color(QPalette::Link);
                 break;
             case QApt::Package::ToDowngrade:
-                color = scheme.foreground(KColorScheme::NeutralText).color();
+                color = palette.color(QPalette::Midlight);
                 break;
             case QApt::Package::ToRemove:
             case QApt::Package::ToPurge:
-                color = scheme.foreground(KColorScheme::NegativeText).color();
+                color = palette.color(QPalette::LinkVisited);
+                break;
+            case QApt::Package::ToReInstall:
+                color = palette.color(QPalette::Text);
                 break;
             default:
-                color = scheme.foreground(KColorScheme::NormalText).color();
+                color = palette.color(QPalette::PlaceholderText);
                 break;
         }
         item->setData(color, Qt::ForegroundRole);
     }
 
-    for (int i = 0; i < item->rowCount(); ++i) {
-        updateItemColors(item->child(i), scheme);
+    for (int row = 0; row < item->rowCount(); ++row) {
+        int cols = item->columnCount();
+        for (int col = 0; col < cols; ++col) {
+            QStandardItem *child = item->child(row, col);
+            if (child)
+                updateItemColors(child, palette);
+        }
     }
+}
+
+bool HistoryView::event(QEvent *event)
+{
+    if (event->type() == QEvent::PaletteChange) {
+        updateAllItemColors();
+    }
+    return QWidget::event(event);
 }
 
 void HistoryView::updateAllItemColors()
 {
-    m_colorScheme = KColorScheme(QPalette::Current, KColorScheme::Window);
+    m_historyView->setStyleSheet(itemStyleSheet);
+
+    m_palette = QApplication::palette();
     for (int i = 0; i < m_historyModel->rowCount(); ++i) {
         QStandardItem *item = m_historyModel->item(i);
-        updateItemColors(item, m_colorScheme);
+        updateItemColors(item, m_palette);
+    }
+}
+
+void HistoryView::updateSpanning()
+{
+    for (int row = 0; row < m_historyModel->rowCount(); ++row) {
+        QStandardItem *parentItem = m_historyModel->item(row);
+
+        if (parentItem && parentItem->hasChildren()) {
+            m_historyView->setFirstColumnSpanned(row, QModelIndex(), true);
+        }
+    }
+
+    m_historyView->header()->setSectionResizeMode(0, QHeaderView::Stretch);
+    for (int col = 1; col < m_historyModel->columnCount(); ++col) {
+        m_historyView->header()->setSectionResizeMode(col, QHeaderView::ResizeToContents);
     }
 }
 

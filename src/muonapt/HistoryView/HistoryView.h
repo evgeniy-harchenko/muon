@@ -25,9 +25,6 @@
 
 #include <QWidget>
 
-#include <KColorScheme>
-#include <KConfigWatcher>
-
 class QStandardItem;
 class QStandardItemModel;
 class QTimer;
@@ -51,38 +48,33 @@ public:
         UpdatesItem = 2,
         RemovalsItem = 3
     };
-    enum PastActions {
-        InvalidAction = 0,
-        InstalledAction = 1,
-        UpgradedAction = 2,
-        DowngradedAction = 3,
-        RemovedAction = 4,
-        PurgedAction = 5
-    };
-    HistoryView(QWidget *parent);
+    explicit HistoryView(QWidget *parent);
 
-    QSize sizeHint() const;
+    QSize sizeHint() const override;
 
 private:
     QApt::History *m_history;
     QStandardItemModel *m_historyModel;
     HistoryProxyModel *m_proxyModel;
-    QHash<QString, QStandardItem *> m_categoryHash;
+    QHash<QString, QStandardItem *> m_dateCategoryItems;
 
     QLineEdit *m_searchEdit;
     QTimer *m_searchTimer;
     QComboBox *m_filterBox;
     QTreeView *m_historyView;
 
-    KColorScheme m_colorScheme;
-    KConfigWatcher::Ptr m_configWatcher;
+    QPalette m_palette;
 
-    void updateItemColors(QStandardItem *item, const KColorScheme &scheme);
+    void updateItemColors(QStandardItem *item, const QPalette &palette);
     void updateAllItemColors();
+
+protected:
+    bool event(QEvent *event) override;
 
 private Q_SLOTS:
     void setStateFilter(int index);
     void startSearch();
+    void updateSpanning();
 };
 
 #endif
