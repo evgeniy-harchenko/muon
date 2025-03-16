@@ -91,6 +91,10 @@ HistoryView::HistoryView(QWidget *parent)
                             i18nc("@item:inlistbox Filters removals in the history view",
                                   "Removals"),
                             (QApt::Package::State)(QApt::Package::ToRemove | QApt::Package::ToPurge));
+    m_filterBox->insertItem(ReinstallationsItem, reinstallIcon,
+                            i18nc("@item:inlistbox Filters removals in the history view",
+                                  "Reinstallations"),
+                            QApt::Package::ToReInstall);
     connect(m_filterBox, SIGNAL(currentIndexChanged(int)), this, SLOT(setStateFilter(int)));
 
     headerLayout->addWidget(headerLabel);
