@@ -46,8 +46,8 @@ public:
         AllChangesItem = 0,
         InstallationsItem = 1,
         UpdatesItem = 2,
-        RemovalsItem = 3,
-        ReinstallationsItem = 4
+        ReinstallationsItem = 3,
+        RemovalsItem = 4
     };
     explicit HistoryView(QWidget *parent);
 
