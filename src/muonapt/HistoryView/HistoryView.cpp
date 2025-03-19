@@ -87,14 +87,18 @@ HistoryView::HistoryView(QWidget *parent)
                             i18nc("@item:inlistbox Filters updates in the history view",
                                   "Updates"),
                             QApt::Package::ToUpgrade);
+    m_filterBox->insertItem(ReinstallationsItem, reinstallIcon,
+                            i18nc("@item:inlistbox Filters reinstallations in the history view",
+                                  "Reinstallations"),
+                            QApt::Package::ToReInstall);
+    m_filterBox->insertItem(DowngradesItem, downgradeIcon,
+                            i18nc("@item:inlistbox Filters downgrades in the history view",
+                                  "Downgrades"),
+                            QApt::Package::ToDowngrade);
     m_filterBox->insertItem(RemovalsItem, removeIcon,
                             i18nc("@item:inlistbox Filters removals in the history view",
                                   "Removals"),
                             (QApt::Package::State)(QApt::Package::ToRemove | QApt::Package::ToPurge));
-    m_filterBox->insertItem(ReinstallationsItem, reinstallIcon,
-                            i18nc("@item:inlistbox Filters removals in the history view",
-                                  "Reinstallations"),
-                            QApt::Package::ToReInstall);
     connect(m_filterBox, SIGNAL(currentIndexChanged(int)), this, SLOT(setStateFilter(int)));
 
     headerLayout->addWidget(headerLabel);
