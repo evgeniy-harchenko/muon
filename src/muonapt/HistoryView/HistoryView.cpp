@@ -42,7 +42,7 @@ const QString itemStyleSheet = QStringLiteral("QTreeView::item { padding-left: 1
 
 HistoryView::HistoryView(QWidget *parent)
     : QWidget(parent),
-      m_palette(QApplication::palette())
+      m_colorScheme(QPalette::Current, KColorScheme::Window)
 {
     QLayout *viewLayout = new QVBoxLayout(this);
     setLayout(viewLayout);
@@ -173,9 +173,9 @@ HistoryView::HistoryView(QWidget *parent)
             timeItem->setData(startDateTime, HistoryProxyModel::HistoryDateRole);
             timeItem->setData(pastAction, HistoryProxyModel::HistoryActionRole);
 
-            updateItemColors(pkgItem, m_palette);
-            updateItemColors(actionItem, m_palette);
-            updateItemColors(timeItem, m_palette);
+            updateItemColors(pkgItem, m_colorScheme);
+            updateItemColors(actionItem, m_colorScheme);
+            updateItemColors(timeItem, m_colorScheme);
 
             childRow << pkgItem << actionItem << timeItem;
             parentItem->appendRow(childRow);
@@ -233,30 +233,30 @@ void HistoryView::startSearch()
     m_proxyModel->search(m_searchEdit->text());
 }
 
-void HistoryView::updateItemColors(QStandardItem *item, const QPalette &palette)
+void HistoryView::updateItemColors(QStandardItem *item, const KColorScheme &scheme)
 {
     if (item->data(HistoryProxyModel::HistoryActionRole).isValid()) {
         int action = item->data(HistoryProxyModel::HistoryActionRole).toInt();
         QColor color;
         switch (action) {
             case QApt::Package::ToInstall:
-                color = palette.color(QPalette::Highlight);
+                color = scheme.foreground(KColorScheme::PositiveText).color();
                 break;
             case QApt::Package::ToUpgrade:
-                color = palette.color(QPalette::Link);
+                color = scheme.decoration(KColorScheme::FocusColor).color();
                 break;
             case QApt::Package::ToDowngrade:
-                color = palette.color(QPalette::Midlight);
+                color = scheme.foreground(KColorScheme::NeutralText).color();
                 break;
             case QApt::Package::ToRemove:
             case QApt::Package::ToPurge:
-                color = palette.color(QPalette::LinkVisited);
+                color = scheme.foreground(KColorScheme::NegativeText).color();
                 break;
             case QApt::Package::ToReInstall:
-                color = palette.color(QPalette::Text);
+                color = scheme.foreground(KColorScheme::VisitedText).color();
                 break;
             default:
-                color = palette.color(QPalette::PlaceholderText);
+                color = scheme.foreground(KColorScheme::NormalText).color();
                 break;
         }
         item->setData(color, Qt::ForegroundRole);
@@ -267,7 +267,7 @@ void HistoryView::updateItemColors(QStandardItem *item, const QPalette &palette)
         for (int col = 0; col < cols; ++col) {
             QStandardItem *child = item->child(row, col);
             if (child)
-                updateItemColors(child, palette);
+                updateItemColors(child, scheme);
         }
     }
 }
@@ -284,10 +284,10 @@ void HistoryView::updateAllItemColors()
 {
     m_historyView->setStyleSheet(itemStyleSheet);
 
-    m_palette = QApplication::palette();
+    m_colorScheme = KColorScheme(QPalette::Current, KColorScheme::Window);
     for (int i = 0; i < m_historyModel->rowCount(); ++i) {
         QStandardItem *item = m_historyModel->item(i);
-        updateItemColors(item, m_palette);
+        updateItemColors(item, m_colorScheme);
     }
 }
 

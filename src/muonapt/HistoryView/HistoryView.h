@@ -25,6 +25,8 @@
 
 #include <QWidget>
 
+#include <KColorScheme>
+
 class QStandardItem;
 class QStandardItemModel;
 class QTimer;
@@ -64,9 +66,9 @@ private:
     QComboBox *m_filterBox;
     QTreeView *m_historyView;
 
-    QPalette m_palette;
+    KColorScheme m_colorScheme;
 
-    void updateItemColors(QStandardItem *item, const QPalette &palette);
+    void updateItemColors(QStandardItem *item, const KColorScheme &scheme);
     void updateAllItemColors();
 
 protected:
