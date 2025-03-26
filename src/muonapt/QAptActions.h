@@ -83,7 +83,6 @@ public Q_SLOTS:
 
 private Q_SLOTS:
     void reachabilityChanged(QNetworkInformation::Reachability);
-    void closeHistoryDialog();
     void checkDistUpgrade();
     void launchDistUpgrade();
     void checkerFinished(int res);

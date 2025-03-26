@@ -51,6 +51,8 @@
 #include <QApt/DebFile>
 #include <QApt/Transaction>
 
+#include "muonapt/HistoryView/HistoryDialog.h"
+
 QAptActions::QAptActions()
     : QObject(nullptr)
     , m_backend(nullptr)
@@ -508,40 +510,15 @@ void QAptActions::displayTransactionError(QApt::ErrorCode error, QApt::Transacti
 void QAptActions::showHistoryDialog()
 {
     if (!m_historyDialog) {
-        m_historyDialog = new QDialog(mainWindow());
-        m_historyDialog->setLayout(new QVBoxLayout(m_historyDialog));
-
-        connect(m_historyDialog, SIGNAL(finished(int)), SLOT(closeHistoryDialog()));
-        HistoryView *historyView = new HistoryView(m_historyDialog);
-        m_historyDialog->layout()->addWidget(historyView);
-        m_historyDialog->setWindowTitle(i18nc("@title:window", "Package History"));
-        m_historyDialog->setWindowIcon(QIcon::fromTheme(QStringLiteral("view-history")));
-
-        QDialogButtonBox* box = new QDialogButtonBox(m_historyDialog);
-        box->setStandardButtons(QDialogButtonBox::Close);
-        connect(box, SIGNAL(accepted()), m_historyDialog, SLOT(accept()));
-        connect(box, SIGNAL(rejected()), m_historyDialog, SLOT(reject()));
-        m_historyDialog->layout()->addWidget(box);
-
-        m_historyDialog->createWinId();
-
-        KConfigGroup dialogConfig(KSharedConfig::openConfig(QStringLiteral("muonrc")), QStringLiteral("HistoryDialog"));
-        KWindowConfig::restoreWindowSize(m_historyDialog->windowHandle(), dialogConfig);
-        KWindowConfig::restoreWindowPosition(m_historyDialog->windowHandle(), dialogConfig);
-
+        m_historyDialog = new HistoryDialog(mainWindow());
+        connect(m_historyDialog, &QDialog::finished, this, [this](int){
+            m_historyDialog->deleteLater();
+            m_historyDialog = nullptr;
+        });
         m_historyDialog->show();
     } else {
         m_historyDialog->raise();
     }
-}
-
-void QAptActions::closeHistoryDialog()
-{
-    KConfigGroup dialogConfig(KSharedConfig::openConfig(QStringLiteral("muonrc")), QStringLiteral("HistoryDialog"));
-    KWindowConfig::saveWindowSize(m_historyDialog->windowHandle(), dialogConfig);
-    KWindowConfig::saveWindowPosition(m_historyDialog->windowHandle(), dialogConfig);
-    m_historyDialog->deleteLater();
-    m_historyDialog = nullptr;
 }
 
 // TODO: replace with /usr/bin/kubuntu-devel-release-upgrade and ubuntu-release-upgrader

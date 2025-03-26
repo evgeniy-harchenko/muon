@@ -45,6 +45,8 @@ set(muon_SRCS
 
     Widgets/BusyIndicator.cpp
     Widgets/BusyIndicator.h
+        muonapt/HistoryView/HistoryDialog.cpp
+        muonapt/HistoryView/HistoryDialog.h
 
 )
 
