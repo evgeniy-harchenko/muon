@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2018-03-15 03:18+0100\n"
+"POT-Creation-Date: 2025-03-19 13:45+0200\n"
 "PO-Revision-Date: 2015-04-21 15:51+0200\n"
 "Last-Translator: Kiszel Kristóf <ulysses@kubuntu.org>\n"
 "Language-Team: Hungarian <kde-l10n-hu@kde.org>\n"
@@ -19,64 +19,74 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Lokalize 1.5\n"
 
-#, kde-format
-msgctxt "NAME OF TRANSLATORS"
-msgid "Your names"
-msgstr "Kiszel Kristóf"
-
-#, kde-format
-msgctxt "EMAIL OF TRANSLATORS"
-msgid "Your emails"
-msgstr "ulysses@kubuntu.org"
-
+#. i18n: file: src/config/muon.kcfg:9
 #. i18n: ectx: label, entry (SplitterSizes), group (muon)
-#: muonrc.cpp:3 src/config/muon.kcfg:9
+#: rc.cpp:3
 #, kde-format
 msgid "How the main window is divided."
 msgstr "A főablak felosztása."
 
+#. i18n: file: src/config/muon.kcfg:12
 #. i18n: ectx: label, entry (Width), group (muon)
-#: muonrc.cpp:6 src/config/muon.kcfg:12
+#: rc.cpp:6
 #, kde-format
 msgid "Width of the main window."
 msgstr "A főablak szélessége."
 
+#. i18n: file: src/config/muon.kcfg:16
 #. i18n: ectx: label, entry (Height), group (muon)
-#: muonrc.cpp:9 src/config/muon.kcfg:16
+#: rc.cpp:9
 #, kde-format
 msgid "Height of the main window."
 msgstr "A főablak magassága."
 
+#. i18n: file: src/config/muon.kcfg:20
 #. i18n: ectx: label, entry (UndoStackSize), group (muon)
-#: muonrc.cpp:12 src/config/muon.kcfg:20
+#: rc.cpp:12
 #, kde-format
 msgid "The amount of history kept for undo/redo."
 msgstr "A visszavonáshoz/újra végrehajtáshoz megtartott előzmény mérete."
 
+#. i18n: file: src/config/muon.kcfg:24
 #. i18n: ectx: label, entry (AskChanges), group (muon)
-#: muonrc.cpp:15 src/config/muon.kcfg:24
+#: rc.cpp:15
 #, kde-format
 msgid "Whether or not to confirm additional changes."
 msgstr "Legyen-e megerősítés kérése további módosítások előtt."
 
+#. i18n: file: src/config/muon.kcfg:28
 #. i18n: ectx: label, entry (ShowMultiArchDupes), group (muon)
-#: muonrc.cpp:18 src/config/muon.kcfg:28
+#: rc.cpp:18
 #, kde-format
 msgid "Show foreign architecture packages also available natively."
 msgstr ""
 "Más architektúrákhoz tartozó, natívan is elérhető csomagok megjelenítése."
 
+#. i18n: file: src/config/muon.kcfg:32
 #. i18n: ectx: label, entry (ManagerListColumns), group (muon)
-#: muonrc.cpp:21 src/config/muon.kcfg:32
+#: rc.cpp:21
 #, kde-format
 msgid "Status of columns in the manager list of packages."
 msgstr ""
 
+#. i18n: file: src/config/muon.kcfg:36
 #. i18n: ectx: label, entry (ReviewListColumns), group (muon)
-#: muonrc.cpp:24 src/config/muon.kcfg:36
+#: rc.cpp:24
 #, kde-format
 msgid "Status of columns in the changes review list of packages."
 msgstr ""
+
+#: rc.cpp:25
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Kiszel Kristóf"
+
+#: rc.cpp:26
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "ulysses@kubuntu.org"
 
 #: src/config/GeneralSettingsPage.cpp:51
 #, kde-format
@@ -113,32 +123,32 @@ msgstr "Elavult csomagok gyorsítótárának törlési időköze:"
 msgid "Number of undo operations:"
 msgstr "A visszavonandó műveletek száma:"
 
-#: src/config/GeneralSettingsPage.cpp:160
+#: src/config/GeneralSettingsPage.cpp:161
 #, kde-format
 msgid " day"
 msgid_plural " days"
 msgstr[0] " nap"
 msgstr[1] " nap"
 
-#: src/config/ManagerSettingsDialog.cpp:40
+#: src/config/ManagerSettingsDialog.cpp:41
 #, kde-format
 msgctxt "@title:window"
 msgid "Muon Preferences"
 msgstr "A Muon beállításai"
 
-#: src/config/ManagerSettingsDialog.cpp:47
+#: src/config/ManagerSettingsDialog.cpp:59
 #, kde-format
 msgctxt "@title:group Title of the general group"
 msgid "General"
 msgstr "Általános"
 
-#: src/DetailsTabs/ChangelogTab.cpp:45
+#: src/DetailsTabs/ChangelogTab.cpp:44
 #, kde-format
 msgctxt "@title:tab"
 msgid "Changes List"
 msgstr "Változások listája"
 
-#: src/DetailsTabs/ChangelogTab.cpp:94
+#: src/DetailsTabs/ChangelogTab.cpp:90
 #, kde-kuit-format
 msgctxt "@info/rich"
 msgid ""
@@ -148,7 +158,7 @@ msgstr ""
 "A változások listája nem érhető el, használja inkább a <link "
 "url='%1'>Launchpadot</link>."
 
-#: src/DetailsTabs/ChangelogTab.cpp:98
+#: src/DetailsTabs/ChangelogTab.cpp:94
 #, kde-format
 msgctxt "@info"
 msgid "The list of changes is not yet available."
@@ -208,7 +218,7 @@ msgctxt "@title:tab"
 msgid "Installed Files"
 msgstr "Telepített fájlok"
 
-#: src/DetailsTabs/MainTab.cpp:43
+#: src/DetailsTabs/MainTab.cpp:42
 #, kde-format
 msgctxt "@title:tab"
 msgid "Details"
@@ -250,19 +260,19 @@ msgctxt "@action:button"
 msgid "Purge"
 msgstr "Teljes eltávolításra"
 
-#: src/DetailsTabs/MainTab.cpp:102 src/PackageModel/PackageWidget.cpp:191
+#: src/DetailsTabs/MainTab.cpp:102 src/PackageModel/PackageWidget.cpp:186
 #, kde-format
 msgctxt "@action:button"
 msgid "Unmark"
 msgstr "A jelölés megszüntetése"
 
-#: src/DetailsTabs/MainTab.cpp:188
+#: src/DetailsTabs/MainTab.cpp:194
 #, kde-format
 msgctxt "@info Tells how long Canonical, Ltd. will support a package"
 msgid "Canonical provides critical updates for %1 until %2."
 msgstr "A Canonical %2-ig biztosít kritikus frissítéseket a következőhöz: %1."
 
-#: src/DetailsTabs/MainTab.cpp:192
+#: src/DetailsTabs/MainTab.cpp:198
 #, kde-format
 msgctxt "@info Tells how long Canonical, Ltd. will support a package"
 msgid ""
@@ -376,6 +386,7 @@ msgid "Done"
 msgstr "Kész"
 
 #: src/DownloadModel/DownloadModel.cpp:60
+#: src/muonapt/HistoryView/HistoryView.cpp:113
 #, kde-format
 msgctxt "@title:column"
 msgid "Package"
@@ -401,7 +412,7 @@ msgstr "Folyamat"
 
 #: src/FilterWidget/ArchitectureFilter.cpp:47
 #: src/FilterWidget/CategoryFilter.cpp:57 src/FilterWidget/OriginFilter.cpp:42
-#: src/FilterWidget/StatusFilter.cpp:43 src/ManagerWidget.cpp:69
+#: src/FilterWidget/StatusFilter.cpp:43 src/ManagerWidget.cpp:70
 #, kde-format
 msgctxt "@item:inlistbox Item that resets the filter to \"all\""
 msgid "All"
@@ -467,13 +478,13 @@ msgstr ""
 msgid "Top Gardener"
 msgstr ""
 
-#: src/MainWindow.cpp:180
+#: src/MainWindow.cpp:187
 #, kde-format
 msgctxt "@action Marks upgradeable packages for upgrade"
 msgid "Cautious Upgrade"
 msgstr "Biztonságos frissítés"
 
-#: src/MainWindow.cpp:186
+#: src/MainWindow.cpp:193
 #, kde-format
 msgctxt ""
 "@action Marks upgradeable packages, including ones that install/remove new "
@@ -481,31 +492,31 @@ msgctxt ""
 msgid "Full Upgrade"
 msgstr "Teljes frissítés"
 
-#: src/MainWindow.cpp:192
+#: src/MainWindow.cpp:199
 #, kde-format
 msgctxt "@action Marks packages no longer needed for removal"
 msgid "Remove Unnecessary Packages"
 msgstr "Felesleges csomagok eltávolítása"
 
-#: src/MainWindow.cpp:197
+#: src/MainWindow.cpp:204
 #, kde-format
 msgctxt "@action Takes the user to the preview page"
 msgid "Preview Changes"
 msgstr "Változtatások megtekintése"
 
-#: src/MainWindow.cpp:202
+#: src/MainWindow.cpp:209
 #, kde-format
 msgctxt "@action Applys the changes a user has made"
 msgid "Apply Changes"
 msgstr "Változtatások alkalmazása"
 
-#: src/MainWindow.cpp:207
+#: src/MainWindow.cpp:214
 #, kde-format
 msgctxt "@action Checks the Internet for updates"
 msgid "Check for Updates"
 msgstr "Frissítések keresése"
 
-#: src/MainWindow.cpp:233
+#: src/MainWindow.cpp:240
 #, kde-kuit-format
 msgctxt "@label"
 msgid ""
@@ -517,13 +528,13 @@ msgstr ""
 "csomagok telepítésére vagy eltávolítására lehet szükség. Választhatja a "
 "teljes frissítést a <interface>Teljes frissítés</interface> gombra kattintva."
 
-#: src/MainWindow.cpp:238 src/MainWindow.cpp:253
+#: src/MainWindow.cpp:245 src/MainWindow.cpp:260
 #, kde-format
 msgctxt "@title:window"
 msgid "Unable to Mark Upgrades"
 msgstr "A frissítések nem jelölhetők ki"
 
-#: src/MainWindow.cpp:250
+#: src/MainWindow.cpp:257
 #, kde-format
 msgctxt "@label"
 msgid ""
@@ -533,13 +544,13 @@ msgstr ""
 "A frissítések nem jelölhetők ki. Néhány frissítésnek  pillanatnyilag "
 "teljesítetlen függőségei vannak, vagy kézzel vannak visszatartva."
 
-#: src/MainWindow.cpp:326
+#: src/MainWindow.cpp:333
 #, kde-format
 msgctxt "@action:intoolbar Return from the preview page"
 msgid "Back"
 msgstr "Vissza"
 
-#: src/MainWindow.cpp:340
+#: src/MainWindow.cpp:347
 #, kde-format
 msgctxt "@action"
 msgid "Preview Changes"
@@ -547,123 +558,119 @@ msgstr "Változtatások megtekintése"
 
 #: src/muonapt/ChangesDialog.cpp:39
 #, fuzzy, kde-format
-#| msgctxt "@title:window"
-#| msgid "Configuration File Changed"
 msgctxt "@title:window"
 msgid "Confirm Additional Changes"
 msgstr "A beállítófájl megváltozott"
 
-#: src/muonapt/ChangesDialog.cpp:44
+#: src/muonapt/ChangesDialog.cpp:43
 #, kde-format
 msgctxt "@info"
 msgid "<h2>Mark additional changes?</h2>"
 msgstr ""
 
-#: src/muonapt/ChangesDialog.cpp:48
+#: src/muonapt/ChangesDialog.cpp:47
 #, fuzzy, kde-format
-#| msgid "Ask to confirm changes that affect other packages"
 msgid "This action requires a change to another package:"
 msgid_plural "This action requires changes to other packages:"
 msgstr[0] "Megerősítés kérése más csomagokat érintő módosítások előtt"
 msgstr[1] "Megerősítés kérése más csomagokat érintő módosítások előtt"
 
-#: src/muonapt/HistoryView/HistoryView.cpp:49
+#: src/muonapt/HistoryView/HistoryView.cpp:55
 #, fuzzy, kde-kuit-format
-#| msgctxt "@info Status information, widget title"
-#| msgid "<title>Waiting</title>"
 msgctxt "@info"
 msgid "<title>History</title>"
 msgstr "<title>Várakozás</title>"
 
-#: src/muonapt/HistoryView/HistoryView.cpp:55
-#: src/PackageModel/PackageWidget.cpp:102
+#: src/muonapt/HistoryView/HistoryView.cpp:61
+#: src/PackageModel/PackageWidget.cpp:100
 #, kde-format
 msgctxt "@label Line edit click message"
 msgid "Search"
 msgstr "Keresés"
 
-#: src/muonapt/HistoryView/HistoryView.cpp:67
+#: src/muonapt/HistoryView/HistoryView.cpp:80
 #, fuzzy, kde-format
-#| msgctxt "@action Applys the changes a user has made"
-#| msgid "Apply Changes"
 msgctxt "@item:inlistbox Filters all changes in the history view"
 msgid "All changes"
 msgstr "Változtatások alkalmazása"
 
-#: src/muonapt/HistoryView/HistoryView.cpp:71
+#: src/muonapt/HistoryView/HistoryView.cpp:84
 #, fuzzy, kde-format
-#| msgctxt "@action:button"
-#| msgid "Installation"
 msgctxt "@item:inlistbox Filters installations in the history view"
 msgid "Installations"
 msgstr "Telepítésre"
 
-#: src/muonapt/HistoryView/HistoryView.cpp:75
+#: src/muonapt/HistoryView/HistoryView.cpp:88
 #, fuzzy, kde-format
-#| msgctxt "Start the update"
-#| msgid "Update"
 msgctxt "@item:inlistbox Filters updates in the history view"
 msgid "Updates"
 msgstr "Frissítés"
 
-#: src/muonapt/HistoryView/HistoryView.cpp:79
+#: src/muonapt/HistoryView/HistoryView.cpp:92
 #, fuzzy, kde-format
-#| msgctxt "@action:button"
-#| msgid "Removal"
+msgctxt "@item:inlistbox Filters reinstallations in the history view"
+msgid "Reinstallations"
+msgstr "Újratelepítésre"
+
+#: src/muonapt/HistoryView/HistoryView.cpp:96
+#, fuzzy, kde-format
+msgctxt "@item:inlistbox Filters downgrades in the history view"
+msgid "Downgrades"
+msgstr "Visszalépés alacsonyabb verzióra"
+
+#: src/muonapt/HistoryView/HistoryView.cpp:100
+#, fuzzy, kde-format
 msgctxt "@item:inlistbox Filters removals in the history view"
 msgid "Removals"
 msgstr "Eltávolításra"
 
-#: src/muonapt/HistoryView/HistoryView.cpp:90
+#: src/muonapt/HistoryView/HistoryView.cpp:114
+#, fuzzy, kde-format
+msgctxt "@title:column"
+msgid "Action"
+msgstr "Hely"
+
+#: src/muonapt/HistoryView/HistoryView.cpp:115
 #, kde-format
 msgctxt "@title:column"
-msgid "Date"
+msgid "Time"
 msgstr ""
 
-#: src/muonapt/HistoryView/HistoryView.cpp:98
+#: src/muonapt/HistoryView/HistoryView.cpp:128
 #, fuzzy, kde-format
-#| msgid "Installed"
 msgctxt "@info:status describes a past-tense action"
 msgid "Installed"
 msgstr "Telepített"
 
-#: src/muonapt/HistoryView/HistoryView.cpp:99
+#: src/muonapt/HistoryView/HistoryView.cpp:129
 #, fuzzy, kde-format
-#| msgid "Upgrade"
 msgctxt "@info:status describes a past-tense action"
 msgid "Upgraded"
 msgstr "Frissítés"
 
-#: src/muonapt/HistoryView/HistoryView.cpp:100
+#: src/muonapt/HistoryView/HistoryView.cpp:130
 #, fuzzy, kde-format
-#| msgid "Downgrade"
 msgctxt "@status describes a past-tense action"
 msgid "Downgraded"
 msgstr "Visszalépés alacsonyabb verzióra"
 
-#: src/muonapt/HistoryView/HistoryView.cpp:101
+#: src/muonapt/HistoryView/HistoryView.cpp:131
 #, fuzzy, kde-format
-#| msgid "Remove"
 msgctxt "@status describes a past-tense action"
 msgid "Removed"
 msgstr "Eltávolítás"
 
-#: src/muonapt/HistoryView/HistoryView.cpp:102
+#: src/muonapt/HistoryView/HistoryView.cpp:132
 #, fuzzy, kde-format
-#| msgid "Purge"
 msgctxt "@status describes a past-tense action"
 msgid "Purged"
 msgstr "Teljes eltávolítás"
 
-#: src/muonapt/HistoryView/HistoryView.cpp:137
-#: src/muonapt/HistoryView/HistoryView.cpp:152
-#: src/muonapt/HistoryView/HistoryView.cpp:167
-#: src/muonapt/HistoryView/HistoryView.cpp:182
-#: src/muonapt/HistoryView/HistoryView.cpp:197
-#, kde-format
-msgctxt "@item example: muon installed at 16:00"
-msgid "%1 %2 at %3"
-msgstr ""
+#: src/muonapt/HistoryView/HistoryView.cpp:133
+#, fuzzy, kde-format
+msgctxt "@status describes a past-tense action"
+msgid "Reinstalled"
+msgstr "Újratelepítés"
 
 #: src/muonapt/MuonStrings.cpp:49
 #, kde-format
@@ -682,8 +689,8 @@ msgstr "Alaprendszer"
 #: src/muonapt/MuonStrings.cpp:53
 #, kde-format
 msgctxt ""
-"@item:inlistbox Human-readable name for the Debian package section \"cli-mono"
-"\""
+"@item:inlistbox Human-readable name for the Debian package section \"cli-"
+"mono\""
 msgid "Mono/CLI Infrastructure"
 msgstr "Mono/CLI infrastruktúra"
 
@@ -697,8 +704,8 @@ msgstr "Kommunikáció"
 #: src/muonapt/MuonStrings.cpp:57
 #, kde-format
 msgctxt ""
-"@item:inlistbox Human-readable name for the Debian package section \"database"
-"\""
+"@item:inlistbox Human-readable name for the Debian package section "
+"\"database\""
 msgid "Databases"
 msgstr "Adatbázisok"
 
@@ -726,8 +733,8 @@ msgstr "Hibakeresés"
 #: src/muonapt/MuonStrings.cpp:65
 #, kde-format
 msgctxt ""
-"@item:inlistbox Human-readable name for the Debian package section \"editors"
-"\""
+"@item:inlistbox Human-readable name for the Debian package section "
+"\"editors\""
 msgid "Editors"
 msgstr "Szerkesztők"
 
@@ -742,8 +749,8 @@ msgstr "Elektronika"
 #: src/muonapt/MuonStrings.cpp:69
 #, kde-format
 msgctxt ""
-"@item:inlistbox Human-readable name for the Debian package section \"embedded"
-"\""
+"@item:inlistbox Human-readable name for the Debian package section "
+"\"embedded\""
 msgid "Embedded Devices"
 msgstr "Beágyazott eszközök"
 
@@ -771,8 +778,8 @@ msgstr "GNOME asztali környezet"
 #: src/muonapt/MuonStrings.cpp:77
 #, kde-format
 msgctxt ""
-"@item:inlistbox Human-readable name for the Debian package section \"graphics"
-"\""
+"@item:inlistbox Human-readable name for the Debian package section "
+"\"graphics\""
 msgid "Graphics"
 msgstr "Grafika"
 
@@ -786,24 +793,24 @@ msgstr "GNU R statisztikai rendszer"
 #: src/muonapt/MuonStrings.cpp:81
 #, kde-format
 msgctxt ""
-"@item:inlistbox Human-readable name for the Debian package section \"gnustep"
-"\""
+"@item:inlistbox Human-readable name for the Debian package section "
+"\"gnustep\""
 msgid "Gnustep Desktop Environment"
 msgstr "Gnustep asztali környezet"
 
 #: src/muonapt/MuonStrings.cpp:83
 #, kde-format
 msgctxt ""
-"@item:inlistbox Human-readable name for the Debian package section \"hamradio"
-"\""
+"@item:inlistbox Human-readable name for the Debian package section "
+"\"hamradio\""
 msgid "Amateur Radio"
 msgstr "Amatőr rádiózás"
 
 #: src/muonapt/MuonStrings.cpp:85
 #, kde-format
 msgctxt ""
-"@item:inlistbox Human-readable name for the Debian package section \"haskell"
-"\""
+"@item:inlistbox Human-readable name for the Debian package section "
+"\"haskell\""
 msgid "Haskell Programming Language"
 msgstr "Haskell programozási nyelv"
 
@@ -846,8 +853,8 @@ msgstr "Kernel és modulok"
 #: src/muonapt/MuonStrings.cpp:97
 #, kde-format
 msgctxt ""
-"@item:inlistbox Human-readable name for the Debian package section \"libdevel"
-"\""
+"@item:inlistbox Human-readable name for the Debian package section "
+"\"libdevel\""
 msgid "Libraries - Development"
 msgstr "Fejlesztői függvénytárak"
 
@@ -918,8 +925,8 @@ msgstr "OCaml programozási nyelv"
 #: src/muonapt/MuonStrings.cpp:117
 #, kde-format
 msgctxt ""
-"@item:inlistbox Human-readable name for the Debian package section \"oldlibs"
-"\""
+"@item:inlistbox Human-readable name for the Debian package section "
+"\"oldlibs\""
 msgid "Libraries - Old"
 msgstr "Elavult függvénytárak"
 
@@ -962,8 +969,8 @@ msgstr "Ruby programozási nyelv"
 #: src/muonapt/MuonStrings.cpp:129
 #, kde-format
 msgctxt ""
-"@item:inlistbox Human-readable name for the Debian package section \"science"
-"\""
+"@item:inlistbox Human-readable name for the Debian package section "
+"\"science\""
 msgid "Science"
 msgstr "Tudomány"
 
@@ -1047,8 +1054,8 @@ msgstr "Zope/Plone-környezet"
 #: src/muonapt/MuonStrings.cpp:153
 #, kde-format
 msgctxt ""
-"@item:inlistbox Human-readable name for the Debian package section \"unknown"
-"\""
+"@item:inlistbox Human-readable name for the Debian package section "
+"\"unknown\""
 msgid "Unknown"
 msgstr "Ismeretlen"
 
@@ -1086,23 +1093,21 @@ msgstr "Exportkorlátozás alatti"
 #: src/muonapt/MuonStrings.cpp:163
 #, kde-format
 msgctxt ""
-"@item:inlistbox Human-readable name for the Debian package section \"non-free"
-"\""
+"@item:inlistbox Human-readable name for the Debian package section \"non-"
+"free\""
 msgid "Non-free"
 msgstr "Nem szabad"
 
 #: src/muonapt/MuonStrings.cpp:165
 #, kde-format
 msgctxt ""
-"@item:inlistbox Human-readable name for the Debian package section \"contrib"
-"\""
+"@item:inlistbox Human-readable name for the Debian package section "
+"\"contrib\""
 msgid "Contrib"
 msgstr "Külső"
 
 #: src/muonapt/MuonStrings.cpp:167
 #, fuzzy, kde-format
-#| msgctxt "@title:column"
-#| msgid "Location"
 msgctxt ""
 "@item:inlistbox Human-readable name for the Debian package section "
 "\"education\""
@@ -1119,42 +1124,36 @@ msgstr ""
 
 #: src/muonapt/MuonStrings.cpp:195
 #, fuzzy, kde-format
-#| msgid "No change"
 msgctxt "@info:status Package state"
 msgid "No Change"
 msgstr "Nincs változás"
 
 #: src/muonapt/MuonStrings.cpp:196 src/muonapt/MuonStrings.cpp:197
 #, fuzzy, kde-format
-#| msgid "Install"
 msgctxt "@info:status Requested action"
 msgid "Install"
 msgstr "Telepítés"
 
 #: src/muonapt/MuonStrings.cpp:198
 #, fuzzy, kde-format
-#| msgid "Reinstall"
 msgctxt "@info:status Requested action"
 msgid "Reinstall"
 msgstr "Újratelepítés"
 
 #: src/muonapt/MuonStrings.cpp:199
 #, fuzzy, kde-format
-#| msgid "Upgrade"
 msgctxt "@info:status Requested action"
 msgid "Upgrade"
 msgstr "Frissítés"
 
 #: src/muonapt/MuonStrings.cpp:200
 #, fuzzy, kde-format
-#| msgid "Downgrade"
 msgctxt "@info:status Requested action"
 msgid "Downgrade"
 msgstr "Visszalépés alacsonyabb verzióra"
 
 #: src/muonapt/MuonStrings.cpp:201
 #, fuzzy, kde-format
-#| msgid "Remove"
 msgctxt "@info:status Requested action"
 msgid "Remove"
 msgstr "Eltávolítás"
@@ -1185,8 +1184,6 @@ msgstr "Törött"
 
 #: src/muonapt/MuonStrings.cpp:206
 #, fuzzy, kde-format
-#| msgctxt "@title:group"
-#| msgid "Installed Version"
 msgctxt "@info:status Package state"
 msgid "Install Broken"
 msgstr "Telepített verzió:"
@@ -1217,15 +1214,12 @@ msgstr "Beállításra vár"
 
 #: src/muonapt/MuonStrings.cpp:211
 #, fuzzy, kde-format
-#| msgctxt "@title:window"
-#| msgid "Download failed"
 msgctxt "@info:status Package state"
 msgid "Not Downloadable"
 msgstr "A letöltés meghiúsult"
 
 #: src/muonapt/MuonStrings.cpp:212
 #, fuzzy, kde-format
-#| msgid "Purge"
 msgctxt "@info:status Requested action"
 msgid "Purge"
 msgstr "Teljes eltávolítás"
@@ -1256,7 +1250,6 @@ msgstr "Telepített (automatikusan eltávolítható)"
 
 #: src/muonapt/MuonStrings.cpp:217 src/muonapt/MuonStrings.cpp:218
 #, fuzzy, kde-format
-#| msgid "Broken"
 msgctxt "@info:status Package state"
 msgid "Policy Broken"
 msgstr "Törött"
@@ -1281,10 +1274,6 @@ msgstr ""
 
 #: src/muonapt/MuonStrings.cpp:243
 #, fuzzy, kde-format
-#| msgctxt ""
-#| "@item:inlistbox Human-readable name for the Debian package section \"comm"
-#| "\""
-#| msgid "Communication"
 msgctxt "@item:inlistbox"
 msgid "Common"
 msgstr "Kommunikáció"
@@ -1309,32 +1298,24 @@ msgstr ""
 
 #: src/muonapt/MuonStrings.cpp:265
 #, fuzzy, kde-format
-#| msgctxt "@title:window"
-#| msgid "Initialization error"
 msgctxt "@title:window"
 msgid "Initialization Error"
 msgstr "Inicializálási hiba"
 
 #: src/muonapt/MuonStrings.cpp:267
 #, fuzzy, kde-format
-#| msgctxt "@title:window"
-#| msgid "Unable to obtain package system lock"
 msgctxt "@title:window"
 msgid "Unable to Obtain Package System Lock"
 msgstr "A csomagrendszer nem zárolható"
 
 #: src/muonapt/MuonStrings.cpp:269
 #, fuzzy, kde-format
-#| msgctxt "@title:window"
-#| msgid "Low disk space"
 msgctxt "@title:window"
 msgid "Low Disk Space"
 msgstr "Kevés a lemezterület"
 
 #: src/muonapt/MuonStrings.cpp:272
 #, fuzzy, kde-format
-#| msgctxt "@action Applys the changes a user has made"
-#| msgid "Apply Changes"
 msgctxt "@title:window"
 msgid "Failed to Apply Changes"
 msgstr "Változtatások alkalmazása"
@@ -1359,10 +1340,6 @@ msgstr "Nem megbízható csomagok"
 
 #: src/muonapt/MuonStrings.cpp:281
 #, fuzzy, kde-format
-#| msgctxt ""
-#| "@item:inlistbox Human-readable name for the Debian package section "
-#| "\"unknown\""
-#| msgid "Unknown"
 msgctxt "@title:window"
 msgid "Unknown Error"
 msgstr "Ismeretlen"
@@ -1399,17 +1376,12 @@ msgstr ""
 
 #: src/muonapt/MuonStrings.cpp:307
 #, fuzzy, kde-format
-#| msgctxt "@info:status"
-#| msgid "Muon is downloading packages"
 msgctxt "@label"
 msgid "Could not download packages"
 msgstr "A Muon csomagokat tölt le"
 
 #: src/muonapt/MuonStrings.cpp:310
 #, fuzzy, kde-format
-#| msgctxt "@label"
-#| msgid "An error occurred while applying changes:"
-#| msgid_plural "The following errors occurred while applying changes:"
 msgctxt "@label"
 msgid "An error occurred while applying changes:"
 msgstr "A következő hibák történtek a változtatások alkalmazása során:"
@@ -1447,83 +1419,80 @@ msgstr[1] ""
 "A szerzők nem ellenőrizték a következő csomagokat. A jelenlegi beállítások "
 "nem engedélyezik a megbízhatatlan csomagok letöltését."
 
-#: src/muonapt/QAptActions.cpp:118
+#: src/muonapt/QAptActions.cpp:119
 #, kde-format
 msgctxt "@action Reverts all potential changes to the cache"
 msgid "Unmark All"
 msgstr "A jelölés megszüntetése"
 
-#: src/muonapt/QAptActions.cpp:125
+#: src/muonapt/QAptActions.cpp:126
 #, kde-format
 msgctxt "@action Opens the software sources configuration dialog"
 msgid "Configure Software Sources"
 msgstr "Szoftverforrások beállítása"
 
-#: src/muonapt/QAptActions.cpp:131
+#: src/muonapt/QAptActions.cpp:132
 #, kde-format
 msgctxt "@action"
 msgid "Read Markings..."
 msgstr "Jelölések olvasása…"
 
-#: src/muonapt/QAptActions.cpp:137
+#: src/muonapt/QAptActions.cpp:138
 #, kde-format
 msgctxt "@action"
 msgid "Save Markings As..."
 msgstr "Jelölések mentése másként…"
 
-#: src/muonapt/QAptActions.cpp:144
+#: src/muonapt/QAptActions.cpp:145
 #, kde-format
 msgctxt "@action"
 msgid "Save Package Download List..."
 msgstr "Letöltött csomagok listájának mentése…"
 
-#: src/muonapt/QAptActions.cpp:151
+#: src/muonapt/QAptActions.cpp:152
 #, kde-format
 msgctxt "@action"
 msgid "Download Packages From List..."
 msgstr "Csomagok letöltése lista alapján…"
 
-#: src/muonapt/QAptActions.cpp:160
+#: src/muonapt/QAptActions.cpp:161
 #, kde-format
 msgctxt "@action"
 msgid "Add Downloaded Packages"
 msgstr "Letöltött csomagok hozzáadása"
 
-#: src/muonapt/QAptActions.cpp:167
+#: src/muonapt/QAptActions.cpp:168
 #, kde-format
 msgctxt "@action"
 msgid "Save Installed Packages List..."
 msgstr "Telepített csomagok listájának mentése…"
 
-#: src/muonapt/QAptActions.cpp:173
+#: src/muonapt/QAptActions.cpp:174
 #, kde-format
 msgctxt "@action::inmenu"
 msgid "History..."
 msgstr "Előzmények…"
 
-#: src/muonapt/QAptActions.cpp:179
+#: src/muonapt/QAptActions.cpp:180
 #, fuzzy, kde-format
-#| msgid "Upgrade"
 msgctxt "@action"
 msgid "Upgrade"
 msgstr "Frissítés"
 
-#: src/muonapt/QAptActions.cpp:182
+#: src/muonapt/QAptActions.cpp:183
 #, fuzzy, kde-format
-#| msgctxt "Notification when a new version of Kubuntu is available"
-#| msgid "A new version of Kubuntu is available"
 msgctxt "Notification when a new version of Kubuntu is available"
 msgid "A new version of Kubuntu is available."
 msgstr "Új Kubuntu kiadás érhető el"
 
-#: src/muonapt/QAptActions.cpp:226
+#: src/muonapt/QAptActions.cpp:227
 #, kde-format
 msgctxt "@title:window"
 msgid "Save Markings As"
 msgstr "Jelölések mentése másként"
 
-#: src/muonapt/QAptActions.cpp:233 src/muonapt/QAptActions.cpp:258
-#: src/muonapt/QAptActions.cpp:282
+#: src/muonapt/QAptActions.cpp:234 src/muonapt/QAptActions.cpp:259
+#: src/muonapt/QAptActions.cpp:283
 #, kde-kuit-format
 msgctxt "@label"
 msgid ""
@@ -1539,27 +1508,25 @@ msgstr ""
 "Ellenőrizze, hogy jogosult-e a fájl írására, vagy elérhető-e elég szabad "
 "lemezterület."
 
-#: src/muonapt/QAptActions.cpp:251
+#: src/muonapt/QAptActions.cpp:252
 #, kde-format
 msgctxt "@title:window"
 msgid "Save Installed Packages List As"
 msgstr "Csomaglita mentése másként"
 
-#: src/muonapt/QAptActions.cpp:275
+#: src/muonapt/QAptActions.cpp:276
 #, fuzzy, kde-format
-#| msgctxt "@action"
-#| msgid "Save Package Download List..."
 msgctxt "@title:window"
 msgid "Save Download List As"
 msgstr "Letöltött csomagok listájának mentése…"
 
-#: src/muonapt/QAptActions.cpp:297 src/muonapt/QAptActions.cpp:314
+#: src/muonapt/QAptActions.cpp:298 src/muonapt/QAptActions.cpp:315
 #, kde-format
 msgctxt "@title:window"
 msgid "Open File"
 msgstr "Fájl megnyitása"
 
-#: src/muonapt/QAptActions.cpp:322
+#: src/muonapt/QAptActions.cpp:323
 #, kde-format
 msgctxt "@label"
 msgid ""
@@ -1569,13 +1536,13 @@ msgstr ""
 "Nem jelölhetők ki a változtatások. Ellenőrizze, hogy a fájl egy, a Muon vagy "
 "a Synaptic csomagkezelő által létrehozott jelölőfájl-e."
 
-#: src/muonapt/QAptActions.cpp:333
+#: src/muonapt/QAptActions.cpp:334
 #, kde-format
 msgctxt "@title:window"
 msgid "Choose a Directory"
 msgstr ""
 
-#: src/muonapt/QAptActions.cpp:356
+#: src/muonapt/QAptActions.cpp:357
 #, kde-format
 msgctxt "@label"
 msgid "%1 package was successfully added to the cache"
@@ -1583,7 +1550,7 @@ msgid_plural "%1 packages were successfully added to the cache"
 msgstr[0] ""
 msgstr[1] ""
 
-#: src/muonapt/QAptActions.cpp:362
+#: src/muonapt/QAptActions.cpp:363
 #, kde-format
 msgctxt "@label"
 msgid ""
@@ -1591,120 +1558,122 @@ msgid ""
 "packages are compatible with your computer and are at the latest version."
 msgstr ""
 
-#: src/muonapt/QAptActions.cpp:366
+#: src/muonapt/QAptActions.cpp:367
 #, fuzzy, kde-format
-#| msgctxt "@title:window"
-#| msgid "Some Packages Could not be Downloaded"
 msgctxt "@title:window"
 msgid "Packages Could Not be Found"
 msgstr "Néhány csomag nem tölthető le"
 
-#: src/muonapt/QAptActions.cpp:398
-#, kde-format
-msgctxt "@label"
+#: src/muonapt/QAptActions.cpp:397
+#, kde-kuit-format
+msgctxt "@info"
 msgid ""
-"Could not find <command>software-properties-kde</command> on your system, "
-"please install it. Alternatively, you can use <application>Plasma Discover</"
-"application> to configure software sources."
+"<para>Could not find <command>software-properties-qt</command> nor "
+"<command>software-properties-kde</command> on your system, please install it."
+"</para>"
 msgstr ""
 
-#: src/muonapt/QAptActions.cpp:403
-#, kde-format
+#: src/muonapt/QAptActions.cpp:401
+#, kde-kuit-format
 msgctxt "@title:window"
-msgid "Cannot find <command>software-properties-kde</command>"
+msgid "Cannot find <command>software-properties-qt</command>"
 msgstr ""
 
-#: src/muonapt/QAptActions.cpp:494
+#: src/muonapt/QAptActions.cpp:410
+#, kde-format
+msgid "pkexec could not be found. Please install polkit-1."
+msgstr ""
+
+#: src/muonapt/QAptActions.cpp:411
+#, kde-format
+msgid "pkexec not found"
+msgstr ""
+
+#: src/muonapt/QAptActions.cpp:517
 #, kde-format
 msgctxt "@title:window"
 msgid "Package History"
 msgstr "Csomagelőzmények"
 
-#: src/PackageModel/PackageModel.cpp:88
+#: src/PackageModel/PackageModel.cpp:93
 #, kde-format
 msgid "Package"
 msgstr "Csomag"
 
-#: src/PackageModel/PackageModel.cpp:90
+#: src/PackageModel/PackageModel.cpp:95
 #, kde-format
 msgid "Status"
 msgstr "Állapot"
 
-#: src/PackageModel/PackageModel.cpp:92
+#: src/PackageModel/PackageModel.cpp:97
 #, kde-format
 msgid "Requested"
 msgstr "Kért"
 
-#: src/PackageModel/PackageModel.cpp:94
+#: src/PackageModel/PackageModel.cpp:99
 #, fuzzy, kde-format
-#| msgctxt "@label Label preceding the package size"
-#| msgid "Installed Size:"
 msgid "Installed Size"
 msgstr "Telepített méret:"
 
-#: src/PackageModel/PackageModel.cpp:96
+#: src/PackageModel/PackageModel.cpp:101
 #, fuzzy, kde-format
-#| msgctxt "@title:group"
-#| msgid "Installed Version"
 msgid "Installed Version"
 msgstr "Telepített verzió:"
 
-#: src/PackageModel/PackageModel.cpp:98
+#: src/PackageModel/PackageModel.cpp:103
 #, fuzzy, kde-format
-#| msgctxt "@title:group"
-#| msgid "Available Version"
 msgid "Available Version"
 msgstr "Elérhető verzió"
 
-#: src/PackageModel/PackageWidget.cpp:166
+#: src/PackageModel/PackageWidget.cpp:161
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Mark for Installation"
 msgstr "Telepítésre"
 
-#: src/PackageModel/PackageWidget.cpp:171
+#: src/PackageModel/PackageWidget.cpp:166
 #, kde-format
 msgctxt "@action:button"
 msgid "Mark for Removal"
 msgstr "Eltávolításra"
 
-#: src/PackageModel/PackageWidget.cpp:176
+#: src/PackageModel/PackageWidget.cpp:171
 #, kde-format
 msgctxt "@action:button"
 msgid "Mark for Upgrade"
 msgstr "Frissítésre"
 
-#: src/PackageModel/PackageWidget.cpp:181
+#: src/PackageModel/PackageWidget.cpp:176
 #, kde-format
 msgctxt "@action:button"
 msgid "Mark for Reinstallation"
 msgstr "Újratelepítésre"
 
-#: src/PackageModel/PackageWidget.cpp:186
+#: src/PackageModel/PackageWidget.cpp:181
 #, kde-format
 msgctxt "@action:button"
 msgid "Mark for Purge"
 msgstr "Teljes eltávolításra"
 
-#: src/PackageModel/PackageWidget.cpp:197
+#: src/PackageModel/PackageWidget.cpp:192
 #, kde-format
 msgctxt "@action:button"
 msgid "Lock Package at Current Version"
 msgstr "Jelenlegi csomagverzió zárolása"
 
-#: src/PackageModel/PackageWidget.cpp:377
+#: src/PackageModel/PackageWidget.cpp:373
 #, kde-format
 msgctxt "@action:button"
 msgid "Unlock package"
 msgstr "Csomag feloldása"
 
-#: src/PackageModel/PackageWidget.cpp:381
+#: src/PackageModel/PackageWidget.cpp:377
 #, kde-format
 msgctxt "@action:button"
 msgid "Lock at Current Version"
 msgstr "Jelenlegi verzió zárolása"
 
-#: src/PackageModel/PackageWidget.cpp:422
+#: src/PackageModel/PackageWidget.cpp:418
 #, kde-format
 msgctxt "@label"
 msgid ""
@@ -1713,37 +1682,37 @@ msgid ""
 msgstr ""
 "Ezen csomag eltávolítása károsíthatja a rendszerét. Biztosan eltávolítja?"
 
-#: src/PackageModel/PackageWidget.cpp:423
+#: src/PackageModel/PackageWidget.cpp:419
 #, kde-format
 msgctxt "@label"
 msgid "Warning - Removing Important Package"
 msgstr "Figyelmeztetés - Fontos csomag eltávolítása"
 
-#: src/PackageModel/PackageWidget.cpp:609
+#: src/PackageModel/PackageWidget.cpp:605
 #, kde-format
 msgctxt "@title:window"
 msgid "Failed to Lock Package"
 msgstr "A csomag zárolása nem sikerült"
 
-#: src/PackageModel/PackageWidget.cpp:610
+#: src/PackageModel/PackageWidget.cpp:606
 #, kde-format
 msgctxt "@info Error text"
 msgid "The package %1 could not be locked. Failed to write lock file."
 msgstr "A(z) %1 csomag nem zárolható. Nem sikerült a zárolási fájl írása."
 
-#: src/PackageModel/PackageWidget.cpp:659
+#: src/PackageModel/PackageWidget.cpp:656
 #, kde-format
 msgctxt "@label"
 msgid "The \"%1\" package could not be marked for installation or upgrade:"
 msgstr "A(z) „%1” csomag nem jelölhető ki telepítésre vagy frissítésre:"
 
-#: src/PackageModel/PackageWidget.cpp:662
+#: src/PackageModel/PackageWidget.cpp:659
 #, kde-format
 msgctxt "@title:window"
 msgid "Unable to Mark Package"
 msgstr "A csomag nem jelölhető ki"
 
-#: src/PackageModel/PackageWidget.cpp:679
+#: src/PackageModel/PackageWidget.cpp:676
 #, kde-format
 msgctxt "@label"
 msgid ""
@@ -1757,19 +1726,19 @@ msgstr ""
 "töltötték fel, elavult, vagy nem érhető el a jelenleg engedélyezett "
 "tárolókból."
 
-#: src/PackageModel/PackageWidget.cpp:686
+#: src/PackageModel/PackageWidget.cpp:683
 #, kde-format
 msgctxt "@label Example: Depends: libqapt 0.1, but 0.2 is to be installed"
 msgid "%1: %2 %3, but %4 is to be installed"
 msgstr "%1: %2, %3, de %4 kerül telepítésre"
 
-#: src/PackageModel/PackageWidget.cpp:692
+#: src/PackageModel/PackageWidget.cpp:689
 #, kde-format
 msgctxt "@label Example: Depends: libqapt, but is not installable"
 msgid "%1: %2, but it is not installable"
 msgstr "%1: %2, de az nem telepíthető"
 
-#: src/PackageModel/PackageWidget.cpp:697
+#: src/PackageModel/PackageWidget.cpp:694
 #, kde-format
 msgctxt "@label Example: Depends: libqapt, but it is a virtual package"
 msgid "%1: %2, but it is a virtual package"
@@ -1786,7 +1755,7 @@ msgctxt "@info:status"
 msgid "Rebuilding Search Index"
 msgstr "Keresési index újraépítése"
 
-#: src/StatusWidget.cpp:93
+#: src/StatusWidget.cpp:95
 #, kde-format
 msgctxt "@info:status"
 msgid "1 package available, "
@@ -1794,31 +1763,31 @@ msgid_plural "%1 packages available, "
 msgstr[0] "1 csomag érhető el, "
 msgstr[1] "%1 csomag érhető el, "
 
-#: src/StatusWidget.cpp:94
+#: src/StatusWidget.cpp:96
 #, kde-format
 msgctxt "@info:status"
 msgid "%1 installed, "
 msgstr "%1 telepített, "
 
-#: src/StatusWidget.cpp:98
+#: src/StatusWidget.cpp:100
 #, kde-format
 msgctxt "@info:status"
 msgid "%1 upgradeable,"
 msgstr "%1 frissíthető,"
 
-#: src/StatusWidget.cpp:100
+#: src/StatusWidget.cpp:102
 #, kde-format
 msgctxt "@info:status"
 msgid "%1 upgradeable"
 msgstr "%1 frissíthető"
 
-#: src/StatusWidget.cpp:112
+#: src/StatusWidget.cpp:114
 #, kde-format
 msgctxt "@info:status Part of the status label"
 msgid " %1 to install/upgrade"
 msgstr " %1 telepítendő/frissítendő"
 
-#: src/StatusWidget.cpp:117
+#: src/StatusWidget.cpp:119
 #, kde-format
 msgctxt ""
 "@info:status Label for the number of packages pending removal when packages "
@@ -1826,7 +1795,7 @@ msgctxt ""
 msgid ", %1 to remove"
 msgstr ", %1 eltávolítandó"
 
-#: src/StatusWidget.cpp:120
+#: src/StatusWidget.cpp:122
 #, kde-format
 msgctxt ""
 "@info:status Label for the number of packages pending removal when there are "
@@ -1834,13 +1803,13 @@ msgctxt ""
 msgid " %1 to remove"
 msgstr " %1 eltávolítandó"
 
-#: src/StatusWidget.cpp:129
+#: src/StatusWidget.cpp:131
 #, kde-format
 msgctxt "@label showing download and install size"
 msgid "%1 to download, %2 of space to be freed"
 msgstr "%1 letöltendő, %2 hely szabadul fel"
 
-#: src/StatusWidget.cpp:133
+#: src/StatusWidget.cpp:135
 #, kde-format
 msgctxt "@label showing download and install size"
 msgid "%1 to download, %2 of space to be used"

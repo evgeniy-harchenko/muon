@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2018-03-15 03:18+0100\n"
+"POT-Creation-Date: 2025-03-19 13:45+0200\n"
 "PO-Revision-Date: 2016-01-28 18:48+0200\n"
 "Last-Translator: Marek Laane <qiilaq69@gmail.com>\n"
 "Language-Team: Estonian <kde-et@linux.ee>\n"
@@ -17,63 +17,73 @@ msgstr ""
 "X-Generator: Lokalize 1.5\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
+#. i18n: file: src/config/muon.kcfg:9
+#. i18n: ectx: label, entry (SplitterSizes), group (muon)
+#: rc.cpp:3
+#, kde-format
+msgid "How the main window is divided."
+msgstr "Kuidas jagada peaaken."
+
+#. i18n: file: src/config/muon.kcfg:12
+#. i18n: ectx: label, entry (Width), group (muon)
+#: rc.cpp:6
+#, kde-format
+msgid "Width of the main window."
+msgstr "Peaakna laius."
+
+#. i18n: file: src/config/muon.kcfg:16
+#. i18n: ectx: label, entry (Height), group (muon)
+#: rc.cpp:9
+#, kde-format
+msgid "Height of the main window."
+msgstr "Peaakna kõrgus."
+
+#. i18n: file: src/config/muon.kcfg:20
+#. i18n: ectx: label, entry (UndoStackSize), group (muon)
+#: rc.cpp:12
+#, kde-format
+msgid "The amount of history kept for undo/redo."
+msgstr "Tagasivõtmisteks/uuestitegemisteks säilitatava ajaloo suurus."
+
+#. i18n: file: src/config/muon.kcfg:24
+#. i18n: ectx: label, entry (AskChanges), group (muon)
+#: rc.cpp:15
+#, kde-format
+msgid "Whether or not to confirm additional changes."
+msgstr "Täiendavate muudatuste kinnitamine või kinnitamata jätmine."
+
+#. i18n: file: src/config/muon.kcfg:28
+#. i18n: ectx: label, entry (ShowMultiArchDupes), group (muon)
+#: rc.cpp:18
+#, kde-format
+msgid "Show foreign architecture packages also available natively."
+msgstr "Natiivselt saadaolevate võõra arhitektuuriga pakettide näitamine."
+
+#. i18n: file: src/config/muon.kcfg:32
+#. i18n: ectx: label, entry (ManagerListColumns), group (muon)
+#: rc.cpp:21
+#, kde-format
+msgid "Status of columns in the manager list of packages."
+msgstr ""
+
+#. i18n: file: src/config/muon.kcfg:36
+#. i18n: ectx: label, entry (ReviewListColumns), group (muon)
+#: rc.cpp:24
+#, kde-format
+msgid "Status of columns in the changes review list of packages."
+msgstr ""
+
+#: rc.cpp:25
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
 msgstr "Marek Laane"
 
+#: rc.cpp:26
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "qiilaq69@gmail.com"
-
-#. i18n: ectx: label, entry (SplitterSizes), group (muon)
-#: muonrc.cpp:3 src/config/muon.kcfg:9
-#, kde-format
-msgid "How the main window is divided."
-msgstr "Kuidas jagada peaaken."
-
-#. i18n: ectx: label, entry (Width), group (muon)
-#: muonrc.cpp:6 src/config/muon.kcfg:12
-#, kde-format
-msgid "Width of the main window."
-msgstr "Peaakna laius."
-
-#. i18n: ectx: label, entry (Height), group (muon)
-#: muonrc.cpp:9 src/config/muon.kcfg:16
-#, kde-format
-msgid "Height of the main window."
-msgstr "Peaakna kõrgus."
-
-#. i18n: ectx: label, entry (UndoStackSize), group (muon)
-#: muonrc.cpp:12 src/config/muon.kcfg:20
-#, kde-format
-msgid "The amount of history kept for undo/redo."
-msgstr "Tagasivõtmisteks/uuestitegemisteks säilitatava ajaloo suurus."
-
-#. i18n: ectx: label, entry (AskChanges), group (muon)
-#: muonrc.cpp:15 src/config/muon.kcfg:24
-#, kde-format
-msgid "Whether or not to confirm additional changes."
-msgstr "Täiendavate muudatuste kinnitamine või kinnitamata jätmine."
-
-#. i18n: ectx: label, entry (ShowMultiArchDupes), group (muon)
-#: muonrc.cpp:18 src/config/muon.kcfg:28
-#, kde-format
-msgid "Show foreign architecture packages also available natively."
-msgstr "Natiivselt saadaolevate võõra arhitektuuriga pakettide näitamine."
-
-#. i18n: ectx: label, entry (ManagerListColumns), group (muon)
-#: muonrc.cpp:21 src/config/muon.kcfg:32
-#, kde-format
-msgid "Status of columns in the manager list of packages."
-msgstr ""
-
-#. i18n: ectx: label, entry (ReviewListColumns), group (muon)
-#: muonrc.cpp:24 src/config/muon.kcfg:36
-#, kde-format
-msgid "Status of columns in the changes review list of packages."
-msgstr ""
 
 #: src/config/GeneralSettingsPage.cpp:51
 #, kde-format
@@ -110,32 +120,32 @@ msgstr "Puhverdatud iganenud pakettide hävitamise intervall:"
 msgid "Number of undo operations:"
 msgstr "Tagasivõtmistoimingute arv:"
 
-#: src/config/GeneralSettingsPage.cpp:160
+#: src/config/GeneralSettingsPage.cpp:161
 #, kde-format
 msgid " day"
 msgid_plural " days"
 msgstr[0] " päev"
 msgstr[1] " päeva"
 
-#: src/config/ManagerSettingsDialog.cpp:40
+#: src/config/ManagerSettingsDialog.cpp:41
 #, kde-format
 msgctxt "@title:window"
 msgid "Muon Preferences"
 msgstr "Muoni seadistused"
 
-#: src/config/ManagerSettingsDialog.cpp:47
+#: src/config/ManagerSettingsDialog.cpp:59
 #, kde-format
 msgctxt "@title:group Title of the general group"
 msgid "General"
 msgstr "Üldine"
 
-#: src/DetailsTabs/ChangelogTab.cpp:45
+#: src/DetailsTabs/ChangelogTab.cpp:44
 #, kde-format
 msgctxt "@title:tab"
 msgid "Changes List"
 msgstr "Muutuste nimekiri"
 
-#: src/DetailsTabs/ChangelogTab.cpp:94
+#: src/DetailsTabs/ChangelogTab.cpp:90
 #, kde-kuit-format
 msgctxt "@info/rich"
 msgid ""
@@ -145,7 +155,7 @@ msgstr ""
 "Muutuste nimekiri pole veel kättesaadav. Palun kasuta selle asemel <link "
 "url='%1'>Launchpadi</link>."
 
-#: src/DetailsTabs/ChangelogTab.cpp:98
+#: src/DetailsTabs/ChangelogTab.cpp:94
 #, kde-format
 msgctxt "@info"
 msgid "The list of changes is not yet available."
@@ -205,7 +215,7 @@ msgctxt "@title:tab"
 msgid "Installed Files"
 msgstr "Paigaldatud failid"
 
-#: src/DetailsTabs/MainTab.cpp:43
+#: src/DetailsTabs/MainTab.cpp:42
 #, kde-format
 msgctxt "@title:tab"
 msgid "Details"
@@ -247,19 +257,19 @@ msgctxt "@action:button"
 msgid "Purge"
 msgstr "Kustutamine"
 
-#: src/DetailsTabs/MainTab.cpp:102 src/PackageModel/PackageWidget.cpp:191
+#: src/DetailsTabs/MainTab.cpp:102 src/PackageModel/PackageWidget.cpp:186
 #, kde-format
 msgctxt "@action:button"
 msgid "Unmark"
 msgstr "Eemalda märgistus"
 
-#: src/DetailsTabs/MainTab.cpp:188
+#: src/DetailsTabs/MainTab.cpp:194
 #, kde-format
 msgctxt "@info Tells how long Canonical, Ltd. will support a package"
 msgid "Canonical provides critical updates for %1 until %2."
 msgstr "Canonical pakub paketile %1 kriitilisi uuendusi kuni %2."
 
-#: src/DetailsTabs/MainTab.cpp:192
+#: src/DetailsTabs/MainTab.cpp:198
 #, kde-format
 msgctxt "@info Tells how long Canonical, Ltd. will support a package"
 msgid ""
@@ -373,6 +383,7 @@ msgid "Done"
 msgstr "Valmis"
 
 #: src/DownloadModel/DownloadModel.cpp:60
+#: src/muonapt/HistoryView/HistoryView.cpp:113
 #, kde-format
 msgctxt "@title:column"
 msgid "Package"
@@ -398,7 +409,7 @@ msgstr "Edenemine"
 
 #: src/FilterWidget/ArchitectureFilter.cpp:47
 #: src/FilterWidget/CategoryFilter.cpp:57 src/FilterWidget/OriginFilter.cpp:42
-#: src/FilterWidget/StatusFilter.cpp:43 src/ManagerWidget.cpp:69
+#: src/FilterWidget/StatusFilter.cpp:43 src/ManagerWidget.cpp:70
 #, kde-format
 msgctxt "@item:inlistbox Item that resets the filter to \"all\""
 msgid "All"
@@ -464,13 +475,13 @@ msgstr ""
 msgid "Top Gardener"
 msgstr ""
 
-#: src/MainWindow.cpp:180
+#: src/MainWindow.cpp:187
 #, kde-format
 msgctxt "@action Marks upgradeable packages for upgrade"
 msgid "Cautious Upgrade"
 msgstr "Ettevaatlik uuendamine"
 
-#: src/MainWindow.cpp:186
+#: src/MainWindow.cpp:193
 #, kde-format
 msgctxt ""
 "@action Marks upgradeable packages, including ones that install/remove new "
@@ -478,31 +489,31 @@ msgctxt ""
 msgid "Full Upgrade"
 msgstr "Täielik uuendamine"
 
-#: src/MainWindow.cpp:192
+#: src/MainWindow.cpp:199
 #, kde-format
 msgctxt "@action Marks packages no longer needed for removal"
 msgid "Remove Unnecessary Packages"
 msgstr "Ebavajalike pakettide eemaldamine"
 
-#: src/MainWindow.cpp:197
+#: src/MainWindow.cpp:204
 #, kde-format
 msgctxt "@action Takes the user to the preview page"
 msgid "Preview Changes"
 msgstr "Vaata muutusi"
 
-#: src/MainWindow.cpp:202
+#: src/MainWindow.cpp:209
 #, kde-format
 msgctxt "@action Applys the changes a user has made"
 msgid "Apply Changes"
 msgstr "Rakenda muudatused"
 
-#: src/MainWindow.cpp:207
+#: src/MainWindow.cpp:214
 #, kde-format
 msgctxt "@action Checks the Internet for updates"
 msgid "Check for Updates"
 msgstr "Otsi uuendusi"
 
-#: src/MainWindow.cpp:233
+#: src/MainWindow.cpp:240
 #, kde-kuit-format
 msgctxt "@label"
 msgid ""
@@ -515,13 +526,13 @@ msgstr ""
 "täielikku uuendamist, milleks klõpsa nupule <interface>Täielik uuendamine</"
 "interface>."
 
-#: src/MainWindow.cpp:238 src/MainWindow.cpp:253
+#: src/MainWindow.cpp:245 src/MainWindow.cpp:260
 #, kde-format
 msgctxt "@title:window"
 msgid "Unable to Mark Upgrades"
 msgstr "Uuendamiseks märkimine nurjus"
 
-#: src/MainWindow.cpp:250
+#: src/MainWindow.cpp:257
 #, kde-format
 msgctxt "@label"
 msgid ""
@@ -531,13 +542,13 @@ msgstr ""
 "Uuendamiseks märkimine ei ole võimalik. Mõnel uuendusel võivad olla "
 "sõltuvused praegu rahuldamata või on nende uuendamine otseselt keelatud."
 
-#: src/MainWindow.cpp:326
+#: src/MainWindow.cpp:333
 #, kde-format
 msgctxt "@action:intoolbar Return from the preview page"
 msgid "Back"
 msgstr "Tagasi"
 
-#: src/MainWindow.cpp:340
+#: src/MainWindow.cpp:347
 #, kde-format
 msgctxt "@action"
 msgid "Preview Changes"
@@ -545,123 +556,119 @@ msgstr "Vaata muutusi"
 
 #: src/muonapt/ChangesDialog.cpp:39
 #, fuzzy, kde-format
-#| msgctxt "@title:window"
-#| msgid "Configuration File Changed"
 msgctxt "@title:window"
 msgid "Confirm Additional Changes"
 msgstr "Seadistusfaili on muudetud"
 
-#: src/muonapt/ChangesDialog.cpp:44
+#: src/muonapt/ChangesDialog.cpp:43
 #, kde-format
 msgctxt "@info"
 msgid "<h2>Mark additional changes?</h2>"
 msgstr ""
 
-#: src/muonapt/ChangesDialog.cpp:48
+#: src/muonapt/ChangesDialog.cpp:47
 #, fuzzy, kde-format
-#| msgid "Ask to confirm changes that affect other packages"
 msgid "This action requires a change to another package:"
 msgid_plural "This action requires changes to other packages:"
 msgstr[0] "Kinnituse küsimine teisi pakette mõjutavate muutuste korral"
 msgstr[1] "Kinnituse küsimine teisi pakette mõjutavate muutuste korral"
 
-#: src/muonapt/HistoryView/HistoryView.cpp:49
+#: src/muonapt/HistoryView/HistoryView.cpp:55
 #, fuzzy, kde-kuit-format
-#| msgctxt "@info Status information, widget title"
-#| msgid "<title>Waiting</title>"
 msgctxt "@info"
 msgid "<title>History</title>"
 msgstr "<title>Ootamine</title>"
 
-#: src/muonapt/HistoryView/HistoryView.cpp:55
-#: src/PackageModel/PackageWidget.cpp:102
+#: src/muonapt/HistoryView/HistoryView.cpp:61
+#: src/PackageModel/PackageWidget.cpp:100
 #, kde-format
 msgctxt "@label Line edit click message"
 msgid "Search"
 msgstr "Otsing"
 
-#: src/muonapt/HistoryView/HistoryView.cpp:67
+#: src/muonapt/HistoryView/HistoryView.cpp:80
 #, fuzzy, kde-format
-#| msgctxt "@action Applys the changes a user has made"
-#| msgid "Apply Changes"
 msgctxt "@item:inlistbox Filters all changes in the history view"
 msgid "All changes"
 msgstr "Rakenda muudatused"
 
-#: src/muonapt/HistoryView/HistoryView.cpp:71
+#: src/muonapt/HistoryView/HistoryView.cpp:84
 #, fuzzy, kde-format
-#| msgctxt "@action:button"
-#| msgid "Installation"
 msgctxt "@item:inlistbox Filters installations in the history view"
 msgid "Installations"
 msgstr "Paigaldamine"
 
-#: src/muonapt/HistoryView/HistoryView.cpp:75
+#: src/muonapt/HistoryView/HistoryView.cpp:88
 #, fuzzy, kde-format
-#| msgctxt "Start the update"
-#| msgid "Update"
 msgctxt "@item:inlistbox Filters updates in the history view"
 msgid "Updates"
 msgstr "Uuenda"
 
-#: src/muonapt/HistoryView/HistoryView.cpp:79
+#: src/muonapt/HistoryView/HistoryView.cpp:92
 #, fuzzy, kde-format
-#| msgctxt "@action:button"
-#| msgid "Removal"
+msgctxt "@item:inlistbox Filters reinstallations in the history view"
+msgid "Reinstallations"
+msgstr "Taaspaigaldamine"
+
+#: src/muonapt/HistoryView/HistoryView.cpp:96
+#, fuzzy, kde-format
+msgctxt "@item:inlistbox Filters downgrades in the history view"
+msgid "Downgrades"
+msgstr "Paigalda varasem versioon"
+
+#: src/muonapt/HistoryView/HistoryView.cpp:100
+#, fuzzy, kde-format
 msgctxt "@item:inlistbox Filters removals in the history view"
 msgid "Removals"
 msgstr "Eemaldamine"
 
-#: src/muonapt/HistoryView/HistoryView.cpp:90
+#: src/muonapt/HistoryView/HistoryView.cpp:114
+#, fuzzy, kde-format
+msgctxt "@title:column"
+msgid "Action"
+msgstr "Asukoht"
+
+#: src/muonapt/HistoryView/HistoryView.cpp:115
 #, kde-format
 msgctxt "@title:column"
-msgid "Date"
+msgid "Time"
 msgstr ""
 
-#: src/muonapt/HistoryView/HistoryView.cpp:98
+#: src/muonapt/HistoryView/HistoryView.cpp:128
 #, fuzzy, kde-format
-#| msgid "Installed"
 msgctxt "@info:status describes a past-tense action"
 msgid "Installed"
 msgstr "Paigaldatud"
 
-#: src/muonapt/HistoryView/HistoryView.cpp:99
+#: src/muonapt/HistoryView/HistoryView.cpp:129
 #, fuzzy, kde-format
-#| msgid "Upgrade"
 msgctxt "@info:status describes a past-tense action"
 msgid "Upgraded"
 msgstr "Uuenda"
 
-#: src/muonapt/HistoryView/HistoryView.cpp:100
+#: src/muonapt/HistoryView/HistoryView.cpp:130
 #, fuzzy, kde-format
-#| msgid "Downgrade"
 msgctxt "@status describes a past-tense action"
 msgid "Downgraded"
 msgstr "Paigalda varasem versioon"
 
-#: src/muonapt/HistoryView/HistoryView.cpp:101
+#: src/muonapt/HistoryView/HistoryView.cpp:131
 #, fuzzy, kde-format
-#| msgid "Remove"
 msgctxt "@status describes a past-tense action"
 msgid "Removed"
 msgstr "Eemalda"
 
-#: src/muonapt/HistoryView/HistoryView.cpp:102
+#: src/muonapt/HistoryView/HistoryView.cpp:132
 #, fuzzy, kde-format
-#| msgid "Purge"
 msgctxt "@status describes a past-tense action"
 msgid "Purged"
 msgstr "Kustuta"
 
-#: src/muonapt/HistoryView/HistoryView.cpp:137
-#: src/muonapt/HistoryView/HistoryView.cpp:152
-#: src/muonapt/HistoryView/HistoryView.cpp:167
-#: src/muonapt/HistoryView/HistoryView.cpp:182
-#: src/muonapt/HistoryView/HistoryView.cpp:197
-#, kde-format
-msgctxt "@item example: muon installed at 16:00"
-msgid "%1 %2 at %3"
-msgstr ""
+#: src/muonapt/HistoryView/HistoryView.cpp:133
+#, fuzzy, kde-format
+msgctxt "@status describes a past-tense action"
+msgid "Reinstalled"
+msgstr "Taaspaigalda"
 
 #: src/muonapt/MuonStrings.cpp:49
 #, kde-format
@@ -680,8 +687,8 @@ msgstr "Baassüsteem"
 #: src/muonapt/MuonStrings.cpp:53
 #, kde-format
 msgctxt ""
-"@item:inlistbox Human-readable name for the Debian package section \"cli-mono"
-"\""
+"@item:inlistbox Human-readable name for the Debian package section \"cli-"
+"mono\""
 msgid "Mono/CLI Infrastructure"
 msgstr "Mono/CLI infrastruktuur"
 
@@ -695,8 +702,8 @@ msgstr "Side"
 #: src/muonapt/MuonStrings.cpp:57
 #, kde-format
 msgctxt ""
-"@item:inlistbox Human-readable name for the Debian package section \"database"
-"\""
+"@item:inlistbox Human-readable name for the Debian package section "
+"\"database\""
 msgid "Databases"
 msgstr "Andmebaasid"
 
@@ -724,8 +731,8 @@ msgstr "Silumine"
 #: src/muonapt/MuonStrings.cpp:65
 #, kde-format
 msgctxt ""
-"@item:inlistbox Human-readable name for the Debian package section \"editors"
-"\""
+"@item:inlistbox Human-readable name for the Debian package section "
+"\"editors\""
 msgid "Editors"
 msgstr "Redaktorid"
 
@@ -740,8 +747,8 @@ msgstr "Elektroonika"
 #: src/muonapt/MuonStrings.cpp:69
 #, kde-format
 msgctxt ""
-"@item:inlistbox Human-readable name for the Debian package section \"embedded"
-"\""
+"@item:inlistbox Human-readable name for the Debian package section "
+"\"embedded\""
 msgid "Embedded Devices"
 msgstr "Sardseadmed"
 
@@ -769,8 +776,8 @@ msgstr "GNOME töökeskkond"
 #: src/muonapt/MuonStrings.cpp:77
 #, kde-format
 msgctxt ""
-"@item:inlistbox Human-readable name for the Debian package section \"graphics"
-"\""
+"@item:inlistbox Human-readable name for the Debian package section "
+"\"graphics\""
 msgid "Graphics"
 msgstr "Graafika"
 
@@ -784,24 +791,24 @@ msgstr "GNU R statistikasüsteem"
 #: src/muonapt/MuonStrings.cpp:81
 #, kde-format
 msgctxt ""
-"@item:inlistbox Human-readable name for the Debian package section \"gnustep"
-"\""
+"@item:inlistbox Human-readable name for the Debian package section "
+"\"gnustep\""
 msgid "Gnustep Desktop Environment"
 msgstr "Gnustepi töökeskkond"
 
 #: src/muonapt/MuonStrings.cpp:83
 #, kde-format
 msgctxt ""
-"@item:inlistbox Human-readable name for the Debian package section \"hamradio"
-"\""
+"@item:inlistbox Human-readable name for the Debian package section "
+"\"hamradio\""
 msgid "Amateur Radio"
 msgstr "Amatöörraadio"
 
 #: src/muonapt/MuonStrings.cpp:85
 #, kde-format
 msgctxt ""
-"@item:inlistbox Human-readable name for the Debian package section \"haskell"
-"\""
+"@item:inlistbox Human-readable name for the Debian package section "
+"\"haskell\""
 msgid "Haskell Programming Language"
 msgstr "Haskelli programmeerimiskeel"
 
@@ -844,8 +851,8 @@ msgstr "Kernel ja moodulid"
 #: src/muonapt/MuonStrings.cpp:97
 #, kde-format
 msgctxt ""
-"@item:inlistbox Human-readable name for the Debian package section \"libdevel"
-"\""
+"@item:inlistbox Human-readable name for the Debian package section "
+"\"libdevel\""
 msgid "Libraries - Development"
 msgstr "Teegid - arendus"
 
@@ -916,8 +923,8 @@ msgstr "OCamli programmeerimiskeel"
 #: src/muonapt/MuonStrings.cpp:117
 #, kde-format
 msgctxt ""
-"@item:inlistbox Human-readable name for the Debian package section \"oldlibs"
-"\""
+"@item:inlistbox Human-readable name for the Debian package section "
+"\"oldlibs\""
 msgid "Libraries - Old"
 msgstr "Teegid - vana"
 
@@ -960,8 +967,8 @@ msgstr "Ruby programmeerimiskeel"
 #: src/muonapt/MuonStrings.cpp:129
 #, kde-format
 msgctxt ""
-"@item:inlistbox Human-readable name for the Debian package section \"science"
-"\""
+"@item:inlistbox Human-readable name for the Debian package section "
+"\"science\""
 msgid "Science"
 msgstr "Teadus"
 
@@ -1045,8 +1052,8 @@ msgstr "Zope/Plone'i keskkond"
 #: src/muonapt/MuonStrings.cpp:153
 #, kde-format
 msgctxt ""
-"@item:inlistbox Human-readable name for the Debian package section \"unknown"
-"\""
+"@item:inlistbox Human-readable name for the Debian package section "
+"\"unknown\""
 msgid "Unknown"
 msgstr "Tundmatu"
 
@@ -1084,23 +1091,21 @@ msgstr "Ekspordipiiranguga"
 #: src/muonapt/MuonStrings.cpp:163
 #, kde-format
 msgctxt ""
-"@item:inlistbox Human-readable name for the Debian package section \"non-free"
-"\""
+"@item:inlistbox Human-readable name for the Debian package section \"non-"
+"free\""
 msgid "Non-free"
 msgstr "Mittevaba"
 
 #: src/muonapt/MuonStrings.cpp:165
 #, kde-format
 msgctxt ""
-"@item:inlistbox Human-readable name for the Debian package section \"contrib"
-"\""
+"@item:inlistbox Human-readable name for the Debian package section "
+"\"contrib\""
 msgid "Contrib"
 msgstr "Contrib"
 
 #: src/muonapt/MuonStrings.cpp:167
 #, fuzzy, kde-format
-#| msgctxt "@title:column"
-#| msgid "Location"
 msgctxt ""
 "@item:inlistbox Human-readable name for the Debian package section "
 "\"education\""
@@ -1117,42 +1122,36 @@ msgstr ""
 
 #: src/muonapt/MuonStrings.cpp:195
 #, fuzzy, kde-format
-#| msgid "No change"
 msgctxt "@info:status Package state"
 msgid "No Change"
 msgstr "Muutusteta"
 
 #: src/muonapt/MuonStrings.cpp:196 src/muonapt/MuonStrings.cpp:197
 #, fuzzy, kde-format
-#| msgid "Install"
 msgctxt "@info:status Requested action"
 msgid "Install"
 msgstr "Paigalda"
 
 #: src/muonapt/MuonStrings.cpp:198
 #, fuzzy, kde-format
-#| msgid "Reinstall"
 msgctxt "@info:status Requested action"
 msgid "Reinstall"
 msgstr "Taaspaigalda"
 
 #: src/muonapt/MuonStrings.cpp:199
 #, fuzzy, kde-format
-#| msgid "Upgrade"
 msgctxt "@info:status Requested action"
 msgid "Upgrade"
 msgstr "Uuenda"
 
 #: src/muonapt/MuonStrings.cpp:200
 #, fuzzy, kde-format
-#| msgid "Downgrade"
 msgctxt "@info:status Requested action"
 msgid "Downgrade"
 msgstr "Paigalda varasem versioon"
 
 #: src/muonapt/MuonStrings.cpp:201
 #, fuzzy, kde-format
-#| msgid "Remove"
 msgctxt "@info:status Requested action"
 msgid "Remove"
 msgstr "Eemalda"
@@ -1183,8 +1182,6 @@ msgstr "Katki"
 
 #: src/muonapt/MuonStrings.cpp:206
 #, fuzzy, kde-format
-#| msgctxt "@title:group"
-#| msgid "Installed Version"
 msgctxt "@info:status Package state"
 msgid "Install Broken"
 msgstr "Paigaldatud versioon"
@@ -1215,15 +1212,12 @@ msgstr "Pärandseadistus"
 
 #: src/muonapt/MuonStrings.cpp:211
 #, fuzzy, kde-format
-#| msgctxt "@title:window"
-#| msgid "Download failed"
 msgctxt "@info:status Package state"
 msgid "Not Downloadable"
 msgstr "Allalaadimine nurjus"
 
 #: src/muonapt/MuonStrings.cpp:212
 #, fuzzy, kde-format
-#| msgid "Purge"
 msgctxt "@info:status Requested action"
 msgid "Purge"
 msgstr "Kustuta"
@@ -1254,7 +1248,6 @@ msgstr "Paigaldatud (automaatselt eemalduv)"
 
 #: src/muonapt/MuonStrings.cpp:217 src/muonapt/MuonStrings.cpp:218
 #, fuzzy, kde-format
-#| msgid "Broken"
 msgctxt "@info:status Package state"
 msgid "Policy Broken"
 msgstr "Katki"
@@ -1279,10 +1272,6 @@ msgstr ""
 
 #: src/muonapt/MuonStrings.cpp:243
 #, fuzzy, kde-format
-#| msgctxt ""
-#| "@item:inlistbox Human-readable name for the Debian package section \"comm"
-#| "\""
-#| msgid "Communication"
 msgctxt "@item:inlistbox"
 msgid "Common"
 msgstr "Side"
@@ -1307,32 +1296,24 @@ msgstr ""
 
 #: src/muonapt/MuonStrings.cpp:265
 #, fuzzy, kde-format
-#| msgctxt "@title:window"
-#| msgid "Initialization error"
 msgctxt "@title:window"
 msgid "Initialization Error"
 msgstr "Initsialiseerimisviga"
 
 #: src/muonapt/MuonStrings.cpp:267
 #, fuzzy, kde-format
-#| msgctxt "@title:window"
-#| msgid "Unable to obtain package system lock"
 msgctxt "@title:window"
 msgid "Unable to Obtain Package System Lock"
 msgstr "Paketisüsteemi lukustamine nurjus"
 
 #: src/muonapt/MuonStrings.cpp:269
 #, fuzzy, kde-format
-#| msgctxt "@title:window"
-#| msgid "Low disk space"
 msgctxt "@title:window"
 msgid "Low Disk Space"
 msgstr "Kettaruumi napib"
 
 #: src/muonapt/MuonStrings.cpp:272
 #, fuzzy, kde-format
-#| msgctxt "@action Applys the changes a user has made"
-#| msgid "Apply Changes"
 msgctxt "@title:window"
 msgid "Failed to Apply Changes"
 msgstr "Rakenda muudatused"
@@ -1357,10 +1338,6 @@ msgstr "Ebausaldusväärsed paketid"
 
 #: src/muonapt/MuonStrings.cpp:281
 #, fuzzy, kde-format
-#| msgctxt ""
-#| "@item:inlistbox Human-readable name for the Debian package section "
-#| "\"unknown\""
-#| msgid "Unknown"
 msgctxt "@title:window"
 msgid "Unknown Error"
 msgstr "Tundmatu"
@@ -1396,17 +1373,12 @@ msgstr "Selleks toiminguks ei jagu kataloogis %1 enam ruumi."
 
 #: src/muonapt/MuonStrings.cpp:307
 #, fuzzy, kde-format
-#| msgctxt "@info:status"
-#| msgid "Muon is downloading packages"
 msgctxt "@label"
 msgid "Could not download packages"
 msgstr "Muon laadi pakette alla"
 
 #: src/muonapt/MuonStrings.cpp:310
 #, fuzzy, kde-format
-#| msgctxt "@label"
-#| msgid "An error occurred while applying changes:"
-#| msgid_plural "The following errors occurred while applying changes:"
 msgctxt "@label"
 msgid "An error occurred while applying changes:"
 msgstr "Muudatuste rakendamisel tekkis viga:"
@@ -1444,83 +1416,80 @@ msgstr[1] ""
 "Järgmisi pakette ei ole autorid verifitseerinud. Ebausaldusväärsete "
 "pakettide allalaadimine on praeguse seadistusega keelatud."
 
-#: src/muonapt/QAptActions.cpp:118
+#: src/muonapt/QAptActions.cpp:119
 #, kde-format
 msgctxt "@action Reverts all potential changes to the cache"
 msgid "Unmark All"
 msgstr "Eemalda kõigi märgistus"
 
-#: src/muonapt/QAptActions.cpp:125
+#: src/muonapt/QAptActions.cpp:126
 #, kde-format
 msgctxt "@action Opens the software sources configuration dialog"
 msgid "Configure Software Sources"
 msgstr "Tarkvaraallikate seadistamine"
 
-#: src/muonapt/QAptActions.cpp:131
+#: src/muonapt/QAptActions.cpp:132
 #, kde-format
 msgctxt "@action"
 msgid "Read Markings..."
 msgstr "Tähistuste lugemine..."
 
-#: src/muonapt/QAptActions.cpp:137
+#: src/muonapt/QAptActions.cpp:138
 #, kde-format
 msgctxt "@action"
 msgid "Save Markings As..."
 msgstr "Tähistuste salvestamine..."
 
-#: src/muonapt/QAptActions.cpp:144
+#: src/muonapt/QAptActions.cpp:145
 #, kde-format
 msgctxt "@action"
 msgid "Save Package Download List..."
 msgstr "Salvesta allalaaditud pakettide nimekiri..."
 
-#: src/muonapt/QAptActions.cpp:151
+#: src/muonapt/QAptActions.cpp:152
 #, kde-format
 msgctxt "@action"
 msgid "Download Packages From List..."
 msgstr "Laadi alla nimekirja paketid..."
 
-#: src/muonapt/QAptActions.cpp:160
+#: src/muonapt/QAptActions.cpp:161
 #, kde-format
 msgctxt "@action"
 msgid "Add Downloaded Packages"
 msgstr "Lisa allalaaditud paketid"
 
-#: src/muonapt/QAptActions.cpp:167
+#: src/muonapt/QAptActions.cpp:168
 #, kde-format
 msgctxt "@action"
 msgid "Save Installed Packages List..."
 msgstr "Salvesta paigaldatud pakettide nimekiri..."
 
-#: src/muonapt/QAptActions.cpp:173
+#: src/muonapt/QAptActions.cpp:174
 #, kde-format
 msgctxt "@action::inmenu"
 msgid "History..."
 msgstr "Ajalugu..."
 
-#: src/muonapt/QAptActions.cpp:179
+#: src/muonapt/QAptActions.cpp:180
 #, fuzzy, kde-format
-#| msgid "Upgrade"
 msgctxt "@action"
 msgid "Upgrade"
 msgstr "Uuenda"
 
-#: src/muonapt/QAptActions.cpp:182
+#: src/muonapt/QAptActions.cpp:183
 #, fuzzy, kde-format
-#| msgctxt "Notification when a new version of Kubuntu is available"
-#| msgid "A new version of Kubuntu is available"
 msgctxt "Notification when a new version of Kubuntu is available"
 msgid "A new version of Kubuntu is available."
 msgstr "Saadaval on Kubuntu uus versioon"
 
-#: src/muonapt/QAptActions.cpp:226
+#: src/muonapt/QAptActions.cpp:227
 #, kde-format
 msgctxt "@title:window"
 msgid "Save Markings As"
 msgstr "Tähistuste salvestamine"
 
-#: src/muonapt/QAptActions.cpp:233 src/muonapt/QAptActions.cpp:258
-#: src/muonapt/QAptActions.cpp:282
+#: src/muonapt/QAptActions.cpp:234 src/muonapt/QAptActions.cpp:259
+#: src/muonapt/QAptActions.cpp:283
 #, kde-kuit-format
 msgctxt "@label"
 msgid ""
@@ -1530,33 +1499,31 @@ msgid ""
 "Check that you have write access to this file or that enough disk space is "
 "available."
 msgstr ""
-"Dokumenti ei saa salvestada, sest ei ole võimalik kirjutada faili  <filename>"
-"%1</filename>.\n"
+"Dokumenti ei saa salvestada, sest ei ole võimalik kirjutada faili  "
+"<filename>%1</filename>.\n"
 "\n"
 "Palun kontrolli, et sul oleks selle faili kirjutamisõigus ja et kettal "
 "jaguks ruumi."
 
-#: src/muonapt/QAptActions.cpp:251
+#: src/muonapt/QAptActions.cpp:252
 #, kde-format
 msgctxt "@title:window"
 msgid "Save Installed Packages List As"
 msgstr "Paigaldatud pakettide nimekirja salvestamine"
 
-#: src/muonapt/QAptActions.cpp:275
+#: src/muonapt/QAptActions.cpp:276
 #, fuzzy, kde-format
-#| msgctxt "@action"
-#| msgid "Save Package Download List..."
 msgctxt "@title:window"
 msgid "Save Download List As"
 msgstr "Salvesta allalaaditud pakettide nimekiri..."
 
-#: src/muonapt/QAptActions.cpp:297 src/muonapt/QAptActions.cpp:314
+#: src/muonapt/QAptActions.cpp:298 src/muonapt/QAptActions.cpp:315
 #, kde-format
 msgctxt "@title:window"
 msgid "Open File"
 msgstr "Faili avamine"
 
-#: src/muonapt/QAptActions.cpp:322
+#: src/muonapt/QAptActions.cpp:323
 #, kde-format
 msgctxt "@label"
 msgid ""
@@ -1567,13 +1534,13 @@ msgstr ""
 "muudatuste tähistamise failiga, mis on loodud kas Muoni või Synapticu "
 "takrvarahalduriga."
 
-#: src/muonapt/QAptActions.cpp:333
+#: src/muonapt/QAptActions.cpp:334
 #, kde-format
 msgctxt "@title:window"
 msgid "Choose a Directory"
 msgstr ""
 
-#: src/muonapt/QAptActions.cpp:356
+#: src/muonapt/QAptActions.cpp:357
 #, kde-format
 msgctxt "@label"
 msgid "%1 package was successfully added to the cache"
@@ -1581,7 +1548,7 @@ msgid_plural "%1 packages were successfully added to the cache"
 msgstr[0] ""
 msgstr[1] ""
 
-#: src/muonapt/QAptActions.cpp:362
+#: src/muonapt/QAptActions.cpp:363
 #, kde-format
 msgctxt "@label"
 msgid ""
@@ -1589,120 +1556,122 @@ msgid ""
 "packages are compatible with your computer and are at the latest version."
 msgstr ""
 
-#: src/muonapt/QAptActions.cpp:366
+#: src/muonapt/QAptActions.cpp:367
 #, fuzzy, kde-format
-#| msgctxt "@title:window"
-#| msgid "Some Packages Could not be Downloaded"
 msgctxt "@title:window"
 msgid "Packages Could Not be Found"
 msgstr "Mõningate pakettide allalaadimine nurjus"
 
-#: src/muonapt/QAptActions.cpp:398
-#, kde-format
-msgctxt "@label"
+#: src/muonapt/QAptActions.cpp:397
+#, kde-kuit-format
+msgctxt "@info"
 msgid ""
-"Could not find <command>software-properties-kde</command> on your system, "
-"please install it. Alternatively, you can use <application>Plasma Discover</"
-"application> to configure software sources."
+"<para>Could not find <command>software-properties-qt</command> nor "
+"<command>software-properties-kde</command> on your system, please install it."
+"</para>"
 msgstr ""
 
-#: src/muonapt/QAptActions.cpp:403
-#, kde-format
+#: src/muonapt/QAptActions.cpp:401
+#, kde-kuit-format
 msgctxt "@title:window"
-msgid "Cannot find <command>software-properties-kde</command>"
+msgid "Cannot find <command>software-properties-qt</command>"
 msgstr ""
 
-#: src/muonapt/QAptActions.cpp:494
+#: src/muonapt/QAptActions.cpp:410
+#, kde-format
+msgid "pkexec could not be found. Please install polkit-1."
+msgstr ""
+
+#: src/muonapt/QAptActions.cpp:411
+#, kde-format
+msgid "pkexec not found"
+msgstr ""
+
+#: src/muonapt/QAptActions.cpp:517
 #, kde-format
 msgctxt "@title:window"
 msgid "Package History"
 msgstr "Paketiajalugu"
 
-#: src/PackageModel/PackageModel.cpp:88
+#: src/PackageModel/PackageModel.cpp:93
 #, kde-format
 msgid "Package"
 msgstr "Pakett"
 
-#: src/PackageModel/PackageModel.cpp:90
+#: src/PackageModel/PackageModel.cpp:95
 #, kde-format
 msgid "Status"
 msgstr "Olek"
 
-#: src/PackageModel/PackageModel.cpp:92
+#: src/PackageModel/PackageModel.cpp:97
 #, kde-format
 msgid "Requested"
 msgstr "Tegevus"
 
-#: src/PackageModel/PackageModel.cpp:94
+#: src/PackageModel/PackageModel.cpp:99
 #, fuzzy, kde-format
-#| msgctxt "@label Label preceding the package size"
-#| msgid "Installed Size:"
 msgid "Installed Size"
 msgstr "Paigaldamissuurus:"
 
-#: src/PackageModel/PackageModel.cpp:96
+#: src/PackageModel/PackageModel.cpp:101
 #, fuzzy, kde-format
-#| msgctxt "@title:group"
-#| msgid "Installed Version"
 msgid "Installed Version"
 msgstr "Paigaldatud versioon"
 
-#: src/PackageModel/PackageModel.cpp:98
+#: src/PackageModel/PackageModel.cpp:103
 #, fuzzy, kde-format
-#| msgctxt "@title:group"
-#| msgid "Available Version"
 msgid "Available Version"
 msgstr "Saadaolev versioon"
 
-#: src/PackageModel/PackageWidget.cpp:166
+#: src/PackageModel/PackageWidget.cpp:161
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Mark for Installation"
 msgstr "Märgi paigaldamiseks"
 
-#: src/PackageModel/PackageWidget.cpp:171
+#: src/PackageModel/PackageWidget.cpp:166
 #, kde-format
 msgctxt "@action:button"
 msgid "Mark for Removal"
 msgstr "Märgi eemaldamiseks"
 
-#: src/PackageModel/PackageWidget.cpp:176
+#: src/PackageModel/PackageWidget.cpp:171
 #, kde-format
 msgctxt "@action:button"
 msgid "Mark for Upgrade"
 msgstr "Märgi uuendamiseks"
 
-#: src/PackageModel/PackageWidget.cpp:181
+#: src/PackageModel/PackageWidget.cpp:176
 #, kde-format
 msgctxt "@action:button"
 msgid "Mark for Reinstallation"
 msgstr "Märgi taaspaigaldamiseks"
 
-#: src/PackageModel/PackageWidget.cpp:186
+#: src/PackageModel/PackageWidget.cpp:181
 #, kde-format
 msgctxt "@action:button"
 msgid "Mark for Purge"
 msgstr "Märgi kustutamiseks"
 
-#: src/PackageModel/PackageWidget.cpp:197
+#: src/PackageModel/PackageWidget.cpp:192
 #, kde-format
 msgctxt "@action:button"
 msgid "Lock Package at Current Version"
 msgstr "Lukusta paketi aktiivne versioon"
 
-#: src/PackageModel/PackageWidget.cpp:377
+#: src/PackageModel/PackageWidget.cpp:373
 #, kde-format
 msgctxt "@action:button"
 msgid "Unlock package"
 msgstr "Eemalda paketi lukustus"
 
-#: src/PackageModel/PackageWidget.cpp:381
+#: src/PackageModel/PackageWidget.cpp:377
 #, kde-format
 msgctxt "@action:button"
 msgid "Lock at Current Version"
 msgstr "Lukusta aktiivne versioon"
 
-#: src/PackageModel/PackageWidget.cpp:422
+#: src/PackageModel/PackageWidget.cpp:418
 #, kde-format
 msgctxt "@label"
 msgid ""
@@ -1710,37 +1679,37 @@ msgid ""
 "it?"
 msgstr "Selle paketi eemaldamine lõhub sinu süsteemi.Kas tõesti see eemaldada?"
 
-#: src/PackageModel/PackageWidget.cpp:423
+#: src/PackageModel/PackageWidget.cpp:419
 #, kde-format
 msgctxt "@label"
 msgid "Warning - Removing Important Package"
 msgstr "Hoiatus - tähtsa paketi eemaldamine"
 
-#: src/PackageModel/PackageWidget.cpp:609
+#: src/PackageModel/PackageWidget.cpp:605
 #, kde-format
 msgctxt "@title:window"
 msgid "Failed to Lock Package"
 msgstr "Paketi lukustamine nurjus"
 
-#: src/PackageModel/PackageWidget.cpp:610
+#: src/PackageModel/PackageWidget.cpp:606
 #, kde-format
 msgctxt "@info Error text"
 msgid "The package %1 could not be locked. Failed to write lock file."
 msgstr "Paketti %1 ei saa lukustada. Lukustusfaili kirjutamine nurjus."
 
-#: src/PackageModel/PackageWidget.cpp:659
+#: src/PackageModel/PackageWidget.cpp:656
 #, kde-format
 msgctxt "@label"
 msgid "The \"%1\" package could not be marked for installation or upgrade:"
 msgstr "Paketti \"%1\" ei saa märkida paigaldamiseks ega uuendamiseks:"
 
-#: src/PackageModel/PackageWidget.cpp:662
+#: src/PackageModel/PackageWidget.cpp:659
 #, kde-format
 msgctxt "@title:window"
 msgid "Unable to Mark Package"
 msgstr "Paketi märkimine nurjus"
 
-#: src/PackageModel/PackageWidget.cpp:679
+#: src/PackageModel/PackageWidget.cpp:676
 #, kde-format
 msgctxt "@label"
 msgid ""
@@ -1754,19 +1723,19 @@ msgstr ""
 "laaditudki üles, see on iganenud või ei ole praegu aktiveeritud hoidlates "
 "saadaval."
 
-#: src/PackageModel/PackageWidget.cpp:686
+#: src/PackageModel/PackageWidget.cpp:683
 #, kde-format
 msgctxt "@label Example: Depends: libqapt 0.1, but 0.2 is to be installed"
 msgid "%1: %2 %3, but %4 is to be installed"
 msgstr "%1: %2 %3, kuid kavas on paigaldada %4"
 
-#: src/PackageModel/PackageWidget.cpp:692
+#: src/PackageModel/PackageWidget.cpp:689
 #, kde-format
 msgctxt "@label Example: Depends: libqapt, but is not installable"
 msgid "%1: %2, but it is not installable"
 msgstr "%1: %2, kuid see ei ole paigaldatav"
 
-#: src/PackageModel/PackageWidget.cpp:697
+#: src/PackageModel/PackageWidget.cpp:694
 #, kde-format
 msgctxt "@label Example: Depends: libqapt, but it is a virtual package"
 msgid "%1: %2, but it is a virtual package"
@@ -1783,7 +1752,7 @@ msgctxt "@info:status"
 msgid "Rebuilding Search Index"
 msgstr "Otsinguindeksi taasloomine"
 
-#: src/StatusWidget.cpp:93
+#: src/StatusWidget.cpp:95
 #, kde-format
 msgctxt "@info:status"
 msgid "1 package available, "
@@ -1791,31 +1760,31 @@ msgid_plural "%1 packages available, "
 msgstr[0] "Saadaval on 1 pakett, "
 msgstr[1] "Saadaval on %1 paketti, "
 
-#: src/StatusWidget.cpp:94
+#: src/StatusWidget.cpp:96
 #, kde-format
 msgctxt "@info:status"
 msgid "%1 installed, "
 msgstr "paigaldatud %1, "
 
-#: src/StatusWidget.cpp:98
+#: src/StatusWidget.cpp:100
 #, kde-format
 msgctxt "@info:status"
 msgid "%1 upgradeable,"
 msgstr "uuendatakse %1,"
 
-#: src/StatusWidget.cpp:100
+#: src/StatusWidget.cpp:102
 #, kde-format
 msgctxt "@info:status"
 msgid "%1 upgradeable"
 msgstr "uuendatakse %1"
 
-#: src/StatusWidget.cpp:112
+#: src/StatusWidget.cpp:114
 #, kde-format
 msgctxt "@info:status Part of the status label"
 msgid " %1 to install/upgrade"
 msgstr " paigaldatakse/uuendatakse %1"
 
-#: src/StatusWidget.cpp:117
+#: src/StatusWidget.cpp:119
 #, kde-format
 msgctxt ""
 "@info:status Label for the number of packages pending removal when packages "
@@ -1823,7 +1792,7 @@ msgctxt ""
 msgid ", %1 to remove"
 msgstr ", eemaldatakse %1"
 
-#: src/StatusWidget.cpp:120
+#: src/StatusWidget.cpp:122
 #, kde-format
 msgctxt ""
 "@info:status Label for the number of packages pending removal when there are "
@@ -1831,13 +1800,13 @@ msgctxt ""
 msgid " %1 to remove"
 msgstr " eemaldatakse %1"
 
-#: src/StatusWidget.cpp:129
+#: src/StatusWidget.cpp:131
 #, kde-format
 msgctxt "@label showing download and install size"
 msgid "%1 to download, %2 of space to be freed"
 msgstr "Alla laaditakse %1, vabaneb %2 ruumi"
 
-#: src/StatusWidget.cpp:133
+#: src/StatusWidget.cpp:135
 #, kde-format
 msgctxt "@label showing download and install size"
 msgid "%1 to download, %2 of space to be used"
