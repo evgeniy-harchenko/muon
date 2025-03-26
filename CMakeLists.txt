@@ -32,9 +32,9 @@ configure_file(MuonVersion.h.in MuonVersion.h)
 add_subdirectory(src)
 
 set_package_properties(QApt PROPERTIES
-    DESCRIPTION "Qt wrapper around the libapt-pkg library"
-    PURPOSE "Used to support apt-based distribution systems"
-    TYPE REQUIRED)
+        DESCRIPTION "Qt wrapper around the libapt-pkg library"
+        PURPOSE "Used to support apt-based distribution systems"
+        TYPE REQUIRED)
 
 feature_summary(WHAT ALL FATAL_ON_MISSING_REQUIRED_PACKAGES)
 
