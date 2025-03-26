@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2025-03-19 13:45+0200\n"
+"POT-Creation-Date: 2025-03-26 14:11+0200\n"
 "PO-Revision-Date: 2016-08-27 08:10+0100\n"
 "Last-Translator: Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>\n"
 "Language-Team: Polish <kde-i18n-doc@kde.org>\n"
@@ -577,6 +577,12 @@ msgid_plural "This action requires changes to other packages:"
 msgstr[0] "Działanie wymaga zmiany w innym pakiecie:"
 msgstr[1] "Zapytaj o potwierdzenie zmian, które wpływają na inne pakiety"
 msgstr[2] "Zapytaj o potwierdzenie zmian, które wpływają na inne pakiety"
+
+#: src/muonapt/HistoryView/HistoryDialog.cpp:12
+#, kde-format
+msgctxt "@title:window"
+msgid "Package History"
+msgstr "Historia pakietów"
 
 #: src/muonapt/HistoryView/HistoryView.cpp:55
 #, kde-kuit-format
@@ -1430,80 +1436,80 @@ msgstr[2] ""
 "Następujące pakiety nie zostały zweryfikowane przez ich autora. Pobieranie "
 "niezaufanych pakietów zostało wyłączone w bieżącej konfiguracji."
 
-#: src/muonapt/QAptActions.cpp:119
+#: src/muonapt/QAptActions.cpp:121
 #, kde-format
 msgctxt "@action Reverts all potential changes to the cache"
 msgid "Unmark All"
 msgstr "Odznacz wszystko"
 
-#: src/muonapt/QAptActions.cpp:126
+#: src/muonapt/QAptActions.cpp:128
 #, kde-format
 msgctxt "@action Opens the software sources configuration dialog"
 msgid "Configure Software Sources"
 msgstr "Konfiguruj źródła oprogramowania"
 
-#: src/muonapt/QAptActions.cpp:132
+#: src/muonapt/QAptActions.cpp:134
 #, kde-format
 msgctxt "@action"
 msgid "Read Markings..."
 msgstr "Wczytaj oznaczenia..."
 
-#: src/muonapt/QAptActions.cpp:138
+#: src/muonapt/QAptActions.cpp:140
 #, kde-format
 msgctxt "@action"
 msgid "Save Markings As..."
 msgstr "Zapisz oznaczenia jako..."
 
-#: src/muonapt/QAptActions.cpp:145
+#: src/muonapt/QAptActions.cpp:147
 #, kde-format
 msgctxt "@action"
 msgid "Save Package Download List..."
 msgstr "Zapisz listę pobierania pakietów..."
 
-#: src/muonapt/QAptActions.cpp:152
+#: src/muonapt/QAptActions.cpp:154
 #, kde-format
 msgctxt "@action"
 msgid "Download Packages From List..."
 msgstr "Pobierz pakiety z listy..."
 
-#: src/muonapt/QAptActions.cpp:161
+#: src/muonapt/QAptActions.cpp:163
 #, kde-format
 msgctxt "@action"
 msgid "Add Downloaded Packages"
 msgstr "Dodaj pobrane pakiety"
 
-#: src/muonapt/QAptActions.cpp:168
+#: src/muonapt/QAptActions.cpp:170
 #, kde-format
 msgctxt "@action"
 msgid "Save Installed Packages List..."
 msgstr "Zapisz zainstalowaną listę pakietów..."
 
-#: src/muonapt/QAptActions.cpp:174
+#: src/muonapt/QAptActions.cpp:176
 #, kde-format
 msgctxt "@action::inmenu"
 msgid "History..."
 msgstr "Historia..."
 
-#: src/muonapt/QAptActions.cpp:180
+#: src/muonapt/QAptActions.cpp:182
 #, kde-format
 msgctxt "@action"
 msgid "Upgrade"
 msgstr "Uaktualnij"
 
-#: src/muonapt/QAptActions.cpp:183
+#: src/muonapt/QAptActions.cpp:185
 #, kde-format
 msgctxt "Notification when a new version of Kubuntu is available"
 msgid "A new version of Kubuntu is available."
 msgstr "Nowa wersja Kubuntu jest dostępna."
 
-#: src/muonapt/QAptActions.cpp:227
+#: src/muonapt/QAptActions.cpp:229
 #, kde-format
 msgctxt "@title:window"
 msgid "Save Markings As"
 msgstr "Zapisz oznaczone jako"
 
-#: src/muonapt/QAptActions.cpp:234 src/muonapt/QAptActions.cpp:259
-#: src/muonapt/QAptActions.cpp:283
+#: src/muonapt/QAptActions.cpp:236 src/muonapt/QAptActions.cpp:261
+#: src/muonapt/QAptActions.cpp:285
 #, kde-kuit-format
 msgctxt "@label"
 msgid ""
@@ -1519,25 +1525,25 @@ msgstr ""
 "Sprawdź, czy posiadasz prawa zapisu dla tego pliku oraz czy jest "
 "wystarczająco dużo miejsca na dysku."
 
-#: src/muonapt/QAptActions.cpp:252
+#: src/muonapt/QAptActions.cpp:254
 #, kde-format
 msgctxt "@title:window"
 msgid "Save Installed Packages List As"
 msgstr "Zapisz wykaz wgranych pakietów jako"
 
-#: src/muonapt/QAptActions.cpp:276
+#: src/muonapt/QAptActions.cpp:278
 #, kde-format
 msgctxt "@title:window"
 msgid "Save Download List As"
 msgstr "Zapisz wykaz pakietów do pobrania jako"
 
-#: src/muonapt/QAptActions.cpp:298 src/muonapt/QAptActions.cpp:315
+#: src/muonapt/QAptActions.cpp:300 src/muonapt/QAptActions.cpp:317
 #, kde-format
 msgctxt "@title:window"
 msgid "Open File"
 msgstr "Otwórz plik"
 
-#: src/muonapt/QAptActions.cpp:323
+#: src/muonapt/QAptActions.cpp:325
 #, kde-format
 msgctxt "@label"
 msgid ""
@@ -1548,13 +1554,13 @@ msgstr ""
 "oznaczeń utworzonym przez menedżera pakietów Muon lub menedżera pakietów "
 "Synaptic."
 
-#: src/muonapt/QAptActions.cpp:334
+#: src/muonapt/QAptActions.cpp:336
 #, kde-format
 msgctxt "@title:window"
 msgid "Choose a Directory"
 msgstr "Wybierz katalog"
 
-#: src/muonapt/QAptActions.cpp:357
+#: src/muonapt/QAptActions.cpp:359
 #, kde-format
 msgctxt "@label"
 msgid "%1 package was successfully added to the cache"
@@ -1563,7 +1569,7 @@ msgstr[0] "%1 pakiet został pomyślnie dodany do pamięci podręcznej"
 msgstr[1] "%1 pakiety zostały pomyślnie dodane do pamięci podręcznej"
 msgstr[2] "%1 pakietów zostało pomyślnie dodanych do pamięci podręcznej"
 
-#: src/muonapt/QAptActions.cpp:363
+#: src/muonapt/QAptActions.cpp:365
 #, kde-format
 msgctxt "@label"
 msgid ""
@@ -1573,13 +1579,13 @@ msgstr ""
 "Nie można znaleźć prawidłowych pakietów w tym katalogu. Upewnij się, że "
 "pakiety są zgodne z twoim komputerem i że są w najnowszej wersji."
 
-#: src/muonapt/QAptActions.cpp:367
+#: src/muonapt/QAptActions.cpp:369
 #, kde-format
 msgctxt "@title:window"
 msgid "Packages Could Not be Found"
 msgstr "Nie można znaleźć pakietów"
 
-#: src/muonapt/QAptActions.cpp:397
+#: src/muonapt/QAptActions.cpp:399
 #, kde-kuit-format
 msgctxt "@info"
 msgid ""
@@ -1588,27 +1594,21 @@ msgid ""
 "</para>"
 msgstr ""
 
-#: src/muonapt/QAptActions.cpp:401
+#: src/muonapt/QAptActions.cpp:403
 #, fuzzy, kde-kuit-format
 msgctxt "@title:window"
 msgid "Cannot find <command>software-properties-qt</command>"
 msgstr "Nie można znaleźć <command>software-properties-kde</command>"
 
-#: src/muonapt/QAptActions.cpp:410
+#: src/muonapt/QAptActions.cpp:412
 #, kde-format
 msgid "pkexec could not be found. Please install polkit-1."
 msgstr ""
 
-#: src/muonapt/QAptActions.cpp:411
+#: src/muonapt/QAptActions.cpp:413
 #, kde-format
 msgid "pkexec not found"
 msgstr ""
-
-#: src/muonapt/QAptActions.cpp:517
-#, kde-format
-msgctxt "@title:window"
-msgid "Package History"
-msgstr "Historia pakietów"
 
 #: src/PackageModel/PackageModel.cpp:93
 #, kde-format

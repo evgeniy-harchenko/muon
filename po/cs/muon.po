@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2025-03-19 13:45+0200\n"
+"POT-Creation-Date: 2025-03-26 14:11+0200\n"
 "PO-Revision-Date: 2017-03-08 10:57+0100\n"
 "Last-Translator: Vít Pelčák <vit@pelcak.org>\n"
 "Language-Team: Czech <kde-i18n-doc@kde.org>\n"
@@ -575,6 +575,12 @@ msgid_plural "This action requires changes to other packages:"
 msgstr[0] "Tato činnost vyžaduje změnu jiného balíčku:"
 msgstr[1] "Tato činnost vyžaduje změny jiných balíčků:"
 msgstr[2] "Tato činnost vyžaduje změny jiných balíčků:"
+
+#: src/muonapt/HistoryView/HistoryDialog.cpp:12
+#, kde-format
+msgctxt "@title:window"
+msgid "Package History"
+msgstr "Historie balíčku"
 
 #: src/muonapt/HistoryView/HistoryView.cpp:55
 #, kde-kuit-format
@@ -1423,80 +1429,80 @@ msgstr[2] ""
 "Následující balíčky nebyly autorem podepsány. Stahování nedůvěryhodných "
 "balíčků není ve vašem nastavení povolené."
 
-#: src/muonapt/QAptActions.cpp:119
+#: src/muonapt/QAptActions.cpp:121
 #, kde-format
 msgctxt "@action Reverts all potential changes to the cache"
 msgid "Unmark All"
 msgstr "Zrušit označení všech"
 
-#: src/muonapt/QAptActions.cpp:126
+#: src/muonapt/QAptActions.cpp:128
 #, kde-format
 msgctxt "@action Opens the software sources configuration dialog"
 msgid "Configure Software Sources"
 msgstr "Nastavit zdroje software"
 
-#: src/muonapt/QAptActions.cpp:132
+#: src/muonapt/QAptActions.cpp:134
 #, kde-format
 msgctxt "@action"
 msgid "Read Markings..."
 msgstr "Přečíst označení..."
 
-#: src/muonapt/QAptActions.cpp:138
+#: src/muonapt/QAptActions.cpp:140
 #, kde-format
 msgctxt "@action"
 msgid "Save Markings As..."
 msgstr "Uložit označení jako..."
 
-#: src/muonapt/QAptActions.cpp:145
+#: src/muonapt/QAptActions.cpp:147
 #, kde-format
 msgctxt "@action"
 msgid "Save Package Download List..."
 msgstr "Uložit seznam balíčků ke stažení..."
 
-#: src/muonapt/QAptActions.cpp:152
+#: src/muonapt/QAptActions.cpp:154
 #, kde-format
 msgctxt "@action"
 msgid "Download Packages From List..."
 msgstr "Stáhnout balíčky ze seznamu..."
 
-#: src/muonapt/QAptActions.cpp:161
+#: src/muonapt/QAptActions.cpp:163
 #, kde-format
 msgctxt "@action"
 msgid "Add Downloaded Packages"
 msgstr "Přidat stažené balíčky"
 
-#: src/muonapt/QAptActions.cpp:168
+#: src/muonapt/QAptActions.cpp:170
 #, kde-format
 msgctxt "@action"
 msgid "Save Installed Packages List..."
 msgstr "Uložit seznam nainstalovaných balíčků..."
 
-#: src/muonapt/QAptActions.cpp:174
+#: src/muonapt/QAptActions.cpp:176
 #, kde-format
 msgctxt "@action::inmenu"
 msgid "History..."
 msgstr "Historie..."
 
-#: src/muonapt/QAptActions.cpp:180
+#: src/muonapt/QAptActions.cpp:182
 #, kde-format
 msgctxt "@action"
 msgid "Upgrade"
 msgstr "Aktualizovat"
 
-#: src/muonapt/QAptActions.cpp:183
+#: src/muonapt/QAptActions.cpp:185
 #, kde-format
 msgctxt "Notification when a new version of Kubuntu is available"
 msgid "A new version of Kubuntu is available."
 msgstr "Je dostupná nová verze Kubuntu."
 
-#: src/muonapt/QAptActions.cpp:227
+#: src/muonapt/QAptActions.cpp:229
 #, kde-format
 msgctxt "@title:window"
 msgid "Save Markings As"
 msgstr "Uložit označení jako"
 
-#: src/muonapt/QAptActions.cpp:234 src/muonapt/QAptActions.cpp:259
-#: src/muonapt/QAptActions.cpp:283
+#: src/muonapt/QAptActions.cpp:236 src/muonapt/QAptActions.cpp:261
+#: src/muonapt/QAptActions.cpp:285
 #, kde-kuit-format
 msgctxt "@label"
 msgid ""
@@ -1511,25 +1517,25 @@ msgstr ""
 "Zkontrolujte, zda máte oprávnění k zápisu do tohoto souboru a že je na disku "
 "dostatek místa."
 
-#: src/muonapt/QAptActions.cpp:252
+#: src/muonapt/QAptActions.cpp:254
 #, kde-format
 msgctxt "@title:window"
 msgid "Save Installed Packages List As"
 msgstr "Uložit seznam nainstalovaných balíčků jako"
 
-#: src/muonapt/QAptActions.cpp:276
+#: src/muonapt/QAptActions.cpp:278
 #, kde-format
 msgctxt "@title:window"
 msgid "Save Download List As"
 msgstr "Uložit seznam balíčků jako"
 
-#: src/muonapt/QAptActions.cpp:298 src/muonapt/QAptActions.cpp:315
+#: src/muonapt/QAptActions.cpp:300 src/muonapt/QAptActions.cpp:317
 #, kde-format
 msgctxt "@title:window"
 msgid "Open File"
 msgstr "Otevřít soubor"
 
-#: src/muonapt/QAptActions.cpp:323
+#: src/muonapt/QAptActions.cpp:325
 #, kde-format
 msgctxt "@label"
 msgid ""
@@ -1539,13 +1545,13 @@ msgstr ""
 "Nelze označit změny. Přesvědčete se, že daný soubor je značkovacím souborem "
 "správce balíčků Muon nebo Synaptic."
 
-#: src/muonapt/QAptActions.cpp:334
+#: src/muonapt/QAptActions.cpp:336
 #, kde-format
 msgctxt "@title:window"
 msgid "Choose a Directory"
 msgstr "Vyberte adresář"
 
-#: src/muonapt/QAptActions.cpp:357
+#: src/muonapt/QAptActions.cpp:359
 #, kde-format
 msgctxt "@label"
 msgid "%1 package was successfully added to the cache"
@@ -1554,7 +1560,7 @@ msgstr[0] ""
 msgstr[1] ""
 msgstr[2] ""
 
-#: src/muonapt/QAptActions.cpp:363
+#: src/muonapt/QAptActions.cpp:365
 #, kde-format
 msgctxt "@label"
 msgid ""
@@ -1564,13 +1570,13 @@ msgstr ""
 "V tomto adresáři se nenašly platné balíčky. Přesvědčete se, že balíčky jsou "
 "kompatibilní s vaším počítačem a že je to jejich nejnovější verze."
 
-#: src/muonapt/QAptActions.cpp:367
+#: src/muonapt/QAptActions.cpp:369
 #, kde-format
 msgctxt "@title:window"
 msgid "Packages Could Not be Found"
 msgstr "Některé balíčky nebylo možno nalézt"
 
-#: src/muonapt/QAptActions.cpp:397
+#: src/muonapt/QAptActions.cpp:399
 #, kde-kuit-format
 msgctxt "@info"
 msgid ""
@@ -1579,27 +1585,21 @@ msgid ""
 "</para>"
 msgstr ""
 
-#: src/muonapt/QAptActions.cpp:401
+#: src/muonapt/QAptActions.cpp:403
 #, kde-kuit-format
 msgctxt "@title:window"
 msgid "Cannot find <command>software-properties-qt</command>"
 msgstr ""
 
-#: src/muonapt/QAptActions.cpp:410
+#: src/muonapt/QAptActions.cpp:412
 #, kde-format
 msgid "pkexec could not be found. Please install polkit-1."
 msgstr ""
 
-#: src/muonapt/QAptActions.cpp:411
+#: src/muonapt/QAptActions.cpp:413
 #, kde-format
 msgid "pkexec not found"
 msgstr ""
-
-#: src/muonapt/QAptActions.cpp:517
-#, kde-format
-msgctxt "@title:window"
-msgid "Package History"
-msgstr "Historie balíčku"
 
 #: src/PackageModel/PackageModel.cpp:93
 #, kde-format

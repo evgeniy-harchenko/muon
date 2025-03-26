@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2025-03-19 13:45+0200\n"
+"POT-Creation-Date: 2025-03-26 14:11+0200\n"
 "PO-Revision-Date: 2015-11-10 20:02+0100\n"
 "Last-Translator: Karl Ove Hufthammer <karl@huftis.org>\n"
 "Language-Team: Norwegian Nynorsk <i18n-nn@lister.ping.uio.no>\n"
@@ -574,6 +574,12 @@ msgid "This action requires a change to another package:"
 msgid_plural "This action requires changes to other packages:"
 msgstr[0] "Handlinga krev ei endring i ein annan pakke:"
 msgstr[1] "Handlinga krev endringar i andre pakkar:"
+
+#: src/muonapt/HistoryView/HistoryDialog.cpp:12
+#, kde-format
+msgctxt "@title:window"
+msgid "Package History"
+msgstr "Pakkelogg"
 
 #: src/muonapt/HistoryView/HistoryView.cpp:55
 #, kde-kuit-format
@@ -1421,80 +1427,80 @@ msgstr[1] ""
 "Desse pakkane er ikkje stadfesta av forfattaren. Det gjeldande oppsettet "
 "tillèt ikkje å lasta ned ikkje-tiltrudde pakkar."
 
-#: src/muonapt/QAptActions.cpp:119
+#: src/muonapt/QAptActions.cpp:121
 #, kde-format
 msgctxt "@action Reverts all potential changes to the cache"
 msgid "Unmark All"
 msgstr "Fjern merking"
 
-#: src/muonapt/QAptActions.cpp:126
+#: src/muonapt/QAptActions.cpp:128
 #, kde-format
 msgctxt "@action Opens the software sources configuration dialog"
 msgid "Configure Software Sources"
 msgstr "Set opp programvarekjelder"
 
-#: src/muonapt/QAptActions.cpp:132
+#: src/muonapt/QAptActions.cpp:134
 #, kde-format
 msgctxt "@action"
 msgid "Read Markings..."
 msgstr "Les markeringar …"
 
-#: src/muonapt/QAptActions.cpp:138
+#: src/muonapt/QAptActions.cpp:140
 #, kde-format
 msgctxt "@action"
 msgid "Save Markings As..."
 msgstr "Lagra markeringar som …"
 
-#: src/muonapt/QAptActions.cpp:145
+#: src/muonapt/QAptActions.cpp:147
 #, kde-format
 msgctxt "@action"
 msgid "Save Package Download List..."
 msgstr "Lagra liste over pakkar som er lasta ned …"
 
-#: src/muonapt/QAptActions.cpp:152
+#: src/muonapt/QAptActions.cpp:154
 #, kde-format
 msgctxt "@action"
 msgid "Download Packages From List..."
 msgstr "Last ned pakkar frå liste …"
 
-#: src/muonapt/QAptActions.cpp:161
+#: src/muonapt/QAptActions.cpp:163
 #, kde-format
 msgctxt "@action"
 msgid "Add Downloaded Packages"
 msgstr "Legg til nedlasta pakkar"
 
-#: src/muonapt/QAptActions.cpp:168
+#: src/muonapt/QAptActions.cpp:170
 #, kde-format
 msgctxt "@action"
 msgid "Save Installed Packages List..."
 msgstr "Lagra liste over installerte pakker …"
 
-#: src/muonapt/QAptActions.cpp:174
+#: src/muonapt/QAptActions.cpp:176
 #, kde-format
 msgctxt "@action::inmenu"
 msgid "History..."
 msgstr "Logg …"
 
-#: src/muonapt/QAptActions.cpp:180
+#: src/muonapt/QAptActions.cpp:182
 #, kde-format
 msgctxt "@action"
 msgid "Upgrade"
 msgstr "Oppgrader"
 
-#: src/muonapt/QAptActions.cpp:183
+#: src/muonapt/QAptActions.cpp:185
 #, kde-format
 msgctxt "Notification when a new version of Kubuntu is available"
 msgid "A new version of Kubuntu is available."
 msgstr "Ein ny versjon av Kubuntu er tilgjengeleg."
 
-#: src/muonapt/QAptActions.cpp:227
+#: src/muonapt/QAptActions.cpp:229
 #, kde-format
 msgctxt "@title:window"
 msgid "Save Markings As"
 msgstr "Lagra markeringar som"
 
-#: src/muonapt/QAptActions.cpp:234 src/muonapt/QAptActions.cpp:259
-#: src/muonapt/QAptActions.cpp:283
+#: src/muonapt/QAptActions.cpp:236 src/muonapt/QAptActions.cpp:261
+#: src/muonapt/QAptActions.cpp:285
 #, kde-kuit-format
 msgctxt "@label"
 msgid ""
@@ -1510,25 +1516,25 @@ msgstr ""
 "Kontroller at du har skrivetilgang til denne fila og at det er nok diskplass "
 "tilgjengeleg."
 
-#: src/muonapt/QAptActions.cpp:252
+#: src/muonapt/QAptActions.cpp:254
 #, kde-format
 msgctxt "@title:window"
 msgid "Save Installed Packages List As"
 msgstr "Lagra liste over installerte pakker som"
 
-#: src/muonapt/QAptActions.cpp:276
+#: src/muonapt/QAptActions.cpp:278
 #, kde-format
 msgctxt "@title:window"
 msgid "Save Download List As"
 msgstr "Lagra nedlastingsliste som …"
 
-#: src/muonapt/QAptActions.cpp:298 src/muonapt/QAptActions.cpp:315
+#: src/muonapt/QAptActions.cpp:300 src/muonapt/QAptActions.cpp:317
 #, kde-format
 msgctxt "@title:window"
 msgid "Open File"
 msgstr "Opna fil"
 
-#: src/muonapt/QAptActions.cpp:323
+#: src/muonapt/QAptActions.cpp:325
 #, kde-format
 msgctxt "@label"
 msgid ""
@@ -1538,13 +1544,13 @@ msgstr ""
 "Klarte ikkje markera endringar. Sjå etter at fila er ei markeringsfil "
 "oppretta anten av Muon pakkehandsamar eller Synaptic pakkehandsamar."
 
-#: src/muonapt/QAptActions.cpp:334
+#: src/muonapt/QAptActions.cpp:336
 #, kde-format
 msgctxt "@title:window"
 msgid "Choose a Directory"
 msgstr "Vel ei mappe"
 
-#: src/muonapt/QAptActions.cpp:357
+#: src/muonapt/QAptActions.cpp:359
 #, kde-format
 msgctxt "@label"
 msgid "%1 package was successfully added to the cache"
@@ -1552,7 +1558,7 @@ msgid_plural "%1 packages were successfully added to the cache"
 msgstr[0] "%1 pakke vart lagd til mellomlageret"
 msgstr[1] "%1 pakkar vart lagde til mellomlageret"
 
-#: src/muonapt/QAptActions.cpp:363
+#: src/muonapt/QAptActions.cpp:365
 #, kde-format
 msgctxt "@label"
 msgid ""
@@ -1562,13 +1568,13 @@ msgstr ""
 "Fann ikkje nokon gyldige pakkar i mappa. Sjå til at pakkane er kompatible "
 "med maskina di og er i nyaste versjon."
 
-#: src/muonapt/QAptActions.cpp:367
+#: src/muonapt/QAptActions.cpp:369
 #, kde-format
 msgctxt "@title:window"
 msgid "Packages Could Not be Found"
 msgstr "Fann ikkje pakkar"
 
-#: src/muonapt/QAptActions.cpp:397
+#: src/muonapt/QAptActions.cpp:399
 #, kde-kuit-format
 msgctxt "@info"
 msgid ""
@@ -1577,27 +1583,21 @@ msgid ""
 "</para>"
 msgstr ""
 
-#: src/muonapt/QAptActions.cpp:401
+#: src/muonapt/QAptActions.cpp:403
 #, kde-kuit-format
 msgctxt "@title:window"
 msgid "Cannot find <command>software-properties-qt</command>"
 msgstr ""
 
-#: src/muonapt/QAptActions.cpp:410
+#: src/muonapt/QAptActions.cpp:412
 #, kde-format
 msgid "pkexec could not be found. Please install polkit-1."
 msgstr ""
 
-#: src/muonapt/QAptActions.cpp:411
+#: src/muonapt/QAptActions.cpp:413
 #, kde-format
 msgid "pkexec not found"
 msgstr ""
-
-#: src/muonapt/QAptActions.cpp:517
-#, kde-format
-msgctxt "@title:window"
-msgid "Package History"
-msgstr "Pakkelogg"
 
 #: src/PackageModel/PackageModel.cpp:93
 #, kde-format
