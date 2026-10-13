@@ -22,6 +22,8 @@
 
 // Qt includes
 #include <QDir>
+#include <QFile>
+#include <QProcess>
 #include <QtCore/QTextStream>
 #include <QTemporaryFile>
 #include <QTextBrowser>
@@ -37,6 +39,29 @@
 #include <QApt/Changelog>
 
 #include "Widgets/BusyIndicator.h"
+
+/* The Debian changelog that a package installed, or an empty string.
+   Native packages name it changelog.gz. */
+static QString localChangelog(const QString &packageName)
+{
+    const QString docDir = QLatin1String("/usr/share/doc/") + packageName;
+
+    for (const char *fileName : {"/changelog.Debian.gz", "/changelog.gz"}) {
+        const QString path = docDir + QLatin1String(fileName);
+        if (!QFile::exists(path)) {
+            continue;
+        }
+
+        /* gzip is an essential package: every APT system has it. */
+        QProcess gzip;
+        gzip.start(QStringLiteral("gzip"), {QStringLiteral("-dc"), path});
+        if (gzip.waitForFinished(3000) && gzip.exitCode() == 0) {
+            return QString::fromUtf8(gzip.readAllStandardOutput());
+        }
+    }
+
+    return QString();
+}
 
 ChangelogTab::ChangelogTab(QWidget *parent)
     : DetailsTab(parent)
@@ -63,12 +88,17 @@ void ChangelogTab::refresh()
 void ChangelogTab::clear()
 {
     DetailsTab::clear();
+    dropPendingJobs();
+}
 
+void ChangelogTab::dropPendingJobs()
+{
     // Delete any KJobs lying around. We could get stale package pointers if the jobs
-    // finish during a cache reload
+    // finish during a cache reload, or the changelog of the previous package
     auto iter = m_jobFilenames.constBegin();
     while (iter != m_jobFilenames.constEnd()) {
         iter.key()->deleteLater();
+        QFile::remove(iter.value());
         ++iter;
     }
 
@@ -110,7 +140,23 @@ void ChangelogTab::fetchChangelog()
         return;
     }
 
+    dropPendingJobs();
+    m_busyWidget->stop();
     m_changelogBrowser->clear();
+
+    /* Only the Ubuntu archive has changelogs online. For the other packages
+       (KDE neon, third parties, local ones), show the installed changelog. */
+    const QUrl changelogUrl = m_package->changelogUrl();
+    if (changelogUrl.isEmpty()) {
+        const QString changelog = localChangelog(m_package->name());
+        if (changelog.isEmpty()) {
+            m_changelogBrowser->setText(i18nc("@info", "The list of changes is not yet available."));
+        } else {
+            m_changelogBrowser->setPlainText(changelog);
+        }
+        return;
+    }
+
     m_busyWidget->start();
 
     QTemporaryFile *changelogFile = new QTemporaryFile(QDir::tempPath() + QLatin1String("/muon_XXXXXX.txt"));
@@ -119,7 +165,7 @@ void ChangelogTab::fetchChangelog()
     QString filename = changelogFile->fileName();
     delete changelogFile;
 
-    KIO::FileCopyJob *getJob = KIO::file_copy(m_package->changelogUrl(),
+    KIO::FileCopyJob *getJob = KIO::file_copy(changelogUrl,
                                QUrl::fromLocalFile(filename), -1,
                                KIO::Overwrite | KIO::HideProgressInfo);
     getJob->setAutoDelete(false);

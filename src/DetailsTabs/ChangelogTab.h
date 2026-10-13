@@ -42,6 +42,8 @@ private:
     BusyIndicator *m_busyWidget = nullptr;
     QHash<KJob *, QString> m_jobFilenames;
 
+    void dropPendingJobs();
+
 public Q_SLOTS:
     void setPackage(QApt::Package *package);
     void refresh() override;
