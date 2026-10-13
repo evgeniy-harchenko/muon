@@ -122,7 +122,9 @@ void MainWindow::initGUI()
     m_stack->setCurrentWidget(m_mainWidget);
 
     m_backend = new QApt::Backend(this);
-    QApt::FrontendCaps caps = (QApt::FrontendCaps)(QApt::DebconfCap | QApt::MediumPromptCap |
+    /* No DebconfCap while DebconfGui is disabled in TransactionWidget:
+       nothing listens on the debconf socket, so the worker would reject it. */
+    QApt::FrontendCaps caps = (QApt::FrontendCaps)(QApt::MediumPromptCap |
                                QApt::ConfigPromptCap | QApt::UntrustedPromptCap);
     m_backend->setFrontendCaps(caps);
     QAptActions* actions = QAptActions::self();
@@ -467,7 +469,6 @@ void MainWindow::setupTransaction(QApt::Transaction *trans)
 
     trans->setLocale(QLatin1String(setlocale(LC_MESSAGES, nullptr)));
 
-    trans->setDebconfPipe(m_transWidget->pipe());
     m_transWidget->setTransaction(m_trans);
 
     connect(m_trans, SIGNAL(statusChanged(QApt::TransactionStatus)),
