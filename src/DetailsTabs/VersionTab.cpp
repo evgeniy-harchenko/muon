@@ -97,6 +97,7 @@ void VersionTab::setPackage(QApt::Package *package)
 void VersionTab::refresh()
 {
     m_versionModel->clear();
+    m_versions.clear();
     populateVersions();
 }
 
